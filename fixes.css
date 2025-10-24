@@ -1,0 +1,119 @@
+/* ===== FIXES FOR MENU AND SLIDER ISSUES ===== */
+
+/* Fix for menu display issues */
+@media (min-width: 992px) {
+
+    /* Ensure menu displays horizontally */
+    .header-nav .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .header-nav .nav>li {
+        display: inline-block;
+        position: relative;
+        margin: 0 1px;
+    }
+
+    /* Fix for menu alignment */
+    .is-fixed .main-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .header-style-8 .header-nav .nav>li>a {
+        padding: 20px 12px;
+        color: #000;
+    }
+}
+
+/* Fix for Revolution Slider text scaling */
+.tp-caption {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Fix specific caption classes for better visibility */
+.tp-caption.tp-resizeme {
+    font-size: inherit !important;
+    line-height: inherit !important;
+    transition: none 0s ease 0s !important;
+}
+
+/* Fix for small text on mobile */
+@media only screen and (max-width: 767px) {
+
+    .tp-caption .font-14,
+    .tp-caption .font-16,
+    .tp-caption .font-18 {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .tp-caption .font-20,
+    .tp-caption .font-22,
+    .tp-caption .font-24 {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+
+    .tp-caption .font-26,
+    .tp-caption .font-30,
+    .tp-caption .font-36 {
+        font-size: 22px !important;
+        line-height: 28px !important;
+    }
+
+    .tp-caption .font-40,
+    .tp-caption .font-50 {
+        font-size: 26px !important;
+        line-height: 32px !important;
+    }
+}
+
+/* Fix for header navbar toggle position */
+@media only screen and (max-width: 991px) {
+    .header-style-8 .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 30px;
+        margin: 0;
+        padding: 8px;
+        transform: none;
+    }
+
+    .header-style-8 .logo-header {
+        padding: 15px 0;
+    }
+
+    /* Fix nav display on mobile */
+    .header-style-8 .header-nav .nav>li>a {
+        padding: 10px 15px;
+        display: block;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Ensure fullscreen slider fills the screen */
+#rev_slider_1050_1_wrapper,
+#rev_slider_1050_1 {
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+/* Fix for slider fullscreen offset */
+.fullscreen-container {
+    position: relative !important;
+    z-index: 1;
+}
+
+/* Fix Revolution Slider buttons */
+.tp-leftarrow,
+.tp-rightarrow {
+    visibility: visible !important;
+    opacity: 1 !important;
+}

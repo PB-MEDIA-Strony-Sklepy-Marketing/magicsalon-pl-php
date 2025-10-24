@@ -1,0 +1,178 @@
+<!-- JAVASCRIPT  FILES ========================================= -->
+<script src="js/jquery-3.6.1.min.js"></script><!-- JQUERY.MIN JS -->
+<script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+<script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="js/bootstrap-select.min.js"></script><!-- FORM JS -->
+<script src="js/jquery.bootstrap-touchspin.min.js"></script><!-- FORM JS -->
+<script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+<script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script src="js/waypoints-sticky.min.js"></script><!-- COUNTERUP JS -->
+<script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+<script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+<script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+<script src="js/scrolla.min.js"></script><!-- ON SCROLL CONTENT ANIMTE   -->
+<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+
+<!-- REVOLUTION JS FILES -->
+
+<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+<!-- REVOLUTION SLIDER FUNCTION  ===== -->
+<script src="js/rev-script-1.js"></script>
+
+<!-- booksy FUNCTION  ===== -->
+<script src="js/booksy-embed.js"></script>
+<script src="js/booksy-widget.js"></script>
+
+<!-- WhatsApp CTC Chatbox FUNCTION  ===== -->
+<script src="js/whatsapp-ctc-chatbox.js"></script>
+
+<!-- POLITYKA PRYWATNOŚCI JS  ===== -->
+<script type="module" src="js/cookieconsent-config.js"></script>
+<script defer src="js/iframemanager.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K76PV6PD" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Facebook SDK Initialization -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v24.0&appId=464369106147391"></script>
+
+<!-- WhatssApp ikona czatu w lewym dolnym rogu strony start -->
+<div class="custom-ctc-button" onclick="toggleCtcChatbox()">
+    <div class="custom-ctc-icon">
+        <img src="images/svg/WhatsApp.svg" alt="WhatsApp" width="32" height="32">
+    </div>
+</div>
+
+<div class="custom-ctc-chatbox" id="customCtcChatbox">
+    <div class="ctc_g_heading">
+        <div class="ctc_g_header_content">
+            <p><span style="font-size: 17px; font-weight: 500;">magicsalon.pl - odkryj magię profesjonalnej
+                    pielęgnacji!</span></p>
+            <p><span style="font-size: 12px;">Zwykle odpowiadamy w ciągu kilku minut</span></p>
+        </div>
+    </div>
+
+    <div class="ctc_g_content">
+        <div class="ctc_g_content_for_bg_image">
+            <div class="ctc_g_message_box">
+                <p>Masz pytania dotyczące naszych usług? Nie czekaj, napisz!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ctc_g_sentbutton">
+        <div class="g_ctc_s_7_1" onclick="window.open('https://wa.me/48883481581', '_blank')">
+            <p class="g_ctc_s_7_1_cta">Napisz do nas na WhatsApp</p>
+            <div class="g_ctc_s_7_icon_padding">
+                <svg height="20px" viewBox="0 0 509 512" width="20px" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                        <path fill="#ffffff"
+                            d="M259.25 0C121.5 0 9.84 111.66 9.84 249.41c0 47.12 13.08 91.18 35.79 128.78L0.61 512l138.09-44.21c35.73 19.76 76.82 30.99 120.55 30.99 137.74 0 249.41-111.66 249.41-249.38C508.66 111.66 396.99 0 259.25 0z" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="ctc_g_bottom">
+        <p><img draggable="false" role="img" class="emoji" alt="🟢" src="images/svg/1f7e2.svg" width="10px"
+                height="10px"> Online | <a href="polityka-prywatnosci-rodo.html" target="_blank">Polityka prywatności &
+                RODO</a></p>
+    </div>
+</div>
+
+<!-- Booksy Click to Chat - Prawy dolny róg ULTRA FIX START -->
+<div class="booksy-ctc-button" onclick="toggleBooksyChatbox()" role="button" aria-label="Otwórz czat Booksy"
+    tabindex="0" style="display: block !important; visibility: visible !important;">
+    <div class="booksy-ctc-icon" aria-hidden="true">
+        <img src="images/svg/booksyonlyicon.svg" alt="" width="32" height="32" loading="lazy"
+            style="display: block !important;">
+    </div>
+</div>
+
+<div class="booksy-ctc-chatbox" id="booksyChatboxWidget" role="dialog" aria-labelledby="booksyChatTitle"
+    aria-hidden="true">
+    <div class="booksy-heading">
+        <div class="booksy-header-content">
+            <p id="booksyChatTitle"><span style="font-size: 1.0625rem; font-weight: 600;">MAGIC SALON</span></p>
+            <p><span style="font-size: 0.8125rem; opacity: 0.95;">📅 Zarezerwuj wizytę online</span></p>
+        </div>
+    </div>
+
+    <div class="booksy-content">
+        <div class="booksy-content-wrapper">
+            <div class="booksy-message-box">
+                <p style="margin: 0; padding-top: 16px;">Umów się szybko i wygodnie przez Booksy! Dostępne terminy na
+                    wszystkie nasze zabiegi kosmetyczne.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="booksy-sentbutton">
+        <a href="https://booksy.magicsalon.pl" target="_blank" rel="noopener noreferrer" class="booksy-cta-btn"
+            onclick="trackBooksyClick(event)">
+            <p class="booksy-cta-text">Zarezerwuj wizytę teraz</p>
+            <div class="booksy-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="white" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </a>
+    </div>
+
+    <div class="booksy-bottom">
+        <p>
+            <span class="booksy-status-indicator" aria-label="Online"></span>
+            Online 24/7 |
+            <a href="polityka-prywatnosci-rodo.html" target="_blank" rel="noopener">Polityka prywatności</a>
+        </p>
+    </div>
+</div>
+
+<!-- Slideout widget - Prawy środek wysuwane paski -->
+<div class="slideout-widget widget-facebook">
+    <div class="slideout-widget-handler">
+        <i class="fa-brands fa-facebook"></i>
+    </div>
+    <div class="slideout-widget-content">
+        <a href="https://www.facebook.com/magicsalonpl" target="_blank">Magic Salon @ Facebook</a>
+    </div>
+</div>
+
+<div class="slideout-widget widget-twitter">
+    <div class="slideout-widget-handler">
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="slideout-widget-content">
+        <a href="https://www.instagram.com/magicsalonpl/" target="_blank">Magic Salon @ Instagram</a>
+    </div>
+</div>
+<div class="slideout-widget widget-telefon">
+    <div class="slideout-widget-handler">
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+    <div class="slideout-widget-content">
+        <a href="https://www.tiktok.com/@magicsalonpl" target="_blank">Magic Salon @ TikTok</a>
+    </div>
+</div>
+
+<div class="slideout-widget slideout-big widget-gplus-2">
+    <div class="slideout-widget-handler">
+        <i class="fa-solid fa-location-dot"></i>
+    </div>
+    <div class="slideout-widget-content">
+        <a href="https://share.google/mmjMbJdmtpYNbyPYh" target="_blank">Magic Salon @ Lokalizacja Google</a>
+    </div>
+</div>

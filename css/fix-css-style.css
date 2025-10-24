@@ -1,0 +1,207 @@
+/* WhatsApp Widget */
+.custom-ctc-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.custom-ctc-button:hover {
+    transform: scale(1.1);
+}
+
+.custom-ctc-chatbox {
+    position: fixed;
+    bottom: 90px;
+    left: 20px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    z-index: 998;
+    display: none;
+    overflow: hidden;
+}
+
+.ctc_g_heading {
+    background: #25D366;
+    padding: 15px;
+    color: #fff;
+}
+
+.ctc_g_content {
+    padding: 15px;
+    background: #ECECEC;
+}
+
+.ctc_g_message_box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.ctc_g_sentbutton {
+    padding: 10px;
+}
+
+.g_ctc_s_7_1 {
+    background: #25D366;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.ctc_g_bottom {
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+}
+
+/* Booksy Widget */
+.booksy-ctc-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #6D356F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.booksy-ctc-button:hover {
+    transform: scale(1.1);
+}
+
+.booksy-ctc-chatbox {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    z-index: 998;
+    display: none;
+    overflow: hidden;
+}
+
+.booksy-heading {
+    background: #6D356F;
+    padding: 15px;
+    color: #fff;
+}
+
+.booksy-content {
+    padding: 15px;
+    background: #f8f8f8;
+}
+
+.booksy-message-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.booksy-sentbutton {
+    padding: 10px;
+}
+
+.booksy-cta-btn {
+    background: #D7A54F;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.booksy-cta-btn:hover {
+    background: #c89645;
+    text-decoration: none;
+    color: #fff;
+}
+
+.booksy-bottom {
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+}
+
+/* Slideout Widgets */
+.slideout-widget {
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    transition: all 0.3s ease;
+}
+
+.widget-facebook {
+    top: 30%;
+    background: #1877F2;
+}
+
+.widget-twitter {
+    top: 40%;
+    background: #E1306C;
+}
+
+.widget-telefon {
+    top: 50%;
+    background: #000000;
+}
+
+.widget-gplus-2 {
+    top: 60%;
+    background: #4285F4;
+}
+
+.slideout-widget-handler {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+}
+
+.slideout-widget-content {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 200px;
+}
+
+.slideout-widget-content a {
+    color: inherit;
+    text-decoration: none;
+}

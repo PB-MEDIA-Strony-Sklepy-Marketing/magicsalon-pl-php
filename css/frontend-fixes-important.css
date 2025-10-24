@@ -1,0 +1,104 @@
+/* ==== MAGIC SALON: Hotfix nawigacji, slidera i slideout widgets ==== */
+
+/* (opcjonalnie) na mobilkach pionowo jak w Bootstrap 5 */
+@media (max-width: 991.98px) {
+  .header-nav .navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+
+/* 2) SLIDER – usuń pustą przestrzeń pod Revolution Slider */
+.rev_slider_wrapper,
+.rev_slider {
+  margin-bottom: 0 !important;
+}
+.tp-fullwidth-forcer {
+  height: 0 !important;          /* nadpisuje inline height */
+  min-height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+/* 3) SLIDEOUT WIDGETS – ujednolicone style, bez konfliktów z fix-css-style.css */
+
+/* bazowy panel: schowany poza prawą krawędzią, wysuwa się do środka na :hover */
+.slideout-widget {
+  position: fixed !important;
+  right: -15em !important;       /* schowany poza krawędź */
+  width: 15em !important;
+  transition: right .35s ease !important;
+  z-index: 9999 !important;
+}
+.slideout-widget:hover {
+  right: 0 !important;           /* wysunięcie na hover */
+}
+
+/* uchwyt (ikona) – lewy przycisk/uchwyt panelu */
+.slideout-widget-handler {
+  left: -3em !important;
+  width: 3em !important;
+  height: 3em !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: var(--site-button-color, #222) !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 0 !important;
+  writing-mode: initial !important;      /* wyłącz vertical-rl z fix-css-style.css */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.slideout-widget-handler i {
+  font-size: 1.125rem;
+}
+
+/* zawartość wysuwanego panelu */
+.slideout-widget-content {
+  background: #fff !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  border-left: none !important;
+  padding: 0.75rem 1rem !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+  position: relative !important;
+  top: 0 !important;
+  right: auto !important;
+  display: block !important;            /* zawsze blok, bez display:none */
+  width: 100% !important;
+}
+
+/* stos/pozycje – zaczynają się mniej więcej od połowy ekranu w dół */
+.widget-facebook { top: 40% !important; }
+.widget-twitter  { top: calc(40% + 4.5rem) !important; }
+.widget-telefon  { top: calc(40% + 9rem) !important; }
+.widget-gplus-2  { top: calc(40% + 13.5rem) !important; }
+
+/* kolorystyka brandowa */
+.widget-facebook .slideout-widget-handler,
+.widget-twitter  .slideout-widget-handler,
+.widget-telefon  .slideout-widget-handler,
+.widget-gplus-2  .slideout-widget-handler {
+  background: var(--site-button-color, #222) !important;
+}
+
+/* Link wewnątrz panelu */
+.slideout-widget-content a {
+  color: var(--color-theme-primary, #6D356F) !important;
+  text-decoration: none !important;
+  font-weight: 400;
+  transition: color .25s ease;
+}
+.slideout-widget-content a:hover {
+  color: var(--color-theme-secondary, #D7A54F) !important;
+  text-decoration: underline !important;
+}
+
+/* Mobile – chowamy slideout na bardzo wąskich ekranach */
+@media (max-width: 778px) {
+  .slideout-widget { display: none !important; }
+}
+
+/* 4) Blokada konfliktów z fix-css-style.css – nadpisanie sprzecznych reguł */
+.slideout-widget { right: -15em !important; }
+.slideout-widget-handler { writing-mode: initial !important; }
+.slideout-widget-content { right: auto !important; top: 0 !important; }
