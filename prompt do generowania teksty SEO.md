@@ -1,0 +1,1 @@
+Na podstawie załączonego pliku [podmlynem-opis.md] i po jego analizie, wygeneruj tekst główny opisowy dla firmy [Dom wypoczynkowy "Pod Młynem"]. Przeskanuj stronę internetową do analizy: [https://podmlynem.pl/]. Wygeneruj tekst do skopiowania.
