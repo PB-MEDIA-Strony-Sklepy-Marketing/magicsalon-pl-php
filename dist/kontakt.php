@@ -20,13 +20,13 @@
     <title>Kontakt – MAGIC SALON | Umów wizytę już dziś!</title>
 
     <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/kontakt.html" />
+    <link rel="canonical" href="https://magicsalon.pl/kontakt.php" />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Kontakt – MAGIC SALON | Umów wizytę już dziś!" />
     <meta property="og:description" content="Skontaktuj się z nami – Magic Salon. Adres, e-mail, telefon. Umów wizytę i rozpocznij swoją podróż do piękna!!" />
-    <meta property="og:url" content="https://magicsalon.pl/kontakt.html" />
+    <meta property="og:url" content="https://magicsalon.pl/kontakt.php" />
     <meta property="og:image" content="/images/og-image.jpg" />
     <meta property="og:site_name" content="MAGIC SALON" />
     <meta property="og:locale" content="pl_PL" />
@@ -67,7 +67,7 @@
             <div class="bg-gray-light p-tb20">
                 <div class="container">
                     <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="index.html"><i class="fa fa-home"></i> Strona Główna</a></li>
+                        <li><a href="index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
                         <li>Kontakt</li>
                     </ul>
                 </div>

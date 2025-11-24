@@ -20,13 +20,13 @@
     <title>Zarezerwuj wizytę – MAGIC SALON | Umów wizytę już dziś!</title>
 
     <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/zarezerwuj-wizyte.html" />
+    <link rel="canonical" href="https://magicsalon.pl/zarezerwuj-wizyte.php" />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Zarezerwuj wizytę – MAGIC SALON | Umów wizytę już dziś!" />
     <meta property="og:description" content="Zarezerwuj termin na wizytę w naszym salonie – Magic Salon. Adres, e-mail, telefon. Umów wizytę i rozpocznij swoją podróż do piękna!" />
-    <meta property="og:url" content="https://magicsalon.pl/zarezerwuj-wizyte.html" />
+    <meta property="og:url" content="https://magicsalon.pl/zarezerwuj-wizyte.php" />
     <meta property="og:image" content="/images/og-image.jpg" />
     <meta property="og:site_name" content="MAGIC SALON" />
     <meta property="og:locale" content="pl_PL" />
@@ -82,7 +82,7 @@
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30">
                                     <div class="wt-icon-box-wraper left">
                                         <div class="icon-md site-text-primary">
-                                            <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-female-hairs"></i></a>
+                                            <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-female-hairs"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0">Indywidualne podejście:</h5>
@@ -93,7 +93,7 @@
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30 ">
                                     <div class="wt-icon-box-wraper left">
                                         <div class="icon-md site-text-primary">
-                                            <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-eye"></i></a>
+                                            <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-eye"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0">Profesjonalny zespół:</h5>
@@ -104,7 +104,7 @@
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30 ">
                                     <div class="wt-icon-box-wraper left">
                                         <div class="icon-md site-text-primary">
-                                            <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-mirror"></i></a>
+                                            <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-mirror"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0 ">Nowoczesny sprzęt i bezpieczne technologie:</h5>
@@ -115,7 +115,7 @@
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30 ">
                                     <div class="wt-icon-box-wraper left">
                                         <div class="icon-md site-text-primary">
-                                            <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-spray-bottle" aria-hidden="true"></i></a>
+                                            <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-spray-bottle" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0">Szeroka oferta usług:</h5>

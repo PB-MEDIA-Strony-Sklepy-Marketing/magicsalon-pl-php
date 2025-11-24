@@ -201,7 +201,7 @@ if (file_exists($headFile)) {
                                 data-paddingleft="[0,0,0,0]"
 
                                 style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="oferta.html" class="site-button radius-sm button-lg">Oferta</a>
+                                <a href="oferta.php" class="site-button radius-sm button-lg">Oferta</a>
                             </div>
                             <!-- LAYER NR. 5 -->
 
@@ -228,7 +228,7 @@ if (file_exists($headFile)) {
                                 data-paddingleft="[40,40,40,40]"
 
                                 style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="o-firmie.html" class="site-button-secondry radius-sm button-lg">O firmie</a>
+                                <a href="o-firmie.php" class="site-button-secondry radius-sm button-lg">O firmie</a>
                             </div>
 
                         </li>
@@ -347,7 +347,7 @@ if (file_exists($headFile)) {
                                 data-paddingleft="[0,0,0,0]"
 
                                 style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="opinie-klientow.html" class="site-button radius-sm button-lg">Opinie klientów</a>
+                                <a href="opinie-klientow.php" class="site-button radius-sm button-lg">Opinie klientów</a>
                             </div>
                             <!-- LAYER NR. 5 -->
 
@@ -374,7 +374,7 @@ if (file_exists($headFile)) {
                                 data-paddingleft="[40,40,40,40]"
 
                                 style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="faq-pytania.html" class="site-button-secondry radius-sm button-lg">FAQ & Najczęściej zadawane pytania</a>
+                                <a href="faq-pytania.php" class="site-button-secondry radius-sm button-lg">FAQ & Najczęściej zadawane pytania</a>
                             </div>
 
                         </li>
@@ -493,7 +493,7 @@ if (file_exists($headFile)) {
                                 data-paddingleft="[0,0,0,0]"
 
                                 style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="galeria.html" class="site-button radius-sm button-lg">Galeria</a>
+                                <a href="galeria.php" class="site-button radius-sm button-lg">Galeria</a>
                             </div>
                             <!-- LAYER NR. 5 -->
 
@@ -520,7 +520,7 @@ if (file_exists($headFile)) {
                                 data-paddingleft="[40,40,40,40]"
 
                                 style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="zarezerwuj-wizyte.html" class="site-button-secondry radius-sm button-lg">Zarezerwuj wizytę</a>
+                                <a href="zarezerwuj-wizyte.php" class="site-button-secondry radius-sm button-lg">Zarezerwuj wizytę</a>
                             </div>
 
                         </li>
@@ -553,10 +553,10 @@ if (file_exists($headFile)) {
                                         <img src="images/piekno.png" alt="Piękno nie musi być daleko!">
                                     </div>
                                     <div>
-                                        <a href="blog.html" class="site-button radius-sm">
+                                        <a href="o-nas/blog.php" class="site-button radius-sm">
                                             <span class="font-weight-700 inline-block text-uppercase p-lr15">Blog</span>
                                         </a>
-                                        <a href="oferta.html" class="site-button-secondry radius-sm">
+                                        <a href="oferta.php" class="site-button-secondry radius-sm">
                                             <span class="font-weight-700 inline-block text-uppercase p-lr15">Oferta</span>
                                         </a>
                                     </div>
@@ -630,8 +630,8 @@ if (file_exists($headFile)) {
                             </div>
                         </div>
                         <div>
-                            <a href="opinie-klientow.html" class="m-b15 site-button text-uppercase radius-sm m-lr15 font-weight-700 button-lg">Opinie klientów</a>
-                            <a href="faq-pytania.html" class="m-b15 site-button-secondry text-uppercase radius-sm m-lr15 font-weight-700 button-lg">FAQ & Najczęściej zadawane pytania</a>
+                            <a href="opinie-klientow.php" class="m-b15 site-button text-uppercase radius-sm m-lr15 font-weight-700 button-lg">Opinie klientów</a>
+                            <a href="faq-pytania.php" class="m-b15 site-button-secondry text-uppercase radius-sm m-lr15 font-weight-700 button-lg">FAQ & Najczęściej zadawane pytania</a>
                         </div>
                     </div>
                 </div>
@@ -734,7 +734,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Zabieg Glow & Lift to kompleksowa pielęgnacja twarzy, która łączy w sobie oczyszczające, regenerujące i liftingujące działanie.
                                                                 </p>
-                                                                <a href="nasza-oferta/glow-lift.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/glow-lift.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -757,7 +757,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Peeling kawitacyjny to nowoczesny, bezbolesny zabieg oczyszczania skóry, który wykorzystuje działanie ultradźwięków.
                                                                 </p>
-                                                                <a href="nasza-oferta/peeling-kawitacyjny.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/peeling-kawitacyjny.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -780,7 +780,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Innowacyjny, nieinwazyjny zabieg łączący mikrodrgania, kompresję i światłoterapię LED, który kompleksowo oddziałuje na kondycję skóry oraz modelowanie sylwetki.
                                                                 </p>
-                                                                <a href="nasza-oferta/silkroll.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/roll-chill.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -803,7 +803,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Lifting i laminacja rzęs z koloryzacją to doskonała alternatywa dla przedłużania rzęs, przeznaczona dla osób, które pragną podkreślić naturalne piękno swoich rzęs bez ich zagęszczania.
                                                                 </p>
-                                                                <a href="nasza-oferta/laminacja-i-lifting-rzes.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/laminacja-rzes.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -826,7 +826,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Zadbane i odpowiednio ukształtowane brwi nadają twarzy wyrazistość i podkreślają naturalne piękno. Zabieg architektury i laminacji brwi z henną lub farbką pozwala uzyskać idealny kształt, objętość i kolor brwi, dostosowany do indywidualnych rysów twarzy.
                                                                 </p>
-                                                                <a href="nasza-oferta/architektura-i-laminacja-brwi.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/laminacja-brwi.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -865,7 +865,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Epilacja laserowa przy użyciu Trio Laser Medika to nowoczesna i niezwykle skuteczna metoda trwałego usuwania owłosienia. Dzięki zastosowaniu trzech długości fal laserowych w jednym impulsie, urządzenie precyzyjnie działa na różne głębokości skóry, eliminując zarówno powierzchowne, jak i głębiej osadzone cebulki włosów.
                                                                 </p>
-                                                                <a href="nasza-oferta/epilacja-laserowa.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/depilacja-laserowa.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -888,7 +888,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Depilacja woskiem to skuteczna i szybka metoda usuwania niechcianego owłosienia, pozwalająca na długotrwały efekt gładkiej skóry.
                                                                 </p>
-                                                                <a href="nasza-oferta/depilacja-woskiem.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/depilacja-woskiem.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -911,7 +911,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Przedłużanie i zagęszczanie rzęs to idealna propozycja dla kobiet, które marzą o wyrazistym spojrzeniu bez codziennego malowania.
                                                                 </p>
-                                                                <a href="nasza-oferta/przedluzanie-i-zageszczanie-rzes.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/stylizacja-rzes.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -952,7 +952,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Kompleksowy program wyszczuplająco-modelujący, łączący nowoczesne technologie w celu uzyskania maksymalnych efektów redukcji tkanki tłuszczowej, ujędrnienia skóry oraz poprawy konturu ciała.
                                                                 </p>
-                                                                <a href="nasza-oferta/modelowanie-360.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/modelowanie-360.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -975,7 +975,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Nowoczesna i niezwykle skuteczna metoda walki z cellulitem, utratą jędrności oraz nagromadzoną tkanką tłuszczową.
                                                                 </p>
-                                                                <a href="nasza-oferta/dermomasaz.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/dermomasaz.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -998,7 +998,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Liposukcja ultradźwiękowa to nowoczesna, bezinwazyjna metoda modelowania sylwetki i redukcji tkanki tłuszczowej, wykorzystująca działanie ultradźwięków.
                                                                 </p>
-                                                                <a href="nasza-oferta/liposukcja-ultradzwiekowa.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -1021,7 +1021,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Nowoczesna, nieinwazyjna metoda redukcji tkanki tłuszczowej, oparta na działaniu tzw. zimnego lasera.
                                                                 </p>
-                                                                <a href="nasza-oferta/lipolaser-duo.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/lipolaser-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -1044,7 +1044,7 @@ if (file_exists($headFile)) {
 
                                                                 <p>Kompleksowy zabieg łączący kilka nowoczesnych technologii, których celem jest oczyszczenie organizmu z toksyn, pobudzenie krążenia, redukcja obrzęków oraz poprawa jędrności i elastyczności skóry.
                                                                 </p>
-                                                                <a href="nasza-oferta/detox-drenaz.html" class="site-button skew-icon-btn radius-sm">
+                                                                <a href="nasza-oferta/detox-drenaz.php" class="site-button skew-icon-btn radius-sm">
                                                                     <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                                 </a>
                                                             </div>
@@ -1265,13 +1265,13 @@ if (file_exists($headFile)) {
                                 <div class="wt-gallery-bx">
                                     <div class="wt-thum-bx wt-img-effect wt-img-overlay7">
 
-                                        <a href="services-detail.html">
+                                        <a href="galeria.php">
                                             <img src="images/gallery/portrait/pic5.jpg" alt="Nasza Galeria">
                                         </a>
 
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="services-detail.html">
+                                                <a href="galeria.php">
                                                     <i class="fa fa-link wt-icon-box-xs"></i>
                                                 </a>
                                                 <a href="images/gallery/portrait/pic5.jpg" class="mfp-link">
@@ -1288,13 +1288,13 @@ if (file_exists($headFile)) {
                                 <div class="wt-gallery-bx">
                                     <div class="wt-thum-bx wt-img-effect wt-img-overlay7">
 
-                                        <a href="services-detail.html">
+                                        <a href="galeria.php">
                                             <img src="images/gallery/portrait-half/pic1.jpg" alt="Nasza Galeria">
                                         </a>
 
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="services-detail.html">
+                                                <a href="galeria.php">
                                                     <i class="fa fa-link wt-icon-box-xs"></i>
                                                 </a>
                                                 <a href="images/gallery/portrait-half/pic1.jpg" class="mfp-link">
@@ -1311,13 +1311,13 @@ if (file_exists($headFile)) {
                                 <div class="wt-gallery-bx">
                                     <div class="wt-thum-bx wt-img-effect wt-img-overlay7">
 
-                                        <a href="services-detail.html">
+                                        <a href="galeria.php">
                                             <img src="images/gallery/portrait/pic6.jpg" alt="Nasza Galeria">
                                         </a>
 
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="services-detail.html">
+                                                <a href="galeria.php">
                                                     <i class="fa fa-link wt-icon-box-xs"></i>
                                                 </a>
                                                 <a href="images/gallery/portrait/pic6.jpg" class="mfp-link">
@@ -1334,13 +1334,13 @@ if (file_exists($headFile)) {
                                 <div class="wt-gallery-bx">
                                     <div class="wt-thum-bx wt-img-effect wt-img-overlay7">
 
-                                        <a href="services-detail.html">
+                                        <a href="galeria.php">
                                             <img src="images/gallery/portrait-half/pic2.jpg" alt="Nasza Galeria">
                                         </a>
 
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="services-detail.html">
+                                                <a href="galeria.php">
                                                     <i class="fa fa-link wt-icon-box-xs"></i>
                                                 </a>
                                                 <a href="images/gallery/portrait-half/pic2.jpg" class="mfp-link">
@@ -1357,13 +1357,13 @@ if (file_exists($headFile)) {
                                 <div class="wt-gallery-bx">
                                     <div class="wt-thum-bx wt-img-effect wt-img-overlay7">
 
-                                        <a href="services-detail.html">
+                                        <a href="galeria.php">
                                             <img src="images/gallery/portrait-half/pic3.jpg" alt="Nasza Galeria">
                                         </a>
 
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="services-detail.html">
+                                                <a href="galeria.php">
                                                     <i class="fa fa-link wt-icon-box-xs"></i>
                                                 </a>
                                                 <a href="images/gallery/portrait-half/pic3.jpg" class="mfp-link">
@@ -1380,13 +1380,13 @@ if (file_exists($headFile)) {
                                 <div class="wt-gallery-bx">
                                     <div class="wt-thum-bx wt-img-effect wt-img-overlay7">
 
-                                        <a href="services-detail.html">
+                                        <a href="galeria.php">
                                             <img src="images/gallery/landscape-half/pic1.jpg" alt="Nasza Galeria">
                                         </a>
 
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="services-detail.html">
+                                                <a href="galeria.php">
                                                     <i class="fa fa-link wt-icon-box-xs"></i>
                                                 </a>
                                                 <a href="images/gallery/landscape-half/pic1.jpg" class="mfp-link">
@@ -1417,7 +1417,7 @@ if (file_exists($headFile)) {
                                             <h1>Skorzystaj z naszych okazyjnych zabiegów!</h1>
                                             <h2 class="text-uppercase">Nasz zespół MAGIC SALON</h2>
                                             <p>"W naszej klinice dbamy o najwyższą jakość i bezpieczeństwo wykonywanych zabiegów. Komfort i satysfakcja naszych pacjentów to dla nas absolutny priorytet."</p>
-                                            <a href="oferta.html" class="site-button text-uppercase radius-sm font-weight-700 button-lg">zobacz naszą kompleksową ofertę</a>
+                                            <a href="oferta.php" class="site-button text-uppercase radius-sm font-weight-700 button-lg">zobacz naszą kompleksową ofertę</a>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
@@ -1645,11 +1645,11 @@ if (file_exists($headFile)) {
 
                                 <div class="blog-post latest-blog-3 blog-md date-style-1 clearfix">
                                     <div class="wt-post-media wt-img-effect zoom-slow">
-                                        <a href="blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.html"><img src="images/blog/blog-small/pic1.jpg" alt="Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry"></a>
+                                        <a href="blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php"><img src="images/blog/blog-small/pic1.jpg" alt="Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry"></a>
                                     </div>
                                     <div class="wt-post-info">
                                         <div class="wt-post-title ">
-                                            <h4 class="post-title font-weight-800"><a href="blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.html">Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry</a></h4>
+                                            <h4 class="post-title font-weight-800"><a href="blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php">Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry</a></h4>
                                         </div>
 
                                     </div>
@@ -1657,11 +1657,11 @@ if (file_exists($headFile)) {
 
                                 <div class="blog-post latest-blog-3 blog-md date-style-1 clearfix">
                                     <div class="wt-post-media wt-img-effect zoom-slow">
-                                        <a href="blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.html"><img src="images/blog/blog-small/pic2.jpg" alt="Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?"></a>
+                                        <a href="blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php"><img src="images/blog/blog-small/pic2.jpg" alt="Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?"></a>
                                     </div>
                                     <div class="wt-post-info">
                                         <div class="wt-post-title ">
-                                            <h4 class="post-title font-weight-800"><a href="blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.html">Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?</a></h4>
+                                            <h4 class="post-title font-weight-800"><a href="blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php">Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?</a></h4>
                                         </div>
 
                                     </div>
@@ -1669,11 +1669,11 @@ if (file_exists($headFile)) {
 
                                 <div class="blog-post latest-blog-3 blog-md date-style-1 clearfix">
                                     <div class="wt-post-media wt-img-effect zoom-slow">
-                                        <a href="blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.html"><img src="images/blog/blog-small/pic3.jpg" alt="Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno"></a>
+                                        <a href="blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.php"><img src="images/blog/blog-small/pic3.jpg" alt="Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno"></a>
                                     </div>
                                     <div class="wt-post-info">
                                         <div class="wt-post-title ">
-                                            <h4 class="post-title font-weight-800"><a href="blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.html">Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno</a></h4>
+                                            <h4 class="post-title font-weight-800"><a href="blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.php">Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno</a></h4>
                                         </div>
 
                                     </div>
@@ -1686,7 +1686,7 @@ if (file_exists($headFile)) {
                                     <div class="wt-post-info p-a30 text-white">
                                         <div class="post-overlay-position">
                                             <div class="wt-post-title ">
-                                                <h3 class="post-title"><a href="blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.html" class="text-white text-capitalize">Odkryj Moc Nowoczesnej Pielęgnacji: Innowacyjne Zabiegi na Twarz i Ciało w MAGIC SALON</a></h3>
+                                                <h3 class="post-title"><a href="blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.php" class="text-white text-capitalize">Odkryj Moc Nowoczesnej Pielęgnacji: Innowacyjne Zabiegi na Twarz i Ciało w MAGIC SALON</a></h3>
                                             </div>
                                         </div>
                                     </div>

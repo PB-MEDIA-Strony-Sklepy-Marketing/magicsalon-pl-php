@@ -20,13 +20,13 @@
   <title>Cennik – MAGIC SALON | Twoje piękno, nasza pasja</title>
 
   <!-- Kanoniczny adres URL -->
-  <link rel="canonical" href="https://magicsalon.pl/cennik.html" />
+  <link rel="canonical" href="https://magicsalon.pl/cennik.php" />
 
   <!-- Open Graph (Facebook, LinkedIn) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Cennik – MAGIC SALON | Twoje piękno, nasza pasja" />
   <meta property="og:description" content="Witaj w świecie piękna, harmonii i kompleksowej pielęgnacji! W MAGIC SALON wierzymy, że każda kobieta i każdy mężczyzna zasługują na wyjątkowe podejście oraz najwyższy standard usług kosmetycznych. Przygotowaliśmy elastyczny i transparentny cennik, który pozwala swobodnie zaplanować zabiegi dopasowane do Twoich indywidualnych potrzeb, typu skóry, kondycji ciała i oczekiwanych efektów." />
-  <meta property="og:url" content="https://magicsalon.pl/faq-pytania.html" />
+  <meta property="og:url" content="https://magicsalon.pl/cennik.php" />
   <meta property="og:image" content="/images/og-image.jpg" />
   <meta property="og:site_name" content="MAGIC SALON" />
   <meta property="og:locale" content="pl_PL" />
@@ -78,7 +78,7 @@
       <div class="bg-gray-light p-tb20">
         <div class="container">
           <ul class="wt-breadcrumb breadcrumb-style-2">
-            <li><a href="index.html"><i class="fa fa-home"></i> Strona Główna</a></li>
+            <li><a href="index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
             <li>Cennik usług – MAGIC SALON </li>
           </ul>
         </div>
@@ -1170,7 +1170,7 @@
 
                                 <p>Zabieg Glow &amp; Lift to kompleksowa pielęgnacja twarzy, która łączy w sobie oczyszczające, regenerujące i liftingujące działanie.
                                 </p>
-                                <a href="nasza-oferta/glow-lift.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/glow-lift.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1193,7 +1193,7 @@
 
                                 <p>Peeling kawitacyjny to nowoczesny, bezbolesny zabieg oczyszczania skóry, który wykorzystuje działanie ultradźwięków.
                                 </p>
-                                <a href="nasza-oferta/peeling-kawitacyjny.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/peeling-kawitacyjny.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1216,7 +1216,7 @@
 
                                 <p>Innowacyjny, nieinwazyjny zabieg łączący mikrodrgania, kompresję i światłoterapię LED, który kompleksowo oddziałuje na kondycję skóry oraz modelowanie sylwetki.
                                 </p>
-                                <a href="nasza-oferta/silkroll.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/roll-chill.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1239,7 +1239,7 @@
 
                                 <p>To kompleksowa, nieinwazyjna terapia łącząca nowoczesne technologie modelowania sylwetki z odmładzaniem skóry twarzy.
                                 </p>
-                                <a href="nasza-oferta/zabieg-lampa-led.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/zabieg-lampa-led.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1262,7 +1262,7 @@
 
                                 <p>Lifting i laminacja rzęs z koloryzacją to doskonała alternatywa dla przedłużania rzęs, przeznaczona dla osób, które pragną podkreślić naturalne piękno swoich rzęs bez ich zagęszczania.
                                 </p>
-                                <a href="nasza-oferta/laminacja-i-lifting-rzes.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/laminacja-rzes.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1285,7 +1285,7 @@
 
                                 <p>Zadbane i odpowiednio ukształtowane brwi nadają twarzy wyrazistość i podkreślają naturalne piękno. Zabieg architektury i laminacji brwi z henną lub farbką pozwala uzyskać idealny kształt, objętość i kolor brwi, dostosowany do indywidualnych rysów twarzy.
                                 </p>
-                                <a href="nasza-oferta/architektura-i-laminacja-brwi.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/laminacja-brwi.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1325,7 +1325,7 @@
 
                                 <p>Epilacja laserowa przy użyciu Trio Laser Medika to nowoczesna i niezwykle skuteczna metoda trwałego usuwania owłosienia. Dzięki zastosowaniu trzech długości fal laserowych w jednym impulsie, urządzenie precyzyjnie działa na różne głębokości skóry, eliminując zarówno powierzchowne, jak i głębiej osadzone cebulki włosów.
                                 </p>
-                                <a href="nasza-oferta/epilacja-laserowa.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/depilacja-laserowa.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1348,7 +1348,7 @@
 
                                 <p>Depilacja woskiem to skuteczna i szybka metoda usuwania niechcianego owłosienia, pozwalająca na długotrwały efekt gładkiej skóry.
                                 </p>
-                                <a href="nasza-oferta/depilacja-woskiem.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/depilacja-woskiem.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1371,7 +1371,7 @@
 
                                 <p>Piękne i zadbane dłonie to wizytówka każdej kobiety. W naszym salonie oferujemy profesjonalny manicure hybrydowy i żelowy, który pozwala cieszyć się idealnymi paznokciami przez długi czas.
                                 </p>
-                                <a href="nasza-oferta/manicure.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/manicure.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1394,7 +1394,7 @@
 
                                 <p>Przedłużanie i zagęszczanie rzęs to idealna propozycja dla kobiet, które marzą o wyrazistym spojrzeniu bez codziennego malowania.
                                 </p>
-                                <a href="nasza-oferta/przedluzanie-i-zageszczanie-rzes.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/stylizacja-rzes.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1435,7 +1435,7 @@
 
                                 <p>Kompleksowy program wyszczuplająco-modelujący, łączący nowoczesne technologie w celu uzyskania maksymalnych efektów redukcji tkanki tłuszczowej, ujędrnienia skóry oraz poprawy konturu ciała.
                                 </p>
-                                <a href="nasza-oferta/modelowanie-360.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/modelowanie-360.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1458,7 +1458,7 @@
 
                                 <p>Nowoczesna i niezwykle skuteczna metoda walki z cellulitem, utratą jędrności oraz nagromadzoną tkanką tłuszczową.
                                 </p>
-                                <a href="nasza-oferta/dermomasaz.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/dermomasaz.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1481,7 +1481,7 @@
 
                                 <p>Liposukcja ultradźwiękowa to nowoczesna, bezinwazyjna metoda modelowania sylwetki i redukcji tkanki tłuszczowej, wykorzystująca działanie ultradźwięków.
                                 </p>
-                                <a href="nasza-oferta/liposukcja-ultradzwiekowa.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1504,7 +1504,7 @@
 
                                 <p>Nowoczesna, nieinwazyjna metoda redukcji tkanki tłuszczowej, oparta na działaniu tzw. zimnego lasera.
                                 </p>
-                                <a href="nasza-oferta/lipolaser-duo.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/lipolaser-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>
@@ -1527,7 +1527,7 @@
 
                                 <p>Kompleksowy zabieg łączący kilka nowoczesnych technologii, których celem jest oczyszczenie organizmu z toksyn, pobudzenie krążenia, redukcja obrzęków oraz poprawa jędrności i elastyczności skóry.
                                 </p>
-                                <a href="nasza-oferta/detox-drenaz.html" class="site-button skew-icon-btn radius-sm">
+                                <a href="nasza-oferta/detox-drenaz.php" class="site-button skew-icon-btn radius-sm">
                                   <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                 </a>
                               </div>

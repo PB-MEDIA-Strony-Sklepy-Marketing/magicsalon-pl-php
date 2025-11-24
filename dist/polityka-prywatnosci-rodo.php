@@ -20,13 +20,13 @@
     <title>Polityka Prywatności & RODO – MAGIC SALON | Twoje piękno, nasza pasja</title>
 
     <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/polityka-prywatnosci-rodo.html" />
+    <link rel="canonical" href="https://magicsalon.pl/polityka-prywatnosci-rodo.php" />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Polityka Prywatności & RODO – MAGIC SALON | Twoje piękno, nasza pasja" />
     <meta property="og:description" content="Masz pytanie? My mamy odpowiedź! Sprawdź najczęściej zadawane pytania przez naszych Klientów i rozwiej wszelkie wątpliwości przed wizytą w MAGIC SALON." />
-    <meta property="og:url" content="https://magicsalon.pl/polityka-prywatnosci-rodo.html" />
+    <meta property="og:url" content="https://magicsalon.pl/polityka-prywatnosci-rodo.php" />
     <meta property="og:image" content="/images/og-image.jpg" />
     <meta property="og:site_name" content="MAGIC SALON" />
     <meta property="og:locale" content="pl_PL" />
@@ -78,7 +78,7 @@
             <div class="bg-gray-light p-tb20">
                 <div class="container">
                     <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="index.html"><i class="fa fa-home"></i> Strona Główna</a></li>
+                        <li><a href="index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
                         <li>Polityka Prywatności & RODO</li>
                     </ul>
                 </div>

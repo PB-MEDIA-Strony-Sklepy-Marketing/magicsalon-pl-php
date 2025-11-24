@@ -20,13 +20,13 @@
     <title>Galeria – MAGIC SALON | Zabiegi na twarz, ciało i paznokcie</title>
 
     <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/galeria.html" />
+    <link rel="canonical" href="https://magicsalon.pl/galeria.php" />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Galeria – MAGIC SALON | Zabiegi na twarz, ciało i paznokcie" />
     <meta property="og:description" content="Zapraszamy Cię do świata wyjątkowej estetyki, harmonii i relaksu, który codziennie tworzymy w naszym salonie. Galeria MAGIC SALON to przestrzeń pełna inspiracji i dowód na to, jak wiele można osiągnąć dzięki indywidualnie dobranym zabiegom, zaawansowanej technologii oraz oddanemu zespołowi profesjonalistów." />
-    <meta property="og:url" content="https://magicsalon.pl/galeria.html" />
+    <meta property="og:url" content="https://magicsalon.pl/galeria.php" />
     <meta property="og:image" content="/images/og-image.jpg" />
     <meta property="og:site_name" content="MAGIC SALON" />
     <meta property="og:locale" content="pl_PL" />
@@ -78,7 +78,7 @@
             <div class="bg-gray-light p-tb20">
                 <div class="container">
                     <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="index.html"><i class="fa fa-home"></i> Strona Główna</a></li>
+                        <li><a href="index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
                         <li>Galeria MAGIC SALON</li>
                     </ul>
                 </div>
@@ -141,12 +141,12 @@
                         <div class="masonry-item cat-1 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic1.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic1.jpg" class="mfp-link">
@@ -161,12 +161,12 @@
                         <div class="masonry-item cat-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic2.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic2.jpg" class="mfp-link">
@@ -181,12 +181,12 @@
                         <div class="masonry-item cat-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic3.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic3.jpg" class="mfp-link">
@@ -201,12 +201,12 @@
                         <div class="masonry-item cat-4 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic4.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic4.jpg" class="mfp-link m-b15">
@@ -221,12 +221,12 @@
                         <div class="masonry-item cat-5 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic5.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic5.jpg" class="mfp-link">
@@ -241,12 +241,12 @@
                         <div class="masonry-item cat-4 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic6.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic6.jpg" class="mfp-link">
@@ -261,12 +261,12 @@
                         <div class="masonry-item cat-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic7.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic7.jpg" class="mfp-link">
@@ -281,12 +281,12 @@
                         <div class="masonry-item cat-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic8.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic8.jpg" class="mfp-link">
@@ -301,12 +301,12 @@
                         <div class="masonry-item cat-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic9.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic9.jpg" class="mfp-link">
@@ -321,12 +321,12 @@
                         <div class="masonry-item cat-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic10.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic10.jpg" class="mfp-link">
@@ -341,12 +341,12 @@
                         <div class="masonry-item cat-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic11.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic11.jpg" class="mfp-link">
@@ -361,12 +361,12 @@
                         <div class="masonry-item cat-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="oferta.html">
+                                    <a href="oferta.php">
                                         <img src="images/galeria/pic12.jpg" alt="Zdjęcie Galeria Magic Salon">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="oferta.html">
+                                            <a href="oferta.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/large/pic12.jpg" class="mfp-link">
@@ -455,12 +455,12 @@
                         <div class="masonry-item cat-1 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30" style="position: absolute; left: 0px; top: 0px;">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="zarezerwuj-wizyte.html">
+                                    <a href="zarezerwuj-wizyte.php">
                                         <img src="images/galeria/zrealizowane/henna-brwi.jpg" alt="Henna bri">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="zarezerwuj-wizyte.html">
+                                            <a href="zarezerwuj-wizyte.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/zrealizowane/henna-brwi.jpg" class="mfp-link">
@@ -475,12 +475,12 @@
                         <div class="masonry-item cat-2 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30" style="position: absolute; left: 292.5px; top: 0px;">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="zarezerwuj-wizyte.html">
+                                    <a href="zarezerwuj-wizyte.php">
                                         <img src="images/galeria/zrealizowane/laminacja-brwi-i-przedluzanie-rzes-2D.jpg" alt="Laminacjha brwi i przedłużanie rzęs 2D">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="zarezerwuj-wizyte.html">
+                                            <a href="zarezerwuj-wizyte.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/zrealizowane/laminacja-brwi-i-przedluzanie-rzes-2D.jpg" class="mfp-link">
@@ -495,12 +495,12 @@
                         <div class="masonry-item cat-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30" style="position: absolute; left: 585px; top: 0px;">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="zarezerwuj-wizyte.html">
+                                    <a href="zarezerwuj-wizyte.php">
                                         <img src="images/galeria/zrealizowane/lifting-i-laminacja-rzes-laminacja-i-farbka-brwi.jpg" alt="Lifting i laminacja rzęs laminacja i farbka brwi">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="zarezerwuj-wizyte.html">
+                                            <a href="zarezerwuj-wizyte.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/zrealizowane/lifting-i-laminacja-rzes-laminacja-i-farbka-brwi.jpg" class="mfp-link">
@@ -515,12 +515,12 @@
                         <div class="masonry-item cat-4 col-lg-3 col-md-3 col-sm-6 col-xs-6 m-b30" style="position: absolute; left: 877.5px; top: 0px;">
                             <div class="wt-gallery-bx">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="zarezerwuj-wizyte.html">
+                                    <a href="zarezerwuj-wizyte.php">
                                         <img src="images/galeria/zrealizowane/po-przedluzaniu-2D.jpg" alt="Po przedłużaniu 2D">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="zarezerwuj-wizyte.html">
+                                            <a href="zarezerwuj-wizyte.php">
                                                 <i class="fa fa-external-link wt-icon-box-xs"></i>
                                             </a>
                                             <a href="images/galeria/zrealizowane/po-przedluzaniu-2D.jpg" class="mfp-link m-b15">

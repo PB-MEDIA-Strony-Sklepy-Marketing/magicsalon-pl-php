@@ -201,32 +201,6 @@ $meta['twitter']['description'] = $meta['twitter']['description'] ?? $meta['desc
 
     <!-- Fix for Revolution Slider and Menu Issues -->
     <link rel="stylesheet" href="fixes.css">
-    <script>
-        // Ensure Revolution Slider is properly initialized
-        jQuery(document).ready(function($) {
-            // Force redraw of slider elements on window resize
-            $(window).on('resize', function() {
-                if (typeof revapi1050 !== 'undefined') {
-                    revapi1050.revredraw();
-                }
-            });
-
-            // Fix menu display
-            if ($(window).width() > 991) {
-                $('.header-nav .nav').css({
-                    'display': 'flex',
-                    'flex-direction': 'row'
-                });
-            }
-
-            // Wait for slider to be fully loaded then fix captions
-            setTimeout(function() {
-                $('.tp-caption').each(function() {
-                    $(this).css('visibility', 'visible');
-                });
-            }, 1000);
-        });
-    </script>
 
     <!-- Google Fonts -->
     <?php if (!empty($meta['google_fonts'])): ?>

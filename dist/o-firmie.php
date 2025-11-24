@@ -20,13 +20,13 @@
     <title>O firmie – MAGIC SALON | Twoje piękno, nasza pasja</title>
 
     <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/o-firmie.html" />
+    <link rel="canonical" href="https://magicsalon.pl/o-firmie.php" />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="O firmie – MAGIC SALON | Twoje piękno, nasza pasja" />
     <meta property="og:description" content="Poznaj historię i filozofię MAGIC SALON. Łączymy nowoczesne technologie i indywidualne podejście, byś mogła czuć się piękna i zadbana każdego dnia." />
-    <meta property="og:url" content="https://magicsalon.pl/o-firmie.html" />
+    <meta property="og:url" content="https://magicsalon.pl/o-firmie.php" />
     <meta property="og:image" content="/images/og-image.jpg" />
     <meta property="og:site_name" content="MAGIC SALON" />
     <meta property="og:locale" content="pl_PL" />
@@ -80,7 +80,7 @@
             <div class="header-middle bg-white">
                 <div class="container">
                     <div class="logo-header">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="images/logo-7.png" width="216" height="37" alt="Logo Salon Magic">
                         </a>
                     </div>
@@ -109,7 +109,7 @@
                                 </div>
                             </li>
                             <li class="btn-col-last">
-                                <a href="zarezerwuj-wizyte.html" class="site-button text-uppercase radius-sm font-weight-700"><i class="fa-solid fa-circle-exclamation"></i> Zarezerwuj wizytę <i class="fa-solid fa-calendar-plus"></i></a>
+                                <a href="zarezerwuj-wizyte.php" class="site-button text-uppercase radius-sm font-weight-700"><i class="fa-solid fa-circle-exclamation"></i> Zarezerwuj wizytę <i class="fa-solid fa-calendar-plus"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -132,46 +132,46 @@
                         <div class="header-nav navbar-collapse collapse ">
                             <ul class=" nav navbar-nav">
                                 <li class="active">
-                                    <a href="index.html"><i class="fa-solid fa-house"></i> Strona Główna</a>
+                                    <a href="index.php"><i class="fa-solid fa-house"></i> Strona Główna</a>
                                 </li>
 
                                 <li>
-                                    <a href="o-firmie.html"><i class="fa-solid fa-arrow-right"></i> O firmie <i
+                                    <a href="o-firmie.php"><i class="fa-solid fa-arrow-right"></i> O firmie <i
                                             class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="o-nas/zabiegi-na-twarz.html"><i class="fa-solid fa-right-long"></i> Zabiegi na twarz</a>
+                                        <li><a href="o-nas/zabiegi-na-twarz.php"><i class="fa-solid fa-right-long"></i> Zabiegi na twarz</a>
                                         </li>
-                                        <li><a href="o-nas/epilacja-i-pielegnacja.html"><i class="fa-solid fa-right-long"></i> Epilacja i
+                                        <li><a href="o-nas/epilacja-i-pielegnacja.php"><i class="fa-solid fa-right-long"></i> Epilacja i
                                                 pielęgnacja</a></li>
-                                        <li><a href="o-nas/zabiegi-na-cialo.html"><i class="fa-solid fa-right-long"></i> Zabiegi na ciało</a>
+                                        <li><a href="o-nas/zabiegi-na-cialo.php"><i class="fa-solid fa-right-long"></i> Zabiegi na ciało</a>
                                         </li>
-                                        <li><a href="o-nas/blog.html"><i class="fa-solid fa-right-long"></i> Blog MAGIC SALON</a></li>
+                                        <li><a href="o-nas/blog.php"><i class="fa-solid fa-right-long"></i> Blog MAGIC SALON</a></li>
                                     </ul>
                                 </li>
 
                                 <li>
-                                    <a href="opinie-klientow.html"><i class="fa-solid fa-thumbs-up"></i> Opinie</a>
+                                    <a href="opinie-klientow.php"><i class="fa-solid fa-thumbs-up"></i> Opinie</a>
                                 </li>
 
                                 <li>
-                                    <a href="faq-pytania.html"><i class="fa-solid fa-comments"></i> FAQ & Pytania</a>
+                                    <a href="faq-pytania.php"><i class="fa-solid fa-comments"></i> FAQ & Pytania</a>
                                 </li>
 
                                 <li class="has-mega-menu">
-                                    <a href="oferta.html"><i class="fa-solid fa-arrow-right"></i> Oferta <i class="fa fa-chevron-down"></i></a>
+                                    <a href="oferta.php"><i class="fa-solid fa-arrow-right"></i> Oferta <i class="fa fa-chevron-down"></i></a>
                                     <ul class="mega-menu">
                                         <li>
 
                                             <ul>
-                                                <li><a href="nasza-oferta/epilacja-laserowa.html"><i class="fa-solid fa-right-long"></i>
+                                                <li><a href="nasza-oferta/depilacja-laserowa.php"><i class="fa-solid fa-right-long"></i>
                                                         Epilacja laserowa</a></li>
-                                                <li><a href="nasza-oferta/peeling-kawitacyjny.html"><i class="fa-solid fa-right-long"></i>
+                                                <li><a href="nasza-oferta/peeling-kawitacyjny.php"><i class="fa-solid fa-right-long"></i>
                                                         Peeling kawitacyjny</a></li>
-                                                <li><a href="nasza-oferta/lifting-i-laminacja-rzes.html"><i class="fa-solid fa-right-long"></i>
+                                                <li><a href="nasza-oferta/laminacja-rzes.php"><i class="fa-solid fa-right-long"></i>
                                                         Lifting i laminacja rzęs</a></li>
-                                                <li><a href="nasza-oferta/architektura-i-laminacja-brwi.html"><i
+                                                <li><a href="nasza-oferta/laminacja-brwi.php"><i
                                                             class="fa-solid fa-right-long"></i> Architektura i laminacja brwi</a></li>
-                                                <li><a href="nasza-oferta/detox-drenaz.html"><i class="fa-solid fa-right-long"></i> Detox &
+                                                <li><a href="nasza-oferta/detox-drenaz.php"><i class="fa-solid fa-right-long"></i> Detox &
                                                         Drenaż</a></li>
                                             </ul>
 
@@ -180,15 +180,15 @@
                                         <li>
 
                                             <ul>
-                                                <li><a href="nasza-oferta/glow-lift.html"><i class="fa-solid fa-right-long"></i> Glow & Lift</a>
+                                                <li><a href="nasza-oferta/glow-lift.php"><i class="fa-solid fa-right-long"></i> Glow & Lift</a>
                                                 </li>
-                                                <li><a href="nasza-oferta/modelowanie-360.html"><i class="fa-solid fa-right-long"></i>
+                                                <li><a href="nasza-oferta/modelowanie-360.php"><i class="fa-solid fa-right-long"></i>
                                                         Modelowanie 360°</a></li>
-                                                <li><a href="nasza-oferta/dermomasaz.html"><i class="fa-solid fa-right-long"></i> Dermomasaż</a>
+                                                <li><a href="nasza-oferta/dermomasaz.php"><i class="fa-solid fa-right-long"></i> Dermomasaż</a>
                                                 </li>
-                                                <li><a href="nasza-oferta/liposukcja-ultradzwiekowa.html"><i class="fa-solid fa-right-long"></i>
+                                                <li><a href="nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php"><i class="fa-solid fa-right-long"></i>
                                                         Liposukcja ultradźwiękowa</a></li>
-                                                <li><a href="nasza-oferta/lipolaser-duo.html"><i class="fa-solid fa-right-long"></i> Lipolaser
+                                                <li><a href="nasza-oferta/lipolaser-jedna-partia.php"><i class="fa-solid fa-right-long"></i> Lipolaser
                                                         DUO</a></li>
                                             </ul>
 
@@ -197,11 +197,11 @@
                                         <li>
 
                                             <ul>
-                                                <li><a href="nasza-oferta/silkroll.html"><i class="fa-solid fa-right-long"></i> SilkRoll</a>
+                                                <li><a href="nasza-oferta/roll-chill.php"><i class="fa-solid fa-right-long"></i> SilkRoll</a>
                                                 </li>
-                                                <li><a href="nasza-oferta/depilacja-woskiem.html"><i class="fa-solid fa-right-long"></i>
+                                                <li><a href="nasza-oferta/depilacja-woskiem.php"><i class="fa-solid fa-right-long"></i>
                                                         Depilacja woskiem</a></li>
-                                                <li><a href="nasza-oferta/przedluzanie-i-zageszczanie-rzes.html"><i
+                                                <li><a href="nasza-oferta/stylizacja-rzes.php"><i
                                                             class="fa-solid fa-right-long"></i> Przedłużanie i zagęszczanie rzęs</a></li>
                                             </ul>
 
@@ -211,19 +211,19 @@
                                 </li>
 
                                 <li>
-                                    <a href="galeria.html"><i class="fa-solid fa-images"></i> Galeria</a>
+                                    <a href="galeria.php"><i class="fa-solid fa-images"></i> Galeria</a>
                                 </li>
 
                                 <li>
-                                    <a href="cennik.html"><i class="fa-solid fa-tag"></i> Cennik</a>
+                                    <a href="cennik.php"><i class="fa-solid fa-tag"></i> Cennik</a>
                                 </li>
 
                                 <li>
-                                    <a href="zarezerwuj-wizyte.html"><i class="fa-solid fa-calendar"></i> Zarezerwuj wizytę</a>
+                                    <a href="zarezerwuj-wizyte.php"><i class="fa-solid fa-calendar"></i> Zarezerwuj wizytę</a>
                                 </li>
 
                                 <li>
-                                    <a href="kontakt.html"><i class="fa-solid fa-phone-volume"></i> Kontakt</a>
+                                    <a href="kontakt.php"><i class="fa-solid fa-phone-volume"></i> Kontakt</a>
                                 </li>
                             </ul>
                         </div>
@@ -257,7 +257,7 @@
         <div class="bg-gray-light p-tb20">
             <div class="container">
                 <ul class="wt-breadcrumb breadcrumb-style-2">
-                    <li><a href="index.html"><i class="fa fa-home"></i> Strona Główna</a></li>
+                    <li><a href="index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
                     <li>O firmie</li>
                 </ul>
             </div>
@@ -294,7 +294,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30">
                                 <div class="wt-icon-box-wraper left">
                                     <div class="icon-md site-text-primary">
-                                        <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-female-hairs"></i></a>
+                                        <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-female-hairs"></i></a>
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="wt-tilte text-uppercase m-b0">Indywidualne podejście</h5>
@@ -305,7 +305,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30 ">
                                 <div class="wt-icon-box-wraper left">
                                     <div class="icon-md site-text-primary">
-                                        <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-eye"></i></a>
+                                        <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-eye"></i></a>
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="wt-tilte text-uppercase m-b0">Nowoczesne technologie</h5>
@@ -316,7 +316,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30 ">
                                 <div class="wt-icon-box-wraper left">
                                     <div class="icon-md site-text-primary">
-                                        <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-mirror"></i></a>
+                                        <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-mirror"></i></a>
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="wt-tilte text-uppercase m-b0 ">Doświadczony zespół</h5>
@@ -327,7 +327,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-b30 ">
                                 <div class="wt-icon-box-wraper left">
                                     <div class="icon-md site-text-primary">
-                                        <a href="oferta.html" class="icon-cell p-t5 center-block"><i class="flaticon-spray-bottle" aria-hidden="true"></i></a>
+                                        <a href="oferta.php" class="icon-cell p-t5 center-block"><i class="flaticon-spray-bottle" aria-hidden="true"></i></a>
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="wt-tilte text-uppercase m-b0">Relaks i bezpieczeństwo</h5>
@@ -428,7 +428,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 m-b30 animate_line">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
                                 <div class="icon-md site-text-primary m-b20">
-                                    <a href="oferta.html" class="icon-cell"><i class="flaticon-cosmetics" aria-hidden="true"></i></a>
+                                    <a href="oferta.php" class="icon-cell"><i class="flaticon-cosmetics" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="icon-content">
                                     <h5 class="wt-tilte text-uppercase">Profesjonalizm i doświadczenie</h5>
@@ -440,7 +440,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 m-b30 animate_line">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
                                 <div class="icon-md site-text-primary m-b20">
-                                    <a href="oferta.html" class="icon-cell"><i class="flaticon-blush"></i></a>
+                                    <a href="oferta.php" class="icon-cell"><i class="flaticon-blush"></i></a>
                                 </div>
                                 <div class="icon-content ">
                                     <h5 class="wt-tilte text-uppercase">Indywidualne podejście do Klienta</h5>
@@ -452,7 +452,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 m-b30 animate_line">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
                                 <div class="icon-md site-text-primary m-b20">
-                                    <a href="oferta.html" class="icon-cell"><i class="flaticon-combs"></i></a>
+                                    <a href="oferta.php" class="icon-cell"><i class="flaticon-combs"></i></a>
                                 </div>
                                 <div class="icon-content">
                                     <h5 class="wt-tilte text-uppercase">Innowacyjne technologie</h5>
@@ -464,7 +464,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 m-b30 animate_line" style="display: none;">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
                                 <div class="icon-md site-text-primary m-b20">
-                                    <a href="oferta.html" class="icon-cell"><i class="flaticon-bronzer"></i></a>
+                                    <a href="oferta.php" class="icon-cell"><i class="flaticon-bronzer"></i></a>
                                 </div>
                                 <div class="icon-content">
                                     <h5 class="wt-tilte text-uppercase">Szeroka oferta zabiegów</h5>
@@ -476,7 +476,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 m-b30 animate_line">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
                                 <div class="icon-md site-text-primary m-b20">
-                                    <a href="oferta.html" class="icon-cell"><i class="flaticon-hair-dryer"></i></a>
+                                    <a href="oferta.php" class="icon-cell"><i class="flaticon-hair-dryer"></i></a>
                                 </div>
                                 <div class="icon-content">
                                     <h5 class="wt-tilte text-uppercase">Komfortowa i relaksująca przestrzeń</h5>
@@ -488,7 +488,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 m-b30 animate_line">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
                                 <div class="icon-md site-text-primary m-b20">
-                                    <a href="oferta.html" class="icon-cell"><i class="flaticon-spa"></i></a>
+                                    <a href="oferta.php" class="icon-cell"><i class="flaticon-spa"></i></a>
                                 </div>
                                 <div class="icon-content">
                                     <h5 class="wt-tilte text-uppercase">Elastyczne godziny i łatwa rezerwacja</h5>
@@ -777,7 +777,7 @@
 
                                                             <p>Zabieg Glow &amp; Lift to kompleksowa pielęgnacja twarzy, która łączy w sobie oczyszczające, regenerujące i liftingujące działanie.
                                                             </p>
-                                                            <a href="nasza-oferta/glow-lift.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/glow-lift.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -800,7 +800,7 @@
 
                                                             <p>Peeling kawitacyjny to nowoczesny, bezbolesny zabieg oczyszczania skóry, który wykorzystuje działanie ultradźwięków.
                                                             </p>
-                                                            <a href="nasza-oferta/peeling-kawitacyjny.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/peeling-kawitacyjny.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -823,7 +823,7 @@
 
                                                             <p>Innowacyjny, nieinwazyjny zabieg łączący mikrodrgania, kompresję i światłoterapię LED, który kompleksowo oddziałuje na kondycję skóry oraz modelowanie sylwetki.
                                                             </p>
-                                                            <a href="nasza-oferta/silkroll.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/roll-chill.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -846,7 +846,7 @@
 
                                                             <p>To kompleksowa, nieinwazyjna terapia łącząca nowoczesne technologie modelowania sylwetki z odmładzaniem skóry twarzy.
                                                             </p>
-                                                            <a href="nasza-oferta/zabieg-lampa-led.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/zabieg-lampa-led.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -892,7 +892,7 @@
 
                                                             <p>Zadbane i odpowiednio ukształtowane brwi nadają twarzy wyrazistość i podkreślają naturalne piękno. Zabieg architektury i laminacji brwi z henną lub farbką pozwala uzyskać idealny kształt, objętość i kolor brwi, dostosowany do indywidualnych rysów twarzy.
                                                             </p>
-                                                            <a href="nasza-oferta/architektura-i-laminacja-brwi.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/laminacja-brwi.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -932,7 +932,7 @@
 
                                                             <p>Epilacja laserowa przy użyciu Trio Laser Medika to nowoczesna i niezwykle skuteczna metoda trwałego usuwania owłosienia. Dzięki zastosowaniu trzech długości fal laserowych w jednym impulsie, urządzenie precyzyjnie działa na różne głębokości skóry, eliminując zarówno powierzchowne, jak i głębiej osadzone cebulki włosów.
                                                             </p>
-                                                            <a href="nasza-oferta/epilacja-laserowa.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/depilacja-laserowa.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -955,7 +955,7 @@
 
                                                             <p>Depilacja woskiem to skuteczna i szybka metoda usuwania niechcianego owłosienia, pozwalająca na długotrwały efekt gładkiej skóry.
                                                             </p>
-                                                            <a href="nasza-oferta/depilacja-woskiem.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/depilacja-woskiem.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -1001,7 +1001,7 @@
 
                                                             <p>Przedłużanie i zagęszczanie rzęs to idealna propozycja dla kobiet, które marzą o wyrazistym spojrzeniu bez codziennego malowania.
                                                             </p>
-                                                            <a href="nasza-oferta/przedluzanie-i-zageszczanie-rzes.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/stylizacja-rzes.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -1042,7 +1042,7 @@
 
                                                             <p>Kompleksowy program wyszczuplająco-modelujący, łączący nowoczesne technologie w celu uzyskania maksymalnych efektów redukcji tkanki tłuszczowej, ujędrnienia skóry oraz poprawy konturu ciała.
                                                             </p>
-                                                            <a href="nasza-oferta/modelowanie-360.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/modelowanie-360.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -1065,7 +1065,7 @@
 
                                                             <p>Nowoczesna i niezwykle skuteczna metoda walki z cellulitem, utratą jędrności oraz nagromadzoną tkanką tłuszczową.
                                                             </p>
-                                                            <a href="nasza-oferta/dermomasaz.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/dermomasaz.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -1088,7 +1088,7 @@
 
                                                             <p>Liposukcja ultradźwiękowa to nowoczesna, bezinwazyjna metoda modelowania sylwetki i redukcji tkanki tłuszczowej, wykorzystująca działanie ultradźwięków.
                                                             </p>
-                                                            <a href="nasza-oferta/liposukcja-ultradzwiekowa.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -1111,7 +1111,7 @@
 
                                                             <p>Nowoczesna, nieinwazyjna metoda redukcji tkanki tłuszczowej, oparta na działaniu tzw. zimnego lasera.
                                                             </p>
-                                                            <a href="nasza-oferta/lipolaser-duo.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/lipolaser-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>
@@ -1134,7 +1134,7 @@
 
                                                             <p>Kompleksowy zabieg łączący kilka nowoczesnych technologii, których celem jest oczyszczenie organizmu z toksyn, pobudzenie krążenia, redukcja obrzęków oraz poprawa jędrności i elastyczności skóry.
                                                             </p>
-                                                            <a href="nasza-oferta/detox-drenaz.html" class="site-button skew-icon-btn radius-sm">
+                                                            <a href="nasza-oferta/detox-drenaz.php" class="site-button skew-icon-btn radius-sm">
                                                                 <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
                                                             </a>
                                                         </div>

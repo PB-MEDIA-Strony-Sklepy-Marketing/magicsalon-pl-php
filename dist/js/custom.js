@@ -683,7 +683,35 @@ function masonryBox() {
 	});	
 /*===========================
 	Document on  Submit FUNCTION END
-===========================*/	
-	
-	
+===========================*/
+
+
 })(window.jQuery);
+
+/*===========================
+	Revolution Slider and Menu Fixes
+===========================*/
+jQuery(document).ready(function($) {
+	// Ensure Revolution Slider is properly initialized
+	// Force redraw of slider elements on window resize
+	$(window).on('resize', function() {
+		if (typeof revapi1050 !== 'undefined') {
+			revapi1050.revredraw();
+		}
+	});
+
+	// Fix menu display on desktop
+	if ($(window).width() > 991) {
+		$('.header-nav .nav').css({
+			'display': 'flex',
+			'flex-direction': 'row'
+		});
+	}
+
+	// Wait for slider to be fully loaded then fix captions
+	setTimeout(function() {
+		$('.tp-caption').each(function() {
+			$(this).css('visibility', 'visible');
+		});
+	}, 1000);
+});
