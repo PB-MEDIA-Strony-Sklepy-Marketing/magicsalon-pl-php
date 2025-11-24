@@ -55,7 +55,6 @@ $meta = [
 
 // Załaduj head partial - POPRAWIONA ŚCIEŻKA
 include 'partials/head.php'; ?>
-?>
 
 <body id="bg">
 

@@ -55,7 +55,6 @@ $meta = [
 
 // Załaduj head partial - POPRAWIONA ŚCIEŻKA
 include 'partials/head.php'; ?>
-?>
 
 <body id="bg" class="home-page">
 
@@ -84,7 +83,6 @@ include 'partials/head.php'; ?>
                             <!-- MAIN IMAGE -->
                             <img src="images/main-slider/slider2/slide1.jpg" alt="Slider 1 Magic Salon" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
-
 
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption WebProduct-Title tp-resizeme"
