@@ -6,7 +6,7 @@ YOU CAN WRIGHT CUSTOME CSS
     --color-theme-primary: #6D356F;
     --color-theme-secondary: #D7A54F;
     --color-hover: #9F5BA4;
---site-button-color: #222222;
+    --site-button-color: #222222;
 }
 
 .header-style-8 .navbar-toggler .icon-bar {
@@ -2360,4 +2360,222 @@ a.btn-reserve:hover {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+}
+
+/* =========================================
+   PREMIUM HERO SLIDER (Mobile-First Approach)
+   ========================================= */
+
+/* --- 1. BAZA (MOBILE - TELEFONY) --- */
+
+.hero-slider, 
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    /* Na mobilu slider zajmuje więcej wysokości, by był czytelny */
+    height: 75vh; 
+    min-height: 500px; /* Gwarantuje, że treść się nie utnie na małych ekranach */
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Mocniejszy gradient na mobilu dla lepszego kontrastu tekstu */
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+}
+
+.hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Centrujemy zdjęcie, by kluczowe elementy (twarze) były widoczne */
+    object-position: center top; 
+    transform-origin: center;
+    transition: transform 8s ease;
+}
+
+/* Animacja Ken Burns */
+.carousel-item.active .hero-bg-img {
+    animation: kenBurns 8s infinite alternate;
+}
+
+@keyframes kenBurns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); } /* Nieco większy zoom na mobilu wygląda dynamiczniej */
+}
+
+/* Pozycjonowanie napisów - Mobile */
+.hero-slider .carousel-caption {
+    z-index: 2;
+    text-align: center; /* Na telefonach centrujemy tekst */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 4rem; /* Miejsce na wskaźniki (kropki) */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Typografia Mobile */
+.text-primary-theme {
+    color: var(--color-theme-secondary) !important;
+}
+
+.hero-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+.hero-title {
+    font-size: 2.2rem; /* Mniejszy tytuł na mobile, żeby nie łamał się dziwnie */
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+    /* Ukrywamy długie opisy na bardzo małych telefonach, lub ograniczamy linie */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 100%;
+    opacity: 0;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column; /* Przyciski jeden pod drugim na mobilu */
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+}
+
+.hero-buttons .site-button, 
+.hero-buttons .site-button-secondry {
+    width: 100%; /* Pełna szerokość przycisków na telefonie */
+    max-width: 280px;
+    text-align: center;
+    margin-right: 0 !important; /* Reset marginesu desktopowego */
+    padding: 12px 20px;
+}
+
+/* Animacje wejścia (zachowane) */
+.carousel-item.active .hero-subtitle { animation: slideDownFade 0.8s ease forwards 0.3s; }
+.carousel-item.active .hero-title { animation: slideUpFade 0.8s ease forwards 0.5s; }
+.carousel-item.active .hero-desc { animation: fadeIn 1s ease forwards 0.8s; }
+.carousel-item.active .hero-buttons { animation: fadeIn 1s ease forwards 1.0s; }
+
+@keyframes slideDownFade { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideUpFade { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Wskaźniki (Dots) */
+.hero-slider .carousel-indicators { bottom: 15px; margin-bottom: 0; }
+.hero-slider .carousel-indicators button { width: 10px; height: 10px; border-radius: 50%; margin: 0 5px; border: 1px solid #fff; opacity: 0.6; }
+.hero-slider .carousel-indicators button.active { background-color: var(--color-theme-secondary); border-color: var(--color-theme-secondary); opacity: 1; transform: scale(1.2); }
+
+/* Strzałki nawigacji - ukryte na mobile dla czystości, widoczne na tablecie */
+.carousel-control-prev, .carousel-control-next { display: none; }
+
+
+/* --- 2. TABLET (min-width: 768px) --- */
+
+@media (min-width: 768px) {
+    .hero-slider, 
+    .hero-image-wrapper {
+        height: 65vh; /* Nieco niższy na tabletach, by widać było sekcję "O nas" */
+        min-height: 550px;
+    }
+
+    .hero-overlay {
+        /* Powrót do gradientu bocznego na większych ekranach */
+        background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
+    }
+
+    .hero-slider .carousel-caption {
+        text-align: left; /* Wyrównanie do lewej */
+        padding-bottom: 0;
+        top: 0;
+        bottom: 0; /* Rozciągnięcie na całą wysokość dla flexboxa */
+    }
+
+    /* Kontener wewnątrz caption dla tabletu */
+    .hero-slider .carousel-caption .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hero-subtitle { font-size: 1.1rem; margin-bottom: 1rem; }
+    .hero-title { font-size: 3.5rem; margin-bottom: 1.5rem; }
+    .hero-desc { 
+        font-size: 1rem; 
+        max-width: 550px; 
+        display: block; /* Pokaż cały tekst */
+        -webkit-line-clamp: unset;
+    }
+
+    .hero-buttons {
+        flex-direction: row; /* Przyciski obok siebie */
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .hero-buttons .site-button, 
+    .hero-buttons .site-button-secondry {
+        width: auto;
+        min-width: 160px;
+        margin-right: 15px !important;
+    }
+
+    /* Pokaż strzałki na tablecie */
+    .carousel-control-prev, .carousel-control-next { display: flex; width: 5%; opacity: 0.7; }
+    .carousel-control-btn {
+        width: 45px; height: 45px; border: 2px solid rgba(255,255,255,0.4); border-radius: 50%;
+        display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+    }
+    .carousel-control-prev:hover .carousel-control-btn,
+    .carousel-control-next:hover .carousel-control-btn {
+        background: var(--color-theme-secondary); border-color: var(--color-theme-secondary);
+    }
+}
+
+
+/* --- 3. LAPTOP I DESKTOP (min-width: 1200px) --- */
+
+@media (min-width: 1200px) {
+    .hero-slider, 
+    .hero-image-wrapper {
+        height: 85vh; /* Pełna okazałość na dużych ekranach */
+        min-height: 700px;
+    }
+
+    .hero-title { font-size: 4.5rem; }
+    .hero-subtitle { font-size: 1.3rem; }
+    .hero-desc { font-size: 1.15rem; max-width: 650px; }
+
+    .carousel-control-prev, .carousel-control-next { width: 8%; }
+    .carousel-control-btn { width: 60px; height: 60px; }
+    .carousel-control-prev i, .carousel-control-next i { font-size: 24px; }
 }

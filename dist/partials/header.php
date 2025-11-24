@@ -3,7 +3,7 @@
 /**
  * partials/header.php
  * Dynamiczny header z top bar i głównym menu nawigacyjnym
- * MAGIC SALON - Wersja 2.1
+ * MAGIC SALON - Wersja 2.2 (Fix: Klikalne linki nadrzędne)
  */
 
 // Pobierz aktualną ścieżkę dla aktywnego menu
@@ -252,6 +252,29 @@ $main_menu = [
 ];
 ?>
 
+<!-- Header CSS dla Hover Menu -->
+<style>
+    @media (min-width: 992px) {
+        /* Otwieranie menu po najechaniu myszką (Desktop) */
+        .header-nav .nav-item.dropdown:hover > .dropdown-menu,
+        .header-nav .nav-item.has-mega-menu:hover > .mega-menu {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        /* Fix dla klikalnego linku rodzica */
+        .header-nav .nav-item > .nav-link {
+            cursor: pointer;
+        }
+
+        /* Animacja pojawiania się */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    }
+</style>
+
 <!-- Header Start -->
 <header class="site-header header-style-modern" role="banner">
 
@@ -436,6 +459,7 @@ $main_menu = [
                                     ?>
 
                                     <li class="nav-item<?php echo $active_class . $highlight_class; ?><?php echo $is_mega_menu ? ' has-mega-menu' : ($has_submenu ? ' dropdown' : ''); ?>" style="flex: 1;">
+                                        <!-- FIX: Usunięto data-bs-toggle="dropdown" aby link był klikalny -->
                                         <a href="<?php echo nav_url($menu_item['url']); ?>"
                                             class="nav-link d-flex align-items-center justify-content-center gap-2"
                                             style="color: #ffffff; 
@@ -446,7 +470,6 @@ $main_menu = [
                                               position: relative;
                                               display: flex;
                                               <?php echo isset($menu_item['highlight']) && $menu_item['highlight'] ? 'background: linear-gradient(135deg, #D7A54F 0%, #E8B968 100%); border-radius: 0.5rem; margin: 0.25rem;' : ''; ?>"
-                                            <?php echo $has_submenu || $is_mega_menu ? 'data-bs-toggle="dropdown" aria-expanded="false"' : ''; ?>
                                             aria-label="<?php echo e($menu_item['title']); ?>">
                                             <?php if (!empty($menu_item['icon'])): ?>
                                                 <i class="<?php echo e($menu_item['icon']); ?>" aria-hidden="true"></i>
@@ -465,7 +488,7 @@ $main_menu = [
                                                border-radius: 0.75rem; 
                                                box-shadow: 0 10px 40px rgba(0,0,0,0.15); 
                                                padding: -0.75rem 0;
-                                               margin-top: -0.5rem;
+                                               margin-top: 0;
                                                width: 100%;
                                                max-width: 100%;
                                                min-width: 100%;">
@@ -496,7 +519,7 @@ $main_menu = [
                                                border-radius: 0.75rem; 
                                                box-shadow: 0 15px 50px rgba(0,0,0,0.15); 
                                                padding: 2rem;
-                                               margin-top: -0.5rem;
+                                               margin-top: 0;
                                                min-width: 900px;">
                                                 <li>
                                                     <div class="row g-4">

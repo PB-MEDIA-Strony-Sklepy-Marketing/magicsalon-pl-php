@@ -71,8 +71,6 @@ $defaults = [
         '/css/style.css',
         '/css/skin/skin-7.css',
         '/css/booksy-embed.css',
-        '/plugins/revolution/revolution/css/settings.css',
-        '/plugins/revolution/revolution/css/navigation.css',
         '/css/min/cookieconsent.min.css',
         '/css/min/iframemanager.min.css',
         '/css/fix-css-style.css',
@@ -199,8 +197,7 @@ $meta['twitter']['description'] = $meta['twitter']['description'] ?? $meta['desc
     }
     ?>
 
-    <!-- Fix for Revolution Slider and Menu Issues -->
-    <link rel="stylesheet" href="css/fixes.css">
+    <!-- Fix for Booksy Iframe CSS -->
     <link rel="stylesheet" href="css/booksy-iframe.css">
 
     <!-- Google Fonts -->

@@ -74,453 +74,120 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <!-- SLIDER START -->
-            <div id="rev_slider_1050_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="webproduct-light" data-source="gallery" style="background-color:transparent;padding:0px;">
-                <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
-                <div id="rev_slider_1050_1" class="slider-dots rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
-                    <ul>
-                        <!-- SLIDE  -->
-                        <li data-index="rs-2938" data-transition="slideleft" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/main-slider/slider2/slide1.jpg" data-rotate="0" data-fsslotamount="7" data-saveperformance="off" data-title="" data-param1="Additional Text" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/main-slider/slider2/slide1.jpg" alt="Slider 1 Magic Salon" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption WebProduct-Title tp-resizeme"
-                                id="slide-2938-layer-01"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['-80','-80','200','130']"
-                                data-fontsize="['57','55','55','30']"
-                                data-lineheight="['65','65','65','65']"
-                                data-width="['700','700','700','300']"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 11;
-                                white-space: nowrap;
-                                text-transform:uppercase;">
-                                <div class="text-secondry"> Najlepsze miejsce <span class="site-text-primary"> Dla Ciebie!</span></div>
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption WebProduct-SubTitle tp-resizeme"
-                                id="slide-2938-layer-02"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['0','0','280','180']"
-                                data-fontsize="['55','55','55','30']"
-                                data-lineheight="['75','75','75','75']"
-                                data-width="['700','700','700','300']"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1250,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 12; 
-                                white-space: nowrap;
-                                text-transform:uppercase;
-                               	font-weight: 700;
-                                ">
-                                <div class="text-secondry">
-                                    <span class="site-text-primary">Piękno</span> w zasięgu ręki!
-                                </div>
-                            </div>
-
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption WebProduct-Content   tp-resizeme"
-                                id="slide-2938-layer-03"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['80','80','380','250']"
-                                data-fontsize="['21','21','24','18']"
-                                data-lineheight="['28','28','32','26']"
-                                data-width="['700','700','700','300']"
-                                data-height="['none','none','76','68']"
-                                data-whitespace="normal"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 13; white-space: normal;">
-                                <div class="text-secondry"> Witaj w MAGIC SALON – wyjątkowym salonie piękności, który powstał z pasji do estetyki, zdrowia i holistycznego podejścia do pielęgnacji ciała i ducha.</div>
-                            </div>
-
-                            <!-- LAYER NR. 4 -->
-                            <div class="tp-caption tp-resizeme"
-                                id="slide-2938-layer-04"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['180','180','480','400']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="button"
-                                data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
-                                data-responsive_offset="on"
-                                data-responsive="on"
-                                data-frames='[ 
-                                {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
-                                {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
-                                ]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[40,40,40,40]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="oferta.php" class="site-button radius-sm button-lg">Oferta</a>
-                            </div>
-                            <!-- LAYER NR. 5 -->
-
-                            <div class="tp-caption tp-resizeme"
-                                id="slide-2938-layer-05"
-                                data-x="['left','left','left','left']" data-hoffset="['240','240','200','200']"
-                                data-y="['middle','middle','top','top']" data-voffset="['180','180','480','400']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="button"
-                                data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
-                                data-responsive_offset="on"
-                                data-responsive="on"
-                                data-frames='[ 
-                                {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
-                                {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
-                                ]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[40,40,40,40]"
-
-                                style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="o-firmie.php" class="site-button-secondry radius-sm button-lg">O firmie</a>
-                            </div>
-
-                        </li>
-
-                        <!-- SLIDE  -->
-                        <li data-index="rs-2940" data-transition="slideleft" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/main-slider/slider2/slide2.jpg" data-rotate="0" data-fsslotamount="7" data-saveperformance="off" data-title="" data-param1="Additional Text" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/main-slider/slider2/slide2.jpg" alt="Slider 2 Magic Salon" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption WebProduct-Title   tp-resizeme"
-                                id="slide-2940-layer-01"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['-80','-80','200','130']"
-                                data-fontsize="['57','55','55','30']"
-                                data-lineheight="['65','65','65','65']"
-                                data-width="['700','700','700','300']"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 11;
-                                white-space: nowrap;
-                                text-transform:uppercase;">
-                                <div class="text-secondry"> Zrelaksuj się <span class="site-text-primary"> Salon Magic</span></div>
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption WebProduct-SubTitle   tp-resizeme"
-                                id="slide-2940-layer-02"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['0','0','280','180']"
-                                data-fontsize="['55','55','55','30']"
-                                data-lineheight="['75','75','75','75']"
-                                data-width="['700','700','700','300']"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1250,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 12; 
-                                white-space: nowrap;
-                                text-transform:uppercase;
-                               	font-weight: 700;
-                                ">
-                                <div class="text-secondry">
-                                    <span class="site-text-primary">Twoje piękno</span> nasza pasja
-                                </div>
-                            </div>
-
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption WebProduct-Content   tp-resizeme"
-                                id="slide-2940-layer-03"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['80','80','380','250']"
-                                data-fontsize="['21','21','24','18']"
-                                data-lineheight="['28','28','32','26']"
-                                data-width="['700','700','700','300']"
-                                data-height="['none','none','76','68']"
-                                data-whitespace="normal"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 13; white-space: normal;">
-                                <div class="text-secondry"> Nasze motto: "Piękno w zasięgu ręki. Zrelaksuj się i poczuj się wyjątkowo." – to nie tylko slogan, ale codzienna filozofia, którą realizujemy z troską i zaangażowaniem.</div>
-                            </div>
-
-                            <!-- LAYER NR. 4 -->
-                            <div class="tp-caption tp-resizeme"
-                                id="slide-2940-layer-04"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['180','180','480','400']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="button"
-                                data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
-                                data-responsive_offset="on"
-                                data-responsive="on"
-                                data-frames='[ 
-                                {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
-                                {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
-                                ]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[40,40,40,40]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="opinie-klientow.php" class="site-button radius-sm button-lg">Opinie klientów</a>
-                            </div>
-                            <!-- LAYER NR. 5 -->
-
-                            <div class="tp-caption tp-resizeme"
-                                id="slide-2940-layer-05"
-                                data-x="['left','left','left','left']" data-hoffset="['240','240','200','200']"
-                                data-y="['middle','middle','top','top']" data-voffset="['180','180','480','400']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="button"
-                                data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
-                                data-responsive_offset="on"
-                                data-responsive="on"
-                                data-frames='[ 
-                                {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
-                                {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
-                                ]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[40,40,40,40]"
-
-                                style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="faq-pytania.php" class="site-button-secondry radius-sm button-lg">FAQ & Najczęściej zadawane pytania</a>
-                            </div>
-
-                        </li>
-
-                        <!-- SLIDE  -->
-                        <li data-index="rs-2941" data-transition="slideleft" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/main-slider/slider2/slide3.jpg" data-rotate="0" data-fsslotamount="7" data-saveperformance="off" data-title="" data-param1="Additional Text" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/main-slider/slider2/slide3.jpg" alt="Slider 3 Magic Salon" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption WebProduct-Title   tp-resizeme"
-                                id="slide-2941-layer-01"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['-80','-80','200','130']"
-                                data-fontsize="['57','55','55','30']"
-                                data-lineheight="['65','65','65','65']"
-                                data-width="['700','700','700','300']"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 11;
-                                white-space: nowrap;
-                                text-transform:uppercase;">
-                                <div class="text-secondry"> Witamy <span class="site-text-primary"> w Magicznym Miejscu</span></div>
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption WebProduct-SubTitle   tp-resizeme"
-                                id="slide-2941-layer-02"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['0','0','280','180']"
-                                data-fontsize="['55','55','55','30']"
-                                data-lineheight="['75','75','75','75']"
-                                data-width="['700','700','700','300']"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1250,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 12; 
-                                white-space: nowrap;
-                                text-transform:uppercase;
-                               	font-weight: 700;
-                                ">
-                                <div class="text-secondry">
-                                    <span class="site-text-primary">Gdzie Twoje</span> Piękno Rozkwita!
-                                </div>
-                            </div>
-
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption WebProduct-Content   tp-resizeme"
-                                id="slide-2941-layer-03"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['80','80','380','250']"
-                                data-fontsize="['21','21','24','18']"
-                                data-lineheight="['28','28','32','26']"
-                                data-width="['700','700','700','300']"
-                                data-height="['none','none','76','68']"
-                                data-whitespace="normal"
-
-                                data-type="text"
-                                data-responsive_offset="on"
-
-                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index: 13; white-space: normal;">
-                                <div class="text-secondry"> To właśnie tu, w atmosferze luksusu i profesjonalizmu, odkryjesz swoją prawdziwą urodę.</div>
-                            </div>
-
-                            <!-- LAYER NR. 4 -->
-                            <div class="tp-caption tp-resizeme"
-                                id="slide-2941-layer-04"
-                                data-x="['left','left','left','left']" data-hoffset="['60','60','20','20']"
-                                data-y="['middle','middle','top','top']" data-voffset="['180','180','480','400']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="button"
-                                data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
-                                data-responsive_offset="on"
-                                data-responsive="on"
-                                data-frames='[ 
-                                {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
-                                {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
-                                ]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[40,40,40,40]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-
-                                style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="galeria.php" class="site-button radius-sm button-lg">Galeria</a>
-                            </div>
-                            <!-- LAYER NR. 5 -->
-
-                            <div class="tp-caption tp-resizeme"
-                                id="slide-2941-layer-05"
-                                data-x="['left','left','left','left']" data-hoffset="['240','240','200','200']"
-                                data-y="['middle','middle','top','top']" data-voffset="['180','180','480','400']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-
-                                data-type="button"
-                                data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
-                                data-responsive_offset="on"
-                                data-responsive="on"
-                                data-frames='[ 
-                                {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
-                                {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
-                                ]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[40,40,40,40]"
-
-                                style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                <a href="zarezerwuj-wizyte.php" class="site-button-secondry radius-sm button-lg">Zarezerwuj wizytę</a>
-                            </div>
-
-                        </li>
-                    </ul>
-
+        <!-- SLIDER START -->
+            <div id="heroSlider" class="carousel slide carousel-fade hero-slider" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
+                <!-- Wskaźniki (Dots) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+
+                <div class="carousel-inner h-100">
+                    <!-- SLIDE 1 -->
+                    <div class="carousel-item active h-100">
+                        <div class="hero-image-wrapper">
+                            <img src="images/main-slider/slider2/slide1.jpg" class="d-block w-100 hero-bg-img" alt="Magic Salon - Najlepsze miejsce dla Ciebie">
+                            <div class="hero-overlay"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-lg-9 col-md-10 mx-auto mx-md-0">
+                                        <div class="hero-subtitle text-uppercase">
+                                            Najlepsze miejsce <span class="text-primary-theme">Dla Ciebie!</span>
+                                        </div>
+                                        <h1 class="hero-title text-uppercase">
+                                            <span class="text-primary-theme">Piękno</span> w zasięgu ręki!
+                                        </h1>
+                                        <p class="hero-desc">
+                                            Witaj w MAGIC SALON – wyjątkowym salonie piękności, który powstał z pasji do estetyki, zdrowia i holistycznego podejścia do pielęgnacji ciała i ducha.
+                                        </p>
+                                        <div class="hero-buttons">
+                                            <a href="oferta.php" class="site-button radius-sm button-lg">Oferta</a>
+                                            <a href="o-firmie.php" class="site-button-secondry radius-sm button-lg">O firmie</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="carousel-item h-100">
+                        <div class="hero-image-wrapper">
+                            <img src="images/main-slider/slider2/slide2.jpg" class="d-block w-100 hero-bg-img" alt="Relaks w Magic Salon">
+                            <div class="hero-overlay"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-lg-9 col-md-10 mx-auto mx-md-0">
+                                        <div class="hero-subtitle text-uppercase">
+                                            Zrelaksuj się <span class="text-primary-theme">w Salon Magic</span>
+                                        </div>
+                                        <h1 class="hero-title text-uppercase">
+                                            <span class="text-primary-theme">Twoje piękno</span> nasza pasja
+                                        </h1>
+                                        <p class="hero-desc">
+                                            Nasze motto: "Piękno w zasięgu ręki. Zrelaksuj się i poczuj się wyjątkowo." – to nie tylko slogan, ale codzienna filozofia, którą realizujemy z troską.
+                                        </p>
+                                        <div class="hero-buttons">
+                                            <a href="opinie-klientow.php" class="site-button radius-sm button-lg">Opinie klientów</a>
+                                            <a href="faq-pytania.php" class="site-button-secondry radius-sm button-lg">FAQ & Pytania</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="carousel-item h-100">
+                        <div class="hero-image-wrapper">
+                            <img src="images/main-slider/slider2/slide3.jpg" class="d-block w-100 hero-bg-img" alt="Magic Salon - Profesjonalna pielęgnacja">
+                            <div class="hero-overlay"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-lg-9 col-md-10 mx-auto mx-md-0">
+                                        <div class="hero-subtitle text-uppercase">
+                                            Witamy <span class="text-primary-theme">w Magicznym Miejscu</span>
+                                        </div>
+                                        <h1 class="hero-title text-uppercase">
+                                            <span class="text-primary-theme">Gdzie Twoje</span> Piękno Rozkwita!
+                                        </h1>
+                                        <p class="hero-desc">
+                                            To właśnie tu, w atmosferze luksusu i profesjonalizmu, odkryjesz swoją prawdziwą urodę pod okiem doświadczonych ekspertów.
+                                        </p>
+                                        <div class="hero-buttons">
+                                            <a href="galeria.php" class="site-button radius-sm button-lg">Galeria</a>
+                                            <a href="zarezerwuj-wizyte.php" class="site-button-secondry radius-sm button-lg">Zarezerwuj wizytę</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nawigacja (Strzałki) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+                    <span class="carousel-control-btn">
+                        <i class="fa fa-angle-left"></i>
+                    </span>
+                    <span class="visually-hidden">Poprzedni</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+                    <span class="carousel-control-btn">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                    <span class="visually-hidden">Następny</span>
+                </button>
             </div>
             <!-- SLIDER END -->
+            
 
             <!-- ABOUT SECTION START -->
             <div class="section-full p-t100 p-b70 bg-bottom-center bg-full-width bg-no-repeat">
@@ -630,7 +297,7 @@ include 'partials/head.php';
             </div>
             <!-- WELCOME COMPANY SECTION END -->
 
-            <!-- PRICING SECTION START  -->
+            <!-- OFERTA SECTION START  -->
             <div class="section-full bg-gray p-t100 p-b70">
                 <div class="container">
                     <!-- TITLE START-->
@@ -1055,7 +722,7 @@ include 'partials/head.php';
 
                 </div>
             </div>
-            <!-- PRICING SECTION END  -->
+            <!-- OFERTA SECTION END  -->
 
 
             <!-- WELCOME SECTION START -->

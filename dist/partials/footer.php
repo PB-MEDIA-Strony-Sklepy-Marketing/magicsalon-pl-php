@@ -430,12 +430,6 @@ if (!function_exists('footer_url')) {
 <script src="<?php echo asset('js/custom.js'); ?>"></script><!-- CUSTOM FUNCTIONS -->
 <script src="<?php echo asset('js/shortcode.js'); ?>"></script><!-- SHORTCODE FUNCTIONS -->
 
-<!-- REVOLUTION JS FILES -->
-<script src="<?php echo asset('plugins/revolution/revolution/js/jquery.themepunch.tools.min.js'); ?>"></script>
-<script src="<?php echo asset('plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js'); ?>"></script>
-<script src="<?php echo asset('plugins/revolution/revolution/js/extensions/revolution-plugin.js'); ?>"></script>
-<script src="<?php echo asset('js/rev-script-1.js'); ?>"></script>
-
 <!-- BOOKSY & WHATSAPP -->
 <script src="<?php echo asset('js/booksy-embed.js'); ?>"></script>
 <script src="<?php echo asset('js/booksy-widget.js'); ?>"></script>
@@ -526,8 +520,6 @@ if (!function_exists('footer_url')) {
         });
     });
 </script>
-
-<?php include('partials/revolution-fixes.php'); ?>
 
 <!-- Dodaj przed zamknięciem </body> w footer.php -->
 
