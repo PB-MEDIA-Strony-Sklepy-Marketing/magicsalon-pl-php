@@ -1,0 +1,178 @@
+name: 📚 Dokumentacja / Documentation
+description: Zgłoś problem z dokumentacją lub zaproponuj ulepszenia / Report documentation issue or suggest improvements
+title: "[DOCS]: "
+labels: ["documentation", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Pomóż nam ulepszyć dokumentację! / Help us improve the documentation!
+
+        Dobra dokumentacja jest kluczowa dla projektu.
+        Good documentation is key to the project.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 📋 Typ Problemu / Issue Type
+      description: Jaki to typ problemu z dokumentacją? / What type of documentation issue is this?
+      options:
+        - "❌ Błąd w dokumentacji / Error in documentation"
+        - "📝 Niejasne wyjaśnienie / Unclear explanation"
+        - "🔍 Brakująca dokumentacja / Missing documentation"
+        - "🔄 Nieaktualna dokumentacja / Outdated documentation"
+        - "✨ Propozycja ulepszenia / Improvement suggestion"
+        - "🌐 Tłumaczenie / Translation"
+        - "📖 Przykład kodu / Code example"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: location
+    attributes:
+      label: 📍 Lokalizacja / Location
+      description: Gdzie znajduje się problem? / Where is the issue located?
+      options:
+        - "README.md"
+        - "CLAUDE.md"
+        - "CONTRIBUTING.md"
+        - "SECURITY.md"
+        - "SUPPORT.md"
+        - "CODE_OF_CONDUCT.md"
+        - "LICENSE.md"
+        - "copilot-instructions.md"
+        - "Komentarze w kodzie / Code comments"
+        - "Wiki"
+        - "Inne / Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 📄 Obecna Dokumentacja / Current Documentation
+      description: Skopiuj obecny fragment dokumentacji / Copy the current documentation section
+      placeholder: Wklej obecny tekst tutaj / Paste current text here
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: ❌ Problem / Problem
+      description: Co jest nie tak z obecną dokumentacją? / What's wrong with the current documentation?
+      placeholder: |
+        Opisz problem, np.:
+        - Informacje są nieprawidłowe
+        - Wyjaśnienie jest niejasne
+        - Brakuje ważnych szczegółów
+
+        Describe the problem, e.g.:
+        - Information is incorrect
+        - Explanation is unclear
+        - Important details are missing
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: ✅ Sugerowana Poprawa / Suggested Improvement
+      description: Jak powinna wyglądać poprawiona dokumentacja? / How should the corrected documentation look?
+      placeholder: |
+        Zaproponuj poprawioną wersję lub dodatkowe informacje...
+        Propose improved version or additional information...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: 💡 Przykłady / Examples
+      description: Dodaj przykłady kodu lub use cases / Add code examples or use cases
+      placeholder: |
+        ```php
+        // Przykład użycia
+        // Usage example
+        ```
+      render: php
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: 👥 Dla Kogo / Target Audience
+      description: Dla kogo jest ta dokumentacja? / Who is this documentation for?
+      options:
+        - "🆕 Nowi użytkownicy / New users"
+        - "👨‍💻 Doświadczeni deweloperzy / Experienced developers"
+        - "📚 Wszyscy / Everyone"
+        - "🔧 Kontrybutorzy / Contributors"
+        - "🎨 Designerzy / Designers"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-sections
+    attributes:
+      label: 📑 Dodatkowe Sekcje / Additional Sections
+      description: Czy dokumentacja powinna zawierać dodatkowe sekcje? / Should the documentation include additional sections?
+      placeholder: |
+        - Sekcja X powinna być dodana / Section X should be added
+        - Wyjaśnij Y / Explain Y
+        - Dodaj diagram dla Z / Add diagram for Z
+
+  - type: textarea
+    id: links
+    attributes:
+      label: 🔗 Pomocne Linki / Helpful Links
+      description: Linki do zasobów, które mogą pomóc / Links to resources that may help
+      placeholder: |
+        - https://documentation-reference.com
+        - https://similar-project.com/docs
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 Priorytet / Priority
+      description: Jak ważna jest ta zmiana? / How important is this change?
+      options:
+        - "🔴 Wysoki - błąd krytyczny / High - critical error"
+        - "🟠 Średni - wprowadza w błąd / Medium - misleading"
+        - "🟡 Niski - ulepszenie / Low - improvement"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: willingness
+    attributes:
+      label: 🙋 Gotowość do Pomocy / Willingness to Help
+      description: Czy możesz pomóc z tą dokumentacją? / Can you help with this documentation?
+      options:
+        - label: Mogę napisać poprawioną wersję / I can write the corrected version
+        - label: Mogę przetłumaczyć na inny język / I can translate to another language
+        - label: Mogę dodać przykłady kodu / I can add code examples
+        - label: Mogę dodać diagramy/obrazy / I can add diagrams/images
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Dodatkowy Kontekst / Additional Context
+      description: Inne informacje, które mogą być pomocne / Other information that may be helpful
+      placeholder: Dodaj inne istotne informacje / Add any other relevant information
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      description: Przed wysłaniem sprawdź / Before submitting, check
+      options:
+        - label: Przeszukałem istniejące Issues / I've searched existing issues
+          required: true
+        - label: Problem dotyczy dokumentacji, nie kodu / This is about documentation, not code
+          required: true
+        - label: Sprawdziłem czy dokumentacja jest aktualna / I've checked if documentation is up to date
+          required: true

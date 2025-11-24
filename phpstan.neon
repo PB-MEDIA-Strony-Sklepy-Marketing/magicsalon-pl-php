@@ -1,0 +1,41 @@
+# PHPStan configuration
+# https://phpstan.org/config-reference
+
+parameters:
+    level: 6
+    paths:
+        - dist
+
+    # Excluded paths
+    excludePaths:
+        - dist/plugins/
+        - dist/logs/
+
+    # Type inference
+    inferPrivatePropertyTypeFromConstructor: true
+
+    # Ignore errors
+    ignoreErrors:
+        # Revolution Slider variables (external plugin)
+        - '#Variable \$revapi[0-9]+ might not be defined#'
+
+        # Superglobals usage (common in non-framework PHP)
+        - '#Undefined variable: \$_(GET|POST|SERVER|SESSION|COOKIE|FILES|REQUEST)#'
+
+    # Report unmatched ignored errors
+    reportUnmatchedIgnoredErrors: false
+
+    # Check always true conditions
+    checkAlwaysTrueCheckTypeFunctionCall: true
+    checkAlwaysTrueInstanceof: true
+    checkAlwaysTrueStrictComparison: true
+
+    # Check missing return types
+    checkMissingIterableValueType: false
+
+    # Universal object crates
+    universalObjectCratesClasses:
+        - stdClass
+
+    # Treat PHP native types
+    treatPhpDocTypesAsCertain: true

@@ -398,7 +398,7 @@ $main_menu = [
 
             <!-- Desktop Navigation Container -->
             <div class="container-fluid d-none d-lg-block" style="padding: 0;">
-                <div class="row align-items-center g-0 mx-auto px-5">
+                <div class="row align-items-center g-0 mx-auto padding-extech-shortcode-footer">
                     <div class="col-12">
                         <div class="header-nav">
                             <ul class="nav navbar-nav mb-0" style="width: 100%;">

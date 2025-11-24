@@ -1,0 +1,175 @@
+name: ❓ Pytanie / Question
+description: Zadaj pytanie dotyczące projektu / Ask a question about the project
+title: "[QUESTION]: "
+labels: ["question", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Masz pytanie? Chętnie pomożemy! / Have a question? We're happy to help!
+
+        Przed zadaniem pytania sprawdź dokumentację:
+        Before asking, check the documentation:
+        - [README.md](../../README.md)
+        - [CLAUDE.md](../../CLAUDE.md)
+        - [SUPPORT.md](../../SUPPORT.md)
+        - [Existing Issues](../../issues)
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 Kategoria Pytania / Question Category
+      description: Jakiego obszaru dotyczy pytanie? / What area does your question relate to?
+      options:
+        - "🔧 Instalacja i Konfiguracja / Installation & Configuration"
+        - "💻 Rozwój / Development"
+        - "🎨 UI/UX / Design"
+        - "📱 Responsywność / Responsive"
+        - "🔌 Integracje / Integrations"
+        - "🐘 PHP / Backend"
+        - "💅 CSS/JavaScript / Frontend"
+        - "📊 SEO / Analytics"
+        - "♿ Dostępność / Accessibility"
+        - "🔒 Bezpieczeństwo / Security"
+        - "⚡ Wydajność / Performance"
+        - "📚 Dokumentacja / Documentation"
+        - "🤝 Współpraca / Contributing"
+        - "🌐 Deployment"
+        - "🔍 Inne / Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ Pytanie / Question
+      description: Zadaj swoje pytanie jasno i szczegółowo / Ask your question clearly and in detail
+      placeholder: |
+        Co chcesz wiedzieć?
+        What do you want to know?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 📋 Kontekst / Context
+      description: Opisz kontekst pytania / Describe the context of your question
+      placeholder: |
+        Co próbujesz osiągnąć?
+        Co już próbowałeś?
+
+        What are you trying to achieve?
+        What have you already tried?
+
+  - type: textarea
+    id: code
+    attributes:
+      label: 💻 Kod / Code
+      description: Jeśli dotyczy, dodaj fragment kodu / If applicable, add a code snippet
+      placeholder: |
+        ```php
+        // Twój kod tutaj
+        // Your code here
+        ```
+      render: php
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🖥️ Środowisko / Environment
+      description: Opisz swoje środowisko (jeśli istotne) / Describe your environment (if relevant)
+      placeholder: |
+        - PHP Version: 8.2
+        - OS: Windows 11
+        - Browser: Chrome 120
+        - Inne / Other:
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 🔍 Co Próbowałeś / What You've Tried
+      description: Jakie rozwiązania już wypróbowałeś? / What solutions have you already tried?
+      placeholder: |
+        1. Próbowałem...
+        2. Sprawdziłem...
+        3. Testowałem...
+
+        1. I tried...
+        2. I checked...
+        3. I tested...
+
+  - type: textarea
+    id: documentation
+    attributes:
+      label: 📚 Sprawdzona Dokumentacja / Checked Documentation
+      description: Jaką dokumentację już sprawdziłeś? / What documentation have you already checked?
+      placeholder: |
+        - [ ] README.md
+        - [ ] CLAUDE.md
+        - [ ] CONTRIBUTING.md
+        - [ ] SUPPORT.md
+        - [ ] Existing Issues
+        - [ ] Code comments
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: ⏰ Pilność / Urgency
+      description: Jak pilna jest odpowiedź? / How urgent is the answer?
+      options:
+        - "🔴 Pilne - blokuje pracę / Urgent - blocking work"
+        - "🟠 Ważne - potrzebne wkrótce / Important - needed soon"
+        - "🟡 Normalne - kiedy jest czas / Normal - when there's time"
+        - "🟢 Niska - ciekawość / Low - curiosity"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: experience
+    attributes:
+      label: 👤 Poziom Doświadczenia / Experience Level
+      description: Jaki jest twój poziom doświadczenia? / What is your experience level?
+      options:
+        - "🆕 Początkujący / Beginner"
+        - "📚 Średniozaawansowany / Intermediate"
+        - "🎓 Zaawansowany / Advanced"
+        - "💼 Profesjonalny / Professional"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-answer
+    attributes:
+      label: 💭 Oczekiwana Odpowiedź / Expected Answer
+      description: Jakiego rodzaju odpowiedzi szukasz? / What kind of answer are you looking for?
+      placeholder: |
+        - Przykład kodu / Code example
+        - Wyjaśnienie koncepcji / Concept explanation
+        - Link do dokumentacji / Link to documentation
+        - Najlepsze praktyki / Best practices
+        - Alternatywne podejście / Alternative approach
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Dodatkowy Kontekst / Additional Context
+      description: Inne informacje, które mogą być pomocne / Other information that may be helpful
+      placeholder: Dodaj inne istotne informacje / Add any other relevant information
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      description: Przed wysłaniem sprawdź / Before submitting, check
+      options:
+        - label: Przeszukałem istniejące Issues / I've searched existing issues
+          required: true
+        - label: Sprawdziłem dostępną dokumentację / I've checked available documentation
+          required: true
+        - label: Pytanie jest jasne i szczegółowe / The question is clear and detailed
+          required: true
+        - label: To jest pytanie, nie zgłoszenie błędu / This is a question, not a bug report
+          required: true

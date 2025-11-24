@@ -1,0 +1,74 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: mbstring, json, fileinfo
+        coverage: none
+
+    - name: Validate PHP syntax
+      run: find dist -name "*.php" -exec php -l {} \;
+
+    - name: Check file permissions
+      run: |
+        find dist -type f -name "*.php" -exec chmod 644 {} \;
+        find dist -type d -exec chmod 755 {} \;
+
+    - name: Deploy via rsync
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr --delete --exclude='.git' --exclude='logs/*' --exclude='.env' --exclude='node_modules'
+        path: dist/
+        remote_path: ${{ secrets.REMOTE_PATH }}
+        remote_host: ${{ secrets.REMOTE_HOST }}
+        remote_user: ${{ secrets.REMOTE_USER }}
+        remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Set correct permissions on server
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.REMOTE_HOST }}
+        username: ${{ secrets.REMOTE_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd ${{ secrets.REMOTE_PATH }}
+          sudo chown -R www-data:www-data .
+          sudo chmod -R 755 .
+          sudo chmod -R 775 logs
+          sudo chmod 644 config.php
+          sudo chmod 644 helpers.php
+
+    - name: Clear server cache (if applicable)
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.REMOTE_HOST }}
+        username: ${{ secrets.REMOTE_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          # Clear PHP OPcache
+          sudo systemctl reload php8.2-fpm || true
+          # Clear web server cache
+          sudo systemctl reload nginx || sudo systemctl reload apache2 || true
+
+    - name: Notify on success
+      if: success()
+      run: echo "✅ Deployment successful to ${{ secrets.REMOTE_HOST }}"
+
+    - name: Notify on failure
+      if: failure()
+      run: echo "❌ Deployment failed"

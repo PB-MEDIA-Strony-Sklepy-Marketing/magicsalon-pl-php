@@ -1,0 +1,86 @@
+{
+    "name": "pb-media/magicsalon-pl-php",
+    "description": "MAGIC SALON - Professional beauty salon website in PHP",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "beauty-salon",
+        "php",
+        "website",
+        "responsive",
+        "seo"
+    ],
+    "authors": [
+        {
+            "name": "PB MEDIA",
+            "email": "biuro@magicsalon.pl",
+            "homepage": "https://pbmediaonline.pl",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "biuro@magicsalon.pl",
+        "issues": "https://github.com/PB-MEDIA-Strony-Sklepy-Marketing/magicsalon-pl-php/issues",
+        "source": "https://github.com/PB-MEDIA-Strony-Sklepy-Marketing/magicsalon-pl-php"
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-mbstring": "*",
+        "ext-json": "*",
+        "ext-fileinfo": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.46",
+        "squizlabs/php_codesniffer": "^3.8"
+    },
+    "autoload": {
+        "files": [
+            "dist/config.php",
+            "dist/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-html coverage",
+        "analyse": "phpstan analyse dist",
+        "cs:check": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "phpcs": "phpcs --standard=PSR12 dist",
+        "phpcbf": "phpcbf --standard=PSR12 dist",
+        "lint": "find dist -name '*.php' -exec php -l {} \\;",
+        "qa": [
+            "@lint",
+            "@analyse",
+            "@cs:check",
+            "@test"
+        ]
+    },
+    "scripts-descriptions": {
+        "test": "Run PHPUnit tests",
+        "test:coverage": "Run tests with coverage report",
+        "analyse": "Run PHPStan static analysis",
+        "cs:check": "Check code style issues",
+        "cs:fix": "Fix code style issues automatically",
+        "phpcs": "Check PSR-12 compliance",
+        "phpcbf": "Fix PSR-12 issues automatically",
+        "lint": "Check PHP syntax errors",
+        "qa": "Run all quality assurance checks"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

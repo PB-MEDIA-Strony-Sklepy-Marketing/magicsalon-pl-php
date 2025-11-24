@@ -1,0 +1,17 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📚 Dokumentacja / Documentation
+    url: https://github.com/PB-MEDIA-Strony-Sklepy-Marketing/magicsalon-pl-php/blob/main/README.md
+    about: Sprawdź dokumentację projektu / Check project documentation
+
+  - name: 💬 Wsparcie / Support
+    url: https://github.com/PB-MEDIA-Strony-Sklepy-Marketing/magicsalon-pl-php/blob/main/SUPPORT.md
+    about: Uzyskaj pomoc i wsparcie / Get help and support
+
+  - name: 🔒 Bezpieczeństwo / Security
+    url: https://github.com/PB-MEDIA-Strony-Sklepy-Marketing/magicsalon-pl-php/blob/main/SECURITY.md
+    about: Zgłoś problem bezpieczeństwa / Report security issue
+
+  - name: 📧 Kontakt Email
+    url: mailto:biuro@magicsalon.pl
+    about: Skontaktuj się bezpośrednio z zespołem / Contact team directly

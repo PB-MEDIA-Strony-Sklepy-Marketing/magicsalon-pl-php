@@ -1,0 +1,155 @@
+name: 🐛 Zgłoszenie Błędu / Bug Report
+description: Zgłoś błąd lub problem w projekcie / Report a bug or issue in the project
+title: "[BUG]: "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Dziękujemy za zgłoszenie błędu! / Thanks for reporting a bug!
+
+        Wypełnij poniższy formularz, aby pomóc nam szybko zidentyfikować i naprawić problem.
+        Fill out the form below to help us quickly identify and fix the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Opis Błędu / Bug Description
+      description: Jasny i zwięzły opis problemu / A clear and concise description of the bug
+      placeholder: Co się stało? / What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Kroki do Odtworzenia / Steps to Reproduce
+      description: Jak odtworzyć ten problem? / How to reproduce this issue?
+      placeholder: |
+        1. Przejdź do '...'
+        2. Kliknij na '...'
+        3. Przewiń do '...'
+        4. Zobacz błąd
+
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll to '...'
+        4. See error
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Oczekiwane Zachowanie / Expected Behavior
+      description: Co powinno się stać? / What should happen?
+      placeholder: Opisz oczekiwane zachowanie / Describe expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Rzeczywiste Zachowanie / Actual Behavior
+      description: Co faktycznie się dzieje? / What actually happens?
+      placeholder: Opisz rzeczywiste zachowanie / Describe actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Zrzuty Ekranu / Screenshots
+      description: Jeśli dotyczy, dodaj zrzuty ekranu / If applicable, add screenshots
+      placeholder: Przeciągnij i upuść obrazy tutaj / Drag and drop images here
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🔥 Priorytet / Severity
+      description: Jak poważny jest ten błąd? / How severe is this bug?
+      options:
+        - "🔴 Krytyczny - strona nie działa / Critical - site broken"
+        - "🟠 Wysoki - główna funkcja nie działa / High - major feature broken"
+        - "🟡 Średni - drobny problem / Medium - minor issue"
+        - "🟢 Niski - kosmetyczny / Low - cosmetic"
+    validations:
+      required: true
+
+  - type: input
+    id: php-version
+    attributes:
+      label: 🐘 Wersja PHP / PHP Version
+      description: Jaka wersja PHP? / What PHP version?
+      placeholder: "np. / e.g. 8.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: 🌐 Przeglądarka / Browser
+      description: Jaka przeglądarka i wersja? / What browser and version?
+      placeholder: "np. / e.g. Chrome 120, Firefox 121, Safari 17"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: 💻 System Operacyjny / Operating System
+      description: Jaki system operacyjny? / What operating system?
+      placeholder: "np. / e.g. Windows 11, macOS 14, Ubuntu 22.04"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: 📱 Urządzenie / Device
+      description: Na jakim urządzeniu wystąpił problem? / On what device did the issue occur?
+      options:
+        - "🖥️ Desktop"
+        - "💻 Laptop"
+        - "📱 Mobile - iOS"
+        - "📱 Mobile - Android"
+        - "📱 Tablet - iOS"
+        - "📱 Tablet - Android"
+    validations:
+      required: true
+
+  - type: textarea
+    id: console-errors
+    attributes:
+      label: ⚠️ Błędy w Konsoli / Console Errors
+      description: Skopiuj błędy z konsoli przeglądarki (F12) / Copy errors from browser console (F12)
+      placeholder: Wklej błędy tutaj / Paste errors here
+      render: shell
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Dodatkowy Kontekst / Additional Context
+      description: Dodatkowe informacje o problemie / Additional information about the issue
+      placeholder: Dodaj inne istotne informacje / Add any other relevant information
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      description: Przed wysłaniem sprawdź / Before submitting, check
+      options:
+        - label: Przeszukałem istniejące Issues / I've searched existing issues
+          required: true
+        - label: Jest to błąd, nie prośba o nową funkcjonalność / This is a bug, not a feature request
+          required: true
+        - label: Mogę to odtworzyć na najnowszej wersji / I can reproduce this on the latest version
+          required: true
+        - label: Sprawdziłem dokumentację / I've checked the documentation
+          required: true

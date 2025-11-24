@@ -1,0 +1,183 @@
+name: ✨ Prośba o Nową Funkcjonalność / Feature Request
+description: Zaproponuj nową funkcjonalność dla projektu / Suggest a new feature for the project
+title: "[FEATURE]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Dziękujemy za sugestię! / Thanks for your suggestion!
+
+        Pomóż nam zrozumieć twoją propozycję nowej funkcjonalności.
+        Help us understand your proposed feature.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🎯 Problem / Problem
+      description: Jaki problem rozwiązuje ta funkcjonalność? / What problem does this feature solve?
+      placeholder: |
+        Opisz problem lub potrzebę, np.:
+        "Trudno jest..."
+        "Użytkownicy nie mogą..."
+
+        Describe the problem or need, e.g.:
+        "It's difficult to..."
+        "Users cannot..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Proponowane Rozwiązanie / Proposed Solution
+      description: Jak wyobrażasz sobie tę funkcjonalność? / How do you envision this feature?
+      placeholder: |
+        Opisz szczegółowo proponowane rozwiązanie...
+        Describe your proposed solution in detail...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Rozważane Alternatywy / Alternatives Considered
+      description: Czy rozważałeś inne rozwiązania? / Have you considered alternative solutions?
+      placeholder: |
+        Opisz alternatywne rozwiązania...
+        Describe alternative solutions...
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: ✅ Korzyści / Benefits
+      description: Jakie korzyści przyniesie ta funkcjonalność? / What benefits will this feature bring?
+      placeholder: |
+        - Poprawa UX
+        - Zwiększenie wydajności
+        - Lepsza dostępność
+
+        - Improved UX
+        - Better performance
+        - Better accessibility
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: 👥 Typ Użytkownika / User Type
+      description: Kto skorzysta z tej funkcjonalności? / Who will benefit from this feature?
+      options:
+        - "👤 Końcowi użytkownicy / End users"
+        - "👨‍💻 Deweloperzy / Developers"
+        - "📊 Administratorzy / Administrators"
+        - "🎨 Designerzy / Designers"
+        - "📱 Wszyscy / All"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 Priorytet / Priority
+      description: Jak ważna jest ta funkcjonalność? / How important is this feature?
+      options:
+        - "🔴 Krytyczny - potrzebne natychmiast / Critical - needed immediately"
+        - "🟠 Wysoki - bardzo przydatne / High - very useful"
+        - "🟡 Średni - nice to have / Medium - nice to have"
+        - "🟢 Niski - w przyszłości / Low - future consideration"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 Kategoria / Category
+      description: Jakiego obszaru dotyczy funkcjonalność? / What area does this feature relate to?
+      options:
+        - "🎨 UI/UX Design"
+        - "⚡ Wydajność / Performance"
+        - "♿ Dostępność / Accessibility"
+        - "🔒 Bezpieczeństwo / Security"
+        - "📱 Mobile / Responsive"
+        - "🔧 Backend / PHP"
+        - "💅 Frontend / CSS/JS"
+        - "🔌 Integracje / Integrations"
+        - "📊 SEO / Analytics"
+        - "📝 Content Management"
+        - "🌐 Internationalization"
+        - "📚 Dokumentacja / Documentation"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: 🎨 Mockupy / Mockups
+      description: Dodaj mockupy, szkice lub przykłady / Add mockups, sketches or examples
+      placeholder: Przeciągnij i upuść obrazy tutaj / Drag and drop images here
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: 🌟 Przykłady z Innych Stron / Examples from Other Sites
+      description: Linki do podobnych implementacji / Links to similar implementations
+      placeholder: |
+        - https://example.com/feature
+        - https://another-example.com
+
+  - type: textarea
+    id: technical
+    attributes:
+      label: 🔧 Uwagi Techniczne / Technical Notes
+      description: Informacje techniczne, które mogą pomóc w implementacji / Technical information that may help with implementation
+      placeholder: |
+        - Wymagane biblioteki / Required libraries
+        - Potencjalne wyzwania / Potential challenges
+        - Sugerowane podejście / Suggested approach
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📊 Wpływ na Projekt / Impact on Project
+      description: Jak ta funkcjonalność wpłynie na istniejący kod? / How will this feature impact existing code?
+      placeholder: |
+        - Czy wymaga zmian w istniejącym kodzie? / Does it require changes to existing code?
+        - Czy wpłynie na wydajność? / Will it affect performance?
+        - Czy będą breaking changes? / Will there be breaking changes?
+
+  - type: checkboxes
+    id: willingness
+    attributes:
+      label: 🙋 Gotowość do Pomocy / Willingness to Help
+      description: Czy jesteś gotów pomóc w implementacji? / Are you willing to help with implementation?
+      options:
+        - label: Mogę pomóc z implementacją / I can help with implementation
+        - label: Mogę pomóc z testowaniem / I can help with testing
+        - label: Mogę pomóc z dokumentacją / I can help with documentation
+        - label: Mogę pomóc z designem / I can help with design
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Dodatkowy Kontekst / Additional Context
+      description: Inne informacje, które mogą być pomocne / Other information that may be helpful
+      placeholder: Dodaj inne istotne informacje / Add any other relevant information
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      description: Przed wysłaniem sprawdź / Before submitting, check
+      options:
+        - label: Przeszukałem istniejące Issues / I've searched existing issues
+          required: true
+        - label: Ta funkcjonalność nie istnieje obecnie / This feature doesn't currently exist
+          required: true
+        - label: Jest to prośba o funkcjonalność, nie zgłoszenie błędu / This is a feature request, not a bug report
+          required: true
+        - label: Sprawdziłem dokumentację / I've checked the documentation
+          required: true

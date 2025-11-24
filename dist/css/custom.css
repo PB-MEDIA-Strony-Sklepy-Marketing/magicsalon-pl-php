@@ -2286,3 +2286,78 @@ a.btn-reserve:hover {
                     height: 100%;
                   }
                 }
+/* ==========================================================================
+   SafePilot - Responsywne klasy margin i padding
+   Bazowe wartości dla desktop (width >= 1107px)
+   ========================================================================== */
+
+/* Desktop - domyślne (width >= 1107px) */
+.margin-extech-shortcode-footer {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.padding-extech-shortcode-footer {
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.padding-extech-shortcode-footer2 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.margin-extech-shortcode {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+/* ==========================================================================
+   TABLET (768px - 1106px)
+   ========================================================================== */
+@media (max-width: 1600px) and (min-width: 1300px) {
+    .margin-extech-shortcode-footer {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .padding-extech-shortcode-footer {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .padding-extech-shortcode-footer2 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .margin-extech-shortcode {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+/* ==========================================================================
+   MOBILE (width < 768px)
+   ========================================================================== */
+@media (max-width: 1299px) {
+    .margin-extech-shortcode-footer {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .padding-extech-shortcode-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .padding-extech-shortcode-footer2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .margin-extech-shortcode {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
