@@ -297,7 +297,7 @@ include 'partials/head.php';
             </div>
             <!-- WELCOME COMPANY SECTION END -->
 
-                        <!-- OFERTA SECTION START -->
+            <!-- OFERTA SECTION START -->
             <?php
             // Definicja usług w PHP dla łatwiejszego zarządzania i generowania HTML
             // Kategorie: face, body, eyes, laser, other

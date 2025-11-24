@@ -69,27 +69,27 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <!-- INNER PAGE BANNER -->
-            <div class="wt-bnr-inr overlay-wraper" style="background-image:url(images/banner/gallery-banner.jpg);">
-                <div class="overlay-main bg-black opacity-07"></div>
-                <div class="container">
-                    <div class="wt-bnr-inr-entry">
-                        <h1 class="text-white">Galeria MAGIC SALON</h1>
-                    </div>
-                </div>
-            </div>
-            <!-- INNER PAGE BANNER END -->
-
-            <!-- BREADCRUMB ROW -->
-            <div class="bg-gray-light p-tb20">
-                <div class="container">
-                    <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
-                        <li>Galeria MAGIC SALON</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- BREADCRUMB  ROW END -->
+            <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla tej podstrony
+            $banner_img = 'images/banner/gallery-banner.jpg';
+            $page_title = 'Galeria MAGIC SALON';
+            $page_desc = 'Zapraszamy Cię do świata wyjątkowej estetyki, harmonii i relaksu, który codziennie tworzymy w naszym salonie. Galeria MAGIC SALON to przestrzeń pełna inspiracji i dowód na to, jak wiele można osiągnąć dzięki indywidualnie dobranym zabiegom, zaawansowanej technologii oraz oddanemu zespołowi profesjonalistów.';
+            $breadcrumbs = [
+                [
+                    'label' => 'Strona Główna',
+                    'url' => 'index.php',
+                    'icon' => 'fa fa-home'
+                ],
+                [
+                    'label' => 'Galeria MAGIC SALON',
+                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'icon' => ''
+                ]
+            ];
+            
+            // Załadowanie partiala
+            include 'partials/breadcrumbs.php';
+            ?>
 
             <!-- ABOUT COMPANY SECTION START -->
             <div class="section-full p-t80 p-b50">
