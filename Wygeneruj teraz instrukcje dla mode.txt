@@ -1,0 +1,84 @@
+Wygeneruj teraz instrukcje dla modelu AI. Ten model AI ma za zadanie przekonwertować pliki HTML szablonu strony na dynamiczne ze zmiennymi $ pliki PHP 8.5 szablonu strony. Ma pociąć template-parts na części <header> <footer> w party a następnie te party za pomocą include dodać w makiecie strukturze danej podstrony głównej PHP. Magic Salon - Salon kosmetyczny. MAGIC SALON – Twoje piękno, nasza pasja – odkryj magię profesjonalnej pielęgnacji! www.magicsalon.pl . Framework: [Bootstrap]. Konwersja plików HTML na PHP 8.5. Wygląd generowanych skryptów ma mieć wygląd premium. Stosuj odpowiednią kolorystykę pod brand: primary color - #6D356F, secondary color - #D7A54F, text color - #444444, background color - #ffffff, hover color - #9F5BA4. Pamiętaj o kontrastach i o zastosowaniu UI i UX przy projektowaniu. Dodawaj ładne przejścia, animacje, hovery, ikony, przyciski, ładną zgrabną czcionkę i font. Pamiętaj o WCAG 2.2. Projektuj na Systemy - Aplikacje CMS jak i statyczne HTML5. Font size używać rem.
+
+Przy tworzeniu treści, skup się żeby były one dobrze pozycjonujące, żeby firmy miała jak najwyższe pozycje w wynikach wyszukiwania. Stosuj najnowocześniejsze rozwiązania. Generuj gotowe kody do skopiowania i wklejenia jak i działaj na repozytorium i na plikach strony i wprowadzaj autonomicznie poprawki. Przed podaniem kodów, sprawdź ich działanie i debuguj w razie konieczności. Przeszukuj sieć bardzo dogłębnie i dokładnie na odpowiedzi do zapytań. Przeszukuj także wszystkie dostępne ogólnie repozytoria GitHub w celu odpowiedzi na zapytanie. Możesz też przeszukiwać repozytoria dostępne na GitHub. Dostosowuj wygenerowany kod do najnowszych standardów webowych i uwzględnij w nim pozycjonowanie Google. Strona jest stworzona w HTML5 + Bootstrap. 
+
+Dane kontaktowe: telefon: +48 883 481 581, biuro@magicsalon.pl.
+Nazwa firmy: Magic Salon - Salon kosmetyczny.
+Strony www: www.magicsalon.pl
+Adres salonu: ul. Borówkowa 13, 55-002 Dobrzykowice
+Rezerwacja wizyt poprzez Booksy.com - https://booksy.magicsalon.pl
+
+Menu oferta usług w salonie:
+Zabiegi na twarz
+	•	Glow & lift – 250 zł
+	•	Peeling kawitacyjny (twarz) – 120 zł
+	•	Peeling kawitacyjny (twarz + szyja i dekolt) – 150 zł
+Depilacja
+Depilacja laserowa:
+	•	Wąsik – 50 zł
+	•	Pachy – 150 zł
+	•	Plecy – 400 zł
+	•	Bikini klasyczne – 200 zł
+	•	Klatka mężczyźni – 250 zł
+	•	Przedramiona – 250 zł
+	•	Bikini francuskie – 250 zł
+	•	Klatka + brzuch mężczyźni – 400 zł
+	•	Bikini brazylijskie – 300 zł
+	•	Całe nogi – 450 zł
+	•	Broda – 50 zł
+	•	Łydki – 250 zł
+	•	Uda – 250 zł
+Depilacja woskiem:
+	•	Wąsik – 20 zł
+	•	Pachy – 50 zł
+	•	Broda – 20 zł
+Masaż
+	•	Roll & chill – 120 zł
+	•	Cool down roll – 120 zł
+Modelowanie ciała
+Detox & drenaż:
+	•	Ramiona – 120 zł
+	•	Uda + pośladki – 150 zł
+	•	Brzuch + boczki – 150 zł
+	•	Uda + łydki – 150 zł
+Modelowanie 360:
+	•	Ramiona – 200 zł
+	•	Pośladki – 250 zł
+	•	Uda – 250 zł
+	•	Brzuch + boczki – 250 zł
+Liposukcja ultradźwiękowa:
+	•	Pośladki – 150 zł
+	•	Ramiona – 120 zł
+	•	Uda – 120 zł
+	•	Brzuch + boczki – 150 zł
+Lipolaser:
+	•	Pośladki – 150 zł
+	•	Ramiona – 120 zł
+	•	Brzuch + boczki – 150 zł
+	•	Uda – 150 zł
+
+	•	Goodbye cellulite – 180 zł
+	•	Shape & lift:
+	•	Ramiona – 120 zł
+	•	Pośladki – 160 zł
+	•	Brzuch – 160 zł
+	•	Uda – 160 zł
+	•	Łydki – 160 zł
+Stylizacja brwi i rzęs
+Stylizacja rzęs:
+	•	Henna / farbka rzęs – 30 zł
+	•	Ściągnięcie rzęs po innej stylistce – 30 zł
+	•	Lifting + laminacja rzęs + farbka – 150 zł
+	•	Przedłużanie i zagęszczanie rzęs 1:1 – 120 zł
+	•	Przedłużanie i zagęszczanie rzęs 2D, 3D – 150 zł
+Stylizacja brwi:
+	•	Henna brwi z regulacją – 50 zł
+	•	Henna brwi z regulacją + henna rzęs – 65 zł
+	•	Laminacja + architektura + farbka brwi – 140 zł
+
+We wszystkich kodach CSS stosuj :root dla kolorów hex #, implementuj var(): :root {
+    --color-theme-primary: #6D356F;
+    --color-theme-secondary: #D7A54F;
+    --color-hover: #9F5BA4;
+--site-button-color: #222222;
+}
