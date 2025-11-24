@@ -2,7 +2,7 @@
 
 /**
  * MAGIC SALON - Strona główna (index.php)
- * Wersja: 2.2 - Poprawiono błędy konsoli i literówki
+ * Wersja: 2.1 - Naprawiono ścieżki i błędy
  */
 
 // Załaduj konfigurację
@@ -53,9 +53,8 @@ $meta = [
     ]
 ];
 
-// Załaduj head partial
-include 'partials/head.php'; 
-?>
+// Załaduj head partial - POPRAWIONA ŚCIEŻKA
+include 'partials/head.php'; ?>
 
 <body id="bg" class="home-page">
 
@@ -84,7 +83,6 @@ include 'partials/head.php';
                             <!-- MAIN IMAGE -->
                             <img src="images/main-slider/slider2/slide1.jpg" alt="Slider 1 Magic Salon" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
-
 
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption WebProduct-Title tp-resizeme"
@@ -581,7 +579,7 @@ include 'partials/head.php';
                     </div>
                     <div class="section-content text-center about-spa m-b30">
                         <p>
-                            MAGIC SALON to miejsce, gdzie najnowsze technologie spotykają się z indywidualnym podejściem do klienta. Wiemy, że każda osoba jest wyjątkowa, dlatego nasze zabiegi są precyzyjnie dobierane do potrzeb skóry, sylwetki i stylu życia naszych Klientów. Wyróżnia nas szeroka oferta zabiegów kosmetycznych, estetycznych i relaksacyjnych – wykonywanych wyłącznie przez certyfikowanych specjalistów z doświadczeniem.
+                            MAGIC SALON to miejsce, gdzie najnowsze technologie spotykają się z indywidualnym podejściem do klienta. Wiemy, że każda osoba jest wyjątkowa, dlategO firmieze zabiegi są precyzyjnie dobierane do potrzeb skóry, sylwetki i stylu życia naszych Klientów. Wyróżnia nas szeroka oferta zabiegów kosmetycznych, estetycznych i relaksacyjnych – wykonywanych wyłącznie przez certyfikowanych specjalistów z doświadczeniem.
                         </p>
                         <p>
                             Naszą misją jest nie tylko poprawa wyglądu, ale i samopoczucia – wierzymy, że piękno to równowaga ciała i ducha.
@@ -605,7 +603,7 @@ include 'partials/head.php';
                                     </div>
                                     <div class="icon-content">
                                         <h4 class="wt-tilte font-weight-500">Innowacyjne technologie</h4>
-                                        <p class="text-secondry">Korzystamy z najnowszych urządzeń i technologii, które zapewniają skuteczność i bezpieczeństwo naszych zabiegów. Dzięki zaawansowanym metodom, takim jak liposukcja ultradźwiękowa czy terapia mikrodrgań, osiągamy spektakularne efekty w krótkim czasie.</p>
+                                        <p class="text-secondry">Korzystamy z najnowszych urządzeń i technologii, które zapewniają skuteczność i bezpieczeństwO firmiezych zabiegów. Dzięki zaawansowanym metodom, takim jak liposukcja ultradźwiękowa czy terapia mikrodrgań, osiągamy spektakularne efekty w krótkim czasie.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1189,7 +1187,7 @@ include 'partials/head.php';
                             <div class="awesome-counter text-right">
                                 <h3 class="font-24 text-secondry">Odwiedź nas już dziś!</h3>
                                 <h2 class="font-60 font-weight-600"><span class="site-text-primary">Zarezerwuj swoją chwilę dla siebie – zasługujesz na to, co najlepsze. </span></h2>
-                                <p>Zapraszamy Cię do naszego salonu, gdzie możesz zadbać o siebie w atmosferze spokoju i pełnego komfortu. Nasza przestrzeń została stworzona z myślą o tym, by każdy klient poczuł się wyjątkowo od pierwszego kroku. Magiczna atmosfera, pachnące olejki, relaksacyjna muzyka i uśmiechnięty personel czekają na Ciebie.</p>
+                                <p>Zapraszamy Cię dO firmiezego salonu, gdzie możesz zadbać o siebie w atmosferze spokoju i pełnego komfortu. Nasza przestrzeń została stworzona z myślą o tym, by każdy klient poczuł się wyjątkowo od pierwszego kroku. Magiczna atmosfera, pachnące olejki, relaksacyjna muzyka i uśmiechnięty personel czekają na Ciebie.</p>
                             </div>
                             <div class="pull-right counter-small-1">
                                 <ul class="list-inline">
@@ -1457,14 +1455,14 @@ include 'partials/head.php';
                                     <p class="loader-text mt-3">Ładowanie systemu rezerwacji...</p>
                                 </div>
 
-                                <!-- Responsive Iframe - Updated permissions -->
+                                <!-- Responsive Iframe -->
                                 <iframe
                                     id="booksyFrame"
                                     src="https://magicsalon28.booksy.com"
                                     class="booksy-iframe"
                                     title="Rezerwacja online - Magic Salon"
                                     loading="lazy"
-                                    allow="autoplay; camera; microphone; geolocation; payment"
+                                    allow="geolocation; payment"
                                     referrerpolicy="no-referrer-when-downgrade"
                                     sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
                                     onload="hideLoader()">

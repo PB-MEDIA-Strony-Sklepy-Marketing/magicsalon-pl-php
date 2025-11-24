@@ -2,7 +2,7 @@
 
 /**
  * config.php - Zoptymalizowana konfiguracja MAGIC SALON
- * Wersja: 2.2 - Naprawiono nagłówki Permissions-Policy
+ * Wersja: 2.1 - Naprawiono wszystkie błędy
  * UWAGA: Zapisz ten plik jako UTF-8 BEZ BOM!
  */
 
@@ -76,10 +76,6 @@ if (!headers_sent()) {
     header('X-Frame-Options: SAMEORIGIN');
     header('X-XSS-Protection: 1; mode=block');
     header('Referrer-Policy: strict-origin-when-cross-origin');
-
-    // Permissions Policy - Naprawa błędów w konsoli
-    // Wyłączamy funkcje, które generują błędy "Unrecognized feature", a których nie używamy
-    header('Permissions-Policy: geolocation=(self "https://magicsalon28.booksy.com"), camera=(), microphone=(), payment=(), interest-cohort=(), browsing-topics=(), attribution-reporting=()');
 
     // Cache control dla HTML
     if (APP_ENV === 'production') {
