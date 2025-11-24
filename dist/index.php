@@ -502,7 +502,6 @@ include 'partials/head.php';
             </script>
             <!-- OFERTA SECTION END -->
 
-
             <!-- WELCOME SECTION START -->
             <div class="section-full p-t100 p-b70 bg-bottom-center bg-full-width bg-no-repeat" style="background-image:url(images/background/bg-1.png);">
                 <div class="container ">

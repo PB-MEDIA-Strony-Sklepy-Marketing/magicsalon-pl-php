@@ -1,54 +1,46 @@
 <?php
 
 /**
- * MAGIC SALON - Strona główna (index.php)
- * Wersja: 2.2 - Poprawiono błędy konsoli i literówki
+ * MAGIC SALON - Galeria (galeria.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony głównej
+// Konfiguracja meta tagów dla strony Galerii
 $meta = [
-    'title' => 'MAGIC SALON – Salon Kosmetyczny Dobrzykowice | Profesjonalne Zabiegi Beauty',
-    'description' => 'Profesjonalny salon kosmetyczny MAGIC SALON w Dobrzykowicach k. Wrocławia ✨ Zabiegi na twarz, depilacja laserowa, modelowanie sylwetki, lifting rzęs ⭐ Rezerwuj online przez Booksy!',
-    'keywords' => 'salon kosmetyczny dobrzykowice, beauty salon wrocław, depilacja laserowa, zabiegi na twarz, modelowanie ciała, lifting rzęs, magic salon, spa dobrzykowice',
-    'canonical' => BASE_URL . '/',
+    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
+    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
+    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
+    'canonical' => BASE_URL . '/galeria.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'MAGIC SALON – Profesjonalny Salon Kosmetyczny w Dobrzykowicach',
-        'description' => 'Odkryj magię profesjonalnej pielęgnacji w MAGIC SALON! Zabiegi na twarz, depilacja laserowa, modelowanie sylwetki. Umów wizytę online!',
-        'url' => BASE_URL . '/',
-        'image' => BASE_URL . '/images/og-image.jpg',
+        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
+        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
+        'url' => BASE_URL . '/galeria.php',
+        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'MAGIC SALON – Salon Kosmetyczny Dobrzykowice',
-        'description' => 'Profesjonalne zabiegi kosmetyczne w Dobrzykowicach k. Wrocławia',
+        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
+        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon',
-        'name' => 'MAGIC SALON',
-        'description' => 'Profesjonalny salon kosmetyczny oferujący zabiegi na twarz i ciało, depilację laserową, stylizację rzęs i brwi',
+        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
+        'name' => 'MAGIC SALON - Galeria',
+        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
+        'url' => BASE_URL . '/galeria.php',
         'telephone' => '+48883481581',
         'email' => 'biuro@magicsalon.pl',
-        'priceRange' => '20-450 PLN',
         'address' => [
             'streetAddress' => 'ul. Borówkowa 13',
             'postalCode' => '55-002',
             'addressLocality' => 'Dobrzykowice',
             'addressRegion' => 'Dolnośląskie',
             'addressCountry' => 'PL'
-        ],
-        'geo' => [
-            'latitude' => '51.0961',
-            'longitude' => '17.1994'
-        ],
-        'openingHours' => [
-            'Mo-Fr 09:00-20:00',
-            'Sa 09:00-18:00'
         ]
     ]
 ];
@@ -69,11 +61,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla tej podstrony
+                        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
             $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria MAGIC SALON';
-            $page_desc = 'Zapraszamy Cię do świata wyjątkowej estetyki, harmonii i relaksu, który codziennie tworzymy w naszym salonie. Galeria MAGIC SALON to przestrzeń pełna inspiracji i dowód na to, jak wiele można osiągnąć dzięki indywidualnie dobranym zabiegom, zaawansowanej technologii oraz oddanemu zespołowi profesjonalistów.';
+            $page_title = 'Galeria – Piękno w Obiektywie';
+            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
+            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -81,13 +74,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria MAGIC SALON',
+                    'label' => 'Galeria Realizacji',
                     'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie partiala
+            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
             include 'partials/breadcrumbs.php';
             ?>
 

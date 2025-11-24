@@ -66,7 +66,7 @@ include 'partials/head.php';
             // Upewnij się, że plik 'images/banner/about-banner.jpg' istnieje, lub użyj ogólnego banera
             $banner_img = 'images/banner/about-banner.jpg'; 
             $page_title = 'O Nas – Twoje Piękno, Nasza Pasja';
-            $page_desc = 'MAGIC SALON to miejsce, gdzie profesjonalizm spotyka się z atmosferą relaksu. Naszą misją jest wydobywanie naturalnego piękna dzięki połączeniu wiedzy, doświadczenia i nowoczesnych technologii.';
+            $page_desc = 'Magic Salon to więcej niż salon kosmetyczny – to miejsce, gdzie magia profesjonalnej pielęgnacji staje się rzeczywistością. Od pierwszego dnia naszej działalności w Dobrzykowicach stawiamy na najwyższą jakość usług, nowoczesny sprzęt i ciągły rozwój naszego zespołu. Specjalizujemy się w depilacji laserowej, zabiegach na twarz, modelowaniu ciała oraz stylizacji rzęs i brwi. Nasza filozofia? Twoje piękno, nasza pasja – to nie tylko hasło, ale codzienne zobowiązanie wobec każdego klienta, który przekracza próg naszego salonu.';
             
             $breadcrumbs = [
                 [
