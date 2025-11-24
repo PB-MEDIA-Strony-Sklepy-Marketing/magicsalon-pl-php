@@ -141,8 +141,8 @@ $main_menu = [
         'submenu' => [
             'col1' => [
                 [
-                    'title' => 'Epilacja laserowa',
-                    'url' => 'nasza-oferta/epilacja-laserowa.php',
+                    'title' => 'Glow & Lift',
+                    'url' => 'nasza-oferta/glow-lift.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
@@ -151,52 +151,8 @@ $main_menu = [
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
-                    'title' => 'Lifting i laminacja rzęs',
-                    'url' => 'nasza-oferta/lifting-i-laminacja-rzes.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ],
-                [
-                    'title' => 'Architektura i laminacja brwi',
-                    'url' => 'nasza-oferta/architektura-i-laminacja-brwi.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ],
-                [
-                    'title' => 'Detox & Drenaż',
-                    'url' => 'nasza-oferta/detox-drenaz.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ]
-            ],
-            'col2' => [
-                [
-                    'title' => 'Glow & Lift',
-                    'url' => 'nasza-oferta/glow-lift.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ],
-                [
-                    'title' => 'Modelowanie 360°',
-                    'url' => 'nasza-oferta/modelowanie-360.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ],
-                [
-                    'title' => 'Dermomasaż',
-                    'url' => 'nasza-oferta/dermomasaz.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ],
-                [
-                    'title' => 'Liposukcja ultradźwiękowa',
-                    'url' => 'nasza-oferta/liposukcja-ultradzwiekowa.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ],
-                [
-                    'title' => 'Lipolaser DUO',
-                    'url' => 'nasza-oferta/lipolaser-duo.php',
-                    'icon' => 'fa-solid fa-right-long'
-                ]
-            ],
-            'col3' => [
-                [
-                    'title' => 'SilkRoll',
-                    'url' => 'nasza-oferta/silkroll.php',
+                    'title' => 'Depilacja laserowa',
+                    'url' => 'nasza-oferta/depilacja-laserowa.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
@@ -205,8 +161,77 @@ $main_menu = [
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
-                    'title' => 'Przedłużanie i zagęszczanie rzęs',
-                    'url' => 'nasza-oferta/przedluzanie-i-zageszczanie-rzes.php',
+                    'title' => 'Detox & Drenaż',
+                    'url' => 'nasza-oferta/detox-drenaz.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Laminacja rzęs',
+                    'url' => 'nasza-oferta/laminacja-rzes.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ]
+            ],
+            'col2' => [
+                [
+                    'title' => 'Modelowanie 360°',
+                    'url' => 'nasza-oferta/modelowanie-360.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Liposukcja ultradźwiękowa jedna partia',
+                    'url' => 'nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Lipolaser jedna partia',
+                    'url' => 'nasza-oferta/lipolaser-jedna-partia.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Goodbye Cellulite',
+                    'url' => 'nasza-oferta/goodbye-cellulite.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Shape & Lift',
+                    'url' => 'nasza-oferta/shape-lift.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Laminacja brwi',
+                    'url' => 'nasza-oferta/laminacja-brwi.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ]
+            ],
+            'col3' => [
+                [
+                    'title' => 'Dermomasaż',
+                    'url' => 'nasza-oferta/dermomasaz.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Roll & Chill',
+                    'url' => 'nasza-oferta/roll-chill.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Coll Down Roll',
+                    'url' => 'nasza-oferta/coll-down-roll.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Stylizacja brwi',
+                    'url' => 'nasza-oferta/stylizacja-brwi.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Stylizacja rzęs',
+                    'url' => 'nasza-oferta/stylizacja-rzes.php',
+                    'icon' => 'fa-solid fa-right-long'
+                ],
+                [
+                    'title' => 'Laminacja brwi i rzęs',
+                    'url' => 'nasza-oferta/laminacja-brwi-i-rzes.php',
                     'icon' => 'fa-solid fa-right-long'
                 ]
             ]
