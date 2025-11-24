@@ -54,28 +54,20 @@ $meta = [
 ];
 
 // Załaduj head partial - POPRAWIONA ŚCIEŻKA
-$headFile = __DIR__ . DIRECTORY_SEPARATOR . 'partials' . DIRECTORY_SEPARATOR . 'head.php';
-if (file_exists($headFile)) {
-    require_once $headFile;
-} else {
-    die('ERROR: Brak pliku head.php. Oczekiwana ścieżka: ' . htmlspecialchars($headFile));
-}
+include 'partials/head.php'; ?>
 ?>
 
 <body id="bg" class="home-page">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K76PV6PD"
-            height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe>
-    </noscript>
+<!-- GOOGLE TAG MANAGER KOD DO BODY -->
+<?php include 'partials/GTMbodytag.php'; ?>
 
     <div class="page-wraper">
 
         <!-- HEADER START -->
 
         <!-- Header -->
-        <?php require_once __DIR__ . '/partials/header.php'; ?>
+        <?php include 'partials/header.php'; ?>
 
         <!-- HEADER END -->
 
@@ -1722,4 +1714,4 @@ if (file_exists($headFile)) {
         <!-- CONTENT END -->
 
         <!-- Footer -->
-        <?php require_once __DIR__ . '/partials/footer.php'; ?>
+        <?php include 'partials/footer.php'; ?>
