@@ -297,432 +297,210 @@ include 'partials/head.php';
             </div>
             <!-- WELCOME COMPANY SECTION END -->
 
-            <!-- OFERTA SECTION START  -->
-            <div class="section-full bg-gray p-t100 p-b70">
+                        <!-- OFERTA SECTION START -->
+            <?php
+            // Definicja usług w PHP dla łatwiejszego zarządzania i generowania HTML
+            // Kategorie: face, body, eyes, laser, other
+            $services = [
+                // TWARZ
+                [
+                    'title' => 'Glow & Lift',
+                    'category' => 'face',
+                    'cat_name' => 'Pielęgnacja Twarzy',
+                    'image' => 'images/our-services/large/s1.jpg',
+                    'url' => 'nasza-oferta/glow-lift.php',
+                    'desc' => 'Kompleksowa pielęgnacja twarzy łącząca oczyszczanie, regenerację i lifting. Idealna dla każdego typu cery.'
+                ],
+                [
+                    'title' => 'Peeling Kawitacyjny',
+                    'category' => 'face',
+                    'cat_name' => 'Oczyszczanie',
+                    'image' => 'images/our-services/large/s2.jpg',
+                    'url' => 'nasza-oferta/peeling-kawitacyjny.php',
+                    'desc' => 'Bezbolesne oczyszczanie skóry za pomocą ultradźwięków. Usuwa zanieczyszczenia i martwy naskórek.'
+                ],
+                // CIAŁO
+                [
+                    'title' => 'SilkRoll (Roll & Chill)',
+                    'category' => 'body',
+                    'cat_name' => 'Modelowanie Ciała',
+                    'image' => 'images/our-services/large/s3.jpg',
+                    'url' => 'nasza-oferta/roll-chill.php',
+                    'desc' => 'Masaż mechaniczny z podczerwienią. Redukuje cellulit, ujędrnia skórę i wspomaga odchudzanie.'
+                ],
+                [
+                    'title' => 'Modelowanie 360°',
+                    'category' => 'body',
+                    'cat_name' => 'Wyszczuplanie',
+                    'image' => 'images/our-services/large/s11.jpg',
+                    'url' => 'nasza-oferta/modelowanie-360.php',
+                    'desc' => 'Kompleksowy program łączący technologie dla maksymalnej redukcji tkanki tłuszczowej i poprawy konturu.'
+                ],
+                [
+                    'title' => 'Dermomasaż',
+                    'category' => 'body',
+                    'cat_name' => 'Antycellulit',
+                    'image' => 'images/our-services/large/s12.jpg',
+                    'url' => 'nasza-oferta/dermomasaz.php',
+                    'desc' => 'Masaż podciśnieniowy rozbijający tkankę tłuszczową i redukujący widoczność cellulitu.'
+                ],
+                [
+                    'title' => 'Liposukcja Ultradźwiękowa',
+                    'category' => 'body',
+                    'cat_name' => 'Modelowanie',
+                    'image' => 'images/our-services/large/s13.jpg',
+                    'url' => 'nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php',
+                    'desc' => 'Bezinwazyjna metoda redukcji tkanki tłuszczowej za pomocą fal ultradźwiękowych.'
+                ],
+                [
+                    'title' => 'Lipolaser Duo',
+                    'category' => 'body',
+                    'cat_name' => 'Wyszczuplanie',
+                    'image' => 'images/our-services/large/s14.jpg',
+                    'url' => 'nasza-oferta/lipolaser-jedna-partia.php',
+                    'desc' => 'Zimny laser biostymulujący naturalny proces rozpadu komórek tłuszczowych.'
+                ],
+                [
+                    'title' => 'Detox & Drenaż',
+                    'category' => 'body',
+                    'cat_name' => 'Zdrowie',
+                    'image' => 'images/our-services/large/s15.jpg',
+                    'url' => 'nasza-oferta/detox-drenaz.php',
+                    'desc' => 'Oczyszczenie organizmu z toksyn, redukcja obrzęków i poprawa krążenia limfatycznego.'
+                ],
+                // LASER I EPILACJA
+                [
+                    'title' => 'Epilacja Laserowa',
+                    'category' => 'laser',
+                    'cat_name' => 'Trwałe Usuwanie Włosów',
+                    'image' => 'images/our-services/large/s7.jpg',
+                    'url' => 'nasza-oferta/depilacja-laserowa.php',
+                    'desc' => 'Najskuteczniejsza metoda trwałego usuwania owłosienia przy użyciu lasera diodowego.'
+                ],
+                [
+                    'title' => 'Depilacja Woskiem',
+                    'category' => 'laser',
+                    'cat_name' => 'Depilacja',
+                    'image' => 'images/our-services/large/s8.jpg',
+                    'url' => 'nasza-oferta/depilacja-woskiem.php',
+                    'desc' => 'Klasyczna metoda usuwania zbędnego owłosienia zapewniająca gładką skórę na tygodnie.'
+                ],
+                // OPRAWA OCZU
+                [
+                    'title' => 'Laminacja i Lifting Rzęs',
+                    'category' => 'eyes',
+                    'cat_name' => 'Stylizacja Rzęs',
+                    'image' => 'images/our-services/large/s5.jpg',
+                    'url' => 'nasza-oferta/laminacja-rzes.php',
+                    'desc' => 'Podkręcenie, odżywienie i przyciemnienie naturalnych rzęs. Efekt otwartego oka.'
+                ],
+                [
+                    'title' => 'Architektura Brwi',
+                    'category' => 'eyes',
+                    'cat_name' => 'Stylizacja Brwi',
+                    'image' => 'images/our-services/large/s6.jpg',
+                    'url' => 'nasza-oferta/laminacja-brwi.php',
+                    'desc' => 'Idealny kształt i kolor brwi dobrany indywidualnie do rysów twarzy. Geometria i laminacja.'
+                ],
+                [
+                    'title' => 'Stylizacja Rzęs',
+                    'category' => 'eyes',
+                    'cat_name' => 'Przedłużanie',
+                    'image' => 'images/our-services/large/s10.jpg',
+                    'url' => 'nasza-oferta/stylizacja-rzes.php',
+                    'desc' => 'Profesjonalne przedłużanie i zagęszczanie rzęs metodami od 1:1 do dużych objętości.'
+                ]
+            ];
+            ?>
+
+            <div class="magic-premium-offer-section" id="oferta">
                 <div class="container">
-                    <!-- TITLE START-->
-                    <div class="section-head text-center">
-                        <h1><span class="site-text-primary">Nasze</span> usługi – piękno w każdej formie</h1>
-                        <div class="wt-separator-outer">
-                            <div class="wt-separator style-icon">
-                                <i class="fa fa-leaf text-black"></i>
-                                <span class="separator-left site-bg-primary"></span>
-                                <span class="separator-right site-bg-primary"></span>
-                            </div>
+                    
+                    <!-- Header -->
+                    <div class="magic-section-head">
+                        <h5 class="text-uppercase font-weight-600 text-primary-theme mb-2">Odkryj nasze możliwości</h5>
+                        <h2><span class="text-highlight">Kompleksowa</span> Oferta Usług</h2>
+                        <div class="magic-separator">
+                            <div class="magic-separator-line"></div>
+                            <i class="fa fa-leaf"></i>
+                            <div class="magic-separator-line"></div>
                         </div>
-                        <p>To miejsce, gdzie Twoje piękno staje się naszą pasją. Zaufaj profesjonalistom i odkryj magię pielęgnacji, która odmieni Twoje ciało i umysł! W MAGIC SALON oferujemy szeroki wachlarz nowoczesnych zabiegów, które zostały zaprojektowane z myślą o osobach wymagających – tych, którzy cenią sobie wysoką jakość, bezpieczeństwo i trwałe efekty.</p>
+                        <p style="max-width: 700px; margin: 0 auto; color: #666;">
+                            W MAGIC SALON oferujemy szeroki wachlarz nowoczesnych zabiegów, zaprojektowanych z myślą o Twoim pięknie i komforcie. Wybierz kategorię poniżej, aby znaleźć idealny zabieg dla siebie.
+                        </p>
                     </div>
-                    <!-- TITLE END-->
-                    <div class="section-content">
-                        <div class="owl-carousel our-pricing-carousel owl-btn-vertical-center owl-btn-hover nav nav-tabs">
 
-                            <!-- Block 1 -->
-                            <div class="item active-arrow active">
-                                <a data-bs-toggle="tab" href="#pricing-item1" class="tab-block">
-                                    <div class="our-pricing-tab  radius-sm bdr-1 bdr-gray">
-                                        <div class="wt-icon-box-wraper center p-lr10">
-                                            <div class="icon-lg m-b5">
-                                                <span class="icon-cell text-black"><i class="flaticon-people"></i></span>
-                                            </div>
-                                            <div class="icon-content">
-                                                <span class="wt-tilte text-uppercase p-b10 inline-block font-weight-600">Zabiegi na twarz</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Block 2 -->
-                            <div class="item">
-                                <a data-bs-toggle="tab" href="#pricing-item2" class="tab-block">
-                                    <div class="our-pricing-tab  radius-sm bdr-1 bdr-gray">
-                                        <div class="wt-icon-box-wraper center  p-lr10">
-                                            <div class="icon-lg m-b5">
-                                                <span class="icon-cell  text-black"><i class="flaticon-eye"></i></span>
-                                            </div>
-                                            <div class="icon-content">
-                                                <span class="wt-tilte text-uppercase p-b10 inline-block font-weight-600">Epilacja i pielęgnacja</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Block 3 -->
-                            <div class="item">
-                                <a data-bs-toggle="tab" href="#pricing-item3" class="tab-block">
-                                    <div class="our-pricing-tab  radius-sm bdr-1 bdr-gray">
-                                        <div class="wt-icon-box-wraper center  p-lr10">
-                                            <div class="icon-lg m-b5">
-                                                <span class="icon-cell  text-black"><i class="flaticon-female-hairs"></i></span>
-                                            </div>
-                                            <div class="icon-content">
-                                                <span class="wt-tilte text-uppercase p-b10 inline-block font-weight-600">Zabiegi na ciało</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                    <!-- Filter Buttons -->
+                    <div class="magic-filter-container">
+                        <button class="magic-filter-btn active" data-filter="all">Wszystkie</button>
+                        <button class="magic-filter-btn" data-filter="face">Twarz</button>
+                        <button class="magic-filter-btn" data-filter="body">Ciało</button>
+                        <button class="magic-filter-btn" data-filter="eyes">Oprawa Oczu</button>
+                        <button class="magic-filter-btn" data-filter="laser">Epilacja</button>
+                    </div>
 
-                        </div>
-
-                        <div class="tab-content m-b30">
-                            <!-- Block 1 -->
-                            <div id="pricing-item1" class="pricing-tab-content-block tab-pane active-arrow">
-                                <div class="section-content p-t50">
-                                    <!-- TABS DEFAULT NAV LEFT -->
-                                    <div class="wt-tabs vertical bg-tabs">
-                                        <ul class="nav nav-tabs">
-                                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#pricing-tab1-1">Glow & Lift</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab1-2">Peeling kawitacyjny</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab1-3">SilkRoll</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab1-5">Laminacja i lifting rzęs</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab1-6">Architektura i laminacja brwi</a></li>
-                                        </ul>
-                                        <div class="tab-content p-l50">
-
-                                            <div id="pricing-tab1-1" class="tab-pane active">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s1.jpg" alt="Glow & Lift">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Glow & Lift</h3>
-
-                                                                <p>Zabieg Glow & Lift to kompleksowa pielęgnacja twarzy, która łączy w sobie oczyszczające, regenerujące i liftingujące działanie.
-                                                                </p>
-                                                                <a href="nasza-oferta/glow-lift.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab1-2" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s2.jpg" alt="Peeling kawitacyjny">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Peeling kawitacyjny</h3>
-
-                                                                <p>Peeling kawitacyjny to nowoczesny, bezbolesny zabieg oczyszczania skóry, który wykorzystuje działanie ultradźwięków.
-                                                                </p>
-                                                                <a href="nasza-oferta/peeling-kawitacyjny.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab1-3" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s3.jpg" alt="SilkRoll">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">SilkRoll</h3>
-
-                                                                <p>Innowacyjny, nieinwazyjny zabieg łączący mikrodrgania, kompresję i światłoterapię LED, który kompleksowo oddziałuje na kondycję skóry oraz modelowanie sylwetki.
-                                                                </p>
-                                                                <a href="nasza-oferta/roll-chill.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab1-5" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s5.jpg" alt="Laminacja i lifting rzęs">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Laminacja i lifting rzęs</h3>
-
-                                                                <p>Lifting i laminacja rzęs z koloryzacją to doskonała alternatywa dla przedłużania rzęs, przeznaczona dla osób, które pragną podkreślić naturalne piękno swoich rzęs bez ich zagęszczania.
-                                                                </p>
-                                                                <a href="nasza-oferta/laminacja-rzes.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab1-6" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s6.jpg" alt="Architektura i laminacja brwi">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Architektura i laminacja brwi</h3>
-
-                                                                <p>Zadbane i odpowiednio ukształtowane brwi nadają twarzy wyrazistość i podkreślają naturalne piękno. Zabieg architektury i laminacji brwi z henną lub farbką pozwala uzyskać idealny kształt, objętość i kolor brwi, dostosowany do indywidualnych rysów twarzy.
-                                                                </p>
-                                                                <a href="nasza-oferta/laminacja-brwi.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                    <!-- Service Grid -->
+                    <div class="magic-offer-grid">
+                        <?php foreach ($services as $service): ?>
+                            <div class="magic-service-card animate-card" data-category="<?php echo $service['category']; ?>">
+                                <div class="magic-card-img-wrapper">
+                                    <img src="<?php echo $service['image']; ?>" alt="<?php echo $service['title']; ?>" class="magic-card-img">
+                                    <div class="magic-card-overlay"></div>
+                                </div>
+                                <div class="magic-card-content">
+                                    <div class="magic-card-category"><?php echo $service['cat_name']; ?></div>
+                                    <h3 class="magic-card-title"><?php echo $service['title']; ?></h3>
+                                    <p class="magic-card-desc"><?php echo $service['desc']; ?></p>
+                                    <a href="<?php echo $service['url']; ?>" class="magic-card-btn">
+                                        Szczegóły zabiegu <i class="fa fa-arrow-right"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <!-- Block 2 -->
-                            <div id="pricing-item2" class="pricing-tab-content-block tab-pane">
-                                <div class="section-content p-t50">
-                                    <!-- TABS DEFAULT NAV LEFT -->
-                                    <div class="wt-tabs vertical bg-tabs">
-                                        <ul class="nav nav-tabs">
-                                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#pricing-tab2-1">Epilacja laserowa</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab2-2">Depilacja woskiem</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab2-4">Przedłużanie i zagęszczanie rzęs</a></li>
-                                        </ul>
-                                        <div class="tab-content p-l50">
+                        <?php endforeach; ?>
+                    </div>
 
-                                            <div id="pricing-tab2-1" class="tab-pane active">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s7.jpg" alt="Epilacja laserowa">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Epilacja laserowa</h3>
-
-                                                                <p>Epilacja laserowa przy użyciu Trio Laser Medika to nowoczesna i niezwykle skuteczna metoda trwałego usuwania owłosienia. Dzięki zastosowaniu trzech długości fal laserowych w jednym impulsie, urządzenie precyzyjnie działa na różne głębokości skóry, eliminując zarówno powierzchowne, jak i głębiej osadzone cebulki włosów.
-                                                                </p>
-                                                                <a href="nasza-oferta/depilacja-laserowa.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab2-2" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s8.jpg" alt="Depilacja woskiem">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Depilacja woskiem</h3>
-
-                                                                <p>Depilacja woskiem to skuteczna i szybka metoda usuwania niechcianego owłosienia, pozwalająca na długotrwały efekt gładkiej skóry.
-                                                                </p>
-                                                                <a href="nasza-oferta/depilacja-woskiem.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab2-4" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s10.jpg" alt="Przedłużanie i zagęszczanie rzęs">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Przedłużanie i zagęszczanie rzęs</h3>
-
-                                                                <p>Przedłużanie i zagęszczanie rzęs to idealna propozycja dla kobiet, które marzą o wyrazistym spojrzeniu bez codziennego malowania.
-                                                                </p>
-                                                                <a href="nasza-oferta/stylizacja-rzes.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Block 3 -->
-                            <div id="pricing-item3" class="pricing-tab-content-block tab-pane">
-                                <div class="section-content p-t50">
-                                    <!-- TABS DEFAULT NAV LEFT -->
-                                    <div class="wt-tabs vertical bg-tabs">
-                                        <ul class="nav nav-tabs">
-                                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#pricing-tab3-1">Modelowanie sylwetki 360°</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab3-2">Dermomasaż podciśnieniowy</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab3-3">Liposukcja ultradźwiękowa</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab3-4">Lipolaser Duo</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pricing-tab3-5">Detox & Drenaż</a></li>
-                                        </ul>
-                                        <div class="tab-content p-l50">
-
-                                            <div id="pricing-tab3-1" class="tab-pane active">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s11.jpg" alt="Modelowanie sylwetki 360°">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Modelowanie sylwetki 360°</h3>
-
-                                                                <p>Kompleksowy program wyszczuplająco-modelujący, łączący nowoczesne technologie w celu uzyskania maksymalnych efektów redukcji tkanki tłuszczowej, ujędrnienia skóry oraz poprawy konturu ciała.
-                                                                </p>
-                                                                <a href="nasza-oferta/modelowanie-360.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab3-2" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s12.jpg" alt="Dermomasaż podciśnieniowy">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Dermomasaż podciśnieniowy</h3>
-
-                                                                <p>Nowoczesna i niezwykle skuteczna metoda walki z cellulitem, utratą jędrności oraz nagromadzoną tkanką tłuszczową.
-                                                                </p>
-                                                                <a href="nasza-oferta/dermomasaz.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab3-3" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s13.jpg" alt="Liposukcja ultradźwiękowa">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Liposukcja ultradźwiękowa</h3>
-
-                                                                <p>Liposukcja ultradźwiękowa to nowoczesna, bezinwazyjna metoda modelowania sylwetki i redukcji tkanki tłuszczowej, wykorzystująca działanie ultradźwięków.
-                                                                </p>
-                                                                <a href="nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab3-4" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s14.jpg" alt="Lipolaser Duo">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Lipolaser Duo</h3>
-
-                                                                <p>Nowoczesna, nieinwazyjna metoda redukcji tkanki tłuszczowej, oparta na działaniu tzw. zimnego lasera.
-                                                                </p>
-                                                                <a href="nasza-oferta/lipolaser-jedna-partia.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="pricing-tab3-5" class="tab-pane">
-                                                <div class="pricing-tab-inner">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-media">
-                                                                <img src="images/our-services/large/s15.jpg" alt="Detox & Drenaż">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-12">
-                                                            <div class="wt-tilte">
-                                                                <h3 class="font-26 font-weight-400">Detox & Drenaż</h3>
-
-                                                                <p>Kompleksowy zabieg łączący kilka nowoczesnych technologii, których celem jest oczyszczenie organizmu z toksyn, pobudzenie krążenia, redukcja obrzęków oraz poprawa jędrności i elastyczności skóry.
-                                                                </p>
-                                                                <a href="nasza-oferta/detox-drenaz.php" class="site-button skew-icon-btn radius-sm">
-                                                                    <span class="font-weight-700 inline-block text-uppercase p-lr15">Więcej o zabiegu</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                    <!-- Bottom CTA -->
+                    <div class="text-center mt-5">
+                        <a href="cennik.php" class="site-button radius-sm button-lg">
+                            <span class="font-weight-700 text-uppercase p-lr15">Zobacz pełny cennik</span>
+                        </a>
                     </div>
 
                 </div>
             </div>
-            <!-- OFERTA SECTION END  -->
+
+            <!-- Inline JS for Filtering logic (Lightweight) -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const filterBtns = document.querySelectorAll('.magic-filter-btn');
+                    const cards = document.querySelectorAll('.magic-service-card');
+
+                    filterBtns.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            // Remove active class from all buttons
+                            filterBtns.forEach(b => b.classList.remove('active'));
+                            // Add active class to clicked button
+                            btn.classList.add('active');
+
+                            const filterValue = btn.getAttribute('data-filter');
+
+                            cards.forEach(card => {
+                                // Reset animation
+                                card.classList.remove('animate-card');
+                                void card.offsetWidth; // trigger reflow
+
+                                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                                    card.classList.remove('hidden');
+                                    card.classList.add('animate-card');
+                                } else {
+                                    card.classList.add('hidden');
+                                }
+                            });
+                        });
+                    });
+                });
+            </script>
+            <!-- OFERTA SECTION END -->
 
 
             <!-- WELCOME SECTION START -->

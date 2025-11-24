@@ -1,63 +1,69 @@
-<!DOCTYPE html>
+<?php
 
-<html lang="pl-PL">
+/**
+ * MAGIC SALON - Strona główna (index.php)
+ * Wersja: 2.2 - Poprawiono błędy konsoli i literówki
+ */
 
-<head>
+// Załaduj konfigurację
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="galeria, zabiegi kosmetyczne, oferta salonu kosmetycznego, beauty spa, pielęgnacja twarzy, ciało, paznokcie, Magic Salon">
-    <meta name="author" content="MAGICSALON.pl - salon kosmetyczny">
-    <meta name="robots" content="index">
-    <meta name="description" content="Zapraszamy Cię do świata wyjątkowej estetyki, harmonii i relaksu, który codziennie tworzymy w naszym salonie. Galeria MAGIC SALON to przestrzeń pełna inspiracji i dowód na to, jak wiele można osiągnąć dzięki indywidualnie dobranym zabiegom, zaawansowanej technologii oraz oddanemu zespołowi profesjonalistów.">
+// Konfiguracja meta tagów dla strony głównej
+$meta = [
+    'title' => 'MAGIC SALON – Salon Kosmetyczny Dobrzykowice | Profesjonalne Zabiegi Beauty',
+    'description' => 'Profesjonalny salon kosmetyczny MAGIC SALON w Dobrzykowicach k. Wrocławia ✨ Zabiegi na twarz, depilacja laserowa, modelowanie sylwetki, lifting rzęs ⭐ Rezerwuj online przez Booksy!',
+    'keywords' => 'salon kosmetyczny dobrzykowice, beauty salon wrocław, depilacja laserowa, zabiegi na twarz, modelowanie ciała, lifting rzęs, magic salon, spa dobrzykowice',
+    'canonical' => BASE_URL . '/',
+    'robots' => 'index, follow, max-image-preview:large',
+    'og' => [
+        'type' => 'website',
+        'title' => 'MAGIC SALON – Profesjonalny Salon Kosmetyczny w Dobrzykowicach',
+        'description' => 'Odkryj magię profesjonalnej pielęgnacji w MAGIC SALON! Zabiegi na twarz, depilacja laserowa, modelowanie sylwetki. Umów wizytę online!',
+        'url' => BASE_URL . '/',
+        'image' => BASE_URL . '/images/og-image.jpg',
+    ],
+    'twitter' => [
+        'card' => 'summary_large_image',
+        'title' => 'MAGIC SALON – Salon Kosmetyczny Dobrzykowice',
+        'description' => 'Profesjonalne zabiegi kosmetyczne w Dobrzykowicach k. Wrocławia',
+    ],
+    'schema' => [
+        'enabled' => true,
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON',
+        'description' => 'Profesjonalny salon kosmetyczny oferujący zabiegi na twarz i ciało, depilację laserową, stylizację rzęs i brwi',
+        'telephone' => '+48883481581',
+        'email' => 'biuro@magicsalon.pl',
+        'priceRange' => '20-450 PLN',
+        'address' => [
+            'streetAddress' => 'ul. Borówkowa 13',
+            'postalCode' => '55-002',
+            'addressLocality' => 'Dobrzykowice',
+            'addressRegion' => 'Dolnośląskie',
+            'addressCountry' => 'PL'
+        ],
+        'geo' => [
+            'latitude' => '51.0961',
+            'longitude' => '17.1994'
+        ],
+        'openingHours' => [
+            'Mo-Fr 09:00-20:00',
+            'Sa 09:00-18:00'
+        ]
+    ]
+];
 
-    <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-
-    <!-- Podstawowe meta tagi -->
-    <title>Galeria – MAGIC SALON | Zabiegi na twarz, ciało i paznokcie</title>
-
-    <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/galeria.php" />
-
-    <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Galeria – MAGIC SALON | Zabiegi na twarz, ciało i paznokcie" />
-    <meta property="og:description" content="Zapraszamy Cię do świata wyjątkowej estetyki, harmonii i relaksu, który codziennie tworzymy w naszym salonie. Galeria MAGIC SALON to przestrzeń pełna inspiracji i dowód na to, jak wiele można osiągnąć dzięki indywidualnie dobranym zabiegom, zaawansowanej technologii oraz oddanemu zespołowi profesjonalistów." />
-    <meta property="og:url" content="https://magicsalon.pl/galeria.php" />
-    <meta property="og:image" content="/images/og-image.jpg" />
-    <meta property="og:site_name" content="MAGIC SALON" />
-    <meta property="og:locale" content="pl_PL" />
-    <meta property="fb:admins" content="464369106147391" />
-    <meta property="fb:app_id" content="464369106147391" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Galeria – MAGIC SALON | Zabiegi na twarz, ciało i paznokcie" />
-    <meta name="twitter:description" content="Zapraszamy Cię do świata wyjątkowej estetyki, harmonii i relaksu, który codziennie tworzymy w naszym salonie. Galeria MAGIC SALON to przestrzeń pełna inspiracji i dowód na to, jak wiele można osiągnąć dzięki indywidualnie dobranym zabiegom, zaawansowanej technologii oraz oddanemu zespołowi profesjonalistów." />
-    <meta name="twitter:image" content="/images/og-image.jpg" />
-    <meta name="twitter:site" content="@magicsalon" />
-
-    <?php include __DIR__ . '/partials/root/head-root-css.html'; ?>
-
-    <?php include __DIR__ . '/partials/root/head-root.html'; ?>
-
-</head>
+// Załaduj head partial
+include 'partials/head.php'; 
+?>
 
 <body id="bg">
 
     <div class="page-wraper">
 
         <!-- HEADER START -->
-        <header class="site-header header-style-8 mobile-sider-drawer-menu">
-
-            <?php include __DIR__ . '/partials/root/header-top-root.html'; ?>
-
-            <?php include __DIR__ . '/partials/root/main-nav-root.html'; ?>
-
-        </header>
+        <!-- Header -->
+        <?php include 'partials/header.php'; ?>
         <!-- HEADER END -->
 
         <!-- CONTENT START -->
@@ -561,10 +567,8 @@
 
         </div>
         <!-- CONTENT END -->
-
-        <?php include __DIR__ . '/partials/root/footer-root-columns.html'; ?>
-
-        <?php include __DIR__ . '/partials/root/footer-root.html'; ?>
+        <!-- Footer -->
+        <?php include 'partials/footer.php'; ?>
 
 </body>
 
