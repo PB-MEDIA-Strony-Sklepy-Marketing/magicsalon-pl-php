@@ -200,7 +200,8 @@ $meta['twitter']['description'] = $meta['twitter']['description'] ?? $meta['desc
     ?>
 
     <!-- Fix for Revolution Slider and Menu Issues -->
-    <link rel="stylesheet" href="fixes.css">
+    <link rel="stylesheet" href="css/fixes.css">
+    <link rel="stylesheet" href="css/booksy-iframe.css">
 
     <!-- Google Fonts -->
     <?php if (!empty($meta['google_fonts'])): ?>

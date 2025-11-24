@@ -1,0 +1,17 @@
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Uproszczona Permissions-Policy
+    Header set Permissions-Policy "geolocation=(self 'https://magicsalon28.booksy.com'), camera=(self), microphone=(self), payment=(self 'https://booksy.com'), fullscreen=(self)"
+</IfModule>
+
+# Enable CORS for Booksy
+<FilesMatch "\.(ttf|otf|eot|woff|woff2|svg|css|js)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>

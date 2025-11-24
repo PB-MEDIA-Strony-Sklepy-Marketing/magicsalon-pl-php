@@ -440,6 +440,7 @@ if (!function_exists('footer_url')) {
 <script src="<?php echo asset('js/booksy-embed.js'); ?>"></script>
 <script src="<?php echo asset('js/booksy-widget.js'); ?>"></script>
 <script src="<?php echo asset('js/whatsapp-ctc-chatbox.js'); ?>"></script>
+<script src="<?php echo asset('js/booksy-iframe-fix.js'); ?>"></script>
 
 <!-- POLITYKA PRYWATNOŚCI JS -->
 <script type="module" src="<?php echo asset('js/cookieconsent-config.js'); ?>"></script>
@@ -526,17 +527,41 @@ if (!function_exists('footer_url')) {
     });
 </script>
 
-<?php include('revolution-fixes.php'); ?>
+<?php include('partials/revolution-fixes.php'); ?>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K76PV6PD"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-        title="Google Tag Manager"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- Dodaj przed zamknięciem </body> w footer.php -->
+
+<!-- Booksy iframe fix -->
+<script src="<?php echo asset('js/booksy-iframe-fix.js'); ?>"></script>
+
+<!-- Dodatkowy inline script dla development -->
+<?php if (APP_ENV === 'development'): ?>
+<script>
+// Development helper - ignoruj błędy AdBlocka
+(function() {
+    const originalError = console.error;
+    console.error = function() {
+        const args = Array.from(arguments);
+        const errorString = args.join(' ');
+        
+        // Ignoruj błędy związane z AdBlockiem i rozszerzeniami
+        const ignoredErrors = [
+            'ERR_BLOCKED_BY_CLIENT',
+            'Failed to apply filter',
+            'Invalid flags supplied to RegExp',
+            'VM'
+        ];
+        
+        const shouldIgnore = ignoredErrors.some(error => errorString.includes(error));
+        
+        if (!shouldIgnore) {
+            originalError.apply(console, arguments);
+        }
+    };
+})();
+</script>
+<?php endif; ?>
+
 </body>
 
 </html>

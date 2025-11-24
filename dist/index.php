@@ -1426,112 +1426,114 @@ include 'partials/head.php';
             </div>
             <!-- OUR SPECIAL OFFER SECTION END  -->
 
-            <!-- Sekcja Rezerwacji Online - Booksy Embed -->
-            <section class="booksy-reservation-section" id="rezerwacja">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <!-- Nagłówek sekcji -->
-                            <div class="section-header text-center mb-4 mb-md-5">
-                                <h2 class="section-title">Zarezerwuj Swoją Wizytę Online</h2>
-                                <p class="section-subtitle">Wybierz termin i usługę w kilka sekund przez system Booksy</p>
-                            </div>
+<!-- Sekcja Rezerwacji Online - Booksy Embed -->
+<section class="booksy-reservation-section" id="rezerwacja">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <!-- Nagłówek sekcji -->
+                <div class="section-header text-center mb-4 mb-md-5">
+                    <h2 class="section-title">Zarezerwuj Swoją Wizytę Online</h2>
+                    <p class="section-subtitle">Wybierz termin i usługę w kilka sekund przez system Booksy</p>
+                </div>
 
-                            <script>
-                                // Funkcja do ukrywania loadera dla iframe Booksy
-                                function hideLoader() {
-                                    const loader = document.getElementById('iframeLoader');
-                                    if (loader) {
-                                        loader.style.display = 'none';
-                                    }
-                                }
-                            </script>
+                <!-- Kontener Iframe -->
+                <div class="booksy-iframe-wrapper">
+                    <!-- Loader Animation -->
+                    <div class="iframe-loader" id="iframeLoader">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Ładowanie...</span>
+                        </div>
+                        <p class="loader-text mt-3">Ładowanie systemu rezerwacji...</p>
+                    </div>
 
-                            <!-- Kontener Iframe -->
-                            <div class="booksy-iframe-wrapper">
-                                <!-- Loader Animation -->
-                                <div class="iframe-loader" id="iframeLoader">
-                                    <div class="spinner-border" role="status">
-                                        <span class="visually-hidden">Ładowanie...</span>
-                                    </div>
-                                    <p class="loader-text mt-3">Ładowanie systemu rezerwacji...</p>
-                                </div>
+                    <!-- Responsive Iframe z poprawionymi atrybutami -->
+                    <iframe
+                        id="booksyFrame"
+                        src="https://magicsalon28.booksy.com"
+                        class="booksy-iframe"
+                        title="Rezerwacja online - Magic Salon"
+                        loading="lazy"
+                        allow="geolocation *; camera *; microphone *; payment *; fullscreen *"
+                        allowfullscreen
+                        allowpaymentrequest
+                        referrerpolicy="no-referrer-when-downgrade"
+                        onload="hideLoader()"
+                        onerror="console.error('Iframe loading error')">
+                    </iframe>
+                    
+                    <!-- Fallback dla blokowanych iframe -->
+                    <noscript>
+                        <div class="text-center p-4 bg-light">
+                            <p>JavaScript jest wyłączony. Aby zarezerwować wizytę online, włącz JavaScript lub</p>
+                            <a href="https://booksy.magicsalon.pl" target="_blank" class="btn btn-primary">
+                                Otwórz Booksy w nowej karcie
+                            </a>
+                        </div>
+                    </noscript>
+                </div>
 
-                                <!-- Responsive Iframe - Updated permissions -->
-                                <iframe
-                                    id="booksyFrame"
-                                    src="https://magicsalon28.booksy.com"
-                                    class="booksy-iframe"
-                                    title="Rezerwacja online - Magic Salon"
-                                    loading="lazy"
-                                    allow="autoplay; camera; microphone; geolocation; payment"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                    sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
-                                    onload="hideLoader()">
-                                </iframe>
-                            </div>
+                <!-- Przycisk alternatywny -->
+                <div class="text-center mt-4">
+                    <a
+                        href="https://booksy.magicsalon.pl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary-magic btn-reservation-alt"
+                        aria-label="Otwórz rezerwację w nowym oknie">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-check me-2" viewBox="0 0 16 16">
+                            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
+                        Otwórz rezerwację w nowej karcie
+                    </a>
+                </div>
 
-                            <!-- Przycisk alternatywny -->
-                            <div class="text-center mt-4">
-                                <a
-                                    href="https://booksy.magicsalon.pl"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="btn btn-primary-magic btn-reservation-alt"
-                                    aria-label="Otwórz rezerwację w nowym oknie">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-check me-2" viewBox="0 0 16 16">
-                                        <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
-                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    Otwórz rezerwację w nowej karcie
-                                </a>
-                            </div>
-
-                            <!-- Info box -->
-                            <div class="reservation-info-box mt-4">
-                                <div class="row g-3">
-                                    <div class="col-md-4">
-                                        <div class="info-item">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="info-icon" viewBox="0 0 16 16">
-                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                            </svg>
-                                            <div class="info-content">
-                                                <h4>Rezerwacja 24/7</h4>
-                                                <p>Zarezerwuj wizytę o dowolnej porze</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="info-item">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="info-icon" viewBox="0 0 16 16">
-                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                            </svg>
-                                            <div class="info-content">
-                                                <h4>Natychmiastowe potwierdzenie</h4>
-                                                <p>Otrzymasz SMS i email z potwierdzeniem</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="info-item">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="info-icon" viewBox="0 0 16 16">
-                                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
-                                            </svg>
-                                            <div class="info-content">
-                                                <h4>Bezpieczne płatności</h4>
-                                                <p>Twoje dane są w pełni chronione</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!-- Info box -->
+                <div class="reservation-info-box mt-4">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="info-icon" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <div class="info-content">
+                                    <h4>Rezerwacja 24/7</h4>
+                                    <p>Zarezerwuj wizytę o dowolnej porze</p>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="info-icon" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                </svg>
+                                <div class="info-content">
+                                    <h4>Natychmiastowe potwierdzenie</h4>
+                                    <p>Otrzymasz SMS i email z potwierdzeniem</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="info-icon" viewBox="0 0 16 16">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                                </svg>
+                                <div class="info-content">
+                                    <h4>Bezpieczne płatności</h4>
+                                    <p>Twoje dane są w pełni chronione</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+
+            </div>
+        </div>
+    </div>
+</section>
 
             <!-- CONTACT US SECTION END  -->
             <div class="section-full p-t100 p-b70">

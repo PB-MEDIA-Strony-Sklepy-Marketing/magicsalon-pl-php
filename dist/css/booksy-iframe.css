@@ -1,0 +1,81 @@
+/* Booksy Iframe Styles */
+.booksy-reservation-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.booksy-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.booksy-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.iframe-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-color: #6D356F;
+    border-right-color: transparent;
+}
+
+.loader-text {
+    color: #6D356F;
+    font-weight: 500;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .booksy-iframe-wrapper {
+        height: 500px;
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .booksy-iframe-wrapper {
+        height: 450px;
+        min-height: 450px;
+        border-radius: 5px;
+    }
+}
+
+/* Fix dla pełnego ekranu */
+.booksy-iframe:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.booksy-iframe:-moz-full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.booksy-iframe:fullscreen {
+    width: 100%;
+    height: 100%;
+}
