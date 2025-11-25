@@ -1759,7 +1759,7 @@ a.btn-reserve:hover {
   }
 
   .nav-link {
-    color: #444444 !important;
+    color: #fff!important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 0.75rem 1rem !important;
   }
