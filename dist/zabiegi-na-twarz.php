@@ -6,7 +6,7 @@
  */
 
 // Załaduj konfigurację
-require_once __DIR__ . DIRECTORY_SEPARATOR . '../config.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
 // Konfiguracja meta tagów dla strony Galerii
 $meta = [
@@ -46,7 +46,7 @@ $meta = [
 ];
 
 // Załaduj head partial
-include '../partials/prev-head.php'; 
+include 'partials/head.php'; 
 ?>
 
 <body id="bg">
@@ -55,7 +55,7 @@ include '../partials/prev-head.php';
         	
         <!-- HEADER START -->
         <!-- Header -->
-        <?php include '../partials/prev-header.php'; ?>
+        <?php include 'partials/header.php'; ?>
         <!-- HEADER END -->
         
          <!-- CONTENT START -->
@@ -81,7 +81,7 @@ include '../partials/prev-head.php';
             ];
             
             // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
-            include '../partials/prev-breadcrumbs.php';
+            include 'partials/breadcrumbs.php';
             ?>   
             
             <!-- ABOUT COMPANY SECTION START -->
@@ -347,7 +347,7 @@ include '../partials/prev-head.php';
         <!-- CONTENT END -->
 
         <!-- Footer -->
-        <?php include '../partials/prev-footer.php'; ?>
+        <?php include 'partials/footer.php'; ?>
 
 </body>
 
