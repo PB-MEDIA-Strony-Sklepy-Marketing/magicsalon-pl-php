@@ -67,16 +67,28 @@ include 'partials/head.php'; ?>
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <!-- BREADCRUMB ROW -->
-            <div class="bg-gray-light p-tb20">
-                <div class="container">
-                    <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
-                        <li>Kontakt</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- BREADCRUMB ROW END -->
+            <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
+            $banner_img = 'images/banner/gallery-banner.jpg';
+            $page_title = 'Galeria – Piękno w Obiektywie';
+            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
+            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+            $breadcrumbs = [
+                [
+                    'label' => 'Strona Główna',
+                    'url' => 'index.php',
+                    'icon' => 'fa fa-home'
+                ],
+                [
+                    'label' => 'Galeria Realizacji',
+                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'icon' => ''
+                ]
+            ];
+            
+            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            include 'partials/breadcrumbs.php';
+            ?>
 
             <!-- ABOUT COMPANY SECTION START -->
             <div class="section-full m-t80">
@@ -253,9 +265,8 @@ include 'partials/head.php'; ?>
         </div>
         <!-- CONTENT END -->
 
-        <?php include __DIR__ . '/partials/root/footer-root-columns.html'; ?>
-
-        <?php include __DIR__ . '/partials/root/footer-root.html'; ?>
+        <!-- Footer -->
+        <?php include 'partials/footer.php'; ?>
 
 </body>
 

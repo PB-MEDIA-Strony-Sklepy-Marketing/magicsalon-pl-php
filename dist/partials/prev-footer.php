@@ -129,7 +129,7 @@ if (!function_exists('footer_url')) {
                     <div class="widget widget_about">
                         <h4 class="widget-title">O Magic Salon</h4>
                         <div class="logo-footer clearfix p-b15">
-                            <a href="<?php echo footer_url('index.php'); ?>"><img src="<?php echo asset('images/logo-7.png'); ?>" width="230" height="67" alt="Logo Magic Salon"></a>
+                            <a href="<?php echo footer_url('index.php'); ?>"><img src="<?php echo asset('../images/logo-7.png'); ?>" width="230" height="67" alt="Logo Magic Salon"></a>
                         </div>
                         <p>MAGIC SALON to nowoczesny salon kosmetyczny i beauty spa. Zabiegi na twarz i ciało, lasery medyczne, manicure, lifting rzęs i więcej – poczuj magię pielęgnacji!</p>
                     </div>
@@ -279,7 +279,7 @@ if (!function_exists('footer_url')) {
 <!-- WhatsApp Click-to-Chat Button -->
 <div class="custom-ctc-button" onclick="toggleCtcChatbox()" role="button" tabindex="0" aria-label="Otwórz czat WhatsApp">
     <div class="custom-ctc-icon">
-        <img src="<?php echo asset('images/svg/WhatsApp.svg'); ?>" alt="WhatsApp" width="32" height="32">
+        <img src="<?php echo asset('../images/svg/WhatsApp.svg'); ?>" alt="WhatsApp" width="32" height="32">
     </div>
 </div>
 
@@ -314,14 +314,14 @@ if (!function_exists('footer_url')) {
     </div>
 
     <div class="ctc_g_bottom">
-        <p><img draggable="false" role="img" class="emoji" alt="🟢" src="<?php echo asset('images/svg/1f7e2.svg'); ?>" width="10px" height="10px"> Online | <a href="<?php echo footer_url('polityka-prywatnosci-rodo.php'); ?>" target="_blank">Polityka prywatności & RODO</a></p>
+        <p><img draggable="false" role="img" class="emoji" alt="🟢" src="<?php echo asset('../images/svg/1f7e2.svg'); ?>" width="10px" height="10px"> Online | <a href="<?php echo footer_url('polityka-prywatnosci-rodo.php'); ?>" target="_blank">Polityka prywatności & RODO</a></p>
     </div>
 </div>
 
 <!-- Booksy Click to Chat -->
 <div class="booksy-ctc-button" onclick="toggleBooksyChatbox()" role="button" tabindex="0" aria-label="Otwórz czat Booksy">
     <div class="booksy-ctc-icon">
-        <img src="<?php echo asset('images/svg/booksyonlyicon.svg'); ?>" alt="Booksy" width="32" height="32" loading="lazy">
+        <img src="<?php echo asset('../images/svg/booksyonlyicon.svg'); ?>" alt="Booksy" width="32" height="32" loading="lazy">
     </div>
 </div>
 
@@ -414,32 +414,30 @@ if (!function_exists('footer_url')) {
 <!-- LOADING AREA END -->
 
 <!-- JAVASCRIPT FILES -->
-<script src="<?php echo asset('js/jquery-3.6.1.min.js'); ?>"></script><!-- JQUERY.MIN JS -->
-<script src="<?php echo asset('js/popper.min.js'); ?>"></script><!-- POPPER.MIN JS -->
-<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="<?php echo asset('js/bootstrap-select.min.js'); ?>"></script><!-- FORM JS -->
-<script src="<?php echo asset('js/jquery.bootstrap-touchspin.min.js'); ?>"></script><!-- FORM JS -->
-<script src="<?php echo asset('js/magnific-popup.min.js'); ?>"></script><!-- MAGNIFIC-POPUP JS -->
-<script src="<?php echo asset('js/waypoints.min.js'); ?>"></script><!-- WAYPOINTS JS -->
-<script src="<?php echo asset('js/counterup.min.js'); ?>"></script><!-- COUNTERUP JS -->
-<script src="<?php echo asset('js/waypoints-sticky.min.js'); ?>"></script><!-- COUNTERUP JS -->
-<script src="<?php echo asset('js/isotope.pkgd.min.js'); ?>"></script><!-- MASONRY -->
-<script src="<?php echo asset('js/imagesloaded.pkgd.min.js'); ?>"></script><!-- MASONRY -->
-<script src="<?php echo asset('js/owl.carousel.min.js'); ?>"></script><!-- OWL SLIDER -->
-<script src="<?php echo asset('js/scrolla.min.js'); ?>"></script><!-- ON SCROLL CONTENT ANIMATE -->
-<script src="<?php echo asset('js/custom.js'); ?>"></script><!-- CUSTOM FUNCTIONS -->
-<script src="<?php echo asset('js/shortcode.js'); ?>"></script><!-- SHORTCODE FUNCTIONS -->
-
+<script src="<?php echo asset('../js/jquery-3.6.1.min.js'); ?>"></script><!-- JQUERY.MIN JS -->
+<script src="<?php echo asset('../js/popper.min.js'); ?>"></script><!-- POPPER.MIN JS -->
+<script src="<?php echo asset('../js/bootstrap.min.js'); ?>"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="<?php echo asset('../js/bootstrap-select.min.js'); ?>"></script><!-- FORM JS -->
+<script src="<?php echo asset('../js/jquery.bootstrap-touchspin.min.js'); ?>"></script><!-- FORM JS -->
+<script src="<?php echo asset('../js/magnific-popup.min.js'); ?>"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="<?php echo asset('../js/waypoints.min.js'); ?>"></script><!-- WAYPOINTS JS -->
+<script src="<?php echo asset('../js/counterup.min.js'); ?>"></script><!-- COUNTERUP JS -->
+<script src="<?php echo asset('../js/waypoints-sticky.min.js'); ?>"></script><!-- COUNTERUP JS -->
+<script src="<?php echo asset('../js/isotope.pkgd.min.js'); ?>"></script><!-- MASONRY -->
+<script src="<?php echo asset('../js/imagesloaded.pkgd.min.js'); ?>"></script><!-- MASONRY -->
+<script src="<?php echo asset('../js/owl.carousel.min.js'); ?>"></script><!-- OWL SLIDER -->
+<script src="<?php echo asset('../js/scrolla.min.js'); ?>"></script><!-- ON SCROLL CONTENT ANIMATE -->
+<script src="<?php echo asset('../js/custom.js'); ?>"></script><!-- CUSTOM FUNCTIONS -->
+<script src="<?php echo asset('../js/shortcode.js'); ?>"></script><!-- SHORTCODE FUNCTIONS -->
 <!-- BOOKSY & WHATSAPP -->
-<script src="<?php echo asset('js/booksy-embed.js'); ?>"></script>
-<script src="<?php echo asset('js/booksy-widget.js'); ?>"></script>
-<script src="<?php echo asset('js/whatsapp-ctc-chatbox.js'); ?>"></script>
-<script src="<?php echo asset('js/booksy-iframe-fix.js'); ?>"></script>
+<script src="<?php echo asset('../js/booksy-embed.js'); ?>"></script>
+<script src="<?php echo asset('../js/booksy-widget.js'); ?>"></script>
+<script src="<?php echo asset('../js/whatsapp-ctc-chatbox.js'); ?>"></script>
+<script src="<?php echo asset('../js/booksy-iframe-fix.js'); ?>"></script>
 
 <!-- POLITYKA PRYWATNOŚCI JS -->
-<script type="module" src="<?php echo asset('js/cookieconsent-config.js'); ?>"></script>
-<script defer src="<?php echo asset('js/iframemanager.js'); ?>"></script>
-
+<script type="module" src="<?php echo asset('../js/cookieconsent-config.js'); ?>"></script>
+<script defer src="<?php echo asset('../js/iframemanager.js'); ?>"></script>
 <!-- Facebook SDK Initialization -->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v24.0&appId=464369106147391"></script>

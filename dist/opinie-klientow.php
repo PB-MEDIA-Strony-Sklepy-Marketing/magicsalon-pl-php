@@ -1,89 +1,88 @@
-<!DOCTYPE html>
+<?php
 
-<html lang="pl-PL">
+/**
+ * MAGIC SALON - Galeria (galeria.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ */
 
-<head>
+// Załaduj konfigurację
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="opinie klientów, zespół beauty, kosmetolog, spa, zabiegi estetyczne, Magic Salon">
-    <meta name="author" content="MAGICSALON.pl - salon kosmetyczny">
-    <meta name="robots" content="index">
-    <meta name="description" content="W MAGIC SALON najważniejsze jest Twoje zadowolenie. To właśnie dzięki naszym Klientkom i Klientom nieustannie się rozwijamy, doskonalimy nasze zabiegi i wzbogacamy ofertę o nowoczesne, skuteczne i bezpieczne rozwiązania w zakresie kosmetologii, pielęgnacji oraz estetyki twarzy i ciała.">
+// Konfiguracja meta tagów dla strony Galerii
+$meta = [
+    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
+    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
+    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
+    'canonical' => BASE_URL . '/galeria.php',
+    'robots' => 'index, follow, max-image-preview:large',
+    'og' => [
+        'type' => 'website',
+        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
+        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
+        'url' => BASE_URL . '/galeria.php',
+        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+    ],
+    'twitter' => [
+        'card' => 'summary_large_image',
+        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
+        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+    ],
+    'schema' => [
+        'enabled' => true,
+        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
+        'name' => 'MAGIC SALON - Galeria',
+        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
+        'url' => BASE_URL . '/galeria.php',
+        'telephone' => '+48883481581',
+        'email' => 'biuro@magicsalon.pl',
+        'address' => [
+            'streetAddress' => 'ul. Borówkowa 13',
+            'postalCode' => '55-002',
+            'addressLocality' => 'Dobrzykowice',
+            'addressRegion' => 'Dolnośląskie',
+            'addressCountry' => 'PL'
+        ]
+    ]
+];
 
-    <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-
-    <!-- Podstawowe meta tagi -->
-    <title>Opinie klientów – MAGIC SALON | Twoje piękno, nasza pasja</title>
-
-    <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/opinie-klientow.html" />
-
-    <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Opinie klientów – MAGIC SALON | Twoje piękno, nasza pasja" />
-    <meta property="og:description" content="W MAGIC SALON najważniejsze jest Twoje zadowolenie. To właśnie dzięki naszym Klientkom i Klientom nieustannie się rozwijamy, doskonalimy nasze zabiegi i wzbogacamy ofertę o nowoczesne, skuteczne i bezpieczne rozwiązania w zakresie kosmetologii, pielęgnacji oraz estetyki twarzy i ciała." />
-    <meta property="og:url" content="https://magicsalon.pl/opinie-klientow.html" />
-    <meta property="og:image" content="/images/og-image.jpg" />
-    <meta property="og:site_name" content="MAGIC SALON" />
-    <meta property="og:locale" content="pl_PL" />
-    <meta property="fb:admins" content="464369106147391" />
-    <meta property="fb:app_id" content="464369106147391" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Opinie klientów – MAGIC SALON | Twoje piękno, nasza pasja" />
-    <meta name="twitter:description" content="W MAGIC SALON najważniejsze jest Twoje zadowolenie. To właśnie dzięki naszym Klientkom i Klientom nieustannie się rozwijamy, doskonalimy nasze zabiegi i wzbogacamy ofertę o nowoczesne, skuteczne i bezpieczne rozwiązania w zakresie kosmetologii, pielęgnacji oraz estetyki twarzy i ciała." />
-    <meta name="twitter:image" content="/images/og-image.jpg" />
-    <meta name="twitter:site" content="@magicsalon" />
-
-    <?php include __DIR__ . '/partials/root/head-root-css.html'; ?>
-
-    <?php include __DIR__ . '/partials/root/head-root.html'; ?>
-
-</head>
+// Załaduj head partial
+include 'partials/head.php'; 
+?>
 
 <body id="bg">
 
     <div class="page-wraper">
 
         <!-- HEADER START -->
-        <header class="site-header header-style-8 mobile-sider-drawer-menu">
-
-            <?php include __DIR__ . '/partials/root/header-top-root.html'; ?>
-
-            <?php include __DIR__ . '/partials/root/main-nav-root.html'; ?>
-
-        </header>
+        <!-- Header -->
+        <?php include 'partials/header.php'; ?>
         <!-- HEADER END -->
 
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <!-- INNER PAGE BANNER -->
-            <div class="wt-bnr-inr overlay-wraper" style="background-image:url(images/banner/all.jpg);">
-                <div class="overlay-main bg-black opacity-07"></div>
-                <div class="container">
-                    <div class="wt-bnr-inr-entry">
-                        <h1 class="text-white">Opinie klientów</h1>
-                    </div>
-                </div>
-            </div>
-            <!-- INNER PAGE BANNER END -->
-
-            <!-- BREADCRUMB ROW -->
-            <div class="bg-gray-light p-tb20">
-                <div class="container">
-                    <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="index.html"><i class="fa fa-home"></i> Strona Główna</a></li>
-                        <li>Opinie klientów</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- BREADCRUMB ROW END -->
+            <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
+            $banner_img = 'images/banner/gallery-banner.jpg';
+            $page_title = 'Galeria – Piękno w Obiektywie';
+            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
+            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+            $breadcrumbs = [
+                [
+                    'label' => 'Strona Główna',
+                    'url' => 'index.php',
+                    'icon' => 'fa fa-home'
+                ],
+                [
+                    'label' => 'Galeria Realizacji',
+                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'icon' => ''
+                ]
+            ];
+            
+            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            include 'partials/breadcrumbs.php';
+            ?>
 
             <!-- ABOUT COMPANY SECTION START -->
             <div class="section-full p-t80 p-b50">
@@ -297,9 +296,8 @@
         </div>
         <!-- CONTENT END -->
 
-        <?php include __DIR__ . '/partials/root/footer-root-columns.html'; ?>
-
-        <?php include __DIR__ . '/partials/root/footer-root.html'; ?>
+        <!-- Footer -->
+        <?php include 'partials/footer.php'; ?>
 
 </body>
 

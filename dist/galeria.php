@@ -61,7 +61,7 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
 
-                        <?php
+        <?php
             // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
             $banner_img = 'images/banner/gallery-banner.jpg';
             $page_title = 'Galeria – Piękno w Obiektywie';
@@ -560,6 +560,7 @@ include 'partials/head.php';
 
         </div>
         <!-- CONTENT END -->
+         
         <!-- Footer -->
         <?php include 'partials/footer.php'; ?>
 
