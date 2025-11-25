@@ -1,8 +1,8 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta: Shape & Lift (oferta-shape-lift-claude-code.php)
- * Wersja: 1.0 - Kompleksowe ujędrnianie i modelowanie ciała
+ * MAGIC SALON - Oferta: Shape & Lift (oferta-shape-lift.php)
+ * Wersja: 2.4 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
@@ -10,28 +10,28 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
 // Konfiguracja meta tagów dla strony Shape & Lift
 $meta = [
-    'title' => 'Shape & Lift Dobrzykowice – Modelowanie Ciała EMS + RF | MAGIC SALON',
-    'description' => 'Shape & Lift - zaawansowane modelowanie sylwetki z EMS i falami RF. Wzrost mięśni o 16-20%, redukcja tłuszczu o 15-19%. Od 120 zł. Brak rekonwalescencji!',
-    'keywords' => 'shape lift dobrzykowice, modelowanie ciała wrocław, ems elektrostymulacja, fale radiowe rf, ujędrnianie ciała, lifting pośladków, brazilian butt lift, redukcja cellulitu, zabiegi na ciało, salon kosmetyczny dobrzykowice, magic salon',
-    'canonical' => BASE_URL . '/oferta-shape-lift-claude-code.php',
+    'title' => 'Shape & Lift – Modelowanie Sylwetki EMS, RF, Vacuum | MAGIC SALON',
+    'description' => 'Odkryj Shape & Lift w Magic Salon Dobrzykowice. 3 technologie w 1 zabiegu: EMS, RF i Vacuum. Skuteczne budowanie mięśni, spalanie tłuszczu i redukcja cellulitu. Sprawdź cennik!',
+    'keywords' => 'shape lift zabieg, modelowanie sylwetki dobrzykowice, ems elektrostymulacja wrocław, fale radiowe na ciało, vacuum drenaż, lifting pośladków, redukcja cellulitu, ujędrnianie ciała czernica',
+    'canonical' => BASE_URL . '/oferta-shape-lift.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Shape & Lift – Kompleksowe Modelowanie Ciała | MAGIC SALON',
-        'description' => 'Rewolucyjny zabieg łączący EMS, RF i masaż podciśnieniowy. Wzrost masy mięśniowej, redukcja tłuszczu, lifting pośladków bez skalpela!',
-        'url' => BASE_URL . '/oferta-shape-lift-claude-code.php',
-        'image' => BASE_URL . '/images/oferta-details/shape-lift-og.jpg',
+        'title' => 'Shape & Lift – Twoja Wymarzona Sylwetka',
+        'description' => 'Trzy technologie, jeden cel: perfekcyjne ciało. Połącz siłę mięśni, redukcję tłuszczu i jędrną skórę dzięki Shape & Lift. Bez skalpela i rekonwalescencji.',
+        'url' => BASE_URL . '/oferta-shape-lift.php',
+        'image' => BASE_URL . '/images/oferta-details/shape-lift-og.jpg', // Upewnij się, że ta grafika istnieje
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Shape & Lift – Modelowanie Ciała',
-        'description' => 'EMS + RF + Vacuum = Wyrzeźbiona sylwetka bez skalpela!',
+        'title' => 'Shape & Lift w MAGIC SALON',
+        'description' => 'EMS + RF + Vacuum. Kompleksowe modelowanie sylwetki w jednym zabiegu.',
     ],
     'schema' => [
         'enabled' => true,
         'type' => 'Service',
-        'name' => 'Shape & Lift – Kompleksowe Ujędrnianie i Modelowanie Ciała',
-        'description' => 'Innowacyjny zabieg łączący elektrostymulację EMS, fale radiowe RF i masaż podciśnieniowy do kompleksowego modelowania sylwetki.',
+        'name' => 'Zabieg Shape & Lift',
+        'description' => 'Zaawansowany zabieg na ciało łączący elektrostymulację EMS, fale radiowe (RF) oraz masaż podciśnieniowy (Vacuum) dla efektu liftingu, redukcji tłuszczu i budowy mięśni.',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -48,36 +48,37 @@ $meta = [
             '@type' => 'City',
             'name' => 'Dobrzykowice'
         ],
-        'offers' => [
-            [
-                '@type' => 'Offer',
-                'name' => 'Shape & Lift - Ramiona',
-                'price' => '120',
-                'priceCurrency' => 'PLN'
-            ],
-            [
-                '@type' => 'Offer',
-                'name' => 'Shape & Lift - Pośladki',
-                'price' => '160',
-                'priceCurrency' => 'PLN'
-            ],
-            [
-                '@type' => 'Offer',
-                'name' => 'Shape & Lift - Brzuch',
-                'price' => '160',
-                'priceCurrency' => 'PLN'
-            ],
-            [
-                '@type' => 'Offer',
-                'name' => 'Shape & Lift - Uda',
-                'price' => '160',
-                'priceCurrency' => 'PLN'
-            ],
-            [
-                '@type' => 'Offer',
-                'name' => 'Shape & Lift - Łydki',
-                'price' => '160',
-                'priceCurrency' => 'PLN'
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Modelowanie Sylwetki',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Shape & Lift - Ramiona',
+                        'price' => '120.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Shape & Lift - Brzuch',
+                        'price' => '160.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Shape & Lift - Pośladki',
+                        'price' => '160.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ]
             ]
         ]
     ]
@@ -98,10 +99,15 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content bg-white">
 
-        <?php
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
             $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Shape & Lift';
-            $page_desc = 'Odkryj moc profesjonalnego modelowania sylwetki – rewolucyjny zabieg łączący najnowocześniejsze technologie EMS, RF i Vacuum dla kompleksowej przemiany Twojego ciała!';
+            
+            $page_title = 'Shape & Lift – Rewolucja w Modelowaniu';
+            
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Shape & Lift to Twoja tajna broń w walce o perfekcyjną sylwetkę. Wyobraź sobie zabieg, który wykonuje pracę za Ciebie – stymuluje tysiące skurczów mięśni, jednocześnie ujędrniając skórę ciepłem fal radiowych i drenując toksyny. To kompleksowa terapia, która modeluje brzuch, unosi pośladki i wysmukla uda, dając efekty niemożliwe do osiągnięcia samą dietą czy standardowymi ćwiczeniami. Poczuj moc technologii w służbie Twojego piękna.';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -109,17 +115,18 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta',
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
                     'url' => 'oferta.php',
                     'icon' => 'fa fa-list'
                 ],
                 [
-                    'label' => 'Shape & Lift',
+                    'label' => 'Shape & Lift', // Element aktywny
                     'url' => '',
                     'icon' => ''
                 ]
             ];
-
+            
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
             ?>
 
@@ -720,7 +727,7 @@ include 'partials/head.php';
                     </div>
 
                     <div class="row justify-content-center">
-                        <div class="col-lg-10">
+                        <div class="col-lg-12">
                             <div class="accordion" id="faqAccordion">
                                 <!-- FAQ 1 -->
                                 <div class="accordion-item" style="border: none; margin-bottom: 20px;" data-aos="fade-up" data-aos-delay="0">
@@ -798,7 +805,7 @@ include 'partials/head.php';
             </div>
 
             <!-- Final CTA Section -->
-            <div style="background: linear-gradient(135deg, #6D356F 0%, #9F5BA4 100%); padding: 100px 0; position: relative; overflow: hidden;">
+            <div style="background: linear-gradient(135deg, #6D356F 0%, #6D356F 100%); padding: 100px 0; position: relative; overflow: hidden;">
                 <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
                 <div style="position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px; background: rgba(215,165,79,0.1); border-radius: 50%;"></div>
 
@@ -869,8 +876,8 @@ include 'partials/head.php';
     </div>
     <!-- page-wraper -->
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
     <script>
         AOS.init({
             duration: 800,

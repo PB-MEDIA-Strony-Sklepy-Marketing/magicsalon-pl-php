@@ -1,8 +1,8 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta: Laminacja Brwi
- * Wersja: 1.0 - Premium design z animacjami i efektami
+ * MAGIC SALON - Oferta: Laminacja Brwi (oferta-laminacja-brwi.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
@@ -10,28 +10,29 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
 // Konfiguracja meta tagów dla strony Laminacja Brwi
 $meta = [
-    'title' => 'Laminacja Brwi Dobrzykowice – Perfekcyjne Brwi na 6 Tygodni | MAGIC SALON',
-    'description' => 'Laminacja brwi z architekturą i farbką za 140 zł w Dobrzykowicach. Idealnie ułożone, gęste brwi na 4-6 tygodni. Profesjonalna stylizacja bez jazdy do Wrocławia.',
-    'keywords' => 'laminacja brwi dobrzykowice, laminacja brwi wrocław, architektura brwi, stylizacja brwi okolice wrocławia, brow lamination, lifting brwi, magic salon',
+    'title' => 'Laminacja Brwi z Geometrią i Farbką | MAGIC SALON Dobrzykowice',
+    'description' => 'Idealnie ułożone brwi na 6 tygodni. Kompleksowy zabieg laminacji z architekturą i farbowaniem w Magic Salon. Sprawdź efekt "brwi na mydełko"!',
+    'keywords' => 'laminacja brwi dobrzykowice, brow lamination wrocław, architektura brwi, geometria brwi, stylizacja brwi czernica, brwi na mydełko, farbowanie brwi',
+    // Canonical URL dla tej konkretnej usługi
     'canonical' => BASE_URL . '/oferta-laminacja-brwi.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Laminacja Brwi – Perfekcyjne Brwi na Tygodnie',
-        'description' => 'Kompleksowa laminacja brwi z architekturą i farbką. Idealnie ułożone, gęste brwi bez codziennej stylizacji. Efekt do 6 tygodni.',
+        'title' => 'Laminacja Brwi – Perfekcyjny Kształt i Objętość',
+        'description' => 'Zapomnij o niesfornych włoskach. Wybierz laminację brwi w Magic Salon i ciesz się idealną oprawą oczu przez wiele tygodni.',
         'url' => BASE_URL . '/oferta-laminacja-brwi.php',
-        'image' => BASE_URL . '/images/oferta/laminacja-brwi-og.jpg',
+        'image' => BASE_URL . '/images/oferta-details/laminacja-brwi-share.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
         'title' => 'Laminacja Brwi w MAGIC SALON',
-        'description' => 'Profesjonalna laminacja brwi z architekturą i farbką. Efekt do 6 tygodni.',
+        'description' => 'Trwałe ułożenie i odżywienie brwi. Sprawdź naszą ofertę.',
     ],
     'schema' => [
         'enabled' => true,
         'type' => 'Service',
-        'name' => 'Laminacja Brwi z Architekturą i Farbką',
-        'description' => 'Profesjonalny zabieg laminacji brwi polegający na trwałym ułożeniu i wyprostowaniu włosków brwi, w połączeniu z architekturą i farbowaniem.',
+        'name' => 'Laminacja i Architektura Brwi',
+        'description' => 'Zabieg trwałego modelowania brwi (brow lamination) połączony z geometrią, regulacją i farbowaniem.',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -46,28 +47,33 @@ $meta = [
             '@type' => 'City',
             'name' => 'Dobrzykowice'
         ],
-        'offers' => [
-            '@type' => 'Offer',
-            'price' => '140',
-            'priceCurrency' => 'PLN',
-            'availability' => 'https://schema.org/InStock',
-            'description' => 'Laminacja + architektura + farbka brwi'
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Stylizacja Brwi',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Pakiet Kompleksowy: Laminacja + Architektura + Farba',
+                        'price' => '140.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Henna Pudrowa z Geometrią'
+                    ]
+                ]
+            ]
         ]
-    ],
-    'styles' => [
-        'css/bootstrap.min.css',
-        'css/style.css',
-        'plugins/revolution/revolution/css/settings.css',
-        'plugins/revolution/revolution/css/layers.css',
-        'plugins/revolution/revolution/css/navigation.css',
-        'css/skin/skin-7.css',
-        'css/templete.css',
-        'plugins/aos/aos.css'
     ]
 ];
 
 // Załaduj head partial
-include 'partials/head.php';
+include 'partials/head.php'; 
 ?>
 
 <body id="bg">
@@ -75,17 +81,22 @@ include 'partials/head.php';
     <div class="page-wraper">
 
         <!-- HEADER START -->
+        <!-- Header -->
         <?php include 'partials/header.php'; ?>
         <!-- HEADER END -->
 
         <!-- CONTENT START -->
         <div class="page-content bg-white">
 
-        <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Laminacja Brwi';
-            $page_desc = 'Perfekcyjne brwi bez codziennej stylizacji. Profesjonalna laminacja z architekturą i farbką.';
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            
+            $page_title = 'Laminacja i Architektura Brwi';
+            
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Brwi to rama dla Twoich oczu – nadaj jej perfekcyjny kształt. Laminacja brwi w Magic Salon to więcej niż stylizacja; to kompleksowa terapia ujarzmiająca niesforne włoski, nadająca im objętość i wymarzony kierunek. Dzięki połączeniu z precyzyjną geometrią i profesjonalną koloryzacją, uzyskujemy efekt naturalnie gęstych, lśniących i idealnie ułożonych brwi, który utrzymuje się przez długie tygodnie.';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -93,19 +104,20 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta',
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
                     'url' => 'oferta.php',
                     'icon' => 'fa fa-list'
                 ],
                 [
-                    'label' => 'Laminacja Brwi',
-                    'url' => '',
+                    'label' => 'Laminacja Brwi', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
-
+            
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-        ?>
+            ?>
 
         <!--====== Start Main Content ======-->
 
@@ -258,7 +270,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80" style="background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(215, 165, 79, 0.1); color: #D7A54F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-list-ol me-2"></i>Krok po kroku
                         </span>
@@ -422,7 +434,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80 bg-white">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(109, 53, 111, 0.1); color: #6D356F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-users me-2"></i>Dla kogo?
                         </span>
@@ -516,7 +528,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80" style="background: linear-gradient(135deg, rgba(109, 53, 111, 0.03) 0%, rgba(215, 165, 79, 0.03) 100%);">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(215, 165, 79, 0.1); color: #D7A54F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-tag me-2"></i>Atrakcyjne ceny
                         </span>
@@ -530,7 +542,7 @@ include 'partials/head.php';
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="col-lg-6 col-md-6 mb-6" data-aos="zoom-in" data-aos-delay="0">
                         <div class="position-relative">
                             <div class="position-absolute" style="top: -15px; right: 30px; background: #D7A54F; color: #fff; padding: 8px 25px; border-radius: 50px; font-weight: 700; box-shadow: 0 8px 20px rgba(215, 165, 79, 0.4); z-index: 1; font-size: 14px;">
                                 BESTSELLER
@@ -582,7 +594,7 @@ include 'partials/head.php';
                         </div>
                     </div>
 
-                    <div class="col-lg-5 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="col-lg-6 col-md-6 mb-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="card h-100 border-0 shadow" style="border-radius: 30px; border: 2px solid rgba(109, 53, 111, 0.1);">
                             <div class="p-5">
                                 <div class="text-center mb-4">
@@ -627,7 +639,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80 bg-white">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(109, 53, 111, 0.1); color: #6D356F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-question-circle me-2"></i>FAQ
                         </span>
@@ -641,7 +653,7 @@ include 'partials/head.php';
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-9">
+                    <div class="col-lg-12">
                         <div class="accordion" id="faqAccordion">
 
                             <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden;" data-aos="fade-up" data-aos-delay="0">
@@ -735,17 +747,17 @@ include 'partials/head.php';
         </div>
 
         <!-- CTA Final -->
-        <div class="section-full p-t80 p-b80" style="background: linear-gradient(135deg, #6D356F 0%, #9F5BA4 50%, #D7A54F 100%); position: relative; overflow: hidden;">
+        <div class="section-full p-t80 p-b80" style="background: linear-gradient(135deg, #6D356F 0%, #6D356F 50%, #6D356F 100%); position: relative; overflow: hidden;">
             <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('images/background/pattern-dots.png'); opacity: 0.1;"></div>
 
             <div class="container position-relative">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center" data-aos="zoom-in">
+                    <div class="col-lg-12 text-center" data-aos="zoom-in">
                         <div class="mb-4">
                             <i class="fa fa-stars fa-4x text-white mb-3" style="opacity: 0.9;"></i>
                         </div>
                         <h2 class="mb-4 text-white" style="font-weight: 800; font-size: 48px;">
-                            Gotowa na perfekcyjne brwi?
+                            Gotowy na perfekcyjne brwi?
                         </h2>
                         <p class="lead text-white mb-5" style="opacity: 0.95; font-size: 22px; line-height: 1.6;">
                             Umów się na <strong>laminację brwi</strong> w Magic Salon i zapomnij o codziennej stylizacji.<br/>
@@ -809,14 +821,11 @@ include 'partials/head.php';
         </div>
         <!-- CONTENT END -->
 
-        <!-- Footer -->
-        <?php include 'partials/footer.php'; ?>
-
-    </div>
+    
 
     <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
     <script>
         AOS.init({
             duration: 800,
@@ -849,5 +858,8 @@ include 'partials/head.php';
         });
     </script>
 
+    <!-- Footer -->
+    <?php include 'partials/footer.php'; ?>
+</div>
 </body>
 </html>

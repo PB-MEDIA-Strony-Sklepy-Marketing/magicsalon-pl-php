@@ -1,8 +1,8 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta: Roll & Chill
- * Wersja: 1.0 - Premium design z diagonal sections i wave dividers
+ * MAGIC SALON - Oferta: Roll & Chill (oferta-roll-chill.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
@@ -10,28 +10,29 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
 // Konfiguracja meta tagów dla strony Roll & Chill
 $meta = [
-    'title' => 'Roll & Chill Dobrzykowice – Relaksujący Masaż Rolkowy | MAGIC SALON',
-    'description' => 'Roll & Chill - innowacyjny masaż rolkowy łączący modelowanie sylwetki z głębokim relaksem. Cena 120 zł. Redukcja cellulitu i odprężenie w jednym zabiegu.',
-    'keywords' => 'roll chill, rollmasaż wrocław, masaż na cellulit, drenaż limfatyczny, modelowanie sylwetki, salon kosmetyczny dobrzykowice, masaż rolkowy',
+    'title' => 'Roll & Chill – Masaż Rolkowy i Głęboki Relaks | MAGIC SALON',
+    'description' => 'Odkryj Roll & Chill w Dobrzykowicach. Innowacyjne połączenie rollmasażu, podczerwieni i głębokiego relaksu. Redukcja cellulitu, drenaż limfatyczny i odprężenie za 120 zł.',
+    'keywords' => 'roll chill, rollmasaż dobrzykowice, masaż rolkowy wrocław, drenaż limfatyczny, redukcja cellulitu, relaks wrocław, modelowanie sylwetki czernica, zabiegi na ciało, terapia podczerwienią',
+    // Canonical URL dla tej konkretnej usługi
     'canonical' => BASE_URL . '/oferta-roll-chill.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Roll & Chill – Masaż Rolkowy z Relaksem',
-        'description' => 'Skuteczny rollmasaż z podczerwienią. Redukcja cellulitu, modelowanie sylwetki i głęboka relaksacja. Zabieg 45-60 minut za 120 zł.',
+        'title' => 'Roll & Chill – Modelowanie i Relaks w Jednym',
+        'description' => 'Poczuj moc drewnianych rolek i ciepła podczerwieni. Skuteczna walka z cellulitem połączona z błogim relaksem. Sprawdź ofertę Magic Salon!',
         'url' => BASE_URL . '/oferta-roll-chill.php',
-        'image' => BASE_URL . '/images/oferta/roll-chill-og.jpg',
+        'image' => BASE_URL . '/images/oferta-details/rollchill.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
         'title' => 'Roll & Chill w MAGIC SALON',
-        'description' => 'Relaksujący masaż rolkowy z efektem modelującym.',
+        'description' => 'Masaż rolkowy z podczerwienią. Idealne połączenie efektów estetycznych i relaksu.',
     ],
     'schema' => [
         'enabled' => true,
         'type' => 'Service',
-        'name' => 'Roll & Chill - Masaż Rolkowy',
-        'description' => 'Innowacyjny zabieg łączący skuteczność rollmasażu z głębokim efektem relaksacyjnym. Masaż wykonywany przy użyciu drewnianych rolek z podczerwienią.',
+        'name' => 'Zabieg Roll & Chill',
+        'description' => 'Holistyczny zabieg na ciało łączący mechaniczny masaż rolkowy z terapią ciepłem (podczerwień), wspomagający redukcję cellulitu i głęboką relaksację.',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -46,27 +47,33 @@ $meta = [
             '@type' => 'City',
             'name' => 'Dobrzykowice'
         ],
-        'offers' => [
-            '@type' => 'Offer',
-            'price' => '120',
-            'priceCurrency' => 'PLN',
-            'availability' => 'https://schema.org/InStock'
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Masaże i Modelowanie Sylwetki',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Pojedyncza sesja Roll & Chill',
+                        'price' => '120.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Pakiet 10 zabiegów Roll & Chill'
+                    ]
+                ]
+            ]
         ]
-    ],
-    'styles' => [
-        'css/bootstrap.min.css',
-        'css/style.css',
-        'plugins/revolution/revolution/css/settings.css',
-        'plugins/revolution/revolution/css/layers.css',
-        'plugins/revolution/revolution/css/navigation.css',
-        'css/skin/skin-7.css',
-        'css/templete.css',
-        'plugins/aos/aos.css'
     ]
 ];
 
 // Załaduj head partial
-include 'partials/head.php';
+include 'partials/head.php'; 
 ?>
 
 <body id="bg">
@@ -80,11 +87,15 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content bg-white">
 
-        <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
             $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Roll & Chill';
-            $page_desc = 'Relaksujący masaż rolkowy z efektem modelującym. Połączenie skuteczności i odprężenia.';
+            
+            $page_title = 'Roll & Chill – Harmonia Ciała i Ducha';
+            
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Pozwól sobie na chwilę zapomnienia, dbając jednocześnie o swoją sylwetkę. Roll & Chill to unikalna ceremonia łącząca intensywny drenaż limfatyczny z kojącym ciepłem podczerwieni. To nie tylko walka z cellulitem i obrzękami, ale przede wszystkim głęboki reset dla ciała i umysłu w kameralnej atmosferze Magic Salon. Odzyskaj energię i lekkość, na którą zasługujesz.';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -92,17 +103,18 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta',
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
                     'url' => 'oferta.php',
                     'icon' => 'fa fa-list'
                 ],
                 [
-                    'label' => 'Roll & Chill',
+                    'label' => 'Roll & Chill', // Element aktywny
                     'url' => '',
                     'icon' => ''
                 ]
             ];
 
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
         ?>
 
@@ -112,7 +124,7 @@ include 'partials/head.php';
         <div class="section-full" style="position: relative; overflow: hidden; min-height: 700px;">
             <!-- Left side - Content -->
             <div class="row g-0">
-                <div class="col-lg-6 d-flex align-items-center" style="background: linear-gradient(135deg, #6D356F 0%, #9F5BA4 100%); min-height: 700px; position: relative; z-index: 2;">
+                <div class="col-lg-6 d-flex align-items-center padding-extech-shortcode-footer2" style="background: linear-gradient(135deg, #6D356F 0%, #9F5BA4 100%); min-height: 700px; position: relative; z-index: 2;">
                     <div class="container">
                         <div class="p-5" data-aos="fade-right" data-aos-duration="1000">
                             <div class="mb-4">
@@ -178,13 +190,13 @@ include 'partials/head.php';
                 </div>
 
                 <!-- Right side - Image with Overlay -->
-                <div class="col-lg-6" style="position: relative; min-height: 700px;">
+                <div class="col-lg-6 padding-extech-shortcode-footer2" style="position: relative; min-height: 700px;">
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/oferta/roll-chill-hero.jpg'); background-size: cover; background-position: center;">
                         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, #6D356F 0%, transparent 50%); opacity: 0.7;"></div>
                     </div>
 
                     <!-- Floating Card -->
-                    <div class="position-absolute" style="bottom: 50px; left: 50px; right: 50px; z-index: 10;" data-aos="fade-up" data-aos-delay="300">
+                    <div class="position-absolute padding-extech-shortcode-footer2" style="bottom: 50px; left: 50px; right: 50px; z-index: 10;" data-aos="fade-up" data-aos-delay="300">
                         <div class="p-4" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
                             <div class="row g-3 text-center">
                                 <div class="col-4">
@@ -220,7 +232,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80 bg-white">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(109, 53, 111, 0.1); color: #6D356F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-info-circle me-2"></i>O zabiegu
                         </span>
@@ -301,7 +313,7 @@ include 'partials/head.php';
             <div style="transform: skewY(3deg);">
                 <div class="container">
                     <div class="row justify-content-center mb-5">
-                        <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <div class="col-lg-12 text-center" data-aos="fade-up">
                             <span class="badge px-4 py-2 mb-3" style="background: rgba(255, 255, 255, 0.2); color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 50px; font-size: 14px;">
                                 <i class="fa fa-award me-2"></i>Wieloaspektowe działanie
                             </span>
@@ -489,7 +501,7 @@ include 'partials/head.php';
         <div class="section-full p-t120 p-b80 bg-white" style="margin-top: -50px;">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(215, 165, 79, 0.1); color: #D7A54F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-route me-2"></i>Krok po kroku
                         </span>
@@ -503,7 +515,7 @@ include 'partials/head.php';
                 </div>
 
                 <!-- Timeline -->
-                <div class="position-relative" style="max-width: 900px; margin: 0 auto;">
+                <div class="position-relative" style="max-width: 100%; margin: 0 auto;">
                     <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, #6D356F, #D7A54F); transform: translateX(-50%); z-index: 0;"></div>
 
                     <!-- Step 1 -->
@@ -593,7 +605,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80" style="background: linear-gradient(135deg, rgba(109, 53, 111, 0.03) 0%, rgba(215, 165, 79, 0.03) 100%);">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(215, 165, 79, 0.1); color: #D7A54F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-tag me-2"></i>Przystępne ceny
                         </span>
@@ -691,17 +703,17 @@ include 'partials/head.php';
         </div>
 
         <!-- CTA Final with Gradient -->
-        <div class="section-full p-t100 p-b100" style="background: linear-gradient(135deg, #6D356F 0%, #9F5BA4 50%, #D7A54F 100%); position: relative; overflow: hidden;">
+        <div class="section-full p-t100 p-b100" style="background: linear-gradient(135deg, #6D356F 0%, #6D356F 50%, #6D356F 100%); position: relative; overflow: hidden;">
             <!-- Animated circles -->
             <div style="position: absolute; top: -100px; left: -100px; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.05); border-radius: 50%; animation: float 6s ease-in-out infinite;"></div>
             <div style="position: absolute; bottom: -150px; right: -150px; width: 500px; height: 500px; background: rgba(255, 255, 255, 0.05); border-radius: 50%; animation: float 8s ease-in-out infinite reverse;"></div>
 
             <div class="container position-relative">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center" data-aos="zoom-in">
+                    <div class="col-lg-12 text-center" data-aos="zoom-in">
                         <i class="fa fa-spa fa-5x mb-4 text-white" style="opacity: 0.9;"></i>
                         <h2 class="mb-4 text-white" style="font-weight: 900; font-size: 48px; text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
-                            Gotowa na Roll & Chill?
+                            Gotowy na Roll & Chill?
                         </h2>
                         <p class="lead text-white mb-5" style="opacity: 0.95; font-size: 22px; line-height: 1.7;">
                             Połącz skuteczność modelowania z głębokim relaksem.<br/>
@@ -755,8 +767,8 @@ include 'partials/head.php';
     </div>
 
     <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
 
     <style>
         @keyframes float {
