@@ -1,53 +1,91 @@
 <?php
-require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'config.php';
 
+/**
+ * MAGIC SALON - Zabiegi na Twarz (zabiegi-na-twarz.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla podstrony
+ */
+
+// Załaduj konfigurację
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
+
+// Konfiguracja meta tagów dla strony Zabiegi na Twarz
 $meta = [
-    'title' => 'Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry - Blog MAGIC SALON',
-    'description' => 'Współczesna pielęgnacja skóry to coś więcej niż tylko codzienne nawilżanie. W dobie rosnącej świadomości o wpływie różnych czynników na stan naszej skóry, stawiamy na kompleksowe zabiegi kosmetyczne, które zapewniają spektakularne efekty i długotrwałe rezultaty.',
-    'keywords' => 'blog, zabiegi kosmetyczne, pielęgnacja skóry, Magic Salon, beauty spa, nowoczesne technologie',
-    'canonical' => BASE_URL . '/blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php',
+    'title' => 'Zabiegi na Twarz – Lifting, Oczyszczanie i Pielęgnacja | MAGIC SALON',
+    'description' => 'Profesjonalna pielęgnacja twarzy w Dobrzykowicach. Sprawdź naszą ofertę: Glow & Lift, peeling kawitacyjny, laminacja brwi i rzęs oraz terapie anti-aging. Przywróć skórze blask!',
+    'keywords' => 'zabiegi na twarz dobrzykowice, kosmetyczka wrocław, peeling kawitacyjny, lifting twarzy, laminacja brwi, glow and lift, oczyszczanie twarzy, zabiegi odmładzające',
+    'canonical' => BASE_URL . '/zabiegi-na-twarz.php',
+    'robots' => 'index, follow, max-image-preview:large',
     'og' => [
-        'title' => 'Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry',
-        'description' => 'Współczesna pielęgnacja skóry to coś więcej niż tylko codzienne nawilżanie. W dobie rosnącej świadomości o wpływie różnych czynników na stan naszej skóry, stawiamy na kompleksowe zabiegi kosmetyczne.',
-        'url' => BASE_URL . '/blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php',
-        'image' => BASE_URL . '/images/og-image.jpg'
+        'type' => 'website',
+        'title' => 'Zabiegi na Twarz – Twoja Cera w Dobrych Rękach',
+        'description' => 'Zadbaj o promienną cerę z MAGIC SALON. Oferujemy nowoczesne terapie liftingujące, nawilżające i regenerujące.',
+        'url' => BASE_URL . '/zabiegi-na-twarz.php',
+        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Zdjęcie reprezentujące główną usługę
+    ],
+    'twitter' => [
+        'card' => 'summary_large_image',
+        'title' => 'Profesjonalna Pielęgnacja Twarzy w MAGIC SALON',
+        'description' => 'Odkryj nasze zabiegi: Glow & Lift, SilkRoll i wiele więcej.',
+    ],
+    'schema' => [
+        'enabled' => true,
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON - Zabiegi na Twarz',
+        'description' => 'Specjalistyczne zabiegi kosmetyczne na twarz: oczyszczanie, nawilżanie, lifting i stylizacja oprawy oka.',
+        'url' => BASE_URL . '/zabiegi-na-twarz.php',
+        'telephone' => '+48883481581',
+        'email' => 'biuro@magicsalon.pl',
+        'address' => [
+            'streetAddress' => 'ul. Borówkowa 13',
+            'postalCode' => '55-002',
+            'addressLocality' => 'Dobrzykowice',
+            'addressRegion' => 'Dolnośląskie',
+            'addressCountry' => 'PL'
+        ]
     ]
 ];
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'partials' . DIRECTORY_SEPARATOR . 'head.php';
+// Załaduj head partial
+include 'partials/head.php'; 
 ?>
 
 <body id="bg">
 
     <div class="page-wraper">
 
-        <?php require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'partials' . DIRECTORY_SEPARATOR . 'header.php'; ?>
+        <!-- HEADER START -->
+        <!-- Header -->
+        <?php include 'partials/header.php'; ?>
+        <!-- HEADER END -->
 
         <!-- CONTENT START -->
         <div class="page-content">
 
-        	<!-- INNER PAGE BANNER START -->
-            <div class="wt-bnr-inr overlay-wraper" style="background-image:url(<?php echo asset('images/banner/blog-banner.jpg'); ?>);">
-            	<div class="overlay-main bg-black opacity-07"></div>
-                <div class="container">
-                    <div class="wt-bnr-inr-entry">
-                        <h1 class="text-white">Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry</h1>
-                    </div>
-                </div>
-            </div>
-            <!-- INNER PAGE BANNER END -->
-
-            <!-- BREADCRUMB ROW START -->
-            <div class="bg-gray-light p-tb20">
-            	<div class="container">
-                    <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="<?php echo BASE_URL; ?>/index.php"><i class="fa fa-home"></i> Strona Główna</a></li>
-                        <li><a href="<?php echo BASE_URL; ?>/o-nas/blog.php">Blog MAGIC SALON</a></li>
-                        <li><a href="<?php echo BASE_URL; ?>/blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php">Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- BREADCRUMB ROW END -->
+        	<?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zabiegi na Twarz
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            
+            $page_title = 'Pielęgnacja i Odmładzanie Twarzy';
+            
+            // Unikalny opis zachęcający do zadbania o cerę
+            $page_desc = 'Twoja twarz to Twoja wizytówka, która zasługuje na wyjątkową troskę. W MAGIC SALON oferujemy kompleksowe terapie dobrane do indywidualnych potrzeb Twojej skóry. Od głębokiego oczyszczania, przez intensywne nawilżanie, aż po zaawansowane zabiegi liftingujące – pomagamy wydobyć naturalne piękno, przywrócić blask i zachować młody wygląd na dłużej.';
+            
+            $breadcrumbs = [
+                [
+                    'label' => 'Strona Główna',
+                    'url' => 'index.php',
+                    'icon' => 'fa fa-home'
+                ],
+                [
+                    'label' => 'Zabiegi na twarz',
+                    'url' => '', // Pusty URL oznacza element aktywny
+                    'icon' => ''
+                ]
+            ];
+            
+            // Załadowanie dedykowanego partiala
+            include 'partials/breadcrumbs.php';
+            ?>
 
             <!-- SECTION CONTENT START -->
             <div class="section-full p-t80 p-b50">
@@ -133,7 +171,8 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'parti
         </div>
         <!-- CONTENT END -->
 
-        <?php require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'partials' . DIRECTORY_SEPARATOR . 'footer.php'; ?>
+        <!-- Footer -->
+        <?php include 'partials/footer.php'; ?>
 
     </div>
 

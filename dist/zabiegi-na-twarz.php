@@ -59,7 +59,7 @@ include 'partials/head.php';
         <!-- HEADER END -->
         
          <!-- CONTENT START -->
-        <div class="page-content  bg-white">
+        <div class="page-content bg-white">
         
         <?php
             // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zabiegi na Twarz
