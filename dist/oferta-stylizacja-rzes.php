@@ -1,37 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta (oferta.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Oferty
+ * MAGIC SALON - Oferta: Stylizacja Rzęs (oferta-stylizacja-rzes.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Oferty
+// Konfiguracja meta tagów dla strony Stylizacja Rzęs
 $meta = [
-    'title' => 'Oferta Zabiegów i Cennik Usług | MAGIC SALON Dobrzykowice',
-    'description' => 'Poznaj pełną ofertę MAGIC SALON. Nowoczesna kosmetologia, epilacja laserowa, modelowanie sylwetki, stylizacja rzęs i brwi. Sprawdź szczegóły naszych zabiegów i umów wizytę.',
-    'keywords' => 'oferta magic salon, zabiegi kosmetyczne dobrzykowice, cennik usług kosmetycznych, epilacja laserowa oferta, zabiegi na twarz wrocław, modelowanie sylwetki cennik',
-    'canonical' => BASE_URL . '/oferta.php',
+    'title' => 'Przedłużanie i Zagęszczanie Rzęs – Stylizacja Oka | MAGIC SALON',
+    'description' => 'Perfekcyjna stylizacja rzęs w Dobrzykowicach. Metody 1:1, objętościowe 2D-4D. Podkreśl swoje spojrzenie i zapomnij o tuszu. Umów wizytę w Magic Salon!',
+    'keywords' => 'przedłużanie rzęs dobrzykowice, zagęszczanie rzęs wrocław, rzęsy 1:1, metody objętościowe rzęsy, stylistka rzęs czernica, rzęsy objętościowe, magic salon rzęsy',
+    // Canonical URL dla tej konkretnej usługi
+    'canonical' => BASE_URL . '/oferta-stylizacja-rzes.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Oferta Zabiegów – Piękno i Relaks w MAGIC SALON',
-        'description' => 'Kompleksowa pielęgnacja twarzy i ciała. Sprawdź naszą ofertę zabiegową i wybierz idealne rozwiązanie dla siebie.',
-        'url' => BASE_URL . '/oferta.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Reprezentatywne zdjęcie usługi
+        'title' => 'Przedłużanie Rzęs – Spojrzenie Pełne Blasku',
+        'description' => 'Marzysz o długich i gęstych rzęsach? Wybierz profesjonalną stylizację w Magic Salon. Indywidualny dobór metody i spektakularny efekt.',
+        'url' => BASE_URL . '/oferta-stylizacja-rzes.php',
+        'image' => BASE_URL . '/images/oferta-details/przedluzanieizageszczanierzes.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Oferta MAGIC SALON – Twoje Piękno w Dobrych Rękach',
-        'description' => 'Zobacz jakie zabiegi oferujemy w naszym salonie w Dobrzykowicach.',
+        'title' => 'Stylizacja Rzęs w MAGIC SALON',
+        'description' => 'Przedłużanie i zagęszczanie rzęs. Metody 1:1 oraz objętościowe.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'Service', // Schema dla usług
-        'name' => 'Usługi Kosmetyczne MAGIC SALON',
-        'description' => 'Szeroki zakres usług kosmetycznych: zabiegi na twarz, ciało, laseroterapia i stylizacja oprawy oka.',
+        'type' => 'Service',
+        'name' => 'Przedłużanie i Zagęszczanie Rzęs',
+        'description' => 'Profesjonalny zabieg stylizacji rzęs polegający na doklejaniu rzęs syntetycznych do naturalnych metodami 1:1 lub objętościowymi.',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -40,6 +41,37 @@ $meta = [
                 'postalCode' => '55-002',
                 'addressLocality' => 'Dobrzykowice',
                 'addressCountry' => 'PL'
+            ]
+        ],
+        'areaServed' => [
+            '@type' => 'City',
+            'name' => 'Dobrzykowice'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Stylizacja Rzęs',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Przedłużanie Rzęs Metoda 1:1'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Przedłużanie Rzęs Metody Objętościowe (2D-8D)'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Uzupełnianie Rzęs'
+                    ]
+                ]
             ]
         ]
     ]
@@ -61,13 +93,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content  bg-white">
         
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Oferta
-            $banner_img = 'images/banner/gallery-banner.jpg'; // Jeśli masz dedykowany baner np. 'offer-banner.jpg', użyj go tutaj
-            $page_title = 'Nasza Oferta Zabiegowa';
-            // Unikalny opis, budujący wizerunek ekspercki i zachęcający do eksploracji usług
-            $page_desc = 'W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem do pielęgnacji. Nasza oferta to starannie wyselekcjonowane zabiegi na twarz i ciało, które nie tylko poprawiają wygląd, ale także przywracają równowagę i dobre samopoczucie. Niezależnie od tego, czy szukasz spektakularnej metamorfozy, czy chwili głębokiego relaksu – znajdziesz tu rozwiązanie skrojone na miarę Twoich potrzeb.';
-            
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Stylizacja Rzęs';
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Oczy są zwierciadłem duszy, a rzęsy ich najpiękniejszą oprawą. W Magic Salon tworzymy spojrzenia, które hipnotyzują. Nasza usługa przedłużania i zagęszczania rzęs to nie tylko zabieg kosmetyczny, to sztuka dopasowania stylizacji do Twojej urody i stylu życia. Niezależnie od tego, czy pragniesz naturalnego efektu "mascara look", czy spektakularnej objętości na wielkie wyjście – gwarantujemy precyzję, trwałość i bezpieczeństwo aplikacji.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -75,15 +106,20 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta Usług',
-                    'url' => '', // Element aktywny
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
+                    'url' => 'oferta.php',
+                    'icon' => 'fa fa-list'
+                ],
+                [
+                    'label' => 'Przedłużanie Rzęs', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (korzystamy z wersji breadcrumbs-botttom-header.php dla spójności)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-            ?> 
+            ?>  
                               
             <!-- SECTION CONTENT -->         
             <div class="section-full  p-t80 p-b50  ">

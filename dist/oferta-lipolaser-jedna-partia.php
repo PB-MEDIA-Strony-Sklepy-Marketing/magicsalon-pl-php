@@ -1,37 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta (oferta.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Oferty
+ * MAGIC SALON - Oferta: Lipolaser Jedna Partia (oferta-lipolaser-jedna-partia.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Oferty
+// Konfiguracja meta tagów dla strony Lipolaser - Jedna Partia
 $meta = [
-    'title' => 'Oferta Zabiegów i Cennik Usług | MAGIC SALON Dobrzykowice',
-    'description' => 'Poznaj pełną ofertę MAGIC SALON. Nowoczesna kosmetologia, epilacja laserowa, modelowanie sylwetki, stylizacja rzęs i brwi. Sprawdź szczegóły naszych zabiegów i umów wizytę.',
-    'keywords' => 'oferta magic salon, zabiegi kosmetyczne dobrzykowice, cennik usług kosmetycznych, epilacja laserowa oferta, zabiegi na twarz wrocław, modelowanie sylwetki cennik',
-    'canonical' => BASE_URL . '/oferta.php',
+    'title' => 'Lipolaser na Wybraną Partię Ciała – Precyzyjne Wyszczuplanie | MAGIC SALON',
+    'description' => 'Skuteczna redukcja tłuszczu z konkretnego obszaru: brzuch, uda, ramiona lub pośladki. Lipolaser w Dobrzykowicach to bezinwazyjna metoda modelowania sylwetki. Sprawdź!',
+    'keywords' => 'lipolaser jedna partia, miejscowe odchudzanie, redukcja tłuszczu z brzucha, wyszczuplanie ud, zimny laser wrocław, zabiegi na boczki, modelowanie sylwetki dobrzykowice',
+    // Canonical URL dla tej konkretnej usługi
+    'canonical' => BASE_URL . '/oferta-lipolaser-jedna-partia.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Oferta Zabiegów – Piękno i Relaks w MAGIC SALON',
-        'description' => 'Kompleksowa pielęgnacja twarzy i ciała. Sprawdź naszą ofertę zabiegową i wybierz idealne rozwiązanie dla siebie.',
-        'url' => BASE_URL . '/oferta.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Reprezentatywne zdjęcie usługi
+        'title' => 'Lipolaser – Skuteczne Uderzenie w Tłuszcz',
+        'description' => 'Wybierz jeden obszar i zobacz różnicę. Precyzyjne modelowanie sylwetki zimnym laserem w Magic Salon. Bez bólu, bez skalpela.',
+        'url' => BASE_URL . '/oferta-lipolaser-jedna-partia.php',
+        'image' => BASE_URL . '/images/oferta-details/lipolaserduo.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Oferta MAGIC SALON – Twoje Piękno w Dobrych Rękach',
-        'description' => 'Zobacz jakie zabiegi oferujemy w naszym salonie w Dobrzykowicach.',
+        'title' => 'Lipolaser na jedną partię ciała w MAGIC SALON',
+        'description' => 'Celowane wyszczuplanie problematycznych stref.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'Service', // Schema dla usług
-        'name' => 'Usługi Kosmetyczne MAGIC SALON',
-        'description' => 'Szeroki zakres usług kosmetycznych: zabiegi na twarz, ciało, laseroterapia i stylizacja oprawy oka.',
+        'type' => 'Service',
+        'name' => 'Zabieg Lipolaser na jedną partię ciała',
+        'description' => 'Bezinwazyjny zabieg redukcji tkanki tłuszczowej zimnym laserem, koncentrujący się na jednym wybranym obszarze (np. brzuch, uda).',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -40,6 +41,37 @@ $meta = [
                 'postalCode' => '55-002',
                 'addressLocality' => 'Dobrzykowice',
                 'addressCountry' => 'PL'
+            ]
+        ],
+        'areaServed' => [
+            '@type' => 'City',
+            'name' => 'Dobrzykowice'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Modelowanie Sylwetki',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Lipolaser Brzuch'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Lipolaser Uda'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Lipolaser Ramiona'
+                    ]
+                ]
             ]
         ]
     ]
@@ -61,13 +93,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content  bg-white">
         
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Oferta
-            $banner_img = 'images/banner/gallery-banner.jpg'; // Jeśli masz dedykowany baner np. 'offer-banner.jpg', użyj go tutaj
-            $page_title = 'Nasza Oferta Zabiegowa';
-            // Unikalny opis, budujący wizerunek ekspercki i zachęcający do eksploracji usług
-            $page_desc = 'W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem do pielęgnacji. Nasza oferta to starannie wyselekcjonowane zabiegi na twarz i ciało, które nie tylko poprawiają wygląd, ale także przywracają równowagę i dobre samopoczucie. Niezależnie od tego, czy szukasz spektakularnej metamorfozy, czy chwili głębokiego relaksu – znajdziesz tu rozwiązanie skrojone na miarę Twoich potrzeb.';
-            
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Lipolaser – Jedna Partia Ciała';
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Masz jeden konkretny cel? Skupiamy się na tym, co dla Ciebie najważniejsze. Zabieg lipolasera na wybraną partię ciała to precyzyjne uderzenie w lokalnie nagromadzoną tkankę tłuszczową. To idealne rozwiązanie dla osób, które chcą wymodelować brzuch, wyszczuplić uda lub zredukować "boczki", zachowując przy tym pełen komfort i bezpieczeństwo. Skoncentrowana energia zimnego lasera działa dokładnie tam, gdzie tego potrzebujesz.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -75,15 +106,20 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta Usług',
-                    'url' => '', // Element aktywny
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
+                    'url' => 'oferta.php',
+                    'icon' => 'fa fa-list'
+                ],
+                [
+                    'label' => 'Lipolaser (1 partia)', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (korzystamy z wersji breadcrumbs-botttom-header.php dla spójności)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-            ?> 
+            ?>  
                               
             <!-- SECTION CONTENT -->         
             <div class="section-full  p-t80 p-b50  ">

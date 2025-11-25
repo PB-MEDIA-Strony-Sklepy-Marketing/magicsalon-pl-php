@@ -1,37 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta (oferta.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Oferty
+ * MAGIC SALON - Oferta: Architektura i Laminacja Brwi (oferta-laminacja-brwi-i-rzes.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi stylizacji oprawy oka
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Oferty
+// Konfiguracja meta tagów dla strony Architektura i Laminacja Brwi
 $meta = [
-    'title' => 'Oferta Zabiegów i Cennik Usług | MAGIC SALON Dobrzykowice',
-    'description' => 'Poznaj pełną ofertę MAGIC SALON. Nowoczesna kosmetologia, epilacja laserowa, modelowanie sylwetki, stylizacja rzęs i brwi. Sprawdź szczegóły naszych zabiegów i umów wizytę.',
-    'keywords' => 'oferta magic salon, zabiegi kosmetyczne dobrzykowice, cennik usług kosmetycznych, epilacja laserowa oferta, zabiegi na twarz wrocław, modelowanie sylwetki cennik',
-    'canonical' => BASE_URL . '/oferta.php',
+    'title' => 'Architektura i Laminacja Brwi – Perfekcyjna Oprawa Oka | MAGIC SALON',
+    'description' => 'Idealne brwi bez codziennego malowania? Sprawdź architekturę i laminację brwi w Magic Salon Dobrzykowice. Geometria, regulacja, henna i farbka. Umów się na stylizację!',
+    'keywords' => 'laminacja brwi dobrzykowice, architektura brwi wrocław, stylizacja brwi, henna pudrowa, geometria brwi, regulacja brwi, kosmetyczka czernica, lami brwi',
+    // Canonical URL dla tej konkretnej usługi
+    'canonical' => BASE_URL . '/oferta-laminacja-brwi-i-rzes.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Oferta Zabiegów – Piękno i Relaks w MAGIC SALON',
-        'description' => 'Kompleksowa pielęgnacja twarzy i ciała. Sprawdź naszą ofertę zabiegową i wybierz idealne rozwiązanie dla siebie.',
-        'url' => BASE_URL . '/oferta.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Reprezentatywne zdjęcie usługi
+        'title' => 'Architektura i Laminacja Brwi – Twoje Spojrzenie ma Moc',
+        'description' => 'Nadaj swoim brwiom idealny kształt i objętość. Profesjonalna stylizacja oprawy oka w Magic Salon. Sprawdź efekty!',
+        'url' => BASE_URL . '/oferta-laminacja-brwi-i-rzes.php',
+        'image' => BASE_URL . '/images/oferta-details/architekturilaminacjarwi.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Oferta MAGIC SALON – Twoje Piękno w Dobrych Rękach',
-        'description' => 'Zobacz jakie zabiegi oferujemy w naszym salonie w Dobrzykowicach.',
+        'title' => 'Stylizacja Brwi w MAGIC SALON',
+        'description' => 'Laminacja, architektura i geometria brwi. Zadbaj o perfekcyjną ramę dla swoich oczu.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'Service', // Schema dla usług
-        'name' => 'Usługi Kosmetyczne MAGIC SALON',
-        'description' => 'Szeroki zakres usług kosmetycznych: zabiegi na twarz, ciało, laseroterapia i stylizacja oprawy oka.',
+        'type' => 'Service',
+        'name' => 'Architektura i Laminacja Brwi',
+        'description' => 'Kompleksowy zabieg stylizacji brwi obejmujący geometrię, regulację, laminację oraz koloryzację farbką lub henną.',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -40,6 +41,37 @@ $meta = [
                 'postalCode' => '55-002',
                 'addressLocality' => 'Dobrzykowice',
                 'addressCountry' => 'PL'
+            ]
+        ],
+        'areaServed' => [
+            '@type' => 'City',
+            'name' => 'Dobrzykowice'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Stylizacja Oprawy Oka',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Laminacja Brwi z Farbką'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Architektura i Geometria Brwi'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Regulacja Brwi'
+                    ]
+                ]
             ]
         ]
     ]
@@ -61,13 +93,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content  bg-white">
         
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Oferta
-            $banner_img = 'images/banner/gallery-banner.jpg'; // Jeśli masz dedykowany baner np. 'offer-banner.jpg', użyj go tutaj
-            $page_title = 'Nasza Oferta Zabiegowa';
-            // Unikalny opis, budujący wizerunek ekspercki i zachęcający do eksploracji usług
-            $page_desc = 'W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem do pielęgnacji. Nasza oferta to starannie wyselekcjonowane zabiegi na twarz i ciało, które nie tylko poprawiają wygląd, ale także przywracają równowagę i dobre samopoczucie. Niezależnie od tego, czy szukasz spektakularnej metamorfozy, czy chwili głębokiego relaksu – znajdziesz tu rozwiązanie skrojone na miarę Twoich potrzeb.';
-            
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Architektura i Laminacja Brwi';
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Twoje brwi to najważniejsza rama dla oczu, nadająca twarzy charakter i wyrazistość. W Magic Salon zamieniamy codzienną walkę z kredką i cieniem w trwały efekt perfekcji. Dzięki zabiegom architektury i laminacji, ujarzmiamy niesforne włoski, nadajemy im idealny kształt i głębię koloru. Odkryj wygodę i pewność siebie, jaką daje profesjonalna stylizacja oprawy oka.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -75,15 +106,20 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta Usług',
-                    'url' => '', // Element aktywny
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
+                    'url' => 'oferta.php',
+                    'icon' => 'fa fa-list'
+                ],
+                [
+                    'label' => 'Stylizacja Brwi', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (korzystamy z wersji breadcrumbs-botttom-header.php dla spójności)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-            ?> 
+            ?>  
                               
             <!-- SECTION CONTENT -->         
             <div class="section-full  p-t80 p-b50  ">

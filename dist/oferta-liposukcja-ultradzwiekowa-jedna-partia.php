@@ -1,37 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta (oferta.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Oferty
+ * MAGIC SALON - Oferta: Liposukcja Ultradźwiękowa Jedna Partia (oferta-liposukcja-ultradzwiekowa-jedna-partia.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Oferty
+// Konfiguracja meta tagów dla strony Liposukcji (1 partia)
 $meta = [
-    'title' => 'Oferta Zabiegów i Cennik Usług | MAGIC SALON Dobrzykowice',
-    'description' => 'Poznaj pełną ofertę MAGIC SALON. Nowoczesna kosmetologia, epilacja laserowa, modelowanie sylwetki, stylizacja rzęs i brwi. Sprawdź szczegóły naszych zabiegów i umów wizytę.',
-    'keywords' => 'oferta magic salon, zabiegi kosmetyczne dobrzykowice, cennik usług kosmetycznych, epilacja laserowa oferta, zabiegi na twarz wrocław, modelowanie sylwetki cennik',
-    'canonical' => BASE_URL . '/oferta.php',
+    'title' => 'Liposukcja Ultradźwiękowa na Wybraną Partię Ciała | MAGIC SALON',
+    'description' => 'Precyzyjne modelowanie sylwetki w Dobrzykowicach. Liposukcja kawitacyjna na brzuch, uda lub pośladki. Skuteczna redukcja miejscowej tkanki tłuszczowej bez skalpela.',
+    'keywords' => 'liposukcja ultradźwiękowa jedna partia, kawitacja brzuch, wyszczuplanie ud, redukcja boczków, bezinwazyjna liposukcja wrocław, modelowanie sylwetki dobrzykowice',
+    // Canonical URL dla tej konkretnej usługi
+    'canonical' => BASE_URL . '/oferta-liposukcja-ultradzwiekowa-jedna-partia.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Oferta Zabiegów – Piękno i Relaks w MAGIC SALON',
-        'description' => 'Kompleksowa pielęgnacja twarzy i ciała. Sprawdź naszą ofertę zabiegową i wybierz idealne rozwiązanie dla siebie.',
-        'url' => BASE_URL . '/oferta.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Reprezentatywne zdjęcie usługi
+        'title' => 'Liposukcja Ultradźwiękowa – Precyzyjne Wyszczuplanie',
+        'description' => 'Masz problem z jedną partią ciała? Wybierz liposukcję ultradźwiękową na brzuch, uda lub ramiona. Szybkie efekty bez bólu w Magic Salon.',
+        'url' => BASE_URL . '/oferta-liposukcja-ultradzwiekowa-jedna-partia.php',
+        'image' => BASE_URL . '/images/oferta-details/liposukcjaultradzwiekowa.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Oferta MAGIC SALON – Twoje Piękno w Dobrych Rękach',
-        'description' => 'Zobacz jakie zabiegi oferujemy w naszym salonie w Dobrzykowicach.',
+        'title' => 'Liposukcja Ultradźwiękowa (1 partia) - MAGIC SALON',
+        'description' => 'Skuteczna walka z miejscowym tłuszczem.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'Service', // Schema dla usług
-        'name' => 'Usługi Kosmetyczne MAGIC SALON',
-        'description' => 'Szeroki zakres usług kosmetycznych: zabiegi na twarz, ciało, laseroterapia i stylizacja oprawy oka.',
+        'type' => 'Service',
+        'name' => 'Liposukcja Ultradźwiękowa na jedną partię ciała',
+        'description' => 'Zabieg wykorzystujący zjawisko kawitacji do rozbijania komórek tłuszczowych w wybranym obszarze ciała (np. brzuch, uda, pośladki).',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -40,6 +41,37 @@ $meta = [
                 'postalCode' => '55-002',
                 'addressLocality' => 'Dobrzykowice',
                 'addressCountry' => 'PL'
+            ]
+        ],
+        'areaServed' => [
+            '@type' => 'City',
+            'name' => 'Dobrzykowice'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Modelowanie Sylwetki',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Liposukcja Kawitacyjna Brzuch'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Liposukcja Kawitacyjna Uda'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Liposukcja Kawitacyjna Pośladki'
+                    ]
+                ]
             ]
         ]
     ]
@@ -61,13 +93,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content  bg-white">
         
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Oferta
-            $banner_img = 'images/banner/gallery-banner.jpg'; // Jeśli masz dedykowany baner np. 'offer-banner.jpg', użyj go tutaj
-            $page_title = 'Nasza Oferta Zabiegowa';
-            // Unikalny opis, budujący wizerunek ekspercki i zachęcający do eksploracji usług
-            $page_desc = 'W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem do pielęgnacji. Nasza oferta to starannie wyselekcjonowane zabiegi na twarz i ciało, które nie tylko poprawiają wygląd, ale także przywracają równowagę i dobre samopoczucie. Niezależnie od tego, czy szukasz spektakularnej metamorfozy, czy chwili głębokiego relaksu – znajdziesz tu rozwiązanie skrojone na miarę Twoich potrzeb.';
-            
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Liposukcja Ultradźwiękowa (1 partia)';
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Twoja sylwetka jest prawie idealna, ale jeden obszar spędza Ci sen z powiek? Wybierz celowaną terapię. Liposukcja ultradźwiękowa na jedną partię ciała to skoncentrowana dawka energii, która precyzyjnie uderza w oporne komórki tłuszczowe tam, gdzie jest to najbardziej potrzebne. Niezależnie od tego, czy walczysz z "boczkami", czy chcesz wysmuklić uda – ten zabieg to bezpieczna alternatywa dla skalpela, gwarantująca widoczną redukcję centymetrów w wybranej strefie.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -75,15 +106,20 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta Usług',
-                    'url' => '', // Element aktywny
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
+                    'url' => 'oferta.php',
+                    'icon' => 'fa fa-list'
+                ],
+                [
+                    'label' => 'Liposukcja (1 partia)', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (korzystamy z wersji breadcrumbs-botttom-header.php dla spójności)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-            ?> 
+            ?>  
                               
             <!-- SECTION CONTENT -->         
             <div class="section-full  p-t80 p-b50  ">

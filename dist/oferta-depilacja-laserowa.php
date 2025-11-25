@@ -1,37 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta (oferta.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Oferty
+ * MAGIC SALON - Oferta: Epilacja Laserowa (oferta-depilacja-laserowa.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Oferty
+// Konfiguracja meta tagów dla strony Epilacji Laserowej
 $meta = [
-    'title' => 'Oferta Zabiegów i Cennik Usług | MAGIC SALON Dobrzykowice',
-    'description' => 'Poznaj pełną ofertę MAGIC SALON. Nowoczesna kosmetologia, epilacja laserowa, modelowanie sylwetki, stylizacja rzęs i brwi. Sprawdź szczegóły naszych zabiegów i umów wizytę.',
-    'keywords' => 'oferta magic salon, zabiegi kosmetyczne dobrzykowice, cennik usług kosmetycznych, epilacja laserowa oferta, zabiegi na twarz wrocław, modelowanie sylwetki cennik',
-    'canonical' => BASE_URL . '/oferta.php',
+    'title' => 'Depilacja Laserowa – Trwałe Usuwanie Owłosienia | MAGIC SALON',
+    'description' => 'Skuteczna epilacja laserowa w Dobrzykowicach. Wykorzystujemy nowoczesny Trio Laser Medika (3 wiązki). Gładka skóra bez podrażnień. Sprawdź cennik i umów zabieg!',
+    'keywords' => 'epilacja laserowa dobrzykowice, depilacja laserowa wrocław, trio laser medika, trwałe usuwanie owłosienia, laserowe usuwanie włosów, depilacja bikini laserem',
+    // Canonical URL dla tej konkretnej usługi
+    'canonical' => BASE_URL . '/oferta-depilacja-laserowa.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Oferta Zabiegów – Piękno i Relaks w MAGIC SALON',
-        'description' => 'Kompleksowa pielęgnacja twarzy i ciała. Sprawdź naszą ofertę zabiegową i wybierz idealne rozwiązanie dla siebie.',
-        'url' => BASE_URL . '/oferta.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Reprezentatywne zdjęcie usługi
+        'title' => 'Epilacja Laserowa – Poczuj Komfort Gładkiej Skóry',
+        'description' => 'Zapomnij o maszynce i wosku. Wybierz skuteczną i bezpieczną epilację laserową w Magic Salon. Efekty już po pierwszym zabiegu.',
+        'url' => BASE_URL . '/oferta-depilacja-laserowa.php',
+        'image' => BASE_URL . '/images/oferta-details/epilacjalaserowa.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Oferta MAGIC SALON – Twoje Piękno w Dobrych Rękach',
-        'description' => 'Zobacz jakie zabiegi oferujemy w naszym salonie w Dobrzykowicach.',
+        'title' => 'Epilacja Laserowa w MAGIC SALON',
+        'description' => 'Trwałe usuwanie owłosienia nowoczesnym laserem diodowym.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'Service', // Schema dla usług
-        'name' => 'Usługi Kosmetyczne MAGIC SALON',
-        'description' => 'Szeroki zakres usług kosmetycznych: zabiegi na twarz, ciało, laseroterapia i stylizacja oprawy oka.',
+        'type' => 'Service',
+        'name' => 'Epilacja Laserowa Trio Laser Medika',
+        'description' => 'Zabieg trwałego usuwania owłosienia przy użyciu lasera łączącego trzy długości fal (755nm, 810nm, 1064nm).',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -40,6 +41,37 @@ $meta = [
                 'postalCode' => '55-002',
                 'addressLocality' => 'Dobrzykowice',
                 'addressCountry' => 'PL'
+            ]
+        ],
+        'areaServed' => [
+            '@type' => 'City',
+            'name' => 'Dobrzykowice'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Usługi Epilacji',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Epilacja Laserowa Bikini'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Epilacja Laserowa Nóg'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Epilacja Laserowa Pach'
+                    ]
+                ]
             ]
         ]
     ]
@@ -62,12 +94,11 @@ include 'partials/head.php';
         <div class="page-content  bg-white">
         
             <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Oferta
-            $banner_img = 'images/banner/gallery-banner.jpg'; // Jeśli masz dedykowany baner np. 'offer-banner.jpg', użyj go tutaj
-            $page_title = 'Nasza Oferta Zabiegowa';
-            // Unikalny opis, budujący wizerunek ekspercki i zachęcający do eksploracji usług
-            $page_desc = 'W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem do pielęgnacji. Nasza oferta to starannie wyselekcjonowane zabiegi na twarz i ciało, które nie tylko poprawiają wygląd, ale także przywracają równowagę i dobre samopoczucie. Niezależnie od tego, czy szukasz spektakularnej metamorfozy, czy chwili głębokiego relaksu – znajdziesz tu rozwiązanie skrojone na miarę Twoich potrzeb.';
-            
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Depilacja Laserowa';
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Marzysz o idealnie gładkiej skórze bez konieczności codziennego golenia? Epilacja laserowa w Magic Salon to gwarancja komfortu, oszczędności czasu i pewności siebie w każdej sytuacji. Dzięki zaawansowanej technologii Trio Laser Medika oferujemy zabiegi szybkie, bezpieczne i skuteczne dla każdego typu karnacji i rodzaju owłosienia.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -75,15 +106,20 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta Usług',
-                    'url' => '', // Element aktywny
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
+                    'url' => 'oferta.php',
+                    'icon' => 'fa fa-list'
+                ],
+                [
+                    'label' => 'Depilacja Laserowa', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (korzystamy z wersji breadcrumbs-botttom-header.php dla spójności)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-            ?> 
+            ?>  
                               
             <!-- SECTION CONTENT -->         
             <div class="section-full  p-t80 p-b50  ">
@@ -109,7 +145,7 @@ include 'partials/head.php';
                                          <!-- WHY IT'S BEST? -->
                                          <div class="col-md-6 col-sm-6">
                                                 <div class="text-left m-b10">
-                                                   <h3 class="text-uppercase">Epilacja Laserowa – Skuteczne i trwałe usuwanie owłosienia w MAGIC SALON</h3>
+                                                   <h3 class="text-uppercase">Depilacja Laserowa – Skuteczne i trwałe usuwanie owłosienia w MAGIC SALON</h3>
                                                    <div class="wt-separator-outer">
                                                        <div class="wt-separator style-icon">
                                                            <i class="fa fa-leaf text-black"></i>

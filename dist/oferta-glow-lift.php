@@ -1,37 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta (oferta.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Oferty
+ * MAGIC SALON - Oferta: Glow & Lift (oferta-glow-lift.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Oferty
+// Konfiguracja meta tagów dla strony Glow & Lift
 $meta = [
-    'title' => 'Oferta Zabiegów i Cennik Usług | MAGIC SALON Dobrzykowice',
-    'description' => 'Poznaj pełną ofertę MAGIC SALON. Nowoczesna kosmetologia, epilacja laserowa, modelowanie sylwetki, stylizacja rzęs i brwi. Sprawdź szczegóły naszych zabiegów i umów wizytę.',
-    'keywords' => 'oferta magic salon, zabiegi kosmetyczne dobrzykowice, cennik usług kosmetycznych, epilacja laserowa oferta, zabiegi na twarz wrocław, modelowanie sylwetki cennik',
-    'canonical' => BASE_URL . '/oferta.php',
+    'title' => 'Glow & Lift – Zabieg Bankietowy i Lifting Twarzy | MAGIC SALON',
+    'description' => 'Natychmiastowy efekt liftingu i rozświetlenia w Dobrzykowicach. Zabieg Glow & Lift to idealne rozwiązanie przed wielkim wyjściem. Promienna cera, nawilżenie i napięcie skóry.',
+    'keywords' => 'zabieg bankietowy wrocław, glow and lift, lifting bez skalpela, rozświetlenie twarzy, zabieg przed ślubem, kosmetyczka dobrzykowice, odmładzanie twarzy',
+    // Canonical URL dla tej konkretnej usługi
+    'canonical' => BASE_URL . '/oferta-glow-lift.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Oferta Zabiegów – Piękno i Relaks w MAGIC SALON',
-        'description' => 'Kompleksowa pielęgnacja twarzy i ciała. Sprawdź naszą ofertę zabiegową i wybierz idealne rozwiązanie dla siebie.',
-        'url' => BASE_URL . '/oferta.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Reprezentatywne zdjęcie usługi
+        'title' => 'Glow & Lift – Twój Sekret Promiennej Cery',
+        'description' => 'Potrzebujesz efektu WOW? Wybierz nasz autorski zabieg Glow & Lift. Lifting, nawilżenie i blask w jednej sesji. Sprawdź szczegóły!',
+        'url' => BASE_URL . '/oferta-glow-lift.php',
+        'image' => BASE_URL . '/images/oferta-details/glowlift.jpg', // Zdjęcie konkretnej usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Oferta MAGIC SALON – Twoje Piękno w Dobrych Rękach',
-        'description' => 'Zobacz jakie zabiegi oferujemy w naszym salonie w Dobrzykowicach.',
+        'title' => 'Zabieg Glow & Lift w MAGIC SALON',
+        'description' => 'Lifting i rozświetlenie skóry. Idealny zabieg bankietowy.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'Service', // Schema dla usług
-        'name' => 'Usługi Kosmetyczne MAGIC SALON',
-        'description' => 'Szeroki zakres usług kosmetycznych: zabiegi na twarz, ciało, laseroterapia i stylizacja oprawy oka.',
+        'type' => 'Service',
+        'name' => 'Zabieg Glow & Lift',
+        'description' => 'Ekskluzywny zabieg pielęgnacyjny łączący lifting, głębokie nawilżenie i rozświetlenie skóry twarzy, szyi i dekoltu.',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -40,6 +41,30 @@ $meta = [
                 'postalCode' => '55-002',
                 'addressLocality' => 'Dobrzykowice',
                 'addressCountry' => 'PL'
+            ]
+        ],
+        'areaServed' => [
+            '@type' => 'City',
+            'name' => 'Dobrzykowice'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Zabiegi Bankietowe i Liftingujące',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Glow & Lift Twarz'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Glow & Lift Twarz + Szyja + Dekolt'
+                    ]
+                ]
             ]
         ]
     ]
@@ -61,13 +86,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content  bg-white">
         
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Oferta
-            $banner_img = 'images/banner/gallery-banner.jpg'; // Jeśli masz dedykowany baner np. 'offer-banner.jpg', użyj go tutaj
-            $page_title = 'Nasza Oferta Zabiegowa';
-            // Unikalny opis, budujący wizerunek ekspercki i zachęcający do eksploracji usług
-            $page_desc = 'W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem do pielęgnacji. Nasza oferta to starannie wyselekcjonowane zabiegi na twarz i ciało, które nie tylko poprawiają wygląd, ale także przywracają równowagę i dobre samopoczucie. Niezależnie od tego, czy szukasz spektakularnej metamorfozy, czy chwili głębokiego relaksu – znajdziesz tu rozwiązanie skrojone na miarę Twoich potrzeb.';
-            
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Glow & Lift – Natychmiastowy Blask';
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Marzysz o cerze jak z okładki magazynu? Glow & Lift to nasza odpowiedź na potrzeby skóry zmęczonej, poszarzałej i wymagającej natychmiastowej rewitalizacji. To idealny "zabieg bankietowy", który w krótkim czasie przywraca skórze witalność, poprawia jej napięcie i nadaje niesamowity blask. Poczuj się pewnie i olśniewaj wyglądem podczas każdej ważnej chwili.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -75,13 +99,18 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta Usług',
-                    'url' => '', // Element aktywny
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
+                    'url' => 'oferta.php',
+                    'icon' => 'fa fa-list'
+                ],
+                [
+                    'label' => 'Glow & Lift', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (korzystamy z wersji breadcrumbs-botttom-header.php dla spójności)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
             ?>
                               
