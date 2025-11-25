@@ -1,40 +1,41 @@
 <?php
 
 /**
- * MAGIC SALON - Galeria (galeria.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ * MAGIC SALON - Cennik (cennik.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Cennika
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Galerii
+// Konfiguracja meta tagów dla strony Cennika
 $meta = [
-    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
-    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
-    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
-    'canonical' => BASE_URL . '/galeria.php',
+    'title' => 'Cennik Usług Kosmetycznych | MAGIC SALON Dobrzykowice',
+    'description' => 'Sprawdź aktualny cennik zabiegów w MAGIC SALON. Oferujemy transparentne ceny epilacji laserowej, zabiegów na twarz, modelowania sylwetki i stylizacji rzęs. Zainwestuj w swoje piękno!',
+    'keywords' => 'cennik magic salon, ceny zabiegów dobrzykowice, koszt depilacji laserowej, cennik kosmetyczka wrocław, zabiegi na twarz cena, modelowanie sylwetki cennik',
+    'canonical' => BASE_URL . '/cennik.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
-        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
-        'url' => BASE_URL . '/galeria.php',
-        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+        'title' => 'Cennik MAGIC SALON – Przejrzyste Ceny, Najwyższa Jakość',
+        'description' => 'Inwestycja w siebie to najlepsza decyzja. Zobacz pełny cennik naszych zabiegów i zarezerwuj termin online.',
+        'url' => BASE_URL . '/cennik.php',
+        'image' => BASE_URL . '/images/about-pic5.jpg', // Zdjęcie z wnętrza salonu lub zabiegu
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
-        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+        'title' => 'Cennik Usług MAGIC SALON Dobrzykowice',
+        'description' => 'Sprawdź ceny naszych zabiegów i umów wizytę.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
-        'name' => 'MAGIC SALON - Galeria',
-        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
-        'url' => BASE_URL . '/galeria.php',
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON - Cennik Usług',
+        'description' => 'Cennik usług kosmetycznych, zabiegów laserowych i pielęgnacyjnych w Magic Salon.',
+        'url' => BASE_URL . '/cennik.php',
         'telephone' => '+48883481581',
         'email' => 'biuro@magicsalon.pl',
+        'priceRange' => '$$', // Wskaźnik zakresu cenowego
         'address' => [
             'streetAddress' => 'ul. Borówkowa 13',
             'postalCode' => '55-002',
@@ -61,12 +62,14 @@ include 'partials/head.php';
     <!-- CONTENT START -->
     <div class="page-content">
 
-      <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+            <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Cennik
+            // Używamy banera ogólnego lub dedykowanego 'pricing-banner.jpg' jeśli istnieje
+            $banner_img = 'images/banner/about-banner.jpg'; 
+            $page_title = 'Cennik – Inwestycja w Twoje Piękno';
+            // Unikalny opis, podkreślający transparentność i jakość
+            $page_desc = 'W MAGIC SALON stawiamy na pełną transparentność i uczciwość. Poniżej prezentujemy szczegółowy cennik wszystkich oferowanych przez nas zabiegów. Wierzymy, że wysoka jakość usług, certyfikowany sprzęt i profesjonalna opieka powinny iść w parze z jasnymi zasadami. Każda pozycja w naszym cenniku to gwarancja Twojego bezpieczeństwa i satysfakcji.';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -74,13 +77,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'Cennik Usług',
+                    'url' => '', // Pusty URL oznacza element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
             ?>
 

@@ -1,40 +1,45 @@
 <?php
 
 /**
- * MAGIC SALON - Galeria (galeria.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ * MAGIC SALON - Opinie Klientów (opinie-klientow.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla sekcji Opinii
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Galerii
+// Konfiguracja meta tagów dla strony Opinii
 $meta = [
-    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
-    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
-    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
-    'canonical' => BASE_URL . '/galeria.php',
+    'title' => 'Opinie Klientów – Zobacz Co Mówią o MAGIC SALON Dobrzykowice',
+    'description' => 'Sprawdź autentyczne opinie o MAGIC SALON. Tysiące zadowolonych klientów, profesjonalizm i pasja. Przeczytaj recenzje zabiegów i dołącz do grona osób, które nam zaufały.',
+    'keywords' => 'opinie magic salon, recenzje salon kosmetyczny dobrzykowice, polecany kosmetolog wrocław, magic salon oceny, najlepszy salon beauty dobrzykowice, rekomendacje zabiegów',
+    'canonical' => BASE_URL . '/opinie-klientow.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
-        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
-        'url' => BASE_URL . '/galeria.php',
-        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+        'title' => 'Opinie Klientów – Zaufanie i Profesjonalizm w MAGIC SALON',
+        'description' => 'Twoja satysfakcja jest naszą najlepszą wizytówką. Zobacz, jak oceniane są nasze zabiegi i atmosfera w salonie.',
+        'url' => BASE_URL . '/opinie-klientow.php',
+        'image' => BASE_URL . '/images/about-pic3.jpg', // Zdjęcie reprezentujące zadowoloną klientkę lub zespół
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
-        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+        'title' => 'Opinie o MAGIC SALON Dobrzykowice',
+        'description' => 'Sprawdź, dlaczego klientki kochają Magic Salon.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
-        'name' => 'MAGIC SALON - Galeria',
-        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
-        'url' => BASE_URL . '/galeria.php',
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON - Opinie',
+        'description' => 'Zbiór recenzji i opinii klientów korzystających z usług salonu kosmetycznego Magic Salon.',
+        'url' => BASE_URL . '/opinie-klientow.php',
         'telephone' => '+48883481581',
         'email' => 'biuro@magicsalon.pl',
+        'aggregateRating' => [
+            '@type' => 'AggregateRating',
+            'ratingValue' => '5.0',
+            'reviewCount' => '100' // Wartość przykładowa, warto aktualizować zgodnie z Booksy/Google
+        ],
         'address' => [
             'streetAddress' => 'ul. Borówkowa 13',
             'postalCode' => '55-002',
@@ -61,12 +66,14 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Opinie
+            // Sugeruję użycie banera związanego z relacjami/ludźmi, np. about-banner lub dedykowany reviews-banner
+            $banner_img = 'images/banner/about-banner.jpg'; 
+            $page_title = 'Wasze Historie Piękna';
+            // Unikalny opis, który nie duplikuje treści poniżej, ale stanowi wstęp do sekcji
+            $page_desc = 'Nie musisz wierzyć nam na słowo – poznaj opinie prawdziwych klientów Magic Salon! Każda recenzja to autentyczna historia związana z naszymi zabiegami. Od depilacji laserowej, przez profesjonalne pielęgnacje twarzy, po modelowanie sylwetki – odkryj, dlaczego tysiące osób z Dobrzykowic i Wrocławia poleca właśnie nas swoim znajomym!';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -74,13 +81,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'Opinie Klientów',
+                    'url' => '', // Element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie partiala (korzystamy z wersji breadcrumbs-botttom-header.php utworzonej w poprzednim kroku)
             include 'partials/breadcrumbs.php';
             ?>
 

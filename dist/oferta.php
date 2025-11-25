@@ -1,46 +1,46 @@
 <?php
 
 /**
- * MAGIC SALON - Galeria (galeria.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ * MAGIC SALON - Oferta (oferta.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Oferty
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Galerii
+// Konfiguracja meta tagów dla strony Oferty
 $meta = [
-    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
-    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
-    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
-    'canonical' => BASE_URL . '/galeria.php',
+    'title' => 'Oferta Zabiegów i Cennik Usług | MAGIC SALON Dobrzykowice',
+    'description' => 'Poznaj pełną ofertę MAGIC SALON. Nowoczesna kosmetologia, epilacja laserowa, modelowanie sylwetki, stylizacja rzęs i brwi. Sprawdź szczegóły naszych zabiegów i umów wizytę.',
+    'keywords' => 'oferta magic salon, zabiegi kosmetyczne dobrzykowice, cennik usług kosmetycznych, epilacja laserowa oferta, zabiegi na twarz wrocław, modelowanie sylwetki cennik',
+    'canonical' => BASE_URL . '/oferta.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
-        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
-        'url' => BASE_URL . '/galeria.php',
-        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+        'title' => 'Oferta Zabiegów – Piękno i Relaks w MAGIC SALON',
+        'description' => 'Kompleksowa pielęgnacja twarzy i ciała. Sprawdź naszą ofertę zabiegową i wybierz idealne rozwiązanie dla siebie.',
+        'url' => BASE_URL . '/oferta.php',
+        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Reprezentatywne zdjęcie usługi
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
-        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+        'title' => 'Oferta MAGIC SALON – Twoje Piękno w Dobrych Rękach',
+        'description' => 'Zobacz jakie zabiegi oferujemy w naszym salonie w Dobrzykowicach.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
-        'name' => 'MAGIC SALON - Galeria',
-        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
-        'url' => BASE_URL . '/galeria.php',
-        'telephone' => '+48883481581',
-        'email' => 'biuro@magicsalon.pl',
-        'address' => [
-            'streetAddress' => 'ul. Borówkowa 13',
-            'postalCode' => '55-002',
-            'addressLocality' => 'Dobrzykowice',
-            'addressRegion' => 'Dolnośląskie',
-            'addressCountry' => 'PL'
+        'type' => 'Service', // Schema dla usług
+        'name' => 'Usługi Kosmetyczne MAGIC SALON',
+        'description' => 'Szeroki zakres usług kosmetycznych: zabiegi na twarz, ciało, laseroterapia i stylizacja oprawy oka.',
+        'provider' => [
+            '@type' => 'BeautySalon',
+            'name' => 'MAGIC SALON',
+            'address' => [
+                'streetAddress' => 'ul. Borówkowa 13',
+                'postalCode' => '55-002',
+                'addressLocality' => 'Dobrzykowice',
+                'addressCountry' => 'PL'
+            ]
         ]
     ]
 ];
@@ -61,12 +61,13 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content  bg-white">
 
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Oferta
+            $banner_img = 'images/banner/gallery-banner.jpg'; // Jeśli masz dedykowany baner np. 'offer-banner.jpg', użyj go tutaj
+            $page_title = 'Nasza Oferta Zabiegowa';
+            // Unikalny opis, budujący wizerunek ekspercki i zachęcający do eksploracji usług
+            $page_desc = 'W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem do pielęgnacji. Nasza oferta to starannie wyselekcjonowane zabiegi na twarz i ciało, które nie tylko poprawiają wygląd, ale także przywracają równowagę i dobre samopoczucie. Niezależnie od tego, czy szukasz spektakularnej metamorfozy, czy chwili głębokiego relaksu – znajdziesz tu rozwiązanie skrojone na miarę Twoich potrzeb.';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -74,13 +75,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'Oferta Usług',
+                    'url' => '', // Element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie dedykowanego partiala (korzystamy z wersji breadcrumbs-botttom-header.php dla spójności)
             include 'partials/breadcrumbs.php';
             ?>
 

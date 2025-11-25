@@ -1,46 +1,69 @@
 <?php
 
 /**
- * MAGIC SALON - Galeria (galeria.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ * MAGIC SALON - FAQ (faq-pytania.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO, Schema FAQPage i zmienne
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Galerii
+// Konfiguracja meta tagów dla strony FAQ
 $meta = [
-    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
-    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
-    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
-    'canonical' => BASE_URL . '/galeria.php',
-    'robots' => 'index, follow, max-image-preview:large',
+    'title' => 'FAQ – Pytania i Odpowiedzi | Przygotowanie do Zabiegów MAGIC SALON',
+    'description' => 'Masz pytania przed wizytą w MAGIC SALON? Sprawdź nasze FAQ! 🌸 Dowiedz się jak przygotować się do zabiegów, jak zarezerwować termin i jakie są przeciwwskazania.',
+    'keywords' => 'faq magic salon, pytania do kosmetyczki dobrzykowice, przeciwwskazania do zabiegów, jak przygotować się do lasera, rezerwacja wizyty salon kosmetyczny',
+    'canonical' => BASE_URL . '/faq-pytania.php',
+    'robots' => 'index, follow',
     'og' => [
-        'type' => 'website',
-        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
-        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
-        'url' => BASE_URL . '/galeria.php',
-        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+        'type' => 'article', // Dla stron informacyjnych typu FAQ 'article' lub 'website' jest ok
+        'title' => 'Strefa Wiedzy MAGIC SALON – Najczęstsze Pytania',
+        'description' => 'Chcemy, abyś czuła się u nas pewnie i bezpiecznie. Przeczytaj odpowiedzi na pytania, które najczęściej zadają nasi Klienci.',
+        'url' => BASE_URL . '/faq-pytania.php',
+        'image' => BASE_URL . '/images/about-pic4.jpg', // Zdjęcie tematyczne z sekcji FAQ
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
-        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+        'title' => 'FAQ MAGIC SALON – Wszystko co musisz wiedzieć',
+        'description' => 'Przygotowanie do zabiegu, płatności, rezerwacje. Sprawdź nasze odpowiedzi.',
     ],
+    // Specjalny schemat FAQPage dla Google Rich Snippets
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
-        'name' => 'MAGIC SALON - Galeria',
-        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
-        'url' => BASE_URL . '/galeria.php',
-        'telephone' => '+48883481581',
-        'email' => 'biuro@magicsalon.pl',
-        'address' => [
-            'streetAddress' => 'ul. Borówkowa 13',
-            'postalCode' => '55-002',
-            'addressLocality' => 'Dobrzykowice',
-            'addressRegion' => 'Dolnośląskie',
-            'addressCountry' => 'PL'
+        'type' => 'FAQPage',
+        'mainEntity' => [
+            [
+                '@type' => 'Question',
+                'name' => 'Jak mogę umówić się na wizytę?',
+                'acceptedAnswer' => [
+                    '@type' => 'Answer',
+                    'text' => 'Najwygodniej jest zarezerwować termin online przez Booksy, naszą stronę internetową lub telefonicznie pod numerem +48 883 481 581.'
+                ]
+            ],
+            [
+                '@type' => 'Question',
+                'name' => 'Czy przed zabiegiem muszę się jakoś specjalnie przygotować?',
+                'acceptedAnswer' => [
+                    '@type' => 'Answer',
+                    'text' => 'Zależy to od zabiegu. Przy epilacji laserowej należy ogolić skórę dzień wcześniej i nie opalać jej. Przy zabiegach na twarz zalecamy brak makijażu. Szczegóły omawiamy przy rezerwacji.'
+                ]
+            ],
+            [
+                '@type' => 'Question',
+                'name' => 'Czy zabiegi są bezpieczne?',
+                'acceptedAnswer' => [
+                    '@type' => 'Answer',
+                    'text' => 'Tak, pracujemy wyłącznie na certyfikowanym sprzęcie i kosmetykach, a nasz personel posiada odpowiednie kwalifikacje i przeszkolenie.'
+                ]
+            ],
+            [
+                '@type' => 'Question',
+                'name' => 'Jak mogę zapłacić za zabieg?',
+                'acceptedAnswer' => [
+                    '@type' => 'Answer',
+                    'text' => 'W Magic Salon akceptujemy płatności gotówką, kartami płatniczymi oraz systemem BLIK.'
+                ]
+            ]
         ]
     ]
 ];
@@ -61,12 +84,13 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+                        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony FAQ
+            $banner_img = 'images/banner/gallery-banner.jpg'; // Można tu dać inne tło, jeśli jest dostępne np. 'images/banner/faq-banner.jpg'
+            $page_title = 'Strefa Wiedzy i Odpowiedzi';
+            // Unikalny opis dla nagłówka FAQ - buduje zaufanie i profesjonalizm
+            $page_desc = 'Transparentność i Twoje poczucie bezpieczeństwa są dla nas kluczowe. Zgromadziliśmy tutaj odpowiedzi na pytania dotyczące procedur zabiegowych, przygotowań oraz kwestii organizacyjnych, aby Twoja wizyta w Magic Salon była czystą przyjemnością od samego wejścia.';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -74,13 +98,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'FAQ & Pytania',
+                    'url' => '', // Pusty URL oznacza element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
             ?>
 

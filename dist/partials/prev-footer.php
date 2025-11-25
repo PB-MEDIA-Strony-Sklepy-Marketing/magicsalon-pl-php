@@ -54,14 +54,14 @@ $footer_social = [
 $footer_blog_posts = [
     [
         'title' => 'Odkryj Moc Twój Piękno: Najnowsze Trendy i Innowacje w Pielęgnacji Skóry w MAGIC SALON',
-        'url' => 'blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php',
+        'url' => '../blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php',
         'date' => '20',
         'month' => 'Mar',
         'author' => 'MAGIC SALON'
     ],
     [
         'title' => 'Przedłużanie Rzęs i Laminacja – Twoje Piękno w Nowym Wydaniu!',
-        'url' => 'blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php',
+        'url' => '../blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php',
         'date' => '30',
         'month' => 'Mar',
         'author' => 'MAGIC SALON'
@@ -70,12 +70,12 @@ $footer_blog_posts = [
 
 // Footer Menu - bez zmian
 $footer_menu = [
-    ['title' => 'O firmie', 'url' => 'o-firmie.php'],
-    ['title' => 'Opinie klientów', 'url' => 'opinie-klientow.php'],
-    ['title' => 'Oferta', 'url' => 'oferta.php'],
-    ['title' => 'FAQ & Pytania', 'url' => 'faq-pytania.php'],
-    ['title' => 'Galeria', 'url' => 'galeria.php'],
-    ['title' => 'Zarezerwuj wizytę', 'url' => 'zarezerwuj-wizyte.php']
+    ['title' => 'O firmie', 'url' => '../o-firmie.php'],
+    ['title' => 'Opinie klientów', 'url' => '../opinie-klientow.php'],
+    ['title' => 'Oferta', 'url' => '../oferta.php'],
+    ['title' => 'FAQ & Pytania', 'url' => '../faq-pytania.php'],
+    ['title' => 'Galeria', 'url' => '../galeria.php'],
+    ['title' => 'Zarezerwuj wizytę', 'url' => '../zarezerwuj-wizyte.php']
 ];
 
 // Rok bieżący dla copyright - bez zmian
@@ -110,7 +110,7 @@ if (!function_exists('footer_url')) {
                         </div>
                         <div class="col-md-3">
                             <div class="call-to-action-right p-tb30">
-                                <a href="<?php echo footer_url('kontakt.php'); ?>" class="site-button-secondry text-uppercase radius-sm font-weight-600">Kontakt</a>
+                                <a href="<?php echo footer_url('../kontakt.php'); ?>" class="site-button-secondry text-uppercase radius-sm font-weight-600">Kontakt</a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@ if (!function_exists('footer_url')) {
                     <div class="widget widget_about">
                         <h4 class="widget-title">O Magic Salon</h4>
                         <div class="logo-footer clearfix p-b15">
-                            <a href="<?php echo footer_url('index.php'); ?>"><img src="<?php echo asset('../images/logo-7.png'); ?>" width="230" height="67" alt="Logo Magic Salon"></a>
+                            <a href="<?php echo footer_url('../index.php'); ?>"><img src="<?php echo asset('../images/logo-7.png'); ?>" width="230" height="67" alt="Logo Magic Salon"></a>
                         </div>
                         <p>MAGIC SALON to nowoczesny salon kosmetyczny i beauty spa. Zabiegi na twarz i ciało, lasery medyczne, manicure, lifting rzęs i więcej – poczuj magię pielęgnacji!</p>
                     </div>
@@ -266,7 +266,7 @@ if (!function_exists('footer_url')) {
                 </div>
                 <div class="wt-footer-bot-right">
                     <ul class="copyrights-nav pull-right">
-                        <li><a href="<?php echo footer_url('polityka-prywatnosci-rodo.php'); ?>">Polityka Prywatności & RODO</a></li>
+                        <li><a href="<?php echo footer_url('../polityka-prywatnosci-rodo.php'); ?>">Polityka Prywatności & RODO</a></li>
                     </ul>
                 </div>
             </div>
@@ -356,7 +356,7 @@ if (!function_exists('footer_url')) {
         <p>
             <span class="booksy-status-indicator"></span>
             Online 24/7 |
-            <a href="<?php echo footer_url('polityka-prywatnosci-rodo.php'); ?>" target="_blank" rel="noopener">Polityka prywatności</a>
+            <a href="<?php echo footer_url('../polityka-prywatnosci-rodo.php'); ?>" target="_blank" rel="noopener">Polityka prywatności</a>
         </p>
     </div>
 </div>

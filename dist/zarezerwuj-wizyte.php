@@ -1,67 +1,106 @@
-<!DOCTYPE html>
+<?php
 
-<html lang="pl-PL">
+/**
+ * MAGIC SALON - Zarezerwuj Wizytę (zarezerwuj-wizyte.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla strony Rezerwacji
+ */
 
-<head>
+// Załaduj konfigurację
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="zarezerwuj wizytę, kontakt Magic Salon, umów wizytę, salon kosmetyczny Gronau, beauty spa, dane kontaktowe">
-    <meta name="author" content="MAGICSALON.pl - salon kosmetyczny">
-    <meta name="robots" content="index">
-    <meta name="description" content="Zarezerwuj termin na wizytę w naszym salonie – Magic Salon. Adres, e-mail, telefon. Umów wizytę i rozpocznij swoją podróż do piękna!">
+// Konfiguracja meta tagów dla strony Zarezerwuj Wizytę
+$meta = [
+    'title' => 'Zarezerwuj Wizytę Online | MAGIC SALON Dobrzykowice – Booksy',
+    'description' => 'Umów wizytę w MAGIC SALON szybko i wygodnie! 📅 Rezerwacja online przez Booksy 24/7 lub telefonicznie. Wybierz zabieg na twarz lub ciało i zarezerwuj termin w Dobrzykowicach.',
+    'keywords' => 'rezerwacja wizyty kosmetyczka, booksy magic salon, umów wizytę dobrzykowice, salon beauty rezerwacja online, wolne terminy kosmetyczka wrocław, zabiegi na twarz rezerwacja',
+    'canonical' => BASE_URL . '/zarezerwuj-wizyte.php',
+    'robots' => 'index, follow',
+    'og' => [
+        'type' => 'website',
+        'title' => 'Zarezerwuj Chwilę dla Siebie – MAGIC SALON Dobrzykowice',
+        'description' => 'Twój termin czeka! Sprawdź dostępność w kalendarzu online i umów się na profesjonalne zabiegi pielęgnacyjne bez wychodzenia z domu.',
+        'url' => BASE_URL . '/zarezerwuj-wizyte.php',
+        'image' => BASE_URL . '/images/background/bg-6.jpg', // Zdjęcie zachęcające do relaksu/wizyty
+    ],
+    'twitter' => [
+        'card' => 'summary_large_image',
+        'title' => 'Zarezerwuj Wizytę w MAGIC SALON',
+        'description' => 'Szybka rezerwacja online przez Booksy. Sprawdź wolne terminy!',
+    ],
+    'schema' => [
+        'enabled' => true,
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON',
+        'description' => 'Salon kosmetyczny oferujący rezerwację wizyt online.',
+        'url' => BASE_URL . '/zarezerwuj-wizyte.php',
+        'telephone' => '+48883481581',
+        'email' => 'biuro@magicsalon.pl',
+        'address' => [
+            'streetAddress' => 'ul. Borówkowa 13',
+            'postalCode' => '55-002',
+            'addressLocality' => 'Dobrzykowice',
+            'addressRegion' => 'Dolnośląskie',
+            'addressCountry' => 'PL'
+        ],
+        // Dodanie akcji rezerwacji do schema
+        'potentialAction' => [
+            '@type' => 'ReserveAction',
+            'target' => [
+                '@type' => 'EntryPoint',
+                'urlTemplate' => 'https://booksy.magicsalon.pl',
+                'inLanguage' => 'pl-PL',
+                'actionPlatform' => [
+                    'http://schema.org/DesktopWebPlatform',
+                    'http://schema.org/IOSPlatform',
+                    'http://schema.org/AndroidPlatform'
+                ]
+            ],
+            'result' => [
+                '@type' => 'Reservation',
+                'name' => 'Rezerwacja wizyty kosmetycznej'
+            ]
+        ]
+    ]
+];
 
-    <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-
-    <!-- Podstawowe meta tagi -->
-    <title>Zarezerwuj wizytę – MAGIC SALON | Umów wizytę już dziś!</title>
-
-    <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/zarezerwuj-wizyte.php" />
-
-    <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zarezerwuj wizytę – MAGIC SALON | Umów wizytę już dziś!" />
-    <meta property="og:description" content="Zarezerwuj termin na wizytę w naszym salonie – Magic Salon. Adres, e-mail, telefon. Umów wizytę i rozpocznij swoją podróż do piękna!" />
-    <meta property="og:url" content="https://magicsalon.pl/zarezerwuj-wizyte.php" />
-    <meta property="og:image" content="/images/og-image.jpg" />
-    <meta property="og:site_name" content="MAGIC SALON" />
-    <meta property="og:locale" content="pl_PL" />
-    <meta property="fb:admins" content="464369106147391" />
-    <meta property="fb:app_id" content="464369106147391" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Zarezerwuj wizytę – MAGIC SALON | Umów wizytę już dziś!" />
-    <meta name="twitter:description" content="Zarezerwuj termin na wizytę w naszym salonie – Magic Salon. Adres, e-mail, telefon. Umów wizytę i rozpocznij swoją podróż do piękna!" />
-    <meta name="twitter:image" content="/images/og-image.jpg" />
-    <meta name="twitter:site" content="@magicsalon" />
-
-    <?php include __DIR__ . '/partials/root/head-root-css.html'; ?>
-
-    <?php include __DIR__ . '/partials/root/head-root.html'; ?>
-
-</head>
+// Załaduj head partial
+include 'partials/head.php'; 
+?>
 
 <body id="bg">
 
     <div class="page-wraper">
 
         <!-- HEADER START -->
-        <header class="site-header header-style-8 mobile-sider-drawer-menu">
-
-            <?php include __DIR__ . '/partials/root/header-top-root.html'; ?>
-
-            <?php include __DIR__ . '/partials/root/main-nav-root.html'; ?>
-
-        </header>
+        <?php include 'partials/header.php'; ?>
         <!-- HEADER END -->
 
         <!-- CONTENT START -->
         <div class="page-content">
+
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zarezerwuj Wizytę
+            // Wybieramy baner kojarzący się z relaksem i czasem dla siebie
+            $banner_img = 'images/banner/about-banner.jpg'; 
+            $page_title = 'Zarezerwuj Swój Termin';
+            // Unikalny opis, podkreślający łatwość rezerwacji i szacunek dla czasu klienta
+            $page_desc = 'Twój czas jest dla nas cenny, dlatego proces umawiania wizyt w MAGIC SALON jest maksymalnie uproszczony. Skorzystaj z naszego kalendarza online dostępnego 24/7, zadzwoń do nas lub napisz. Niezależnie od wybranej formy kontaktu, dołożymy wszelkich starań, aby znaleźć dla Ciebie idealny termin na chwilę relaksu i profesjonalnej pielęgnacji.';
+            $breadcrumbs = [
+                [
+                    'label' => 'Strona Główna',
+                    'url' => 'index.php',
+                    'icon' => 'fa fa-home'
+                ],
+                [
+                    'label' => 'Zarezerwuj wizytę',
+                    'url' => '', // Pusty URL oznacza element aktywny
+                    'icon' => ''
+                ]
+            ];
+            
+            // Załadowanie dedykowanego partiala
+            include 'partials/breadcrumbs.php';
+            ?>
 
             <!-- ABOUT COMPANY SECTION START -->
             <div class="section-full m-t150">
@@ -256,9 +295,8 @@
         </div>
         <!-- CONTENT END -->
 
-        <?php include __DIR__ . '/partials/root/footer-root-columns.html'; ?>
-
-        <?php include __DIR__ . '/partials/root/footer-root.html'; ?>
+        <!-- Footer -->
+        <?php include 'partials/footer.php'; ?>
 
 </body>
 

@@ -1,82 +1,93 @@
-<!DOCTYPE html>
+<?php
 
-<html lang="pl-PL">
+/**
+ * MAGIC SALON - Error 500 (500.php)
+ * Wersja: 2.3 - Strona błędu wewnętrznego serwera
+ */
 
-<head>
+// Załaduj konfigurację
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="zarezerwuj wizytę, kontakt Magic Salon, umów wizytę, salon kosmetyczny Gronau, beauty spa, dane kontaktowe">
-    <meta name="author" content="MAGICSALON.pl - salon kosmetyczny">
-    <meta name="robots" content="index">
-    <meta name="description" content="Error 500 – MAGIC SALON">
+// Konfiguracja meta tagów dla strony błędu 500
+$meta = [
+    'title' => 'Błąd 500 – Wewnętrzny Błąd Serwera | MAGIC SALON Dobrzykowice',
+    'description' => 'Przepraszamy, wystąpił niespodziewany błąd techniczny po naszej stronie. Nasz zespół już pracuje nad rozwiązaniem problemu. Spróbuj odświeżyć stronę za chwilę.',
+    'keywords' => 'błąd 500, internal server error, awaria strony, magic salon błąd techniczny',
+    'canonical' => BASE_URL . '/500.php',
+    'robots' => 'noindex, follow', // Strony błędów technicznych nie powinny być indeksowane
+    'og' => [
+        'type' => 'website',
+        'title' => 'Chwilowa Przerwa Techniczna – MAGIC SALON',
+        'description' => 'Nawet najlepsze technologie czasem potrzebują chwili wytchnienia. Pracujemy nad przywróceniem pełnej sprawności serwisu.',
+        'url' => BASE_URL . '/500.php',
+        'image' => BASE_URL . '/images/logo-7.png',
+    ],
+    'twitter' => [
+        'card' => 'summary',
+        'title' => 'Błąd 500 – Pracujemy nad tym',
+        'description' => 'Wystąpił błąd serwera. Prosimy o chwilę cierpliwości.',
+    ],
+    'schema' => [
+        'enabled' => true,
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON',
+        'description' => 'Salon kosmetyczny w Dobrzykowicach.',
+        'url' => BASE_URL . '/',
+        'telephone' => '+48883481581',
+        'email' => 'biuro@magicsalon.pl',
+        'address' => [
+            'streetAddress' => 'ul. Borówkowa 13',
+            'postalCode' => '55-002',
+            'addressLocality' => 'Dobrzykowice',
+            'addressRegion' => 'Dolnośląskie',
+            'addressCountry' => 'PL'
+        ]
+    ]
+];
 
-    <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-
-    <!-- Podstawowe meta tagi -->
-    <title>Error 500 – MAGIC SALON</title>
-
-    <!-- Kanoniczny adres URL -->
-    <link rel="canonical" href="https://magicsalon.pl/404.html" />
-
-    <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Error 500 – MAGIC SALON" />
-    <meta property="og:description" content="Error 500 – MAGIC SALON" />
-    <meta property="og:url" content="https://magicsalon.pl/404.html" />
-    <meta property="og:image" content="/images/og-image.jpg" />
-    <meta property="og:site_name" content="MAGIC SALON" />
-    <meta property="og:locale" content="pl_PL" />
-    <meta property="fb:admins" content="464369106147391" />
-    <meta property="fb:app_id" content="464369106147391" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Error 500 – MAGIC SALON" />
-    <meta name="twitter:description" content="Error 500 – MAGIC SALON" />
-    <meta name="twitter:image" content="/images/og-image.jpg" />
-    <meta name="twitter:site" content="@magicsalon" />
-
-    <?php include __DIR__ . '/partials/root/head-root-css.html'; ?>
-
-    <?php include __DIR__ . '/partials/root/head-root.html'; ?>
-
-</head>
+// Załaduj head partial
+include 'partials/head.php'; 
+?>
 
 <body id="bg">
 
     <div class="page-wraper">
 
         <!-- HEADER START -->
-        <header class="site-header header-style-8 mobile-sider-drawer-menu">
-
-            <?php include __DIR__ . '/partials/root/header-top-root.html'; ?>
-
-            <?php include __DIR__ . '/partials/root/main-nav-root.html'; ?>
-
-        </header>
+        <?php include 'partials/header.php'; ?>
         <!-- HEADER END -->
 
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <!-- BREADCRUMB ROW -->
-            <div class="bg-gray-light p-tb20">
-                <div class="container">
-                    <ul class="wt-breadcrumb breadcrumb-style-2">
-                        <li><a href="index.html">Strona Główna</a></li>
-                        <li>Error 500</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- BREADCRUMB ROW END -->
+                        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla strony błędu
+            $banner_img = 'images/banner/about-banner.jpg'; 
+            
+            $page_title = 'Mała usterka techniczna';
+            
+            // Opis łagodzący sytuację, nawiązujący do branży beauty
+            $page_desc = 'Nawet w świecie piękna zdarzają się techniczne niespodzianki. Nasz serwer potrzebuje chwili regeneracji, ale specjaliści już nad nim pracują. Przepraszamy za niedogodności i prosimy o chwilę cierpliwości.';
+            
+            $breadcrumbs = [
+                [
+                    'label' => 'Strona Główna',
+                    'url' => 'index.php',
+                    'icon' => 'fa fa-home'
+                ],
+                [
+                    'label' => 'Error 500',
+                    'url' => '', // Pusty URL oznacza element aktywny
+                    'icon' => ''
+                ]
+            ];
+            
+            // Załadowanie dedykowanego partiala
+            include 'partials/breadcrumbs.php';
+            ?>
 
-            <!-- SECTION CONTENT -->
+            <!-- SECTION CONTENT START -->
             <div class="section-full p-t80 p-b50">
-
                 <div class="container">
                     <div class="section-content">
                         <div class="page-notfound-wrap row">
@@ -85,9 +96,10 @@
                                 <div class="page-notfound text-center">
                                     <form method="post">
                                         <strong class="text-uppercase">Error</strong>
-                                        <strong>5<i class="fa fa-frown-o site-text-primary"></i><i class="fa fa-frown-o site-text-primary"></i></strong>
-                                        <span>Błąd wewnętrzny serwera</span>
-                                        <a href="index.html" class="site-button ">PRZEJDŹ DO STRONA GŁÓWNA <i class="fa fa-angle-double-right"></i></a>
+                                        <strong>5<i class="fa fa-cogs site-text-primary"></i>0</strong>
+                                        <span>Wewnętrzny błąd serwera</span>
+                                        <p class="m-b20">Coś poszło nie tak po naszej stronie. Prosimy spróbuj odświeżyć stronę za kilka minut lub skontaktuj się z nami telefonicznie, jeśli chcesz pilnie umówić wizytę.</p>
+                                        <a href="index.php" class="site-button">WRÓĆ NA STRONĘ GŁÓWNĄ <i class="fa fa-angle-double-right"></i></a>
                                     </form>
                                 </div>
                             </div>
@@ -95,7 +107,8 @@
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="page-notfound-left text-center bg-gray">
                                     <div class="constrot-strip"></div>
-                                    <span class="flaticon-bronzer"></span>
+                                    <!-- Ikona trybików symbolizująca prace techniczne -->
+                                    <span class="fa fa-cogs" style="font-size: 100px; color: var(--color-theme-primary); display:block; padding: 40px 0;"></span>
                                     <div class="constrot-strip"></div>
                                 </div>
                             </div>
@@ -103,16 +116,14 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- SECTION CONTENT END -->
 
         </div>
         <!-- CONTENT END -->
 
-        <?php include __DIR__ . '/partials/root/footer-root-columns.html'; ?>
-
-        <?php include __DIR__ . '/partials/root/footer-root.html'; ?>
+        <!-- Footer -->
+        <?php include 'partials/footer.php'; ?>
 
 </body>
 

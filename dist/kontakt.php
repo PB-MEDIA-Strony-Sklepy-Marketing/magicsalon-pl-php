@@ -1,40 +1,41 @@
 <?php
 
 /**
- * MAGIC SALON - Strona główna (index.php)
- * Wersja: 2.1 - Naprawiono ścieżki i błędy
+ * MAGIC SALON - Kontakt (kontakt.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla strony Kontaktowej
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony głównej
+// Konfiguracja meta tagów dla strony Kontakt
 $meta = [
-    'title' => 'MAGIC SALON – Salon Kosmetyczny Dobrzykowice | Profesjonalne Zabiegi Beauty',
-    'description' => 'Profesjonalny salon kosmetyczny MAGIC SALON w Dobrzykowicach k. Wrocławia ✨ Zabiegi na twarz, depilacja laserowa, modelowanie sylwetki, lifting rzęs ⭐ Rezerwuj online przez Booksy!',
-    'keywords' => 'salon kosmetyczny dobrzykowice, beauty salon wrocław, depilacja laserowa, zabiegi na twarz, modelowanie ciała, lifting rzęs, magic salon, spa dobrzykowice',
-    'canonical' => BASE_URL . '/',
-    'robots' => 'index, follow, max-image-preview:large',
+    'title' => 'Kontakt i Rezerwacje – MAGIC SALON Dobrzykowice | Umów Wizytę',
+    'description' => 'Skontaktuj się z MAGIC SALON. 📞 Telefon: +48 883 481 581. 📍 Adres: ul. Borówkowa 13, Dobrzykowice. Rezerwacja online, godziny otwarcia i mapa dojazdu.',
+    'keywords' => 'kontakt magic salon, salon kosmetyczny telefon, adres magic salon dobrzykowice, dojazd z wrocławia, rezerwacja wizyty, godziny otwarcia salonu',
+    'canonical' => BASE_URL . '/kontakt.php',
+    'robots' => 'index, follow',
     'og' => [
         'type' => 'website',
-        'title' => 'MAGIC SALON – Profesjonalny Salon Kosmetyczny w Dobrzykowicach',
-        'description' => 'Odkryj magię profesjonalnej pielęgnacji w MAGIC SALON! Zabiegi na twarz, depilacja laserowa, modelowanie sylwetki. Umów wizytę online!',
-        'url' => BASE_URL . '/',
-        'image' => BASE_URL . '/images/og-image.jpg',
+        'title' => 'Skontaktuj się z MAGIC SALON – Jesteśmy tu dla Ciebie',
+        'description' => 'Masz pytania? Chcesz umówić wizytę? Sprawdź jak do nas trafić i skontaktuj się z naszym zespołem.',
+        'url' => BASE_URL . '/kontakt.php',
+        'image' => BASE_URL . '/images/background/contact-map.png', // Zdjęcie mapy lub wejścia do salonu
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'MAGIC SALON – Salon Kosmetyczny Dobrzykowice',
-        'description' => 'Profesjonalne zabiegi kosmetyczne w Dobrzykowicach k. Wrocławia',
+        'title' => 'Kontakt MAGIC SALON Dobrzykowice',
+        'description' => 'Dane kontaktowe, telefon, adres i mapa dojazdu.',
     ],
     'schema' => [
         'enabled' => true,
         'type' => 'BeautySalon',
         'name' => 'MAGIC SALON',
-        'description' => 'Profesjonalny salon kosmetyczny oferujący zabiegi na twarz i ciało, depilację laserową, stylizację rzęs i brwi',
+        'description' => 'Dane kontaktowe salonu kosmetycznego Magic Salon w Dobrzykowicach.',
+        'url' => BASE_URL . '/kontakt.php',
         'telephone' => '+48883481581',
         'email' => 'biuro@magicsalon.pl',
-        'priceRange' => '20-450 PLN',
+        'image' => BASE_URL . '/images/logo-7.png',
         'address' => [
             'streetAddress' => 'ul. Borówkowa 13',
             'postalCode' => '55-002',
@@ -46,15 +47,33 @@ $meta = [
             'latitude' => '51.0961',
             'longitude' => '17.1994'
         ],
-        'openingHours' => [
-            'Mo-Fr 09:00-20:00',
-            'Sa 09:00-18:00'
+        'openingHoursSpecification' => [
+            [
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                'opens' => '09:00',
+                'closes' => '19:00'
+            ],
+            [
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => 'Saturday',
+                'opens' => '09:00',
+                'closes' => '14:00'
+            ]
+        ],
+        'contactPoint' => [
+            '@type' => 'ContactPoint',
+            'telephone' => '+48883481581',
+            'contactType' => 'reservations',
+            'areaServed' => 'PL',
+            'availableLanguage' => 'Polish'
         ]
     ]
 ];
 
-// Załaduj head partial - POPRAWIONA ŚCIEŻKA
-include 'partials/head.php'; ?>
+// Załaduj head partial
+include 'partials/head.php'; 
+?>
 
 <body id="bg">
 
@@ -67,12 +86,14 @@ include 'partials/head.php'; ?>
         <!-- CONTENT START -->
         <div class="page-content">
 
-            <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Kontakt
+            // Jeśli nie masz dedykowanego 'contact-banner.jpg', użyj 'about-banner.jpg' lub 'bg-6.jpg'
+            $banner_img = 'images/banner/about-banner.jpg'; 
+            $page_title = 'Bądźmy w Kontakcie';
+            // Unikalny opis zachęcający do interakcji
+            $page_desc = 'Kontakt z nami jest łatwy i szybki! Wybierz najwygodniejszą dla siebie formę – zadzwoń, wyślij e-mail, wypełnij formularz kontaktowy lub zarezerwuj wizytę online przez Booksy. Magic Salon w Dobrzykowicach jest dostępny dla klientów z całego Wrocławia i okolic. Odpowiadamy na wszystkie pytania dotyczące naszych usług kosmetycznych i chętnie pomożemy w wyborze idealnego zabiegu!';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -80,13 +101,13 @@ include 'partials/head.php'; ?>
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'Kontakt',
+                    'url' => '', // Pusty URL oznacza element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
             ?>
 
