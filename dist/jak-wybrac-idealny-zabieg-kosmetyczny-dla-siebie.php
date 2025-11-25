@@ -1,46 +1,55 @@
 <?php
 
 /**
- * MAGIC SALON - Zabiegi na Twarz (zabiegi-na-twarz.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla podstrony
+ * MAGIC SALON - Blog Post: Jak Wybrać Idealny Zabieg
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla artykułu blogowego
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Zabiegi na Twarz
+// Konfiguracja meta tagów dla artykułu
 $meta = [
-    'title' => 'Zabiegi na Twarz – Lifting, Oczyszczanie i Pielęgnacja | MAGIC SALON',
-    'description' => 'Profesjonalna pielęgnacja twarzy w Dobrzykowicach. Sprawdź naszą ofertę: Glow & Lift, peeling kawitacyjny, laminacja brwi i rzęs oraz terapie anti-aging. Przywróć skórze blask!',
-    'keywords' => 'zabiegi na twarz dobrzykowice, kosmetyczka wrocław, peeling kawitacyjny, lifting twarzy, laminacja brwi, glow and lift, oczyszczanie twarzy, zabiegi odmładzające',
-    'canonical' => BASE_URL . '/zabiegi-na-twarz.php',
+    'title' => 'Jak Wybrać Idealny Zabieg Kosmetyczny? Poradnik | Blog MAGIC SALON',
+    'description' => 'Nie wiesz, jaki zabieg będzie najlepszy dla Twojej skóry? Przeczytaj nasz poradnik! Pomożemy Ci dopasować pielęgnację do potrzeb cery suchej, tłustej czy dojrzałej.',
+    'keywords' => 'dobór zabiegu kosmetycznego, rodzaje cery, konsultacja kosmetologiczna, zabiegi na twarz porady, magic salon blog, pielęgnacja skóry wrocław',
+    // Canonical URL dla tego konkretnego artykułu
+    'canonical' => BASE_URL . '/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
-        'type' => 'website',
-        'title' => 'Zabiegi na Twarz – Twoja Cera w Dobrych Rękach',
-        'description' => 'Zadbaj o promienną cerę z MAGIC SALON. Oferujemy nowoczesne terapie liftingujące, nawilżające i regenerujące.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Zdjęcie reprezentujące główną usługę
+        'type' => 'article',
+        'title' => 'Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?',
+        'description' => 'Gubisz się w ofercie zabiegów? Nasz ekspert podpowiada, na co zwrócić uwagę przy wyborze idealnej terapii dla Twojej skóry.',
+        'url' => BASE_URL . '/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php',
+        'image' => BASE_URL . '/images/blog/default/thum2.jpg', // Zdjęcie wyróżniające artykułu
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Profesjonalna Pielęgnacja Twarzy w MAGIC SALON',
-        'description' => 'Odkryj nasze zabiegi: Glow & Lift, SilkRoll i wiele więcej.',
+        'title' => 'Poradnik MAGIC SALON: Dobierz Zabieg Idealny',
+        'description' => 'Poznaj potrzeby swojej skóry i wybierz najlepszą pielęgnację.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon',
-        'name' => 'MAGIC SALON - Zabiegi na Twarz',
-        'description' => 'Specjalistyczne zabiegi kosmetyczne na twarz: oczyszczanie, nawilżanie, lifting i stylizacja oprawy oka.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'telephone' => '+48883481581',
-        'email' => 'biuro@magicsalon.pl',
-        'address' => [
-            'streetAddress' => 'ul. Borówkowa 13',
-            'postalCode' => '55-002',
-            'addressLocality' => 'Dobrzykowice',
-            'addressRegion' => 'Dolnośląskie',
-            'addressCountry' => 'PL'
+        'type' => 'BlogPosting',
+        'headline' => 'Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?',
+        'description' => 'Poradnik pomagający dopasować zabiegi kosmetyczne do typu cery i oczekiwanych efektów.',
+        'image' => BASE_URL . '/images/blog/default/thum2.jpg',
+        'author' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON'
+        ],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => BASE_URL . '/images/logo-7.png'
+            ]
+        ],
+        'datePublished' => '2023-09-10', // Data publikacji
+        'mainEntityOfPage' => [
+            '@type' => 'WebPage',
+            '@id' => BASE_URL . '/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php'
         ]
     ]
 ];
@@ -61,14 +70,14 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
         
-        	<?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zabiegi na Twarz
+        	        	<?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla wpisu blogowego
             $banner_img = 'images/banner/gallery-banner.jpg'; 
             
-            $page_title = 'Pielęgnacja i Odmładzanie Twarzy';
+            $page_title = 'Świadoma Pielęgnacja';
             
-            // Unikalny opis zachęcający do zadbania o cerę
-            $page_desc = 'Twoja twarz to Twoja wizytówka, która zasługuje na wyjątkową troskę. W MAGIC SALON oferujemy kompleksowe terapie dobrane do indywidualnych potrzeb Twojej skóry. Od głębokiego oczyszczania, przez intensywne nawilżanie, aż po zaawansowane zabiegi liftingujące – pomagamy wydobyć naturalne piękno, przywrócić blask i zachować młody wygląd na dłużej.';
+            // Krótki opis wprowadzający do artykułu (Hero Section)
+            $page_desc = 'Gubisz się w gąszczu nazw zabiegów i nowinek technologicznych? To zupełnie naturalne. Każda skóra jest inna i wymaga indywidualnego podejścia. W tym artykule podpowiadamy, na co zwrócić uwagę, dobierając terapię do potrzeb swojej cery, aby efekty były spektakularne i długotrwałe.';
             
             $breadcrumbs = [
                 [
@@ -77,8 +86,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Zabiegi na twarz',
-                    'url' => '', // Pusty URL oznacza element aktywny
+                    'label' => 'Blog', // Powrót do listy wpisów
+                    'url' => 'blog.php',
+                    'icon' => 'fa fa-book'
+                ],
+                [
+                    'label' => 'Dobór Zabiegu', // Skrócony tytuł dla czytelności
+                    'url' => '', // Element aktywny
                     'icon' => ''
                 ]
             ];

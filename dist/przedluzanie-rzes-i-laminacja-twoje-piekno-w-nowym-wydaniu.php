@@ -1,46 +1,55 @@
 <?php
 
 /**
- * MAGIC SALON - Zabiegi na Twarz (zabiegi-na-twarz.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla podstrony
+ * MAGIC SALON - Blog Post: Przedłużanie i Laminacja Rzęs
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla artykułu blogowego
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Zabiegi na Twarz
+// Konfiguracja meta tagów dla artykułu
 $meta = [
-    'title' => 'Zabiegi na Twarz – Lifting, Oczyszczanie i Pielęgnacja | MAGIC SALON',
-    'description' => 'Profesjonalna pielęgnacja twarzy w Dobrzykowicach. Sprawdź naszą ofertę: Glow & Lift, peeling kawitacyjny, laminacja brwi i rzęs oraz terapie anti-aging. Przywróć skórze blask!',
-    'keywords' => 'zabiegi na twarz dobrzykowice, kosmetyczka wrocław, peeling kawitacyjny, lifting twarzy, laminacja brwi, glow and lift, oczyszczanie twarzy, zabiegi odmładzające',
-    'canonical' => BASE_URL . '/zabiegi-na-twarz.php',
+    'title' => 'Przedłużanie Rzęs i Laminacja – Poradnik | Blog MAGIC SALON',
+    'description' => 'Marzysz o zalotnym spojrzeniu bez tuszu? Przeczytaj o różnicach między przedłużaniem a laminacją rzęs. Dowiedz się, który zabieg wybrać i jak dbać o efekt. Eksperci Magic Salon radzą!',
+    'keywords' => 'przedłużanie rzęs dobrzykowice, laminacja rzęs wrocław, lifting rzęs, pielęgnacja rzęs, stylizacja oprawy oka, rzęsy 1:1, kosmetyczka porady',
+    // Sugeruję ustawienie canonical na konkretny URL tego artykułu
+    'canonical' => BASE_URL . '/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
-        'type' => 'website',
-        'title' => 'Zabiegi na Twarz – Twoja Cera w Dobrych Rękach',
-        'description' => 'Zadbaj o promienną cerę z MAGIC SALON. Oferujemy nowoczesne terapie liftingujące, nawilżające i regenerujące.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Zdjęcie reprezentujące główną usługę
+        'type' => 'article', // Typ 'article' jest kluczowy dla postów blogowych
+        'title' => 'Przedłużanie Rzęs i Laminacja – Twoje Piękno w Nowym Wydaniu',
+        'description' => 'Zapomnij o zalotce i tuszu! Sprawdź, jak nowoczesne metody stylizacji rzęs mogą odmienić Twoje spojrzenie i zaoszczędzić Twój czas.',
+        'url' => BASE_URL . '/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php',
+        'image' => BASE_URL . '/images/blog/default/thum6.jpg', // Zdjęcie wyróżniające artykułu
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Profesjonalna Pielęgnacja Twarzy w MAGIC SALON',
-        'description' => 'Odkryj nasze zabiegi: Glow & Lift, SilkRoll i wiele więcej.',
+        'title' => 'Rzęsy Idealne – Przedłużanie czy Laminacja?',
+        'description' => 'Poradnik Magic Salon: Jak wybrać idealną metodę stylizacji rzęs dla siebie?',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon',
-        'name' => 'MAGIC SALON - Zabiegi na Twarz',
-        'description' => 'Specjalistyczne zabiegi kosmetyczne na twarz: oczyszczanie, nawilżanie, lifting i stylizacja oprawy oka.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'telephone' => '+48883481581',
-        'email' => 'biuro@magicsalon.pl',
-        'address' => [
-            'streetAddress' => 'ul. Borówkowa 13',
-            'postalCode' => '55-002',
-            'addressLocality' => 'Dobrzykowice',
-            'addressRegion' => 'Dolnośląskie',
-            'addressCountry' => 'PL'
+        'type' => 'BlogPosting', // Schema dedykowana dla artykułów
+        'headline' => 'Przedłużanie Rzęs i Laminacja – Twoje Piękno w Nowym Wydaniu!',
+        'description' => 'Artykuł omawiający zalety i różnice między zabiegami przedłużania a laminacji rzęs.',
+        'image' => BASE_URL . '/images/blog/default/thum6.jpg',
+        'author' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON'
+        ],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => BASE_URL . '/images/logo-7.png'
+            ]
+        ],
+        'datePublished' => '2023-11-20', // Możesz zaktualizować datę publikacji
+        'mainEntityOfPage' => [
+            '@type' => 'WebPage',
+            '@id' => BASE_URL . '/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php'
         ]
     ]
 ];
@@ -61,15 +70,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
         
-        	<?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zabiegi na Twarz
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla wpisu blogowego
             $banner_img = 'images/banner/gallery-banner.jpg'; 
-            
-            $page_title = 'Pielęgnacja i Odmładzanie Twarzy';
-            
-            // Unikalny opis zachęcający do zadbania o cerę
-            $page_desc = 'Twoja twarz to Twoja wizytówka, która zasługuje na wyjątkową troskę. W MAGIC SALON oferujemy kompleksowe terapie dobrane do indywidualnych potrzeb Twojej skóry. Od głębokiego oczyszczania, przez intensywne nawilżanie, aż po zaawansowane zabiegi liftingujące – pomagamy wydobyć naturalne piękno, przywrócić blask i zachować młody wygląd na dłużej.';
-            
+            $page_title = 'Stylizacja Spojrzenia';
+            // Krótki opis wprowadzający do artykułu (Hero Section)
+            $page_desc = 'Oczy są zwierciadłem duszy, a rzęsy ich najpiękniejszą oprawą. W tym artykule przybliżamy najpopularniejsze metody stylizacji, które pozwolą Ci cieszyć się wyrazistym spojrzeniem każdego dnia, oszczędzając czas na poranny makijaż. Odkryj różnice między metodami i wybierz tę idealną dla siebie.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -77,8 +83,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Zabiegi na twarz',
-                    'url' => '', // Pusty URL oznacza element aktywny
+                    'label' => 'Blog', // Dodano link powrotny do listy wpisów
+                    'url' => 'blog.php',
+                    'icon' => 'fa fa-book'
+                ],
+                [
+                    'label' => 'Przedłużanie i Laminacja',
+                    'url' => '', // Element aktywny
                     'icon' => ''
                 ]
             ];

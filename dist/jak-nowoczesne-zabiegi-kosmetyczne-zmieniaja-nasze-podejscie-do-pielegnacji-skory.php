@@ -1,46 +1,55 @@
 <?php
 
 /**
- * MAGIC SALON - Zabiegi na Twarz (zabiegi-na-twarz.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla podstrony
+ * MAGIC SALON - Blog Post: Nowoczesne Podejście do Pielęgnacji
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla artykułu blogowego
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Zabiegi na Twarz
+// Konfiguracja meta tagów dla artykułu
 $meta = [
-    'title' => 'Zabiegi na Twarz – Lifting, Oczyszczanie i Pielęgnacja | MAGIC SALON',
-    'description' => 'Profesjonalna pielęgnacja twarzy w Dobrzykowicach. Sprawdź naszą ofertę: Glow & Lift, peeling kawitacyjny, laminacja brwi i rzęs oraz terapie anti-aging. Przywróć skórze blask!',
-    'keywords' => 'zabiegi na twarz dobrzykowice, kosmetyczka wrocław, peeling kawitacyjny, lifting twarzy, laminacja brwi, glow and lift, oczyszczanie twarzy, zabiegi odmładzające',
-    'canonical' => BASE_URL . '/zabiegi-na-twarz.php',
+    'title' => 'Jak Nowoczesne Zabiegi Zmieniają Pielęgnację? | Blog MAGIC SALON',
+    'description' => 'Czy wiesz, że tradycyjne kremy to za mało? Odkryj, jak nowoczesna kosmetologia (liposukcja, lasery, Glow & Lift) rewolucjonizuje dbanie o skórę w Magic Salon.',
+    'keywords' => 'nowoczesna pielęgnacja skóry, zabiegi kosmetyczne trendy, liposukcja ultradźwiękowa, glow and lift, odmładzanie skóry wrocław, technologie w kosmetologii, magic salon blog',
+    // Canonical URL dla tego konkretnego artykułu
+    'canonical' => BASE_URL . '/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
-        'type' => 'website',
-        'title' => 'Zabiegi na Twarz – Twoja Cera w Dobrych Rękach',
-        'description' => 'Zadbaj o promienną cerę z MAGIC SALON. Oferujemy nowoczesne terapie liftingujące, nawilżające i regenerujące.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Zdjęcie reprezentujące główną usługę
+        'type' => 'article',
+        'title' => 'Rewolucja w Pielęgnacji Skóry – MAGIC SALON',
+        'description' => 'Zapomnij o starych metodach. Sprawdź, jak technologia zmienia podejście do piękna i dlaczego warto zaufać profesjonalistom.',
+        'url' => BASE_URL . '/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php',
+        'image' => BASE_URL . '/images/blog/default/thum1.jpg', // Zdjęcie wyróżniające artykułu
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Profesjonalna Pielęgnacja Twarzy w MAGIC SALON',
-        'description' => 'Odkryj nasze zabiegi: Glow & Lift, SilkRoll i wiele więcej.',
+        'title' => 'Nowoczesne Podejście do Pielęgnacji – Blog',
+        'description' => 'Jak technologia wpływa na Twoją skórę? Przeczytaj nasz nowy wpis.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon',
-        'name' => 'MAGIC SALON - Zabiegi na Twarz',
-        'description' => 'Specjalistyczne zabiegi kosmetyczne na twarz: oczyszczanie, nawilżanie, lifting i stylizacja oprawy oka.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'telephone' => '+48883481581',
-        'email' => 'biuro@magicsalon.pl',
-        'address' => [
-            'streetAddress' => 'ul. Borówkowa 13',
-            'postalCode' => '55-002',
-            'addressLocality' => 'Dobrzykowice',
-            'addressRegion' => 'Dolnośląskie',
-            'addressCountry' => 'PL'
+        'type' => 'BlogPosting',
+        'headline' => 'Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry',
+        'description' => 'Artykuł omawiający ewolucję pielęgnacji skóry i rolę nowoczesnych technologii w gabinecie kosmetycznym.',
+        'image' => BASE_URL . '/images/blog/default/thum1.jpg',
+        'author' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON'
+        ],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => BASE_URL . '/images/logo-7.png'
+            ]
+        ],
+        'datePublished' => '2023-09-01', // Data publikacji
+        'mainEntityOfPage' => [
+            '@type' => 'WebPage',
+            '@id' => BASE_URL . '/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php'
         ]
     ]
 ];
@@ -61,15 +70,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
 
-        	<?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zabiegi na Twarz
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla wpisu blogowego
             $banner_img = 'images/banner/gallery-banner.jpg'; 
-            
-            $page_title = 'Pielęgnacja i Odmładzanie Twarzy';
-            
-            // Unikalny opis zachęcający do zadbania o cerę
-            $page_desc = 'Twoja twarz to Twoja wizytówka, która zasługuje na wyjątkową troskę. W MAGIC SALON oferujemy kompleksowe terapie dobrane do indywidualnych potrzeb Twojej skóry. Od głębokiego oczyszczania, przez intensywne nawilżanie, aż po zaawansowane zabiegi liftingujące – pomagamy wydobyć naturalne piękno, przywrócić blask i zachować młody wygląd na dłużej.';
-            
+            $page_title = 'Ewolucja Pielęgnacji';
+            // Krótki opis wprowadzający do artykułu (Hero Section)
+            $page_desc = 'Świat kosmetologii zmienił się nie do poznania. To, co jeszcze dekadę temu wydawało się niemożliwe, dziś jest standardem w profesjonalnych salonach. W tym artykule przyglądamy się, jak nowoczesne technologie i zabiegi hi-tech redefiniują pojęcie skutecznej pielęgnacji, oferując rozwiązania szybsze, bezpieczniejsze i bardziej spektakularne niż kiedykolwiek wcześniej.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -77,8 +83,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Zabiegi na twarz',
-                    'url' => '', // Pusty URL oznacza element aktywny
+                    'label' => 'Blog', // Powrót do listy wpisów
+                    'url' => 'blog.php',
+                    'icon' => 'fa fa-book'
+                ],
+                [
+                    'label' => 'Nowoczesna Pielęgnacja', // Skrócony tytuł dla czytelności
+                    'url' => '', // Element aktywny
                     'icon' => ''
                 ]
             ];

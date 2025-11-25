@@ -1,46 +1,55 @@
 <?php
 
 /**
- * MAGIC SALON - Zabiegi na Twarz (zabiegi-na-twarz.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla podstrony
+ * MAGIC SALON - Blog Post: Najnowsze Trendy i Innowacje
+ * Wersja: 2.3 - Zoptymalizowane treści SEO dla artykułu blogowego
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Zabiegi na Twarz
+// Konfiguracja meta tagów dla artykułu
 $meta = [
-    'title' => 'Zabiegi na Twarz – Lifting, Oczyszczanie i Pielęgnacja | MAGIC SALON',
-    'description' => 'Profesjonalna pielęgnacja twarzy w Dobrzykowicach. Sprawdź naszą ofertę: Glow & Lift, peeling kawitacyjny, laminacja brwi i rzęs oraz terapie anti-aging. Przywróć skórze blask!',
-    'keywords' => 'zabiegi na twarz dobrzykowice, kosmetyczka wrocław, peeling kawitacyjny, lifting twarzy, laminacja brwi, glow and lift, oczyszczanie twarzy, zabiegi odmładzające',
-    'canonical' => BASE_URL . '/zabiegi-na-twarz.php',
+    'title' => 'Trendy i Innowacje w Pielęgnacji Skóry | Blog MAGIC SALON',
+    'description' => 'Poznaj najnowsze trendy w kosmetologii dostępne w Magic Salon. Liposukcja ultradźwiękowa, Glow & Lift, Detox & Drenaż. Sprawdź, jak technologie zmieniają oblicze pielęgnacji.',
+    'keywords' => 'nowoczesna kosmetologia, trendy beauty 2025, innowacje w pielęgnacji skóry, liposukcja ultradźwiękowa opinie, glow and lift, detox i drenaż, zabiegi na twarz wrocław',
+    // Canonical URL dla tego konkretnego artykułu
+    'canonical' => BASE_URL . '/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
-        'type' => 'website',
-        'title' => 'Zabiegi na Twarz – Twoja Cera w Dobrych Rękach',
-        'description' => 'Zadbaj o promienną cerę z MAGIC SALON. Oferujemy nowoczesne terapie liftingujące, nawilżające i regenerujące.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'image' => BASE_URL . '/images/nasza-oferta/glowlift.jpg', // Zdjęcie reprezentujące główną usługę
+        'type' => 'article',
+        'title' => 'Odkryj Moc Swojego Piękna – Innowacje w MAGIC SALON',
+        'description' => 'Technologia w służbie piękna. Przeczytaj o zabiegach, które rewolucjonizują podejście do dbania o siebie w Dobrzykowicach.',
+        'url' => BASE_URL . '/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php',
+        'image' => BASE_URL . '/images/blog/default/thum5.jpg', // Zdjęcie wyróżniające artykułu
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Profesjonalna Pielęgnacja Twarzy w MAGIC SALON',
-        'description' => 'Odkryj nasze zabiegi: Glow & Lift, SilkRoll i wiele więcej.',
+        'title' => 'Trendy i Innowacje Beauty – MAGIC SALON',
+        'description' => 'Sprawdź, jakie nowości technologiczne czekają na Ciebie w naszym salonie.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon',
-        'name' => 'MAGIC SALON - Zabiegi na Twarz',
-        'description' => 'Specjalistyczne zabiegi kosmetyczne na twarz: oczyszczanie, nawilżanie, lifting i stylizacja oprawy oka.',
-        'url' => BASE_URL . '/zabiegi-na-twarz.php',
-        'telephone' => '+48883481581',
-        'email' => 'biuro@magicsalon.pl',
-        'address' => [
-            'streetAddress' => 'ul. Borówkowa 13',
-            'postalCode' => '55-002',
-            'addressLocality' => 'Dobrzykowice',
-            'addressRegion' => 'Dolnośląskie',
-            'addressCountry' => 'PL'
+        'type' => 'BlogPosting',
+        'headline' => 'Odkryj Moc Twój Piękno: Najnowsze Trendy i Innowacje w Pielęgnacji Skóry',
+        'description' => 'Artykuł o nowoczesnych technologiach i trendach w kosmetologii estetycznej dostępnych w Magic Salon.',
+        'image' => BASE_URL . '/images/blog/default/thum5.jpg',
+        'author' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON'
+        ],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => BASE_URL . '/images/logo-7.png'
+            ]
+        ],
+        'datePublished' => '2023-10-15', // Data publikacji
+        'mainEntityOfPage' => [
+            '@type' => 'WebPage',
+            '@id' => BASE_URL . '/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php'
         ]
     ]
 ];
@@ -61,15 +70,12 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
         
-        	<?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zabiegi na Twarz
+        <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla wpisu blogowego
             $banner_img = 'images/banner/gallery-banner.jpg'; 
-            
-            $page_title = 'Pielęgnacja i Odmładzanie Twarzy';
-            
-            // Unikalny opis zachęcający do zadbania o cerę
-            $page_desc = 'Twoja twarz to Twoja wizytówka, która zasługuje na wyjątkową troskę. W MAGIC SALON oferujemy kompleksowe terapie dobrane do indywidualnych potrzeb Twojej skóry. Od głębokiego oczyszczania, przez intensywne nawilżanie, aż po zaawansowane zabiegi liftingujące – pomagamy wydobyć naturalne piękno, przywrócić blask i zachować młody wygląd na dłużej.';
-            
+            $page_title = 'Nowoczesna Kosmetologia';
+            // Krótki opis wprowadzający do artykułu (Hero Section)
+            $page_desc = 'Świat beauty nieustannie pędzi do przodu, oferując coraz to nowsze rozwiązania dla Twojej skóry. W tym artykule zabierzemy Cię w podróż po innowacyjnych technologiach i trendach, które zrewolucjonizowały nasze podejście do pielęgnacji. Dowiedz się, jak łączymy naukę z naturą, by wydobyć Twoje naturalne piękno.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -77,8 +83,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Zabiegi na twarz',
-                    'url' => '', // Pusty URL oznacza element aktywny
+                    'label' => 'Blog', // Powrót do listy wpisów
+                    'url' => 'blog.php',
+                    'icon' => 'fa fa-book'
+                ],
+                [
+                    'label' => 'Trendy i Innowacje', // Skrócony tytuł dla czytelności breadcrumbs
+                    'url' => '', // Element aktywny
                     'icon' => ''
                 ]
             ];
