@@ -1,8 +1,8 @@
 <?php
 
 /**
- * MAGIC SALON - Oferta: Stylizacja Brwi (oferta-stylizacja-brwi-claude-code.php)
- * Wersja: 1.0 - Profesjonalna stylizacja brwi: henna, architektura, laminacja
+ * MAGIC SALON - Oferta: Stylizacja Brwi (oferta-stylizacja-brwi.php)
+ * Wersja: 2.4 - Zoptymalizowane treści SEO dla usługi
  */
 
 // Załaduj konfigurację
@@ -10,28 +10,29 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
 // Konfiguracja meta tagów dla strony Stylizacja Brwi
 $meta = [
-    'title' => 'Stylizacja Brwi Dobrzykowice – Henna, Laminacja, Architektura | MAGIC SALON',
-    'description' => 'Profesjonalna stylizacja brwi w Dobrzykowicach. Henna brwi 50 zł, Laminacja 140 zł. Architektura, regulacja, fluffy brows. Efekt do 6 tygodni!',
-    'keywords' => 'stylizacja brwi dobrzykowice, henna brwi wrocław, laminacja brwi, architektura brwi, regulacja brwi nitką, fluffy brows, henna pudrowa, geometria brwi, salon kosmetyczny dobrzykowice, magic salon',
-    'canonical' => BASE_URL . '/oferta-stylizacja-brwi-claude-code.php',
+    'title' => 'Stylizacja Brwi – Henna Pudrowa, Laminacja i Architektura | MAGIC SALON',
+    'description' => 'Perfekcyjne brwi w Dobrzykowicach. Oferujemy hennę pudrową, geometrię, regulację oraz modną laminację brwi. Nadaj swojej twarzy wyrazu. Sprawdź cennik!',
+    'keywords' => 'stylizacja brwi dobrzykowice, henna pudrowa wrocław, laminacja brwi cena, geometria brwi, regulacja woskiem, brow henna, architektura brwi czernica, brwi ombre',
+    // Canonical URL dla tej konkretnej usługi
+    'canonical' => BASE_URL . '/oferta-stylizacja-brwi.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Stylizacja Brwi – Architektura, Henna, Laminacja | MAGIC SALON',
-        'description' => 'Odkryj sztukę idealnych brwi! Henna pudrowa, laminacja fluffy brows, profesjonalna architektura. Efekt naturalny i długotrwały.',
-        'url' => BASE_URL . '/oferta-stylizacja-brwi-claude-code.php',
-        'image' => BASE_URL . '/images/oferta-details/stylizacja-brwi-og.jpg',
+        'title' => 'Idealne Brwi – Twoja Wizytówka',
+        'description' => 'Zadbaj o oprawę oczu w Magic Salon. Profesjonalna stylizacja brwi: od naturalnej henny po trwałą laminację. Odkryj piękno swojego spojrzenia.',
+        'url' => BASE_URL . '/oferta-stylizacja-brwi.php',
+        'image' => BASE_URL . '/images/oferta-details/stylizacja-brwi-og.jpg', // Upewnij się, że plik istnieje
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Stylizacja Brwi – Magic Salon',
-        'description' => 'Perfekcyjne brwi na 6 tygodni!',
+        'title' => 'Stylizacja Brwi w MAGIC SALON',
+        'description' => 'Henna, regulacja i laminacja. Profesjonalna architektura spojrzenia.',
     ],
     'schema' => [
         'enabled' => true,
         'type' => 'Service',
-        'name' => 'Stylizacja Brwi – Architektura, Henna i Laminacja',
-        'description' => 'Kompleksowa stylizacja brwi łącząca architekturę, koloryzację henną pudrową i laminację dla efektu fluffy brows.',
+        'name' => 'Stylizacja i Pielęgnacja Brwi',
+        'description' => 'Kompleksowe usługi stylizacji brwi obejmujące geometrię, regulację, hennę pudrową oraz laminację brwi z zabiegami odżywczymi.',
         'provider' => [
             '@type' => 'BeautySalon',
             'name' => 'MAGIC SALON',
@@ -41,38 +42,51 @@ $meta = [
                 'addressLocality' => 'Dobrzykowice',
                 'addressCountry' => 'PL'
             ],
-            'telephone' => '+48883481581',
-            'priceRange' => '50-140 PLN'
+            'telephone' => '+48 883 481 581',
+            'priceRange' => '$$'
         ],
         'areaServed' => [
             '@type' => 'City',
             'name' => 'Dobrzykowice'
         ],
-        'offers' => [
-            [
-                '@type' => 'Offer',
-                'name' => 'Henna Brwi z Regulacją',
-                'price' => '50',
-                'priceCurrency' => 'PLN'
-            ],
-            [
-                '@type' => 'Offer',
-                'name' => 'Henna Brwi + Henna Rzęs',
-                'price' => '65',
-                'priceCurrency' => 'PLN'
-            ],
-            [
-                '@type' => 'Offer',
-                'name' => 'Laminacja + Architektura + Farbka',
-                'price' => '140',
-                'priceCurrency' => 'PLN'
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Stylizacja Oprawy Oka',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Henna Pudrowa z Geometrią',
+                        'price' => '80.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Laminacja Brwi (Pakiet Full)',
+                        'price' => '140.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Regulacja Brwi (Wosk/Pęseta)',
+                        'price' => '30.00',
+                        'priceCurrency' => 'PLN'
+                    ]
+                ]
             ]
         ]
     ]
 ];
 
 // Załaduj head partial
-include 'partials/head.php';
+include 'partials/head.php'; 
 ?>
 
 <body id="bg">
@@ -86,10 +100,15 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content bg-white">
 
-        <?php
-            $banner_img = 'images/banner/gallery-banner.jpg';
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            
             $page_title = 'Stylizacja Brwi';
-            $page_desc = 'Odkryj sztukę idealnych brwi w Magic Salon – profesjonalna stylizacja łącząca architekturę, hennę pudrową i laminację dla perfekcyjnego, długotrwałego efektu!';
+            
+            // Unikalny opis wprowadzający do konkretnej usługi
+            $page_desc = 'Brwi to rama twarzy, która potrafi całkowicie odmienić jej wyraz. W Magic Salon stylizacja brwi to nie tylko zabieg kosmetyczny, to sztuka geometrii i precyzji. Niezależnie od tego, czy marzysz o naturalnym efekcie henny pudrowej, czy modnym i trwałym ułożeniu dzięki laminacji – nasi specjaliści dobiorą idealny kształt i kolor, harmonizujący z Twoją urodą. Odkryj moc perfekcyjnego spojrzenia.';
+            
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -97,19 +116,20 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Oferta',
+                    'label' => 'Oferta', // Powrót do ogólnej oferty
                     'url' => 'oferta.php',
                     'icon' => 'fa fa-list'
                 ],
                 [
-                    'label' => 'Stylizacja Brwi',
-                    'url' => '',
+                    'label' => 'Stylizacja Brwi', // Element aktywny
+                    'url' => '', 
                     'icon' => ''
                 ]
             ];
-
+            
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-            ?>
+            ?> 
 
             <!--====== Start Main Content ======-->
 
@@ -815,7 +835,7 @@ include 'partials/head.php';
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
+                    <div class="col-lg-12">
                         <div class="accordion" id="faqAccordion">
                             <!-- FAQ 1 -->
                             <div class="accordion-item" style="border: none; margin-bottom: 20px;" data-aos="fade-up">
@@ -966,8 +986,8 @@ include 'partials/head.php';
     </div>
     <!-- page-wraper -->
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
     <script>
         AOS.init({
             duration: 800,
