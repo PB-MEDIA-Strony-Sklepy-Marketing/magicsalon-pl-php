@@ -1,38 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Galeria (galeria.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ * MAGIC SALON - Depilacja i Pielęgnacja (depilacja-i-pielegnacja.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Galerii
+// Konfiguracja meta tagów dla strony Depilacji i Pielęgnacji
 $meta = [
-    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
-    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
-    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
-    'canonical' => BASE_URL . '/galeria.php',
+    'title' => 'Depilacja Laserowa i Pielęgnacja Skóry | MAGIC SALON Dobrzykowice',
+    'description' => 'Odkryj sposób na idealnie gładką skórę i promienną cerę. Skuteczna epilacja laserowa, depilacja woskiem oraz zaawansowane zabiegi pielęgnacyjne w Magic Salon.',
+    'keywords' => 'epilacja laserowa dobrzykowice, depilacja woskiem wrocław, usuwanie owłosienia, pielęgnacja skóry, zabiegi na twarz, peeling kawitacyjny, magic salon oferta',
+    'canonical' => BASE_URL . '/depilacja-i-pielegnacja.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
-        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
-        'url' => BASE_URL . '/galeria.php',
-        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+        'title' => 'Gładka Skóra i Pielęgnacja – Oferta MAGIC SALON',
+        'description' => 'Pożegnaj niechciane włoski i zadbaj o kondycję swojej skóry. Sprawdź naszą ofertę epilacji i zabiegów pielęgnacyjnych.',
+        'url' => BASE_URL . '/depilacja-i-pielegnacja.php',
+        'image' => BASE_URL . '/images/nasza-oferta/epilacjalaserowa.jpg', // Zdjęcie reprezentujące główną usługę
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
-        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+        'title' => 'Depilacja i Pielęgnacja w MAGIC SALON',
+        'description' => 'Skuteczne metody usuwania owłosienia i profesjonalna kosmetyka.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
-        'name' => 'MAGIC SALON - Galeria',
-        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
-        'url' => BASE_URL . '/galeria.php',
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON - Depilacja i Pielęgnacja',
+        'description' => 'Specjalistyczne usługi usuwania owłosienia (laser, wosk) oraz zabiegi pielęgnacyjne na twarz i ciało.',
+        'url' => BASE_URL . '/depilacja-i-pielegnacja.php',
         'telephone' => '+48883481581',
         'email' => 'biuro@magicsalon.pl',
         'address' => [
@@ -61,12 +61,12 @@ include 'partials/head.php';
          <!-- CONTENT START -->
         <div class="page-content  bg-white">
         
-        <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Depilacja i Pielęgnacja
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Depilacja i Pielęgnacja';
+            // Unikalny opis łączący dwa główne tematy podstrony: usuwanie włosów i dbanie o skórę
+            $page_desc = 'Poczuj komfort idealnie gładkiej skóry i blask zdrowej cery. W Magic Salon łączymy skuteczność nowoczesnej epilacji laserowej z delikatnością zabiegów pielęgnacyjnych. Niezależnie od tego, czy pragniesz trwale pozbyć się owłosienia, czy zregenerować skórę twarzy – nasze holistyczne podejście zapewni Ci spektakularne efekty i doskonałe samopoczucie.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -74,13 +74,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'Depilacja i Pielęgnacja',
+                    'url' => '', // Pusty URL oznacza element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
             ?>    
             

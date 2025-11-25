@@ -1,38 +1,38 @@
 <?php
 
 /**
- * MAGIC SALON - Galeria (galeria.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ * MAGIC SALON - Zabiegi na Ciało (zabiegi-na-cialo.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla podstrony
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Galerii
+// Konfiguracja meta tagów dla strony Zabiegi na Ciało
 $meta = [
-    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
-    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
-    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
-    'canonical' => BASE_URL . '/galeria.php',
+    'title' => 'Zabiegi na Ciało – Modelowanie i Ujędrnianie | MAGIC SALON Dobrzykowice',
+    'description' => 'Odkryj skuteczne zabiegi na ciało w MAGIC SALON. Modelowanie sylwetki 360°, redukcja cellulitu, drenaż limfatyczny, liposukcja ultradźwiękowa i lipolaser. Poczuj się pięknie w swoim ciele!',
+    'keywords' => 'zabiegi na ciało dobrzykowice, modelowanie sylwetki wrocław, usuwanie cellulitu, liposukcja ultradźwiękowa, drenaż limfatyczny, ujędrnianie skóry, dermomasaż, lipolaser efekty',
+    'canonical' => BASE_URL . '/zabiegi-na-cialo.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
         'type' => 'website',
-        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
-        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
-        'url' => BASE_URL . '/galeria.php',
-        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+        'title' => 'Zabiegi na Ciało – Twoja Droga do Idealnej Sylwetki',
+        'description' => 'Zadbaj o swoje ciało kompleksowo. Oferujemy nowoczesne terapie wyszczuplające, antycellulitowe i relaksacyjne w Dobrzykowicach.',
+        'url' => BASE_URL . '/zabiegi-na-cialo.php',
+        'image' => BASE_URL . '/images/nasza-oferta/modelowaniesylwetki360.jpg', // Zdjęcie reprezentujące główną usługę
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
-        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+        'title' => 'Modelowanie Ciała w MAGIC SALON',
+        'description' => 'Sprawdź nasze metody na piękną sylwetkę: Lipolaser, Dermomasaż, Modelowanie 360°.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
-        'name' => 'MAGIC SALON - Galeria',
-        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
-        'url' => BASE_URL . '/galeria.php',
+        'type' => 'BeautySalon',
+        'name' => 'MAGIC SALON - Zabiegi na Ciało',
+        'description' => 'Profesjonalne zabiegi kosmetyczne na ciało: modelowanie sylwetki, redukcja tkanki tłuszczowej i cellulitu.',
+        'url' => BASE_URL . '/zabiegi-na-cialo.php',
         'telephone' => '+48883481581',
         'email' => 'biuro@magicsalon.pl',
         'address' => [
@@ -61,12 +61,12 @@ include 'partials/head.php';
          <!-- CONTENT START -->
         <div class="page-content  bg-white">
         
-        <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Zabiegi na Ciało
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Modelowanie i Pielęgnacja Ciała';
+            // Unikalny opis zachęcający do skorzystania z usług modelowania sylwetki
+            $page_desc = 'Twoje ciało to Twoja świątynia, dlatego zasługuje na najlepszą opiekę. W MAGIC SALON łączymy zaawansowane technologie z holistycznym podejściem, aby pomóc Ci osiągnąć wymarzoną sylwetkę, zredukować cellulit i ujędrnić skórę. Poczuj lekkość, energię i pewność siebie dzięki naszym spersonalizowanym terapiom.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -74,13 +74,13 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'Zabiegi na ciało',
+                    'url' => '', // Pusty URL oznacza element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
             ?>      
             

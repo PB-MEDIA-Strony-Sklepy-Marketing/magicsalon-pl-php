@@ -1,46 +1,45 @@
 <?php
 
 /**
- * MAGIC SALON - Galeria (galeria.php)
- * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Galerii
+ * MAGIC SALON - Blog (blog.php)
+ * Wersja: 2.3 - Zoptymalizowane treści SEO i zmienne dla Bloga
  */
 
 // Załaduj konfigurację
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
 
-// Konfiguracja meta tagów dla strony Galerii
+// Konfiguracja meta tagów dla strony Bloga
 $meta = [
-    'title' => 'Galeria Realizacji – Efekty Zabiegów | MAGIC SALON Dobrzykowice',
-    'description' => 'Zobacz autentyczne efekty zabiegów w MAGIC SALON. Galeria zdjęć: metamorfozy twarzy, modelowanie sylwetki, stylizacja oprawy oczu oraz relaksujące wnętrza naszego salonu.',
-    'keywords' => 'galeria magic salon, efekty zabiegów dobrzykowice, metamorfozy wrocław, stylizacja rzęs zdjęcia, makijaż permanentny galeria, wnętrze salonu kosmetycznego, zabiegi na twarz efekty',
-    'canonical' => BASE_URL . '/galeria.php',
+    'title' => 'Blog Kosmetyczny – Porady, Trendy i Nowości | MAGIC SALON',
+    'description' => 'Odkryj świat profesjonalnej pielęgnacji z MAGIC SALON. Czytaj nasz blog o zabiegach na twarz, ciało i rzęsy. Ekspercka wiedza, porady i inspiracje w Dobrzykowicach.',
+    'keywords' => 'blog kosmetyczny, porady beauty, pielęgnacja skóry blog, zabiegi kosmetyczne trendy, kosmetolog radzi, magic salon blog, edukacja beauty',
+    'canonical' => BASE_URL . '/blog.php',
     'robots' => 'index, follow, max-image-preview:large',
     'og' => [
-        'type' => 'website',
-        'title' => 'Galeria Realizacji – Zobacz Efekty w MAGIC SALON',
-        'description' => 'Obraz mówi więcej niż słowa. Sprawdź nasze portfolio zabiegowe i zobacz, jak dbamy o Twoje piękno w Dobrzykowicach.',
-        'url' => BASE_URL . '/galeria.php',
-        'image' => BASE_URL . '/images/galeria/pic1.jpg', // Reprezentatywne zdjęcie z galerii
+        'type' => 'blog',
+        'title' => 'Blog MAGIC SALON – Twoja Dawka Wiedzy o Pięknie',
+        'description' => 'Poznaj tajniki nowoczesnej kosmetologii. Artykuły, porady i ciekawostki ze świata Beauty.',
+        'url' => BASE_URL . '/blog.php',
+        'image' => BASE_URL . '/images/blog/grid/pic1.jpg', // Zdjęcie pierwszego artykułu jako reprezentatywne
     ],
     'twitter' => [
         'card' => 'summary_large_image',
-        'title' => 'Galeria MAGIC SALON – Efekty Zabiegów',
-        'description' => 'Zobacz nasze realizacje i wnętrza salonu w Dobrzykowicach.',
+        'title' => 'Blog MAGIC SALON – Ekspercka Wiedza',
+        'description' => 'Czytaj o nowościach w pielęgnacji i zabiegach.',
     ],
     'schema' => [
         'enabled' => true,
-        'type' => 'BeautySalon', // Można rozważyć dodanie ImageGallery w przyszłości jako osobny element schema
-        'name' => 'MAGIC SALON - Galeria',
-        'description' => 'Portfolio zrealizowanych zabiegów kosmetycznych oraz galeria wnętrz salonu Magic Salon.',
-        'url' => BASE_URL . '/galeria.php',
-        'telephone' => '+48883481581',
-        'email' => 'biuro@magicsalon.pl',
-        'address' => [
-            'streetAddress' => 'ul. Borówkowa 13',
-            'postalCode' => '55-002',
-            'addressLocality' => 'Dobrzykowice',
-            'addressRegion' => 'Dolnośląskie',
-            'addressCountry' => 'PL'
+        'type' => 'Blog',
+        'name' => 'Blog MAGIC SALON',
+        'description' => 'Blog o tematyce urody, pielęgnacji skóry i zabiegach kosmetycznych prowadzony przez ekspertów Magic Salon.',
+        'url' => BASE_URL . '/blog.php',
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'MAGIC SALON',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => BASE_URL . '/images/logo-7.png'
+            ]
         ]
     ]
 ];
@@ -61,12 +60,13 @@ include 'partials/head.php';
         <!-- CONTENT START -->
         <div class="page-content">
         
-        <?php
-            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Galeria
-            $banner_img = 'images/banner/gallery-banner.jpg';
-            $page_title = 'Galeria – Piękno w Obiektywie';
-            // Unikalny opis dla nagłówka galerii, zachęcający do przeglądania
-            $page_desc = 'Witaj w magicznym świecie transformacji! Nasza galeria to kolekcja spektakularnych efektów zabiegów kosmetycznych, które zmieniły życie naszych klientów. Od delikatnych zabiegów na twarz, przez profesjonalną depilację laserową, po modelowanie sylwetki i artystyczną stylizację rzęs – każda realizacja opowiada unikalną historię piękna. Zainspiruj się i odkryj, co Magic Salon może zrobić dla Ciebie!';
+                <?php
+            // Konfiguracja dynamicznego banera i breadcrumbs dla podstrony Blog
+            // Używamy banera pasującego do tematyki edukacyjnej/beauty
+            $banner_img = 'images/banner/gallery-banner.jpg'; 
+            $page_title = 'Strefa Wiedzy i Inspiracji';
+            // Unikalny opis zachęcający do zgłębiania wiedzy
+            $page_desc = 'Witaj w naszej przestrzeni edukacyjnej! Tutaj dzielimy się pasją do piękna, obalamy mity pielęgnacyjne i przybliżamy tajniki nowoczesnych technologii kosmetycznych. Znajdziesz tu rzetelną wiedzę, porady naszych ekspertów oraz inspiracje, które pomogą Ci świadomie dbać o swoją urodę każdego dnia.';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -74,15 +74,15 @@ include 'partials/head.php';
                     'icon' => 'fa fa-home'
                 ],
                 [
-                    'label' => 'Galeria Realizacji',
-                    'url' => '', // Pusty URL oznacza element aktywny (tekst bez linku)
+                    'label' => 'Blog & Porady',
+                    'url' => '', // Pusty URL oznacza element aktywny
                     'icon' => ''
                 ]
             ];
             
-            // Załadowanie dedykowanego partiala (utworzonego w poprzednich krokach)
+            // Załadowanie dedykowanego partiala
             include 'partials/breadcrumbs.php';
-            ?> 
+            ?>
             
             <!-- ABOUT COMPANY SECTION START -->
             <div class="section-full m-t80">
