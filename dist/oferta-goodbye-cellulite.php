@@ -96,7 +96,7 @@ include 'partials/head.php';
             // Konfiguracja dynamicznego banera i breadcrumbs
             $banner_img = 'images/banner/gallery-banner.jpg';
             $page_title = 'Goodbye Cellulite';
-            $page_desc = 'Profesjonalne zabiegi antycellulitowe z widocznymi efektami. Pożegnaj "skórkę pomarańczową" i ciesz się gładką, jędrną skórą.';
+            $page_desc = 'Pożegnaj cellulit na zawsze z autorskim zabiegiem Goodbye Cellulite w Magic Salon! Ta zaawansowana terapia łączy najskuteczniejsze techniki modelowania ciała, redukując widoczność cellulitu, wygładzając skórę i poprawiając jej elastyczność. Dzięki połączeniu ultradźwięków, masażu próżniowego i lipodrenażu uzyskasz spektakularne efekty już po pierwszym zabiegu. Odkryj gładką, jędrną skórę i ciesz się pewnym siebie ciałem!';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -186,7 +186,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b50 bg-white">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(109, 53, 111, 0.1); color: #6D356F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-info-circle me-2"></i>Wiedza ekspercka
                         </span>
@@ -254,7 +254,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80" style="background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(215, 165, 79, 0.1); color: #D7A54F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-cog me-2"></i>Technologia
                         </span>
@@ -376,7 +376,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80 bg-white">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(109, 53, 111, 0.1); color: #6D356F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-award me-2"></i>Potwierdzona skuteczność
                         </span>
@@ -471,7 +471,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80" style="background: linear-gradient(135deg, rgba(109, 53, 111, 0.03) 0%, rgba(215, 165, 79, 0.03) 100%);">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(215, 165, 79, 0.1); color: #D7A54F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-tag me-2"></i>Konkurencyjne ceny
                         </span>
@@ -574,7 +574,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80 bg-white">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(109, 53, 111, 0.1); color: #6D356F; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-question-circle me-2"></i>Najczęstsze pytania
                         </span>
@@ -588,7 +588,7 @@ include 'partials/head.php';
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="accordion" id="faqAccordion">
 
                             <div class="accordion-item mb-3 border-0 shadow-sm" style="border-radius: 15px; overflow: hidden;" data-aos="fade-up" data-aos-delay="0">
@@ -685,7 +685,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80" style="background: linear-gradient(135deg, #6D356F 0%, #9F5BA4 100%);">
             <div class="container">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
                         <span class="badge px-4 py-2 mb-3" style="background: rgba(255, 255, 255, 0.2); color: #fff; font-size: 14px; border-radius: 50px;">
                             <i class="fa fa-heart me-2"></i>Twój lokalny ekspert
                         </span>
@@ -739,7 +739,7 @@ include 'partials/head.php';
         <div class="section-full p-t80 p-b80 bg-white">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center" data-aos="zoom-in">
+                    <div class="col-lg-12 text-center" data-aos="zoom-in">
                         <div class="p-5 rounded shadow-lg" style="background: linear-gradient(135deg, rgba(109, 53, 111, 0.05) 0%, rgba(215, 165, 79, 0.05) 100%); border-radius: 30px !important;">
                             <i class="fa fa-sparkles fa-4x mb-4" style="color: #D7A54F;"></i>
                             <h2 class="mb-4" style="color: #6D356F; font-weight: 700;">

@@ -742,7 +742,7 @@ include 'partials/head.php';
 /* === CTA SECTION === */
 .cdr-cta-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #D7A54F 0%, #6D356F 100%);
+    background: linear-gradient(135deg, #6D356F 0%, #6D356F 100%);
     position: relative;
     overflow: hidden;
 }
@@ -917,7 +917,7 @@ html {
             // Konfiguracja dynamicznego banera i breadcrumbs dla usługi
             $banner_img = 'images/banner/gallery-banner.jpg';
             $page_title = 'Cool Down Roll';
-            $page_desc = 'Innowacyjny zabieg łączący moc zimna z precyzją masażu rolkowego. Odkryj przełomową technologię modelowania sylwetki, która gwarantuje spektakularne efekty już po pierwszym zabiegu.';
+            $page_desc = 'Masaż Cool Down Roll w Magic Salon to połączenie terapii zimnem i głębokiego masażu rollerowego, które przynosi spektakularne efekty! Zabieg skutecznie redukuje cellulit, poprawia elastyczność skóry, wspiera limfodrenażu i przyspiesza regenerację po wysiłku fizycznym. Poczuj ulgę, ujędrnij ciało i ciesz się gładką, modelowaną sylwetką. Zarezerwuj wizytę online przez Booksy!';
             $breadcrumbs = [
                 [
                     'label' => 'Strona Główna',
@@ -947,19 +947,20 @@ html {
             <div class="cdr-hero-overlay"></div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="col-lg-12 col-md-12 mx-auto">
                         <div class="cdr-hero-content text-center">
                             <div class="cdr-hero-badge">✨ Innowacyjna Technologia Kriomassażu</div>
                             <h1 class="cdr-hero-title">
                                 <span class="highlight">Cool Down Roll</span><br>
-                                Rewolucja w Modelowaniu Sylwetki
+                                <p class="text-center text-white mb-3 mt-3">Rewolucja w Modelowaniu Sylwetki</p>
                             </h1>
                             <p class="cdr-hero-subtitle">
                                 Przełomowe połączenie <strong>krioterapii miejscowej</strong> z <strong>masażem rolkowym</strong> –
                                 dla perfekcyjnej sylwetki, gładkiej skóry i natychmiastowego efektu "lekkich nóg"
                             </p>
-
-                            <div class="cdr-hero-features">
+                            
+                            <div class="cdr-hero-features padding-extech-shortcode-footer">
+                                
                                 <div class="cdr-hero-feature">
                                     <div class="cdr-hero-feature-icon">
                                         <i class="fas fa-snowflake"></i>
@@ -969,6 +970,8 @@ html {
                                         -15°C do +5°C
                                     </div>
                                 </div>
+                            
+                            
                                 <div class="cdr-hero-feature">
                                     <div class="cdr-hero-feature-icon">
                                         <i class="fas fa-spa"></i>
@@ -978,6 +981,8 @@ html {
                                         Głębokie działanie
                                     </div>
                                 </div>
+                            
+                            
                                 <div class="cdr-hero-feature">
                                     <div class="cdr-hero-feature-icon">
                                         <i class="fas fa-chart-line"></i>
@@ -987,9 +992,9 @@ html {
                                         Od 1. zabiegu
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="cdr-cta-group">
+                            
+                        </div>
+                            <div class="cdr-cta-group padding-extech-shortcode-footer">
                                 <a href="https://booksy.magicsalon.pl" target="_blank" class="cdr-btn-primary">
                                     <i class="fas fa-calendar-check me-2"></i>Umów wizytę online
                                 </a>
@@ -1203,7 +1208,7 @@ html {
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-lg-8 mx-auto text-center cdr-animate-on-scroll">
+                    <div class="col-lg-12 mx-auto text-center cdr-animate-on-scroll">
                         <div style="background: #f9f9f9; padding: 30px; border-radius: 15px; border-left: 5px solid #D7A54F;">
                             <h5 style="color: #6D356F; font-weight: 700; margin-bottom: 15px;">
                                 <i class="fas fa-clock me-2"></i>Czas Trwania
@@ -1284,7 +1289,7 @@ html {
                 </div>
 
                 <div class="row mt-4">
-                    <div class="col-lg-10 mx-auto text-center cdr-animate-on-scroll">
+                    <div class="col-lg-12 mx-auto text-center cdr-animate-on-scroll">
                         <div class="alert" style="background: rgba(255,255,255,0.95); border: none; padding: 25px; border-radius: 15px;">
                             <p style="color: #444; font-size: 1.05rem; margin: 0;">
                                 <i class="fas fa-gift me-2" style="color: #D7A54F;"></i>
@@ -1306,7 +1311,7 @@ html {
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
+                    <div class="col-lg-12">
                         <div class="accordion cdr-faq-accordion cdr-animate-on-scroll" id="faqAccordion">
 
                             <div class="accordion-item">
@@ -1450,7 +1455,7 @@ html {
         <section class="cdr-cta-section">
             <div class="container">
                 <div class="cdr-cta-content cdr-animate-on-scroll">
-                    <h2>Gotowa Na Transformację?</h2>
+                    <h2 class="text-white">Gotowy Na Transformację?</h2>
                     <p>
                         Dołącz do grona zadowolonych klientek Magic Salon i odkryj moc Cool Down Roll.
                         Umów się na <strong>bezpłatną konsultację</strong> już dziś!
