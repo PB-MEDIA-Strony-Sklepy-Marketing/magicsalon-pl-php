@@ -50,6 +50,6 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
 
 ## Atrybucja / Attribution
 
-Niniejszy Kodeks Postępowania jest adaptacją Contributor Covenant, wersja 1.4, dostępnej pod adresem https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+Niniejszy Kodeks Postępowania jest adaptacją Contributor Covenant, wersja 1.4, dostępnej pod adresem https://www.contributor-covenant.org/version/1/4/code-of-conduct.php
 
-This Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+This Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.php

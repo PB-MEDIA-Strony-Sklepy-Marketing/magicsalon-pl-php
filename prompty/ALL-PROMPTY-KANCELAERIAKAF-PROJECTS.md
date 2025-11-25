@@ -16,7 +16,7 @@ Korzystam z frameworka Bootstrap w tym projekcie "Kancelaria KAF". W oparciu o o
 ✅ Czytelna, profesjonalna typografia
 ✅ Responsywność mobile-first . Zaprojektuj kodem całą podstronę "O nas".
 
-Załączony plik [testimonial-section.html] przerób nie zmieniając znaczników i tagów w kodzie, zmień tylko teksty na przykładowe i adekwatne do branży firmy "Kancelaria KAF" w języku polskim. Podmień tylko teksty na gotowe przykładowe dla tego projektu [kancelariakaf.com]. Wygeneruj gotowy zmieniony tekstowo kod do skopiowania i wklejenia tylko ta sekcja cała. Rozbuduj te teksty i niech będą spójne z firmą "Kancelaria KAF".
+Załączony plik [testimonial-section.php] przerób nie zmieniając znaczników i tagów w kodzie, zmień tylko teksty na przykładowe i adekwatne do branży firmy "Kancelaria KAF" w języku polskim. Podmień tylko teksty na gotowe przykładowe dla tego projektu [kancelariakaf.com]. Wygeneruj gotowy zmieniony tekstowo kod do skopiowania i wklejenia tylko ta sekcja cała. Rozbuduj te teksty i niech będą spójne z firmą "Kancelaria KAF".
 
 --------------------------------------------------------------------
 
@@ -56,7 +56,7 @@ Przeanalizuj [uslugi-prawne.php]. Do aktualnego już kodu w pliku [uslugi-prawne
 
 ------------------------------------------------------------------
 
-Przeanalizuj plik o-nas.html który chcę przekonwertować na plik .php dynamicznym z odpowiednimi na nim zmiennymi danymi $. Wytnij cała zawartość z tego pliku od znacznika <head> do </head> i przekonwertuj to na dynamiczne PHP w tym url i resztę zmiennych jak meta tagi adekwatnie do tego projektu kancelariakaf.com . To będzie template dla <header> ze zmiennymi w całym projekcie i innych podstronach tej strony internetowej w PHP. Lokalizacja partu <head> do wklejenia do makiety podstrony [/template/head/head.php]. Chcę z tego zrobić template do wklejenia do pliku o-nas.html ale po konwersji bedzie o-nas.php . Chcę żeby w głównej makiecie szkielecie strony O nas [o-nas.php] w miejsce <head></head> wklejało zwartość z tego co wyciąłeś czyli zawartość z pliku [/template/head/head.php] jako include lub template parts w PHP. Jest to czyste PHP bez żadnych CMSów czy innych aplikacji. Wygeneruj kody do skopiowania i wklejania lub gotowe pliki z zawartością kodu i instrukcja implementacji include tego template parts head.php w makiecie głównej podstrobny o-nas.php .
+Przeanalizuj plik o-nas.php który chcę przekonwertować na plik .php dynamicznym z odpowiednimi na nim zmiennymi danymi $. Wytnij cała zawartość z tego pliku od znacznika <head> do </head> i przekonwertuj to na dynamiczne PHP w tym url i resztę zmiennych jak meta tagi adekwatnie do tego projektu kancelariakaf.com . To będzie template dla <header> ze zmiennymi w całym projekcie i innych podstronach tej strony internetowej w PHP. Lokalizacja partu <head> do wklejenia do makiety podstrony [/template/head/head.php]. Chcę z tego zrobić template do wklejenia do pliku o-nas.php ale po konwersji bedzie o-nas.php . Chcę żeby w głównej makiecie szkielecie strony O nas [o-nas.php] w miejsce <head></head> wklejało zwartość z tego co wyciąłeś czyli zawartość z pliku [/template/head/head.php] jako include lub template parts w PHP. Jest to czyste PHP bez żadnych CMSów czy innych aplikacji. Wygeneruj kody do skopiowania i wklejania lub gotowe pliki z zawartością kodu i instrukcja implementacji include tego template parts head.php w makiecie głównej podstrobny o-nas.php .
 
 
 

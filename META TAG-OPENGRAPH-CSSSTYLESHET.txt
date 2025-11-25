@@ -11,6 +11,6 @@ $meta = [
 include __DIR__ . '/partials/head.php';
 
 
-Wygeneruj kod do Plik partials/main-nav-root.php . Na podstawie ostatniej odpowiedzi wygeneruj na podstawie nowych informacji kod PHP do pliku partials/main-nav-root.php na podstawie przesłanego kodu statycznego HTML. Kod z pliku main-nav-root.php jest kodem dynamicznym menu głównego projektu strony internetowej. Zastąp elementy statyczne <li><a href=, dynamicznymi PHP. Uwzględnij zmienny url na podfoldery głównej lokalizacji. Template HTML pliku partials/main-nav-root.html: "
+Wygeneruj kod do Plik partials/main-nav-root.php . Na podstawie ostatniej odpowiedzi wygeneruj na podstawie nowych informacji kod PHP do pliku partials/main-nav-root.php na podstawie przesłanego kodu statycznego HTML. Kod z pliku main-nav-root.php jest kodem dynamicznym menu głównego projektu strony internetowej. Zastąp elementy statyczne <li><a href=, dynamicznymi PHP. Uwzględnij zmienny url na podfoldery głównej lokalizacji. Template HTML pliku partials/main-nav-root.php: "
 
 claude mcp add enrichr-mcp-server -- npx -pbmedia enrichr-mcp-server

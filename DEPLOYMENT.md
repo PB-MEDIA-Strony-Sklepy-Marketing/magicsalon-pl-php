@@ -243,7 +243,7 @@ server {
     server_name magicsalon.pl www.magicsalon.pl;
 
     root /var/www/magicsalon/dist;
-    index index.php index.html;
+    index index.php index.php;
 
     # SSL Configuration
     ssl_certificate /etc/letsencrypt/live/magicsalon.pl/fullchain.pem;

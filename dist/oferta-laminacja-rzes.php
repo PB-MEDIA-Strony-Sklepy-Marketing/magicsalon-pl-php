@@ -194,13 +194,13 @@ include 'partials/head.php';
                                                     </div>
                                                     <div class="ow-post-info p-tb30 bg-white">
                                                         <div class="ow-post-title">
-                                                            <h4 class="post-title"><a href="architektura-i-laminacja-brwi.html" title="Architektura i laminacja brwi">Architektura i laminacja brwi</a></h4>
+                                                            <h4 class="post-title"><a href="architektura-i-laminacja-brwi.php" title="Architektura i laminacja brwi">Architektura i laminacja brwi</a></h4>
                                                         </div>
                                                         <div class="ow-post-text">
                                                             <p>Modelowanie brwi dopasowane do kształtu twarzy oraz indywidualnych preferencji klientki. Efekt? Wyrazista, naturalna oprawa oka.</p>
                                                         </div>
                                                         <div class="ow-post-readmore "> 
-                                                            <a href="architektura-i-laminacja-brwi.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
+                                                            <a href="architektura-i-laminacja-brwi.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
                                                         </div>
                                                         <div class="ow-post-tags clearfix">
                                                             
@@ -216,13 +216,13 @@ include 'partials/head.php';
                                                     </div>
                                                     <div class="ow-post-info p-tb30 bg-white">
                                                         <div class="ow-post-title">
-                                                            <h4 class="post-title"><a href="depilacja-woskiem.html" title="Depilacja woskiem">Depilacja woskiem</a></h4>
+                                                            <h4 class="post-title"><a href="depilacja-woskiem.php" title="Depilacja woskiem">Depilacja woskiem</a></h4>
                                                         </div>
                                                         <div class="ow-post-text">
                                                             <p>Sprawdzona metoda usuwania owłosienia z natychmiastowym efektem. Zabieg przeprowadzany z dbałością o komfort i higienę.</p>
                                                         </div>
                                                         <div class="ow-post-readmore "> 
-                                                            <a href="depilacja-woskiem.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
+                                                            <a href="depilacja-woskiem.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
                                                         </div>
                                                         <div class="ow-post-tags clearfix">
                                                             
@@ -238,13 +238,13 @@ include 'partials/head.php';
                                                     </div>
                                                     <div class="ow-post-info p-tb30 bg-white">
                                                         <div class="ow-post-title">
-                                                            <h4 class="post-title"><a href="dermomasaz.html" title="Dermomasaż podciśnienowy">Dermomasaż podciśnienowy</a></h4>
+                                                            <h4 class="post-title"><a href="dermomasaz.php" title="Dermomasaż podciśnienowy">Dermomasaż podciśnienowy</a></h4>
                                                         </div>
                                                         <div class="ow-post-text">
                                                             <p>Zabieg łączący masaż próżniowy z terapią antycellulitową. Stymuluje krążenie, ujędrnia skórę i poprawia metabolizm komórkowy.</p>
                                                         </div>
                                                         <div class="ow-post-readmore "> 
-                                                            <a href="dermomasaz.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
+                                                            <a href="dermomasaz.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
                                                         </div>
                                                         <div class="ow-post-tags clearfix">
                                                             
@@ -260,13 +260,13 @@ include 'partials/head.php';
                                                     </div>
                                                     <div class="ow-post-info p-tb30 bg-white">
                                                         <div class="ow-post-title">
-                                                            <h4 class="post-title"><a href="epilacja-laserowa.html" title="Epilacja laserowa">Epilacja laserowa</a></h4>
+                                                            <h4 class="post-title"><a href="epilacja-laserowa.php" title="Epilacja laserowa">Epilacja laserowa</a></h4>
                                                         </div>
                                                         <div class="ow-post-text">
                                                             <p>Nowoczesna metoda depilacji zapewniająca trwały efekt gładkiej skóry. Skuteczna zarówno dla kobiet, jak i mężczyzn – bez podrażnień i wrastających włosków.</p>
                                                         </div>
                                                         <div class="ow-post-readmore "> 
-                                                            <a href="epilacja-laserowa.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
+                                                            <a href="epilacja-laserowa.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
                                                         </div>
                                                         <div class="ow-post-tags clearfix">
                                                             
@@ -282,13 +282,13 @@ include 'partials/head.php';
                                                     </div>
                                                     <div class="ow-post-info p-tb30 bg-white">
                                                         <div class="ow-post-title">
-                                                            <h4 class="post-title"><a href="glow-lift.html" title="Glow & Lift">Glow & Lift</a></h4>
+                                                            <h4 class="post-title"><a href="glow-lift.php" title="Glow & Lift">Glow & Lift</a></h4>
                                                         </div>
                                                         <div class="ow-post-text">
                                                             <p>Zabieg stworzony z myślą o osobach, które pragną natychmiastowego efektu liftingu, rozświetlenia i ujędrnienia skóry. Dzięki wykorzystaniu nowoczesnych technologii stymulujemy produkcję kolagenu i elastyny, co przekłada się na młodszy i zdrowszy wygląd.</p>
                                                         </div>
                                                         <div class="ow-post-readmore "> 
-                                                            <a href="glow-lift.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
+                                                            <a href="glow-lift.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
                                                         </div>
                                                         <div class="ow-post-tags clearfix">
                                                             
@@ -304,13 +304,13 @@ include 'partials/head.php';
                                                     </div>
                                                     <div class="ow-post-info p-tb30 bg-white">
                                                         <div class="ow-post-title">
-                                                            <h4 class="post-title"><a href="lifting-i-laminacja-rzes.html" title="Lifting i laminacja rzęs">Lifting i laminacja rzęs</a></h4>
+                                                            <h4 class="post-title"><a href="lifting-i-laminacja-rzes.php" title="Lifting i laminacja rzęs">Lifting i laminacja rzęs</a></h4>
                                                         </div>
                                                         <div class="ow-post-text">
                                                             <p>Zabieg podkreślający naturalne piękno rzęs – uniesione, pogrubione i zadbane rzęsy bez użycia tuszu.</p>
                                                         </div>
                                                         <div class="ow-post-readmore "> 
-                                                            <a href="lifting-i-laminacja-rzes.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
+                                                            <a href="lifting-i-laminacja-rzes.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class=" site-button-link"> CZYTAJ WIĘCEJ  <i class="fa fa-angle-double-right"></i></a> 
                                                         </div>
                                                         <div class="ow-post-tags clearfix">
                                                             
@@ -358,19 +358,19 @@ include 'partials/head.php';
                                 <div class="wt-nav-block m-b50">
                                     <h4 class="wt-nav-title">Nawigacja oferta</h4>
                                     <ul class="wt-nav wt-nav-pills">
-                                      <li><a href="epilacja-laserowa.html">Epilacja laserowa</a></li>
-                                      <li><a href="peeling-kawitacyjny.html">Peeling kawitacyjny</a></li>
-                                      <li><a href="lifting-i-laminacja-rzes.html">Lifting i laminacja rzęs</a></li>
-                                      <li><a href="architektura-i-laminacja-brwi.html">Architektura i laminacja brwi</a></li>
-                                      <li><a href="detox-drenaz.html">Detox & Drenaż</a></li>
-                                      <li><a href="modelowanie-360.html">Glow & Lift</a></li>
-                                    <li><a href="modelowanie-360.html">Modelowanie 360°</a></li>
-                                    <li><a href="dermomasaz.html">Dermomasaż</a></li>
-                                    <li><a href="liposukcja-ultradzwiekowa.html">Liposukcja ultradźwiękowa</a></li>
-                                    <li><a href="lipolaser-duo.html">Lipolaser DUO</a></li>
-                                    <li><a href="silkroll.html">SilkRoll</a></li>
-                                    <li><a href="depilacja-woskiem.html">Depilacja woskiem</a></li>
-                                    <li><a href="przedluzanie-i-zageszczanie-rzes.html">Przedłużanie i zagęszczanie rzęs</a></li>
+                                      <li><a href="epilacja-laserowa.php">Epilacja laserowa</a></li>
+                                      <li><a href="peeling-kawitacyjny.php">Peeling kawitacyjny</a></li>
+                                      <li><a href="lifting-i-laminacja-rzes.php">Lifting i laminacja rzęs</a></li>
+                                      <li><a href="architektura-i-laminacja-brwi.php">Architektura i laminacja brwi</a></li>
+                                      <li><a href="detox-drenaz.php">Detox & Drenaż</a></li>
+                                      <li><a href="modelowanie-360.php">Glow & Lift</a></li>
+                                    <li><a href="modelowanie-360.php">Modelowanie 360°</a></li>
+                                    <li><a href="dermomasaz.php">Dermomasaż</a></li>
+                                    <li><a href="liposukcja-ultradzwiekowa.php">Liposukcja ultradźwiękowa</a></li>
+                                    <li><a href="lipolaser-duo.php">Lipolaser DUO</a></li>
+                                    <li><a href="silkroll.php">SilkRoll</a></li>
+                                    <li><a href="depilacja-woskiem.php">Depilacja woskiem</a></li>
+                                    <li><a href="przedluzanie-i-zageszczanie-rzes.php">Przedłużanie i zagęszczanie rzęs</a></li>
                                     </ul>
                                 </div>
                                 <!-- OUR SERVICES -->
@@ -543,7 +543,7 @@ include 'partials/head.php';
                     <!-- IMAGE CAROUSEL START -->
                     <div class="section-content">
 
-                       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/1b3ffdfb097a529b9970baf400113732.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> 
+                       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/1b3ffdfb097a529b9970baf400113732.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
                         
                     </div>
                     <!-- IMAGE CAROUSEL START -->

@@ -2,7 +2,7 @@ import 'https://magicsalon.pl/js/cookieconsent.umd.js';
 
 /**
  * All config. options available here:
- * https://cookieconsent.orestbida.com/reference/configuration-reference.html
+ * https://cookieconsent.orestbida.com/reference/configuration-reference.php
  */
 CookieConsent.run({
 
@@ -24,7 +24,7 @@ CookieConsent.run({
             pl: {
                 consentModal: {
                     title: 'Polityka Prywatności & RODO',
-                    description: 'W związku z tym, iż 25 maja 2018 roku zaczęły obowiązywać nowe przepisy o ochronie danych osobowych, w tym Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 w sprawie ochrony danych osobowych osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE oraz Ustawa z dnia 10 maja 2018 roku o ochronie danych osobowych, utworzyliśmy klauzulę informacyjną w zakresie ochrony danych osobowych. Z treści naszej klauzuli dowiedzą się Państwo w jakim zakresie, celu oraz formie przetwarzamy Państwa dane osobowe jako administrator danych. <a href="https://magicsalon.pl/polityka-prywatnosci-rodo.html">Więcej informacji</a>',
+                    description: 'W związku z tym, iż 25 maja 2018 roku zaczęły obowiązywać nowe przepisy o ochronie danych osobowych, w tym Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 w sprawie ochrony danych osobowych osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE oraz Ustawa z dnia 10 maja 2018 roku o ochronie danych osobowych, utworzyliśmy klauzulę informacyjną w zakresie ochrony danych osobowych. Z treści naszej klauzuli dowiedzą się Państwo w jakim zakresie, celu oraz formie przetwarzamy Państwa dane osobowe jako administrator danych. <a href="https://magicsalon.pl/polityka-prywatnosci-rodo.php">Więcej informacji</a>',
                     acceptAllBtn: 'Akceptuj wszystko',
                     acceptNecessaryBtn: 'Odrzuć wszystko',
                     showPreferencesBtn: 'Zarządzaj indywidualnymi preferencjami'

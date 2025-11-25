@@ -40,9 +40,9 @@
     <meta name="twitter:image" content="/images/og-image.jpg" />
     <meta name="twitter:site" content="@magicsalon" />
 
-    <?php include __DIR__ . '/partials/root/head-root-css.html'; ?>
+    <?php include __DIR__ . '/partials/root/head-root-css.php'; ?>
 
-    <?php include __DIR__ . '/partials/root/head-root.html'; ?>
+    <?php include __DIR__ . '/partials/root/head-root.php'; ?>
 
 </head>
 
@@ -53,9 +53,9 @@
         <!-- HEADER START -->
         <header class="site-header header-style-8 mobile-sider-drawer-menu">
 
-            <?php include __DIR__ . '/partials/root/header-top-root.html'; ?>
+            <?php include __DIR__ . '/partials/root/header-top-root.php'; ?>
 
-            <?php include __DIR__ . '/partials/root/main-nav-root.html'; ?>
+            <?php include __DIR__ . '/partials/root/main-nav-root.php'; ?>
 
         </header>
         <!-- HEADER END -->
@@ -110,9 +110,9 @@
         </div>
         <!-- CONTENT END -->
 
-        <?php include __DIR__ . '/partials/root/footer-root-columns.html'; ?>
+        <?php include __DIR__ . '/partials/root/footer-root-columns.php'; ?>
 
-        <?php include __DIR__ . '/partials/root/footer-root.html'; ?>
+        <?php include __DIR__ . '/partials/root/footer-root.php'; ?>
 
 </body>
 

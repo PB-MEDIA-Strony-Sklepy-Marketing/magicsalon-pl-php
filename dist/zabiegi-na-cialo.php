@@ -131,12 +131,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate bounceInLeft animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/detox-drenaz.html"><img src="../images/nasza-oferta/detoxdrenaz.jpg" alt="Detox & Drenaż – oczyszczenie i lekkość"></a>
+                                        <a href="../nasza-oferta/detox-drenaz.php"><img src="../images/nasza-oferta/detoxdrenaz.jpg" alt="Detox & Drenaż – oczyszczenie i lekkość"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/detox-drenaz.html">Detox & Drenaż – oczyszczenie i lekkość</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/detox-drenaz.php">Detox & Drenaż – oczyszczenie i lekkość</a></h4>
                                         <p>Idealne rozwiązanie dla osób borykających się z opuchlizną, uczuciem ciężkości i zanieczyszczoną skórą. Zabieg działa detoksykująco, wspomaga metabolizm i poprawia krążenie limfy, przynosząc natychmiastową ulgę i świeżość.</p>
-                                        <a href="../nasza-oferta/detox-drenaz.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/detox-drenaz.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -144,12 +144,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate bounceInRight animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/modelowanie-360.html"><img src="../images/nasza-oferta/modelowaniesylwetki360.jpg" alt="Modelowanie 360° – kompleksowe podejście do ciała"></a>
+                                        <a href="../nasza-oferta/modelowanie-360.php"><img src="../images/nasza-oferta/modelowaniesylwetki360.jpg" alt="Modelowanie 360° – kompleksowe podejście do ciała"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/modelowanie-360.html">Modelowanie 360° – kompleksowe podejście do ciała</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/modelowanie-360.php">Modelowanie 360° – kompleksowe podejście do ciała</a></h4>
                                         <p>Zabieg, który modeluje sylwetkę w sposób holistyczny – redukuje cellulit, poprawia jędrność skóry, wyszczupla i kształtuje kontury ciała. To idealny wybór dla osób, które chcą szybko i skutecznie zobaczyć efekty.</p>
-                                        <a href="../nasza-oferta/modelowanie-360.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/modelowanie-360.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -157,12 +157,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate bounceInRight animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/lipolaser-duo.html"><img src="../images/nasza-oferta/lipolaserduo.jpg" alt="Lipolaser Duo – precyzyjne wyszczuplanie wybranych partii"></a>
+                                        <a href="../nasza-oferta/lipolaser-duo.php"><img src="../images/nasza-oferta/lipolaserduo.jpg" alt="Lipolaser Duo – precyzyjne wyszczuplanie wybranych partii"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/lipolaser-duo.html">Lipolaser Duo – precyzyjne wyszczuplanie wybranych partii</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/lipolaser-duo.php">Lipolaser Duo – precyzyjne wyszczuplanie wybranych partii</a></h4>
                                         <p>Idealne rozwiązanie dla tych, którzy chcą zredukować tkankę tłuszczową z konkretnych obszarów ciała – brzucha, ud, ramion czy bioder. Zabieg bezpieczny i skuteczny, z widocznymi rezultatami.</p>
-                                        <a href="../nasza-oferta/lipolaser-duo.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/lipolaser-duo.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -170,12 +170,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate rotateInUpRight animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/dermomasaz.html"><img src="../images/nasza-oferta/dermomasaz.jpg" alt="Dermomasaż podciśnieniowy"></a>
+                                        <a href="../nasza-oferta/dermomasaz.php"><img src="../images/nasza-oferta/dermomasaz.jpg" alt="Dermomasaż podciśnieniowy"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/dermomasaz.html">Dermomasaż podciśnieniowy</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/dermomasaz.php">Dermomasaż podciśnieniowy</a></h4>
                                         <p>Zabieg łączący masaż próżniowy z terapią antycellulitową. Stymuluje krążenie, ujędrnia skórę i poprawia metabolizm komórkowy.</p>
-                                        <a href="../nasza-oferta/dermomasaz.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/dermomasaz.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -183,12 +183,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate bounceInRight animated" style="visibility: visible;">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/liposukcja-ultradzwiekowa.html"><img src="../images/nasza-oferta/glowlift.jpg" alt="Liposukcja ultradźwiękowa – nieinwazyjne wyszczuplanie"></a>
+                                        <a href="../nasza-oferta/liposukcja-ultradzwiekowa.php"><img src="../images/nasza-oferta/glowlift.jpg" alt="Liposukcja ultradźwiękowa – nieinwazyjne wyszczuplanie"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/liposukcja-ultradzwiekowa.html">Liposukcja ultradźwiękowa – nieinwazyjne wyszczuplanie</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/liposukcja-ultradzwiekowa.php">Liposukcja ultradźwiękowa – nieinwazyjne wyszczuplanie</a></h4>
                                         <p>Bez skalpela i bez bólu! Technologia ultradźwiękowa rozbija komórki tłuszczowe, które są następnie naturalnie usuwane z organizmu. Efekt? Smukła sylwetka i lepsze samopoczucie już po kilku zabiegach.</p>
-                                        <a href="../nasza-oferta/liposukcja-ultradzwiekowa.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/liposukcja-ultradzwiekowa.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>

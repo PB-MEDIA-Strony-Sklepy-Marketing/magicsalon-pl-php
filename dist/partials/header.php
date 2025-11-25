@@ -94,22 +94,22 @@ $main_menu = [
         'submenu' => [
             [
                 'title' => 'Zabiegi na twarz',
-                'url' => 'o-nas/zabiegi-na-twarz.php',
+                'url' => 'zabiegi-na-twarz.php',
                 'icon' => 'fa-solid fa-right-long'
             ],
             [
                 'title' => 'Epilacja i pielęgnacja',
-                'url' => 'o-nas/epilacja-i-pielegnacja.php',
+                'url' => 'epilacja-i-pielegnacja.php',
                 'icon' => 'fa-solid fa-right-long'
             ],
             [
                 'title' => 'Zabiegi na ciało',
-                'url' => 'o-nas/zabiegi-na-cialo.php',
+                'url' => 'zabiegi-na-cialo.php',
                 'icon' => 'fa-solid fa-right-long'
             ],
             [
                 'title' => 'Blog MAGIC SALON',
-                'url' => 'o-nas/blog.php',
+                'url' => 'blog.php',
                 'icon' => 'fa-solid fa-right-long'
             ],
             [
@@ -142,96 +142,96 @@ $main_menu = [
             'col1' => [
                 [
                     'title' => 'Glow & Lift',
-                    'url' => 'nasza-oferta/glow-lift.php',
+                    'url' => 'oferta-glow-lift.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Peeling kawitacyjny',
-                    'url' => 'nasza-oferta/peeling-kawitacyjny.php',
+                    'url' => 'oferta-peeling-kawitacyjny.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Depilacja laserowa',
-                    'url' => 'nasza-oferta/depilacja-laserowa.php',
+                    'url' => 'oferta-depilacja-laserowa.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Depilacja woskiem',
-                    'url' => 'nasza-oferta/depilacja-woskiem.php',
+                    'url' => 'oferta-depilacja-woskiem.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Detox & Drenaż',
-                    'url' => 'nasza-oferta/detox-drenaz.php',
+                    'url' => 'oferta-detox-drenaz.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Laminacja rzęs',
-                    'url' => 'nasza-oferta/laminacja-rzes.php',
+                    'url' => 'oferta-laminacja-rzes.php',
                     'icon' => 'fa-solid fa-right-long'
                 ]
             ],
             'col2' => [
                 [
                     'title' => 'Modelowanie 360°',
-                    'url' => 'nasza-oferta/modelowanie-360.php',
+                    'url' => 'oferta-modelowanie-360.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Liposukcja ultradźwiękowa jedna partia',
-                    'url' => 'nasza-oferta/liposukcja-ultradzwiekowa-jedna-partia.php',
+                    'url' => 'oferta-liposukcja-ultradzwiekowa-jedna-partia.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Lipolaser jedna partia',
-                    'url' => 'nasza-oferta/lipolaser-jedna-partia.php',
+                    'url' => 'oferta-lipolaser-jedna-partia.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Goodbye Cellulite',
-                    'url' => 'nasza-oferta/goodbye-cellulite.php',
+                    'url' => 'oferta-goodbye-cellulite.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Shape & Lift',
-                    'url' => 'nasza-oferta/shape-lift.php',
+                    'url' => 'oferta-shape-lift.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Laminacja brwi',
-                    'url' => 'nasza-oferta/laminacja-brwi.php',
+                    'url' => 'oferta-laminacja-brwi.php',
                     'icon' => 'fa-solid fa-right-long'
                 ]
             ],
             'col3' => [
                 [
                     'title' => 'Dermomasaż',
-                    'url' => 'nasza-oferta/dermomasaz.php',
+                    'url' => 'oferta-dermomasaz.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Roll & Chill',
-                    'url' => 'nasza-oferta/roll-chill.php',
+                    'url' => 'oferta-roll-chill.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Coll Down Roll',
-                    'url' => 'nasza-oferta/coll-down-roll.php',
+                    'url' => 'oferta-coll-down-roll.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Stylizacja brwi',
-                    'url' => 'nasza-oferta/stylizacja-brwi.php',
+                    'url' => 'oferta-stylizacja-brwi.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Stylizacja rzęs',
-                    'url' => 'nasza-oferta/stylizacja-rzes.php',
+                    'url' => 'oferta-stylizacja-rzes.php',
                     'icon' => 'fa-solid fa-right-long'
                 ],
                 [
                     'title' => 'Laminacja brwi i rzęs',
-                    'url' => 'nasza-oferta/laminacja-brwi-i-rzes.php',
+                    'url' => 'oferta-laminacja-brwi-i-rzes.php',
                     'icon' => 'fa-solid fa-right-long'
                 ]
             ]

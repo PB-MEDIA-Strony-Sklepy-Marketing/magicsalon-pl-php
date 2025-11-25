@@ -235,13 +235,13 @@ jQuery.extend(true,_R, {
 						inst = inst.replace(obj.from,obj.to);
 					});	
 				}
-				_a.left.j.html(inst);
+				_a.left.j.php(inst);
 				inst = _a.tmp;
 				if (ni>opt.slideamount) return;
 				jQuery.each(opt.thumbs[ni].params,function(i,obj) {
 					inst = inst.replace(obj.from,obj.to);
 				});	
-				_a.right.j.html(inst);
+				_a.right.j.php(inst);
 				
 				if (!_a.rtl) {				
 					punchgs.TweenLite.set(_a.left.j.find('.tp-arr-imgholder'),{backgroundImage:"url("+opt.thumbs[pi].src+")"});

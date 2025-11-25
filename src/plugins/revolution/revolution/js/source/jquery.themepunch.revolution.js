@@ -284,7 +284,7 @@
 
 				jQuery(this).on("scriptsloaded",function() {
 					if (options.modulesfailing ) {
-						c.html('<div style="margin:auto;line-height:40px;font-size:14px;color:#fff;padding:15px;background:#e74c3c;margin:20px 0px;">!! Error at loading Slider Revolution 5.0 Extrensions.'+options.errorm+'</div>').show();
+						c.php('<div style="margin:auto;line-height:40px;font-size:14px;color:#fff;padding:15px;background:#e74c3c;margin:20px 0px;">!! Error at loading Slider Revolution 5.0 Extrensions.'+options.errorm+'</div>').show();
 						return false;
 					}
 
@@ -461,7 +461,7 @@
 							try{container.closest('.rev_slider_wrapper').remove()} catch(e) {}
 							try{container.remove();} catch(e) {}
 							container.empty();
-							container.html();
+							container.php();
 							container = null;
 
 							opt = null;
@@ -687,7 +687,7 @@ jQuery.extend(true, _R, {
 	//	-	CHECK IF BROWSER IS IE		-		
 	isIE : function( version, comparison ){
 	    var $div = jQuery('<div style="display:none;"/>').appendTo(jQuery('body'));
-	    $div.html('<!--[if '+(comparison||'')+' IE '+(version||'')+']><a>&nbsp;</a><![endif]-->');
+	    $div.php('<!--[if '+(comparison||'')+' IE '+(version||'')+']><a>&nbsp;</a><![endif]-->');
 	    var ieTest = $div.find('a').length;
 	    $div.remove();
 	    return ieTest;
@@ -1296,7 +1296,7 @@ var initSlider = function (container,opt) {
 	// CHECK FOR ALTERNATIVE IMAGE, AND IFRAM EXIST, AND WE ARE IN IE8, MOBILE, DRAW IT SIMPLE
 	if (container.data('aimg')!=undefined) 
 		if ((container.data('aie8')=="enabled" && _R.isIE(8)) || (container.data('amobile')=="enabled" && _ISM))
-			container.html('<img class="tp-slider-alternative-image" src="'+container.data("aimg")+'">');
+			container.php('<img class="tp-slider-alternative-image" src="'+container.data("aimg")+'">');
 	
 	// PREPRARE SOME CLASSES AND VARIABLES
 	container.find('>ul').addClass("tp-revslider-mainul");
@@ -1561,7 +1561,7 @@ var initSlider = function (container,opt) {
 			versionMinor = parseFloat(version[1]),
 			versionIncrement = parseFloat(version[2] || '0');
 		if (versionTop==1 && versionMinor < 7) 
-			container.html('<div style="text-align:center; padding:40px 0px; font-size:20px; color:#992222;"> The Current Version of jQuery:'+version+' <br>Please update your jQuery Version to min. 1.7 in Case you wish to use the Revolution Slider Plugin</div>');									
+			container.php('<div style="text-align:center; padding:40px 0px; font-size:20px; color:#992222;"> The Current Version of jQuery:'+version+' <br>Please update your jQuery Version to min. 1.7 in Case you wish to use the Revolution Slider Plugin</div>');									
 		if (versionTop>1) opt.ie=false;
 		 		
 					

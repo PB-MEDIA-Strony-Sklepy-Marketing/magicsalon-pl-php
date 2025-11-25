@@ -411,7 +411,7 @@ jQuery.extend(true,_R, {
 							
 						}
 					});
-				linfo.html(ltxt);
+				linfo.php(ltxt);
 			});
 		}
 		/* END OF DEBUGGING */

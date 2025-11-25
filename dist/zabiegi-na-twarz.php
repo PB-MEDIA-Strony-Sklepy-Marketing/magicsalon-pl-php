@@ -134,12 +134,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate bounceInLeft animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/glow-lift.html"><img src="../images/nasza-oferta/glowlift.jpg" alt="Glow & Lift – Lifting i rozświetlenie twarzy"></a>
+                                        <a href="../nasza-oferta/glow-lift.php"><img src="../images/nasza-oferta/glowlift.jpg" alt="Glow & Lift – Lifting i rozświetlenie twarzy"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/glow-lift.html">Glow & Lift – Lifting i rozświetlenie twarzy</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/glow-lift.php">Glow & Lift – Lifting i rozświetlenie twarzy</a></h4>
                                         <p>Zabieg stworzony z myślą o osobach, które pragną natychmiastowego efektu liftingu, rozświetlenia i ujędrnienia skóry. Dzięki wykorzystaniu nowoczesnych technologii stymulujemy produkcję kolagenu i elastyny, co przekłada się na młodszy i zdrowszy wygląd.</p>
-                                        <a href="../nasza-oferta/glow-lift.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/glow-lift.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -147,12 +147,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate bounceInLeft animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/silkroll.html"><img src="../images/nasza-oferta/silkroll.jpg" alt="SilkRoll – wygładzenie i regeneracja"></a>
+                                        <a href="../nasza-oferta/silkroll.php"><img src="../images/nasza-oferta/silkroll.jpg" alt="SilkRoll – wygładzenie i regeneracja"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/silkroll.html">SilkRoll – wygładzenie i regeneracja</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/silkroll.php">SilkRoll – wygładzenie i regeneracja</a></h4>
                                         <p>To luksusowy zabieg dla skóry zmęczonej i pozbawionej blasku. Dzięki mikromasażowi oraz regenerującym składnikom aktywnym, skóra staje się jedwabiście gładka, nawilżona i pełna energii.</p>
-                                        <a href="../nasza-oferta/silkroll.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/silkroll.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -160,12 +160,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate rotateIn animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/architektura-i-laminacja-brwi.html"><img src="../images/nasza-oferta/architekturalaminacjabrwi.jpg" alt="Architektura i laminacja brwi"></a>
+                                        <a href="../nasza-oferta/architektura-i-laminacja-brwi.php"><img src="../images/nasza-oferta/architekturalaminacjabrwi.jpg" alt="Architektura i laminacja brwi"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/architektura-i-laminacja-brwi.html">Architektura i laminacja brwi</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/architektura-i-laminacja-brwi.php">Architektura i laminacja brwi</a></h4>
                                         <p>Modelowanie brwi dopasowane do kształtu twarzy oraz indywidualnych preferencji klientki. Efekt? Wyrazista, naturalna oprawa oka.</p>
-                                        <a href="../nasza-oferta/architektura-i-laminacja-brwi.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/architektura-i-laminacja-brwi.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -173,12 +173,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate rotateIn animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/lifting-i-laminacja-rzes.html"><img src="../images/nasza-oferta/laminacjaliftingrzes.jpg" alt="Lifting i Laminacja Rzęs"></a>
+                                        <a href="../nasza-oferta/lifting-i-laminacja-rzes.php"><img src="../images/nasza-oferta/laminacjaliftingrzes.jpg" alt="Lifting i Laminacja Rzęs"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/lifting-i-laminacja-rzes.html">Lifting i Laminacja Rzęs</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/lifting-i-laminacja-rzes.php">Lifting i Laminacja Rzęs</a></h4>
                                         <p>Zabieg podkreślający naturalne piękno rzęs – uniesione, pogrubione i zadbane rzęsy bez użycia tuszu.</p>
-                                        <a href="../nasza-oferta/lifting-i-laminacja-rzes.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/lifting-i-laminacja-rzes.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -186,12 +186,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate rotateInUpRight animated" style="display: none">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/zabieg-lampa-led.html"><img src="../images/nasza-oferta/zabieglampaled.jpg" alt="Zabieg Lampą LED"></a>
+                                        <a href="../nasza-oferta/zabieg-lampa-led.php"><img src="../images/nasza-oferta/zabieglampaled.jpg" alt="Zabieg Lampą LED"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/zabieg-lampa-led.html">Zabieg Lampą LED</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/zabieg-lampa-led.php">Zabieg Lampą LED</a></h4>
                                         <p>Światłoterapia LED wspiera regenerację skóry, łagodzi stany zapalne i przyspiesza procesy odnowy komórkowej. Idealny jako samodzielny zabieg lub dodatek do innych terapii.</p>
-                                        <a href="../nasza-oferta/zabieg-lampa-led.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/zabieg-lampa-led.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -199,12 +199,12 @@ include 'partials/head.php';
                             <div class="col-lg-4 col-md-6 m-b30 animate rotateInUpRight animated">
                                 <div class="wt-box bg-white">
                                     <div class="wt-media wt-thum-bx wt-img-effect off-color">
-                                        <a href="../nasza-oferta/peeling-kawitacyjny.html"><img src="../images/nasza-oferta/peelingkawitacyjny.jpg" alt="Peeling kawitacyjny"></a>
+                                        <a href="../nasza-oferta/peeling-kawitacyjny.php"><img src="../images/nasza-oferta/peelingkawitacyjny.jpg" alt="Peeling kawitacyjny"></a>
                                     </div>
                                     <div class="wt-info p-a30 bg-gray">
-                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/peeling-kawitacyjny.html">Peeling kawitacyjny</a></h4>
+                                        <h4 class="wt-title m-t0"><a href="../nasza-oferta/peeling-kawitacyjny.php">Peeling kawitacyjny</a></h4>
                                         <p>Bezbolesne, głębokie oczyszczanie skóry ultradźwiękami. Idealny dla każdego typu cery, także wrażliwej.</p>
-                                        <a href="../nasza-oferta/peeling-kawitacyjny.html" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="../nasza-oferta/peeling-kawitacyjny.php" class="site-button ">Czytaj więcej <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +338,7 @@ include 'partials/head.php';
                     <!-- IMAGE CAROUSEL START -->
                     <div class="section-content">
 
-                       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/1b3ffdfb097a529b9970baf400113732.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> 
+                       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/1b3ffdfb097a529b9970baf400113732.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
                         
                     </div>
                     <!-- IMAGE CAROUSEL START -->

@@ -6420,7 +6420,7 @@
       get: function get() {
         if (!IS_DOM) return undefined;
         var container = DOCUMENT.createElement('div');
-        container.innerHTML = val.html;
+        container.innerHTML = val.php;
         return container.children;
       }
     });

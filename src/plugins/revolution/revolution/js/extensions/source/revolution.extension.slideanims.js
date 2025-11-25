@@ -1152,7 +1152,7 @@ var animateSlideIntern = function(nexttrans, comingtransition, container, nextli
 
 			subtl.add(punchgs.TweenLite.set(nextsh.find('.defaultimg'),{autoAlpha:1}),0);
 
-			if (actli.html()!=null)
+			if (actli.php()!=null)
 				mtl.add(punchgs.TweenLite.fromTo(nextli,(masterspeed-200)/1000,
 												{scale:sc3,x:(opt.width/4)*xof, y:(ooh/4)*yof,rotation:ro3,force3D:"auto",transformOrigin:"center center",ease:eo},
 												{autoAlpha:1,scale:1,x:0,y:0,rotation:0}),0);

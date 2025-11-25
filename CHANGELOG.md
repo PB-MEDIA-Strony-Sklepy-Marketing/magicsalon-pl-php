@@ -7,7 +7,7 @@ Format bazuje na [Keep a Changelog](https://keepachangelog.com/pl/1.0.0/),
 a projekt stosuje [Semantic Versioning](https://semver.org/lang/pl/).
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.php).
 
 ## [Unreleased]
 
@@ -93,7 +93,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Zmieniono / Changed
 - 🔄 Konwersja z HTML na PHP:
-  - Wszystkie strony .html → .php
+  - Wszystkie strony .php → .php
   - Statyczne treści → dynamiczne komponenty
   - Duplikaty kodu → reużywalne partials
 - 📝 SEO improvements:
@@ -120,16 +120,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Dodano / Added
 - 🎉 Initial release
 - 🏠 Static HTML website:
-  - index.html - Strona główna
-  - o-firmie.html - O nas
-  - oferta.html - Oferta
-  - cennik.html - Cennik
-  - galeria.html - Galeria
-  - kontakt.html - Kontakt
-  - opinie-klientow.html - Opinie
-  - faq-pytania.html - FAQ
-  - polityka-prywatnosci-rodo.html - Polityka prywatności
-  - zarezerwuj-wizyte.html - Rezerwacja
+  - index.php - Strona główna
+  - o-firmie.php - O nas
+  - oferta.php - Oferta
+  - cennik.php - Cennik
+  - galeria.php - Galeria
+  - kontakt.php - Kontakt
+  - opinie-klientow.php - Opinie
+  - faq-pytania.php - FAQ
+  - polityka-prywatnosci-rodo.php - Polityka prywatności
+  - zarezerwuj-wizyte.php - Rezerwacja
 - 🎨 Design system:
   - Brand colors (purple #6D356F, gold #D7A54F)
   - Custom CSS with Bootstrap 5

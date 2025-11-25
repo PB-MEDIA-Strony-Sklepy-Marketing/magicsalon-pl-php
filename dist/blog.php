@@ -121,18 +121,18 @@ include 'partials/head.php';
                         <div class="post masonry-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-1">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="../blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.html"><img src="../images/blog/grid/pic1.jpg" alt="Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry"></a>
+                                    <a href="../blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php"><img src="../images/blog/grid/pic1.jpg" alt="Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry"></a>
                                 </div>
                                 <div class="wt-post-info p-t30 ">
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="../blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.html">Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry</a></h3>
+                                        <h3 class="post-title"><a href="../blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php">Jak Nowoczesne Zabiegi Kosmetyczne Zmieniają Nasze Podejście do Pielęgnacji Skóry</a></h3>
                                     </div>
                                     <div class="wt-post-text">
                                         <p>Współczesna pielęgnacja skóry to coś więcej niż tylko codzienne nawilżanie. W dobie rosnącej świadomości o wpływie różnych czynników na stan naszej skóry, stawiamy na kompleksowe zabiegi kosmetyczne, które zapewniają spektakularne efekty i długotrwałe rezultaty. W MAGIC SALON łączymy najnowsze technologie z profesjonalną opieką, oferując szeroką gamę usług, które nie tylko poprawiają wygląd, ale także wpływają na nasze samopoczucie i zdrowie.</p> 
                                     </div>
                                     <div class="clearfix">
                                 <div class="wt-post-readmore pull-left">
-                                        <a href="../blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
+                                        <a href="../blog/jak-nowoczesne-zabiegi-kosmetyczne-zmieniaja-nasze-podejscie-do-pielegnacji-skory.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
                                 </div>
                             </div>
                                     
@@ -143,18 +143,18 @@ include 'partials/head.php';
                         <div class="post masonry-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-1">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="../blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.html"><img src="../images/blog/grid/pic2.jpg" alt="Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?"></a>
+                                    <a href="../blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php"><img src="../images/blog/grid/pic2.jpg" alt="Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?"></a>
                                 </div>
                                 <div class="wt-post-info p-t30 ">
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="../blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.html">Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?</a></h3>
+                                        <h3 class="post-title"><a href="../blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php">Jak Wybrać Idealny Zabieg Kosmetyczny dla Siebie?</a></h3>
                                     </div>
                                     <div class="wt-post-text">
                                         <p>W dzisiejszych czasach, kiedy tempo życia jest niezwykle szybkie, a otoczenie pełne jest nowych technologii, dbanie o siebie stało się nie tylko modą, ale również koniecznością. W salonach kosmetycznych, takich jak MAGIC SALON, dostępne są najnowocześniejsze zabiegi, które pomagają poprawić wygląd, samopoczucie i zdrowie skóry. Jednak, jak wybrać zabieg, który będzie odpowiedni do Twoich potrzeb i oczekiwań? W tym wpisie podpowiemy, jak dokonać wyboru, który pozwoli Ci poczuć się piękniejszą, młodszą i bardziej zrelaksowaną!</p> 
                                     </div>
                                     <div class="clearfix">
                                 <div class="wt-post-readmore pull-left">
-                                        <a href="../blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
+                                        <a href="../blog/jak-wybrac-idealny-zabieg-kosmetyczny-dla-siebie.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
                                 </div>
                             </div>
                                     
@@ -165,18 +165,18 @@ include 'partials/head.php';
                         <div class="post masonry-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-1">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="../blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.html"><img src="../images/blog/grid/pic3.jpg" alt="Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno"></a>
+                                    <a href="../blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.php"><img src="../images/blog/grid/pic3.jpg" alt="Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno"></a>
                                 </div>
                                 <div class="wt-post-info p-t30 ">
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="../blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.html">Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno</a></h3>
+                                        <h3 class="post-title"><a href="../blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.php">Nowoczesne Zabiegi Kosmetyczne: Jak Technologie Zmienią Twoje Piękno</a></h3>
                                     </div>
                                     <div class="wt-post-text">
                                         <p>W dzisiejszym świecie, gdzie tempo życia jest szybkie, a oczekiwania co do wyglądu rosną, coraz więcej osób decyduje się na profesjonalne zabiegi kosmetyczne, które pomogą im zadbać o skórę i wygląd w sposób kompleksowy. MAGIC SALON to miejsce, w którym spotykają się najnowsze technologie z pasją do piękna. Dzięki innowacyjnym zabiegom możesz poczuć się lepiej, wyglądać młodziej i cieszyć się zdrową skórą. W tym wpisie podpowiemy, jak nowoczesne zabiegi mogą zmienić Twoje podejście do pielęgnacji skóry oraz dlaczego warto inwestować w technologie, które zmieniają wygląd i samopoczucie.</p> 
                                     </div>
                                     <div class="clearfix">
                                 <div class="wt-post-readmore pull-left">
-                                        <a href="../blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
+                                        <a href="../blog/nowoczesne-zabiegi-kosmetyczne-jak-technologie-zmienia-twoje-piekno.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
                                 </div>
                             </div>
                                     
@@ -187,18 +187,18 @@ include 'partials/head.php';
                         <div class="post masonry-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-1">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="../blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.html"><img src="../images/blog/grid/pic4.jpg" alt="Odkryj Moc Nowoczesnej Pielęgnacji: Innowacyjne Zabiegi na Twarz i Ciało w MAGIC SALON"></a>
+                                    <a href="../blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.php"><img src="../images/blog/grid/pic4.jpg" alt="Odkryj Moc Nowoczesnej Pielęgnacji: Innowacyjne Zabiegi na Twarz i Ciało w MAGIC SALON"></a>
                                 </div>
                                 <div class="wt-post-info p-t30 ">
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="../blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.html">Odkryj Moc Nowoczesnej Pielęgnacji: Innowacyjne Zabiegi na Twarz i Ciało w MAGIC SALON</a></h3>
+                                        <h3 class="post-title"><a href="../blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.php">Odkryj Moc Nowoczesnej Pielęgnacji: Innowacyjne Zabiegi na Twarz i Ciało w MAGIC SALON</a></h3>
                                     </div>
                                     <div class="wt-post-text">
                                         <p>Każdy z nas zasługuje na chwilę relaksu, odrobinę luksusu oraz skuteczną pielęgnację, która pozwoli poczuć się wyjątkowo. MAGIC SALON to miejsce, gdzie profesjonalizm łączy się z pasją, oferując Ci kompleksową pielęgnację twarzy i ciała, dostosowaną do Twoich indywidualnych potrzeb. Dzięki innowacyjnym zabiegom, które łączą nowoczesne technologie z doświadczeniem naszych specjalistów, możesz w łatwy sposób poprawić kondycję swojej skóry, zadbać o sylwetkę oraz poczuć się pięknie i zdrowo. Przeczytaj, jak MAGIC SALON może odmienić Twoje ciało i umysł!</p> 
                                     </div>
                                     <div class="clearfix">
                                 <div class="wt-post-readmore pull-left">
-                                        <a href="../blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.html" title="CZYTYAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
+                                        <a href="../blog/odkryj-moc-nowoczesnej-pielegnacji-innowacyjne-zabiegi-na-twarz-i-cialo-w-magic-salon.php" title="CZYTYAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
                                 </div>
                             </div>
                                     
@@ -209,18 +209,18 @@ include 'partials/head.php';
                         <div class="post masonry-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-1">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="../blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.html"><img src="../images/blog/grid/pic5.jpg" alt="Odkryj Moc Twój Piękno: Najnowsze Trendy i Innowacje w Pielęgnacji Skóry w MAGIC SALON"></a>
+                                    <a href="../blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php"><img src="../images/blog/grid/pic5.jpg" alt="Odkryj Moc Twój Piękno: Najnowsze Trendy i Innowacje w Pielęgnacji Skóry w MAGIC SALON"></a>
                                 </div>
                                 <div class="wt-post-info p-t30 ">
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="../blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.html">Odkryj Moc Twój Piękno: Najnowsze Trendy i Innowacje w Pielęgnacji Skóry w MAGIC SALON</a></h3>
+                                        <h3 class="post-title"><a href="../blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php">Odkryj Moc Twój Piękno: Najnowsze Trendy i Innowacje w Pielęgnacji Skóry w MAGIC SALON</a></h3>
                                     </div>
                                     <div class="wt-post-text">
                                         <p>Piękno nie jest jedynie tym, co widzimy na zewnątrz – to także to, jak się czujemy i jak dbamy o siebie. W MAGIC SALON wierzymy, że każda kobieta zasługuje na to, by poczuć się wyjątkowo, dlatego oferujemy szeroką gamę usług pielęgnacyjnych, które pozwolą Ci podkreślić swoją naturalną urodę, poczuć się pewnie i komfortowo we własnej skórze. Nasz salon kosmetyczny to miejsce, gdzie nowoczesne technologie łączą się z doświadczeniem i pasją naszych specjalistów.</p> 
                                     </div>
                                     <div class="clearfix">
                                 <div class="wt-post-readmore pull-left">
-                                        <a href="../blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
+                                        <a href="../blog/odkryj-moc-twoj-piekno-najnowsze-trendy-i-innowacje-w-pielegnacji-skory-w-magic-salon.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
                                 </div>
                             </div>
                                     
@@ -231,18 +231,18 @@ include 'partials/head.php';
                         <div class="post masonry-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-1">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="../blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.html"><img src="../images/blog/grid/pic6.jpg" alt="Przedłużanie Rzęs i Laminacja – Twoje Piękno w Nowym Wydaniu!"></a>
+                                    <a href="../blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php"><img src="../images/blog/grid/pic6.jpg" alt="Przedłużanie Rzęs i Laminacja – Twoje Piękno w Nowym Wydaniu!"></a>
                                 </div>
                                 <div class="wt-post-info p-t30 ">
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="../blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.html">Przedłużanie Rzęs i Laminacja – Twoje Piękno w Nowym Wydaniu!</a></h3>
+                                        <h3 class="post-title"><a href="../blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php">Przedłużanie Rzęs i Laminacja – Twoje Piękno w Nowym Wydaniu!</a></h3>
                                     </div>
                                     <div class="wt-post-text">
                                         <p>Piękne i zadbane rzęsy to jeden z kluczowych elementów, który podkreśla wyrazistość naszego spojrzenia. W dzisiejszym zabieganym świecie, gdzie każdy dzień pełen jest wyzwań, codzienna aplikacja maskary i poświęcanie czasu na makijaż może stać się uciążliwe. Jednak teraz, dzięki nowoczesnym zabiegom takim jak przedłużanie rzęs i laminacja, możesz cieszyć się idealnym wyglądem swoich rzęs bez codziennego nakładania tuszu!</p> 
                                     </div>
                                     <div class="clearfix">
                                 <div class="wt-post-readmore pull-left">
-                                        <a href="../blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.html" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
+                                        <a href="../blog/przedluzanie-rzes-i-laminacja-twoje-piekno-w-nowym-wydaniu.php" title="CZYTAJ WIĘCEJ" rel="bookmark" class="site-button-link">Czytaj więcej</a>
                                 </div>
                             </div>
                                     
@@ -289,8 +289,7 @@ include 'partials/head.php';
                     <!-- IMAGE CAROUSEL START -->
                     <div class="section-content">
 
-                       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/1b3ffdfb097a529b9970baf400113732.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> 
-                        
+                       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/1b3ffdfb097a529b9970baf400113732.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
                     </div>
                     <!-- IMAGE CAROUSEL START -->
                 </div>
